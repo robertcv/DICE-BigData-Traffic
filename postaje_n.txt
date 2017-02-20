@@ -1,0 +1,896 @@
+103111,7. septembra →
+103112,7. septembra
+505132,Adamičev spomenik →
+600022,Ajdovščina
+503031,Akademija →
+503032,Akademija
+502013,Ambrožev trg →
+502014,Ambrožev trg
+103031,AMZS →
+103032,AMZS
+804171,Andreja Bitenca →
+804172,Andreja Bitenca
+300013,AP Ljubljana
+303061,Archinetova →
+303062,Archinetova
+101051,Astra →
+101052,Astra
+602052,Aškerčeva
+602051,Aškerčeva →
+803021,Avtomontaža →
+803022,Avtomontaža
+604022,Barje
+604023,Barje →
+600011,Bavarski dvor (Korabar)
+600012,Bavarski dvor (Kozolec)
+725092,Belica
+725091,Belica →
+204141,Belinka →
+204142,Belinka
+204171,Beričevo →
+405051,Besnica ambulanta →
+405052,Besnica ambulanta
+405061,Besnica kamnolom →
+405062,Besnica kamnolom
+405021,Besnica/Lj. →
+405022,Besnica/Lj.
+405031,Besnica/Lj.Š. →
+405032,Besnica/Lj.Š.
+101031,Bežigrad →
+101032,Bežigrad
+403072,Bilečanska
+403071,Bilečanska →
+404121,Bizovik
+404123,Bizovik →
+405041,Blaževo →
+405042,Blaževo
+504121,Bobrova →
+504122,Bobrova
+704041,Bokalce →
+402041,Bolnica →
+402042,Bolnica
+802041,Bolnica P. Držaja →
+802042,Bolnica P. Držaja
+703102,Bonifacija
+703101,Bonifacija →
+103191,Božičeva →
+103192,Božičeva
+203181,Bratislavska →
+203182,Bratislavska
+803161,Bratov Babnik →
+803162,Bratov Babnik
+803132,Bratov Učakar
+803131,Bratov Učakar →
+101061,Bratov Židan →
+101062,Bratov Židan
+704022,Brdo
+704021,Brdo →
+704024,Brdo
+715112,Brezje pri Dobrovi
+715111,Brezje pri Dobrovi →
+715102,Brezje pri Dobrovi And.
+715101,Brezje pri Dobrovi And. →
+614022,Brglezov štradon
+614021,Brglezov štradon →
+103021,Brinje →
+103022,Brinje
+726022,Briše pri Polh.G.
+726021,Briše pri Polh.G. →
+726032,Briše pri Polh.G.Koroš.
+726031,Briše pri Polh.G.Koroš. →
+726042,Briše pri Polh.G.M.Voda
+726041,Briše pri Polh.G.M.Voda →
+204121,Brnčičeva →
+804121,Brod →
+804122,Brod
+303071,Brodarjev trg →
+303072,Brodarjev trg
+505092,Brvace
+505091,Brvace →
+203142,BTC-Emporium
+203141,BTC-Emporium →
+203132,BTC-Kolosej
+203131,BTC-Kolosej →
+203122,BTC-tržnica
+203121,BTC-tržnica →
+203112,BTC-uprava
+203111,BTC-uprava →
+826032,Bukovica Anzel
+826031,Bukovica Anzel →
+826022,Bukovica Plevevc
+826021,Bukovica Plevevc →
+726072,Butajnova →
+726071,Butajnova →
+726062,Butajnova Čamernik
+726061,Butajnova Čamernik →
+726052,Butajnova Setnik
+726051,Butajnova Setnik →
+602012,Cankarjev dom
+602011,Cankarjev dom →
+614042,Capuder
+614041,Capuder →
+103173,Center Stožice →
+104091,Cesta na Brod →
+104092,Cesta na Brod
+304091,Cesta na Vevče →
+304092,Cesta na Vevče
+404021,Cesta v Bizovik →
+404022,Cesta v Bizovik
+404071,Cesta v Zavoglje →
+404072,Cesta v Zavoglje
+703022,Cesta XV
+703021,Cesta XV →
+304042,Chengdujska
+304041,Chengdujska →
+505082,Cikava
+505081,Cikava →
+803111,Čebelarska →
+803112,Čebelarska
+103121,Čerinova →
+103122,Čerinova
+737041,Črni Vrh →
+737032,Črni Vrh nad Vrhovci
+737031,Črni Vrh nad Vrhovci →
+104161,Črnuče →
+725112,D.vas pri Polh.G.
+725111,D.vas pri Polh.G. →
+600032,Dalmatinova
+725012,Dobrova
+725011,Dobrova →
+725014,Dobrova
+725013,Dobrova →
+715062,Dobrova graben
+715061,Dobrova graben →
+715082,Dobrova Maček
+715081,Dobrova Maček →
+715092,Dobrova Skodlar
+715091,Dobrova Skodlar →
+715072,Dobrova vodomet
+715071,Dobrova vodomet →
+404031,Dobrunje →
+404032,Dobrunje
+404142,Dobrunje pod Urhom
+404141,Dobrunje pod Urhom →
+825072,Dobruša lipa
+825071,Dobruša lipa →
+703112,Dolgi most
+703111,Dolgi most →
+704011,Dolgi most - obračališče →
+704012,Dolgi most - obračališče izstop
+704052,Dolgi most Rotar
+704051,Dolgi most Rotar →
+505192,Dom obrtnikov →
+505182,Dom starejših →
+614032,Dornig
+614031,Dornig →
+602022,Drama
+602021,Drama →
+803152,Draveljska gmajna
+803151,Draveljska gmajna →
+803041,Dravlje →
+803042,Dravlje
+715012,Draževnik
+715011,Draževnik →
+802051,Drenikova →
+802052,Drenikova →
+804352,Dvor
+804351,Dvor →
+725102,Dvor pri Polh.G.
+725101,Dvor pri Polh.G. →
+104061,Elma →
+104062,Elma
+403051,Emona →
+403052,Emona
+745022,Erbežnik
+745021,Erbežnik →
+202082,Flajšmanova
+301011,Friškovec →
+301012,Friškovec
+304051,Fužine →
+725042,Gaberje pri Dob.Brvičar
+725041,Gaberje pri Dob.Brvičar →
+725032,Gaberje pri Dobrovi
+725031,Gaberje pri Dobrovi →
+603093,Galjevica →
+603094,Galjevica
+104221,Gameljne →
+102031,Gasilska brigada →
+102032,Gasilska brigada
+603022,Gerbičeva
+603021,Gerbičeva →
+703082,Glince
+703081,Glince →
+402051,Glonarjeva →
+402052,Glonarjeva
+714022,Gmajna
+714021,Gmajna →
+603151,Goluhova →
+603152,Goluhova
+103091,Gorjančeva →
+103092,Gorjančeva
+402061,Gornje Poljane →
+402062,Gornje Poljane
+504011,Gornji Rudnik →
+504012,Gornji Rudnik
+602101,Gornji trg →
+602102,Gornji trg
+815102,Gostilna Kovač
+815101,Gostilna Kovač →
+505141,Grosuplje →
+204021,GZL →
+204022,GZL
+602032,Hajdrihova
+602031,Hajdrihova →
+604042,Havptmance
+604041,Havptmance →
+603131,Hladnikova →
+603132,Hladnikova
+716012,Horjul
+716011,Horjul →
+700012,Hotel Lev
+101011,Hranilniška →
+101012,Hranilniška
+725072,Hrastenice
+725071,Hrastenice →
+204061,Hrastje →
+204062,Hrastje
+816012,Hraše center
+816011,Hraše center →
+816021,Hraše vzhod →
+816022,Hraše vzhod
+815131,Hraše zahod →
+815132,Hraše zahod
+725052,Hruševo
+725051,Hruševo →
+404112,Hruševska
+404111,Hruševska →
+404011,Hrušica →
+404012,Hrušica
+402011,Hrvatski trg →
+402012,Hrvatski trg
+625022,Ig
+625021,Ig →
+605012,Ig AP
+605011,Ig AP →
+605082,Ig Petrol
+605081,Ig Petrol →
+501011,Ilirska →
+501012,Ilirska
+603102,Ilovica
+603101,Ilovica →
+804161,IMP →
+804162,IMP
+625052,Iška vas
+625051,Iška vas →
+626011,Iška vas obračališče →
+625061,Iška vas šola →
+625062,Iška vas šola
+604012,Iški most
+604011,Iški most →
+603121,Ižanska →
+603122,Ižanska
+604061,Ižica →
+604062,Ižica
+603012,Jadranska
+603011,Jadranska →
+703032,Jamnikarjeva
+703031,Jamnikarjeva →
+403011,Jana Husa →
+403012,Jana Husa
+744021,Japelj →
+744022,Japelj
+203091,Jarše →
+203092,Jarše
+425012,Javor pri Sostrem K.
+425011,Javor pri Sostrem K. →
+405011,Javor/K. →
+405012,Javor/K.
+745061,Jezero →
+104181,Ježa →
+104182,Ježa
+104031,Ježica →
+104032,Ježica
+104033,Ježica →
+504041,Jurčkova →
+504042,Jurčkova
+815112,Kajakaška
+815111,Kajakaška →
+303022,Kajuhova →
+104021,Kališnikov trg →
+104022,Kališnikov trg
+803181,Kamna Gorica →
+102091,Kardeljeva ploščad →
+102092,Kardeljeva ploščad
+203052,Kavčičeva →
+203051,Kavčičeva
+802021,Kino Šiška →
+802022,Kino Šiška
+402031,Klinični center →
+402032,Klinični center
+803082,Kneza Koclja
+803081,Kneza Koclja →
+403023,Kodeljevo →
+403022,Kodeljevo
+403021,Kodeljevo →
+403025,Kodeljevo - obračališče
+203101,Kodrova →
+203102,Kodrova
+700011,Kolizej →
+300011,Kolodvor →
+300012,Kolodvor
+104101,Kolodvor Črnuče →
+104102,Kolodvor Črnuče
+835021,Komandata Staneta →
+835022,Komandata Staneta
+715022,Komanija
+715021,Komanija →
+803031,Kompas →
+803032,Kompas
+505172,Kongo →
+601012,Konzorcij
+603041,Koprska →
+603044,Koprska
+803142,Koseze
+803141,Koseze →
+826111,Koseze →
+826112,Koseze
+826121,Koseze Stare →
+826122,Koseze Stare
+804081,Kosmačeva →
+804082,Kosmačeva
+625042,Kot
+625041,Kot →
+803212,Kovinarska
+803211,Kovinarska →
+704102,Kozarje
+704101,Kozarje →
+714012,Kozarje GD
+714011,Kozarje GD →
+614082,Kozler
+614081,Kozler →
+404051,KPL →
+404052,KPL
+203211,Kranjčeva →
+501032,Krekov trg →
+501031,Krekov trg
+603032,Krimska
+603031,Krimska →
+602061,Križanke →
+602062,Križanke
+404081,Križišče Sostro →
+404082,Križišče Sostro
+404083,Križišče Sostro →
+404084,Križišče Sostro
+404102,Krožna pot
+404101,Krožna pot →
+536022,Krpan →
+101034,Kržičeva
+804312,Kurirska
+804311,Kurirska →
+727012,Kurja vas/Šentjoštu →
+727011,Kurja vas/Šentjoštu →
+603112,Lahova pot
+603111,Lahova pot →
+406071,Lanišče →
+406072,Lanišče
+504092,Lavrica
+504091,Lavrica →
+504082,Lavrica pri Malči
+504081,Lavrica pri Malči →
+204011,Leskoškova →
+204012,Leskoškova
+204041,Letališka →
+204042,Letališka
+204051,Letališka-obračališče →
+614072,Lipe
+614071,Lipe →
+103201,Litostroj →
+803051,Litostrojska →
+803052,Litostrojska
+603092,Livada
+603091,Livada →
+304103,Lj. Vevče Papirnica →
+304102,Lj. Vevče Papirnica
+716022,Ljubgojna
+716021,Ljubgojna →
+404132,Ljubljana Dobrunje
+404131,Ljubljana Dobrunje →
+404152,Ljubljana Zadvor
+404151,Ljubljana Zadvor →
+505152,Ljubljanska →
+803061,Ljubljanske brigade →
+803062,Ljubljanske brigade
+725082,Log pri Polh.G.
+725081,Log pri Polh.G. →
+736012,Mačkov graben
+736011,Mačkov graben →
+415061,Mali Lipoglav →
+505042,Mali vrh
+505041,Mali vrh →
+103162,Maroltova →
+103161,Maroltova
+804131,Martinova →
+804071,Medno →
+804072,Medno
+805021,Medvode →
+805022,Medvode
+805023,Medvode →
+805052,Medvode na klancu
+805041,Medvode naselje →
+805011,Medvoška a.p. →
+805012,Medvoška a.p.
+102081,Mercator →
+102082,Mercator
+604031,Mestni log →
+503051,Mihov štradon →
+503052,Mihov štradon
+602072,Mirje
+602071,Mirje →
+745032,Mostiček
+745031,Mostiček →
+102061,Mostovna →
+102062,Mostovna
+536012,Mrzle njive →
+603062,Murgle
+603061,Murgle →
+603064,Murgle
+804212,Murkova
+804211,Murkova →
+704062,Na Gmajnici
+704061,Na Gmajnici →
+802031,Na jami →
+802032,Na jami
+804091,Na klancu →
+804092,Na klancu
+203231,Na Žale →
+203232,Na Žale
+204131,Nadgorica →
+204132,Nadgorica
+100012,Navje
+745041,Notranje Gorice →
+203171,Nove Jarše →
+203161,Nove Jarše-Šmartinska →
+103081,Nove Stožice →
+203071,Nove Žale →
+203072,Nove Žale
+805031,Novo naselje →
+805032,Novo naselje
+204101,Novo Polje →
+204102,Novo Polje →
+504051,NS Rudnik →
+504052,NS Rudnik
+504061,NS Rudnik →
+804111,Ob daljnovodu →
+804112,Ob daljnovodu
+303032,Ob sotočju
+104081,Obrtna cona →
+104082,Obrtna cona
+804202,Omersova
+804201,Omersova →
+503014,Orlova
+304021,Osenjakova →
+304022,Osenjakova
+505162,OŠ Brinje →
+745101,OŠ Jezero →
+104151,OŠ Maksa Pečarja →
+104152,OŠ Maksa Pečarja
+404162,OŠ Sostro
+404161,OŠ Sostro →
+804342,Oval
+804341,Oval →
+415052,Pance K.
+415051,Pance K. →
+101021,Parmova →
+101022,Parmova
+503041,Peruzzijeva →
+503042,Peruzzijeva
+736022,Petačev graben
+736021,Petačev graben →
+304111,Petrol →
+304112,Petrol
+614012,Plečnikova cerkev
+614011,Plečnikova cerkev →
+803121,Plešičeva →
+803122,Plešičeva
+403031,Pod Golovcem →
+403032,Pod Golovcem
+505112,Pod gozdom
+505111,Pod gozdom →
+504072,Pod Hribom
+504071,Pod Hribom →
+804191,Pod Kamno Gorico →
+702012,Pod Rožnikom
+702011,Pod Rožnikom →
+804031,Podgora →
+804032,Podgora
+415022,Podlipoglav
+415021,Podlipoglav →
+102051,Podmilščakova →
+102052,Podmilščakova
+703052,Podmornica
+703051,Podmornica →
+715122,Podolnica
+715121,Podolnica →
+745052,Podpeč
+745051,Podpeč →
+725122,Podreber/Polh.G.
+725121,Podreber/Polh.G. →
+715032,Podsmreka GD
+715031,Podsmreka GD →
+715052,Podsmreka pri Gorjancu
+715051,Podsmreka pri Gorjancu →
+715042,Podsmreka Rotar
+715041,Podsmreka Rotar →
+804221,Podutik →
+103061,Pohorskega bataljona →
+103062,Pohorskega bataljona
+203011,Pokopališka →
+203012,Pokopališka
+104121,Polanškova →
+104122,Polanškova
+726012,Polhov Gradec
+726011,Polhov Gradec →
+402022,Poliklinika
+402021,Poliklinika →
+502011,Poljanska →
+502012,Poljanska
+304071,Polje →
+304074,Polje →
+304072,Polje
+304073,Polje
+825031,Polje obračališče →
+304081,Polje-kolodvor →
+304082,Polje-kolodvor →
+601011,Pošta →
+404041,Pošta Dobrunje →
+404042,Pošta Dobrunje
+303051,Pot na Fužine →
+303052,Pot na Fužine
+603072,Pot na Rakovo jelšo
+603071,Pot na Rakovo jelšo →
+104141,Pot v Hrastovec →
+104142,Pot v Hrastovec
+104131,Pot v Smrečje →
+104132,Pot v Smrečje
+825012,Povodje
+825011,Povodje →
+304011,Preglov trg →
+304012,Preglov trg
+202021,Prekmurska →
+202022,Prekmurska
+703062,Preval
+703061,Preval →
+406042,Prežganje Š.
+406041,Prežganje Š. →
+406031,Prežganje Š. K. →
+406032,Prežganje Š. K.
+415072,Pri Dogonivar
+415071,Pri Dogonivar →
+415092,Pri Dolencu
+415091,Pri Dolencu →
+604052,Pri Maranzu
+604051,Pri Maranzu →
+704081,Pri Poku →
+415082,Primožev ovinek
+415081,Primožev ovinek →
+104113,Primožičeva
+602111,Privoz →
+602112,Privoz
+804021,Prušnikova →
+804022,Prušnikova
+804181,Pržan →
+103041,Puhova →
+103042,Puhova
+704072,Radna
+503021,Rakovnik →
+503022,Rakovnik
+403061,Rast →
+403062,Rast
+104211,Rašica →
+104212,Rašica
+505052,Razdrto
+505051,Razdrto →
+714042,Razori K
+714041,Razori K →
+714032,Razori Rogovilc
+714031,Razori Rogovilc →
+100021,Razstavišče →
+100022,Razstavišče
+204161,Reaktor →
+204162,Reaktor
+505022,Reber pri Škofljici
+505021,Reber pri Škofljici →
+803014,Remiza
+825042,Repnje Benk
+825041,Repnje Benk →
+825062,Repnje kapelica
+825061,Repnje kapelica →
+825052,Repnje samostan
+825051,Repnje samostan →
+204031,Rog →
+204032,Rog
+104111,Rogovilc →
+104112,Rogovilc
+502022,Roška
+502021,Roška →
+502024,Roška
+203022,Rožičeva →
+203021,Rožičeva
+703012,Rožna dolina
+703011,Rožna dolina →
+504031,Rudnik →
+504033,Rudnik →
+504032,Rudnik
+304031,Rusjanov trg →
+304032,Rusjanov trg
+103131,Ruski car →
+103132,Ruski car
+614062,Rutar
+614061,Rutar →
+415012,Sadinja vas
+415011,Sadinja vas →
+102011,Samova
+102012,Samova →
+505071,Sap →
+505072,Sap
+204201,Saturnus →
+104051,Sava →
+104052,Sava
+104054,Sava
+104011,Savlje →
+202031,Savske stolpnice →
+202032,Savske stolpnice
+202041,Savsko naselje →
+202042,Savsko naselje
+826101,Selo Mali Dunaj →
+826102,Selo Mali Dunaj
+415042,Selo pri Pancah K.
+415041,Selo pri Pancah K. →
+826052,Selo pri Vodicah
+826051,Selo pri Vodicah →
+304131,Silos →
+304132,Silos
+825022,Skaručna
+825021,Skaručna →
+803011,Slovenija avto →
+803012,Slovenija avto
+204111,Slovenijales →
+204112,Slovenijales
+103071,Smelt →
+103072,Smelt
+815121,Smlednik šola →
+815122,Smlednik šola
+737022,Smolnik nad hribom
+737021,Smolnik nad hribom →
+737012,Smolnik Praprotnik
+737011,Smolnik Praprotnik →
+736052,Smolnik Setnik
+736051,Smolnik Setnik →
+736042,Smolnik Zalog
+736041,Smolnik Zalog →
+736032,Smolnik žaga
+736031,Smolnik žaga →
+406051,Smrekarjevo →
+406052,Smrekarjevo
+204071,Sneberje →
+204072,Sneberje
+614092,Snoj
+614091,Snoj →
+404091,Sostro →
+404092,Sostro
+404093,Sostro →
+815022,Sp. Pirniče
+815021,Sp. Pirniče →
+803171,Spar →
+803172,Spar
+504021,Spodnji Rudnik →
+504022,Spodnji Rudnik
+725132,Sr.vas pri Polh.G.
+725131,Sr.vas pri Polh.G. →
+202043,Središka →
+202044,Središka
+102041,Stadion →
+102042,Stadion
+625032,Staje
+625031,Staje →
+703072,Stan in dom
+703071,Stan in dom →
+804061,Stanežiče →
+804062,Stanežiče
+804361,Stanežiče →
+802011,Stara cerkev →
+802012,Stara cerkev
+505102,Stara pošta
+505101,Stara pošta →
+103101,Stožice →
+103102,Stožice
+503011,Strelišče →
+503012,Strelišče
+502031,Streliška →
+502032,Streliška
+304061,Studenec →
+304062,Studenec
+727021,Suhi Dol/Planino →
+835031,Svetje →
+406011,Šemnikar →
+406012,Šemnikar
+204151,Šentjakob →
+204152,Šentjakob
+716051,Šentjošt →
+804041,Šentvid →
+804042,Šentvid
+826131,Šinkov Turn →
+826132,Šinkov Turn
+826141,Šinkov Turn hrib →
+826142,Šinkov Turn hrib
+803016,Šišenska
+515012,Škofljica
+505012,Škofljica Javornik
+505011,Škofljica Javornik →
+515013,Škofljica obračališče →
+504102,Škofljica Petkovšek
+504101,Škofljica Petkovšek →
+515011,Škofljica špica →
+504112,Škofljica žaga
+504111,Škofljica žaga →
+104071,Šlandrova →
+104072,Šlandrova
+505062,Šmarje
+505061,Šmarje →
+104191,Šmartno →
+104192,Šmartno →
+104194,Šmartno pod Š.G.
+104193,Šmartno pod Š.G. →
+203041,Šola Jarše →
+203042,Šola Jarše
+203044,Šola Jarše
+744011,Šolska →
+744012,Šolska
+505032,Špilar
+505031,Špilar →
+403043,Štepanja vas →
+403042,Štepanja vas
+403041,Štepanja vas →
+303041,Štepanjsko naselje →
+303043,Štepanjsko naselje →
+702022,Študentsko naselje
+702021,Študentsko naselje →
+725022,Šuica
+725021,Šuica →
+804101,Tabor →
+804102,Tabor
+804104,Tabor
+804151,Tacen →
+804152,Tacen
+804141,Tacenski most →
+804142,Tacenski most
+804144,Tacenski most
+500011,Tavčarjeva →
+603141,Tbilisijska →
+603142,Tbilisijska
+803071,Tehnounion →
+803072,Tehnounion
+802061,Tiki →
+802062,Tiki
+103182,Titova
+801011,Tivoli →
+801012,Tivoli
+701012,Tivolska
+602042,Tobačna
+602041,Tobačna →
+203081,Tomačevo →
+203031,Tomačevska →
+203032,Tomačevska
+103011,Toplarna →
+103012,Toplarna
+102021,Topniška →
+102022,Topniška
+103051,Tovarna Lek →
+203062,Tovorni kolodvor →
+203061,Tovorni kolodvor →
+804011,Trata →
+804012,Trata
+406021,Trebeljevo →
+406022,Trebeljevo
+602121,Trnovo →
+704171,Tržaška
+704172,Tržaška
+803101,Tržnica Koseze →
+803102,Tržnica Koseze
+303011,Tržnica Moste →
+303012,Tržnica Moste
+406081,Tuji Grm →
+500012,Turist
+826042,Utik
+826041,Utik →
+804322,V Dovjež
+804321,V Dovjež →
+815092,Valburga
+815091,Valburga →
+415032,Veliki Lipoglav
+415031,Veliki Lipoglav →
+603082,Veliki štradon
+603081,Veliki štradon →
+835011,Verje →
+835012,Verje
+826062,Vesca
+826061,Vesca →
+304101,Vevče →
+202011,Viadukt →
+202012,Viadukt
+703092,Vič
+703091,Vič →
+815012,Vikrče
+815011,Vikrče →
+703042,Viško polje
+703041,Viško polje →
+804051,Vižmarje →
+826012,Vodice
+826011,Vodice →
+826091,Vodice OŠ →
+826092,Vodice OŠ
+505122,Vodičar →
+102071,Vodovodna →
+102072,Vodovodna
+826082,Vojsko →
+826081,Vojsko
+406061,Volavlje →
+406062,Volavlje
+704031,Vrhovci →
+716041,Vrzdenec →
+203191,Yulon →
+203192,Yulon
+204081,Zadobrova →
+204082,Zadobrova
+204083,Zadobrova →
+204181,Zadružni dom →
+204182,Zadružni dom
+404061,Zadvor →
+404062,Zadvor
+715132,Zaklanec/Horjulu
+715131,Zaklanec/Horjulu →
+204211,Zalog →
+303021,Zaloška →
+303024,Zaloška
+825082,Zapoge
+825081,Zapoge →
+825111,Zapoge obračališče →
+104171,Zasavska →
+104172,Zasavska
+805091,Zbilje barka →
+805092,Zbilje barka
+805082,Zbilje jezero
+805081,Zbilje jezero →
+805072,Zbilje K
+805071,Zbilje K →
+805062,Zbiljski Gaj
+805061,Zbiljski Gaj →
+202051,Zelena jama →
+204191,Zeleni gaj →
+204192,Zeleni gaj
+405071,Zg. Besnica →
+405072,Zg. Besnica
+104202,Zg. Gameljne
+104201,Zg. Gameljne →
+815032,Zg. Pirniče
+815031,Zg. Pirniče →
+815041,Zg. Pirniče Mihovec →
+803091,Zgornja Šiška →
+803092,Zgornja Šiška
+614052,Zidarjevec
+614051,Zidarjevec →
+602092,Ziherlova
+602093,Ziherlova →
+501022,Zmajski most
+501021,Zmajski most →
+202061,Žale →
+202062,Žale
+716032,Žažar
+716031,Žažar →
+201011,Železna →
+725062,Žirovnik
+725061,Žirovnik →
+203151,Žito →
+203152,Žito
+703121,Živalski vrt →
+703122,Živalski vrt
