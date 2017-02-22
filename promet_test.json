@@ -1,302 +1,38 @@
 {
-  'data': [
-    {
-      'neighbours': [
-        {
-          'btId': 'BTR0202',
-          'distance': 500
-        },
-        {
-          'btId': 'BTR0207',
-          'distance': 690
-        }
-      ],
-      'btId': 'BTR0201',
-      'id': '57531a3bbffebc96088b4567',
-      'loc': {
-        'lng': 14.50808,
-        'lat': 46.06354
-      }
-    },
-    {
-      'neighbours': [
-        {
-          'btId': 'BTR0201',
-          'distance': 500
-        },
-        {
-          'btId': 'BTR0203',
-          'distance': 1800
-        },
-        {
-          'btId': 'BTR0212',
-          'distance': 1010
-        }
-      ],
-      'btId': 'BTR0202',
-      'id': '57531a9fbffebc11048b4567',
-      'loc': {
-        'lng': 14.50978,
-        'lat': 46.06826
-      }
-    },
-    {
-      'neighbours': [
-        {
-          'btId': 'BTR0202',
-          'distance': 1800
-        }
-      ],
-      'btId': 'BTR0203',
-      'id': '57535b23bee8e3121ed7df92',
-      'loc': {
-        'lng': 14.51391,
-        'lat': 46.08402
-      }
-    },
-    {
-      'neighbours': [
-        {
-          'btId': 'BTR0205',
-          'distance': 1200
-        },
-        {
-          'btId': 'BTR0207',
-          'distance': 400
-        },
-        {
-          'btId': 'BTR0210',
-          'distance': 2250
-        }
-      ],
-      'btId': 'BTR0204',
-      'id': '57535b23bee8e3121ed7df93',
-      'loc': {
-        'lng': 14.50185,
-        'lat': 46.05653
-      }
-    },
-    {
-      'neighbours': [
-        {
-          'btId': 'BTR0204',
-          'distance': 1200
-        },
-        {
-          'btId': 'BTR0206',
-          'distance': 470
-        },
-        {
-          'btId': 'BTR0214',
-          'distance': 2550
-        }
-      ],
-      'btId': 'BTR0205',
-      'id': '57535b23bee8e3121ed7df94',
-      'loc': {
-        'lng': 14.49476,
-        'lat': 46.04751
-      }
-    },
-    {
-      'neighbours': [
-        {
-          'btId': 'BTR0205',
-          'distance': 470
-        },
-        {
-          'btId': 'BTR0215',
-          'distance': 5000
-        },
-        {
-          'btId': 'BTR0216',
-          'distance': 2010
-        }
-      ],
-      'btId': 'BTR0206',
-      'id': '57535b23bee8e3121ed7df95',
-      'loc': {
-        'lng': 14.50072,
-        'lat': 46.04619
-      }
-    },
-    {
-      'neighbours': [
-        {
-          'btId': 'BTR0201',
-          'distance': 690
-        },
-        {
-          'btId': 'BTR0204',
-          'distance': 400
-        }
-      ],
-      'btId': 'BTR0207',
-      'id': '57535b23bee8e3121ed7df96',
-      'loc': {
-        'lng': 14.50646,
-        'lat': 46.05787
-      }
-    },
-    {
-      'neighbours': [
-        {
-          'btId': 'BTR0204',
-          'distance': 2250
-        },
-        {
-          'btId': 'BTR0211',
-          'distance': 640
-        }
-      ],
-      'btId': 'BTR0210',
-      'id': '57535b23bee8e3121ed7df97',
-      'loc': {
-        'lng': 14.48594,
-        'lat': 46.07394
-      }
-    },
-    {
-      'neighbours': [
-        {
-          'btId': 'BTR0210',
-          'distance': 640
-        },
-        {
-          'btId': 'BTR0213',
-          'distance': 2500
-        }
-      ],
-      'btId': 'BTR0211',
-      'id': '57535b23bee8e3121ed7df98',
-      'loc': {
-        'lng': 14.48185,
-        'lat': 46.07853
-      }
-    },
-    {
-      'neighbours': [
-        {
-          'btId': 'BTR0202',
-          'distance': 1010
-        }
-      ],
-      'btId': 'BTR0212',
-      'id': '57535b23bee8e3121ed7df99',
-      'loc': {
-        'lng': 14.49663,
-        'lat': 46.06703
-      }
-    },
-    {
-      'neighbours': [
-        {
-          'btId': 'BTR0211',
-          'distance': 2500
-        },
-        {
-          'btId': 'BTR0217',
-          'distance': 380
-        }
-      ],
-      'btId': 'BTR0213',
-      'id': '57535b23bee8e3121ed7df9a',
-      'loc': {
-        'lng': 14.46404,
-        'lat': 46.09782
-      }
-    },
-    {
-      'neighbours': [
-        {
-          'btId': 'BTR0205',
-          'distance': 2550
-        }
-      ],
-      'btId': 'BTR0214',
-      'id': '57535b23bee8e3121ed7df9b',
-      'loc': {
-        'lng': 14.46598,
-        'lat': 46.03719
-      }
-    },
-    {
-      'neighbours': [
-        {
-          'btId': 'BTR0206',
-          'distance': 5000
-        },
-        {
-          'btId': 'BTR0218',
-          'distance': 4600
-        }
-      ],
-      'btId': 'BTR0215',
-      'id': '57535b23bee8e3121ed7df9c',
-      'loc': {
-        'lng': 14.54398,
-        'lat': 46.01633
-      }
-    },
-    {
-      'neighbours': [
-        {
-          'btId': 'BTR0206',
-          'distance': 2010
-        }
-      ],
-      'btId': 'BTR0216',
-      'id': '57535b23bee8e3121ed7df9d',
-      'loc': {
-        'lng': 14.49924,
-        'lat': 46.02795
-      }
-    },
-    {
-      'neighbours': [
-        {
-          'btId': 'BTR0213',
-          'distance': 380
-        }
-      ],
-      'btId': 'BTR0217',
-      'id': '57535b23bee8e3121ed7df9e',
-      'loc': {
-        'lng': 14.46026,
-        'lat': 46.1001
-      }
-    },
-    {
-      'neighbours': [
-        {
-          'btId': 'BTR0215',
-          'distance': 4600
-        },
-        {
-          'btId': 'BTR0219',
-          'distance': 17000
-        }
-      ],
-      'btId': 'BTR0218',
-      'id': '57535b23bee8e3121ed7df9f',
-      'loc': {
-        'lng': 14.57538,
-        'lat': 45.98344
-      }
-    },
-    {
-      'neighbours': [
-        {
-          'btId': 'BTR0218',
-          'distance': 17000
-        }
-      ],
-      'btId': 'BTR0219',
-      'id': '57535b23bee8e3121ed7dfa0',
-      'loc': {
-        'lng': 14.62456,
-        'lat': 45.84845
-      }
+  "from": 0,
+  "size": 50,
+  "sort": {
+    "updated": {
+      "order": "desc"
     }
-  ]
+  },
+  "fields": [
+    "date",
+    "chainage",
+    "locationDescription",
+    "title",
+    "occ",
+    "point",
+    "pkgdate",
+    "StatusDescription",
+    "gap",
+    "directionDescription",
+    "vmax",
+    "id",
+    "roadSection",
+    "direction",
+    "summary",
+    "stat",
+    "laneDescription",
+    "avgSpeed",
+    "roadDescription",
+    "numberOfVehicles",
+    "deviceX",
+    "location",
+    "deviceY",
+    "time",
+    "region",
+    "updated"
+  ],
+  "explain": true
 }
