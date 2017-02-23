@@ -1,4 +1,3 @@
-
 def prihodi(postaja):
     from urllib.request import urlopen, Request
     url = 'http://wbus.lpp.si/wap.aspx'

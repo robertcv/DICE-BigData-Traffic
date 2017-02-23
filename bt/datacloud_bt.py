@@ -1,5 +1,4 @@
 import requests
-import json
 
 response = requests.get('https://datacloud-timon.xlab.si/data_access/bt_sensors/velocities_avgs_last/', auth=('username', 'password'), verify='DigiCertSHA2SecureServerCA.crt')
 
