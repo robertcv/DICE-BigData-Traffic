@@ -20,7 +20,9 @@ def fetch_promet():
 
 
 def _loads(s):
-    return simplejson.loads(s, use_decimal=True)
+    return simplejson.load
+
+    s(s, use_decimal=True)
 
 
 unicode_type = type(u'')
