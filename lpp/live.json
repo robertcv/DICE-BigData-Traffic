@@ -1,0 +1,4154 @@
+{
+  "data": [
+    {
+      "route_int_id": 1096,
+      "arrival_time": "2017-03-01 16:12:50.000",
+      "station_int_id": 3330
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:11:11.000",
+      "station_int_id": 3330
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:15:33.000",
+      "station_int_id": 3330
+    },
+    {
+      "route_int_id": 1582,
+      "arrival_time": "2017-03-01 16:11:46.000",
+      "station_int_id": 3330
+    },
+    {
+      "route_int_id": 1568,
+      "arrival_time": "2017-03-01 16:12:24.000",
+      "station_int_id": 3330
+    },
+    {
+      "route_int_id": 1587,
+      "arrival_time": "2017-03-01 16:17:14.000",
+      "station_int_id": 3330
+    },
+    {
+      "route_int_id": 1544,
+      "arrival_time": "2017-03-01 16:11:11.000",
+      "station_int_id": 3330
+    },
+    {
+      "route_int_id": 1544,
+      "arrival_time": "2017-03-01 16:12:50.000",
+      "station_int_id": 3330
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:12:50.000",
+      "station_int_id": 3330
+    },
+    {
+      "route_int_id": 987,
+      "arrival_time": "2017-03-01 16:15:33.000",
+      "station_int_id": 3330
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:17:14.000",
+      "station_int_id": 3330
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:17:14.000",
+      "station_int_id": 3330
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:17:14.000",
+      "station_int_id": 3330
+    },
+    {
+      "route_int_id": 1542,
+      "arrival_time": "2017-03-01 16:17:14.000",
+      "station_int_id": 3330
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:17:14.000",
+      "station_int_id": 3330
+    },
+    {
+      "route_int_id": 730,
+      "arrival_time": "2017-03-01 16:17:14.000",
+      "station_int_id": 3330
+    },
+    {
+      "route_int_id": 1587,
+      "arrival_time": "2017-03-01 16:17:14.000",
+      "station_int_id": 3330
+    },
+    {
+      "route_int_id": 987,
+      "arrival_time": "2017-03-01 16:17:14.000",
+      "station_int_id": 3330
+    },
+    {
+      "route_int_id": 1544,
+      "arrival_time": "2017-03-01 16:17:14.000",
+      "station_int_id": 3330
+    },
+    {
+      "route_int_id": 1370,
+      "arrival_time": "2017-03-01 16:12:25.000",
+      "station_int_id": 3335
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:11:12.000",
+      "station_int_id": 3335
+    },
+    {
+      "route_int_id": 652,
+      "arrival_time": "2017-03-01 16:14:31.000",
+      "station_int_id": 3335
+    },
+    {
+      "route_int_id": 1616,
+      "arrival_time": "2017-03-01 16:14:31.000",
+      "station_int_id": 3335
+    },
+    {
+      "route_int_id": 1370,
+      "arrival_time": "2017-03-01 16:14:31.000",
+      "station_int_id": 3335
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:14:31.000",
+      "station_int_id": 3335
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:10:36.000",
+      "station_int_id": 3334
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:10:36.000",
+      "station_int_id": 3334
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:10:36.000",
+      "station_int_id": 3334
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:10:36.000",
+      "station_int_id": 3334
+    },
+    {
+      "route_int_id": 346,
+      "arrival_time": "2017-03-01 16:10:36.000",
+      "station_int_id": 3334
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:10:36.000",
+      "station_int_id": 3334
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:12:47.000",
+      "station_int_id": 2081
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:12:47.000",
+      "station_int_id": 2081
+    },
+    {
+      "route_int_id": 1386,
+      "arrival_time": "2017-03-01 16:12:47.000",
+      "station_int_id": 2081
+    },
+    {
+      "route_int_id": 1386,
+      "arrival_time": "2017-03-01 16:12:47.000",
+      "station_int_id": 2081
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:14:28.000",
+      "station_int_id": 2082
+    },
+    {
+      "route_int_id": 1387,
+      "arrival_time": "2017-03-01 16:15:30.000",
+      "station_int_id": 2082
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:15:30.000",
+      "station_int_id": 2082
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:15:30.000",
+      "station_int_id": 2082
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:15:30.000",
+      "station_int_id": 2082
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:15:30.000",
+      "station_int_id": 2082
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:15:30.000",
+      "station_int_id": 2082
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:15:30.000",
+      "station_int_id": 2082
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:15:30.000",
+      "station_int_id": 2082
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:11:42.000",
+      "station_int_id": 2087
+    },
+    {
+      "route_int_id": 341,
+      "arrival_time": "2017-03-01 16:11:42.000",
+      "station_int_id": 2087
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:13:14.000",
+      "station_int_id": 2087
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:13:14.000",
+      "station_int_id": 2087
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:13:14.000",
+      "station_int_id": 2087
+    },
+    {
+      "route_int_id": 341,
+      "arrival_time": "2017-03-01 16:13:14.000",
+      "station_int_id": 2087
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:11:05.000",
+      "station_int_id": 2088
+    },
+    {
+      "route_int_id": 1579,
+      "arrival_time": "2017-03-01 16:13:14.000",
+      "station_int_id": 2088
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:13:55.000",
+      "station_int_id": 2088
+    },
+    {
+      "route_int_id": 342,
+      "arrival_time": "2017-03-01 16:13:55.000",
+      "station_int_id": 2088
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:13:55.000",
+      "station_int_id": 2088
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:13:55.000",
+      "station_int_id": 2088
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:13:55.000",
+      "station_int_id": 2088
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:13:55.000",
+      "station_int_id": 2088
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:13:55.000",
+      "station_int_id": 2088
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:13:55.000",
+      "station_int_id": 2088
+    },
+    {
+      "route_int_id": 1581,
+      "arrival_time": "2017-03-01 16:13:55.000",
+      "station_int_id": 2088
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:16:48.000",
+      "station_int_id": 1949
+    },
+    {
+      "route_int_id": 1409,
+      "arrival_time": "2017-03-01 16:17:22.000",
+      "station_int_id": 1949
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:17:22.000",
+      "station_int_id": 1949
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:17:22.000",
+      "station_int_id": 1949
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:17:22.000",
+      "station_int_id": 1949
+    },
+    {
+      "route_int_id": 1409,
+      "arrival_time": "2017-03-01 16:17:22.000",
+      "station_int_id": 1949
+    },
+    {
+      "route_int_id": 1563,
+      "arrival_time": "2017-03-01 16:11:24.000",
+      "station_int_id": 1948
+    },
+    {
+      "route_int_id": 1544,
+      "arrival_time": "2017-03-01 16:11:56.000",
+      "station_int_id": 1948
+    },
+    {
+      "route_int_id": 1544,
+      "arrival_time": "2017-03-01 16:15:46.000",
+      "station_int_id": 1948
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:15:46.000",
+      "station_int_id": 1948
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:15:46.000",
+      "station_int_id": 1948
+    },
+    {
+      "route_int_id": 1542,
+      "arrival_time": "2017-03-01 16:15:46.000",
+      "station_int_id": 1948
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:15:46.000",
+      "station_int_id": 1948
+    },
+    {
+      "route_int_id": 1146,
+      "arrival_time": "2017-03-01 16:15:12.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 1219,
+      "arrival_time": "2017-03-01 16:17:26.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:15:12.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 1586,
+      "arrival_time": "2017-03-01 16:10:14.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 1387,
+      "arrival_time": "2017-03-01 16:16:14.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:18:20.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:18:20.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:10:49.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 1370,
+      "arrival_time": "2017-03-01 16:18:20.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 1411,
+      "arrival_time": "2017-03-01 16:18:20.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:18:20.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 1409,
+      "arrival_time": "2017-03-01 16:18:20.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:18:20.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 332,
+      "arrival_time": "2017-03-01 16:18:20.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 1205,
+      "arrival_time": "2017-03-01 16:18:20.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 1575,
+      "arrival_time": "2017-03-01 16:18:20.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 1616,
+      "arrival_time": "2017-03-01 16:18:20.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 1387,
+      "arrival_time": "2017-03-01 16:18:20.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:18:20.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:18:20.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:18:20.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 1370,
+      "arrival_time": "2017-03-01 16:18:20.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 1409,
+      "arrival_time": "2017-03-01 16:18:20.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 1575,
+      "arrival_time": "2017-03-01 16:18:20.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 1581,
+      "arrival_time": "2017-03-01 16:18:20.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:18:20.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 726,
+      "arrival_time": "2017-03-01 16:18:20.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 1146,
+      "arrival_time": "2017-03-01 16:18:20.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 1387,
+      "arrival_time": "2017-03-01 16:18:20.000",
+      "station_int_id": 1977
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:11:59.000",
+      "station_int_id": 1976
+    },
+    {
+      "route_int_id": 1587,
+      "arrival_time": "2017-03-01 16:15:12.000",
+      "station_int_id": 1976
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:11:59.000",
+      "station_int_id": 1976
+    },
+    {
+      "route_int_id": 730,
+      "arrival_time": "2017-03-01 16:10:14.000",
+      "station_int_id": 1976
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:15:12.000",
+      "station_int_id": 1976
+    },
+    {
+      "route_int_id": 987,
+      "arrival_time": "2017-03-01 16:11:59.000",
+      "station_int_id": 1976
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:15:47.000",
+      "station_int_id": 1976
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:15:47.000",
+      "station_int_id": 1976
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:15:47.000",
+      "station_int_id": 1976
+    },
+    {
+      "route_int_id": 971,
+      "arrival_time": "2017-03-01 16:15:47.000",
+      "station_int_id": 1976
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:15:47.000",
+      "station_int_id": 1976
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:15:47.000",
+      "station_int_id": 1976
+    },
+    {
+      "route_int_id": 730,
+      "arrival_time": "2017-03-01 16:15:47.000",
+      "station_int_id": 1976
+    },
+    {
+      "route_int_id": 1587,
+      "arrival_time": "2017-03-01 16:15:47.000",
+      "station_int_id": 1976
+    },
+    {
+      "route_int_id": 987,
+      "arrival_time": "2017-03-01 16:15:47.000",
+      "station_int_id": 1976
+    },
+    {
+      "route_int_id": 727,
+      "arrival_time": "2017-03-01 16:15:47.000",
+      "station_int_id": 1976
+    },
+    {
+      "route_int_id": 971,
+      "arrival_time": "2017-03-01 16:15:47.000",
+      "station_int_id": 1976
+    },
+    {
+      "route_int_id": 1370,
+      "arrival_time": "2017-03-01 16:16:38.000",
+      "station_int_id": 1875
+    },
+    {
+      "route_int_id": 332,
+      "arrival_time": "2017-03-01 16:11:19.000",
+      "station_int_id": 1875
+    },
+    {
+      "route_int_id": 1409,
+      "arrival_time": "2017-03-01 16:10:41.000",
+      "station_int_id": 1875
+    },
+    {
+      "route_int_id": 341,
+      "arrival_time": "2017-03-01 16:11:19.000",
+      "station_int_id": 1875
+    },
+    {
+      "route_int_id": 1370,
+      "arrival_time": "2017-03-01 16:16:38.000",
+      "station_int_id": 1875
+    },
+    {
+      "route_int_id": 1409,
+      "arrival_time": "2017-03-01 16:16:38.000",
+      "station_int_id": 1875
+    },
+    {
+      "route_int_id": 332,
+      "arrival_time": "2017-03-01 16:16:38.000",
+      "station_int_id": 1875
+    },
+    {
+      "route_int_id": 341,
+      "arrival_time": "2017-03-01 16:16:38.000",
+      "station_int_id": 1875
+    },
+    {
+      "route_int_id": 1370,
+      "arrival_time": "2017-03-01 16:16:38.000",
+      "station_int_id": 1875
+    },
+    {
+      "route_int_id": 1409,
+      "arrival_time": "2017-03-01 16:16:38.000",
+      "station_int_id": 1875
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:14:43.000",
+      "station_int_id": 1987
+    },
+    {
+      "route_int_id": 1370,
+      "arrival_time": "2017-03-01 16:15:13.000",
+      "station_int_id": 1987
+    },
+    {
+      "route_int_id": 1587,
+      "arrival_time": "2017-03-01 16:15:13.000",
+      "station_int_id": 1987
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:15:13.000",
+      "station_int_id": 1987
+    },
+    {
+      "route_int_id": 727,
+      "arrival_time": "2017-03-01 16:15:13.000",
+      "station_int_id": 1987
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:16:15.000",
+      "station_int_id": 1988
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:12:00.000",
+      "station_int_id": 1988
+    },
+    {
+      "route_int_id": 1568,
+      "arrival_time": "2017-03-01 16:16:15.000",
+      "station_int_id": 1988
+    },
+    {
+      "route_int_id": 726,
+      "arrival_time": "2017-03-01 16:17:26.000",
+      "station_int_id": 1988
+    },
+    {
+      "route_int_id": 1586,
+      "arrival_time": "2017-03-01 16:17:55.000",
+      "station_int_id": 1988
+    },
+    {
+      "route_int_id": 1568,
+      "arrival_time": "2017-03-01 16:12:00.000",
+      "station_int_id": 1988
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:17:55.000",
+      "station_int_id": 1988
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:17:55.000",
+      "station_int_id": 1988
+    },
+    {
+      "route_int_id": 1568,
+      "arrival_time": "2017-03-01 16:17:55.000",
+      "station_int_id": 1988
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:17:55.000",
+      "station_int_id": 1988
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:17:55.000",
+      "station_int_id": 1988
+    },
+    {
+      "route_int_id": 726,
+      "arrival_time": "2017-03-01 16:17:55.000",
+      "station_int_id": 1988
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:13:57.000",
+      "station_int_id": 2097
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:13:57.000",
+      "station_int_id": 2097
+    },
+    {
+      "route_int_id": 1563,
+      "arrival_time": "2017-03-01 16:14:30.000",
+      "station_int_id": 2097
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:14:30.000",
+      "station_int_id": 2097
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:14:30.000",
+      "station_int_id": 2097
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:14:30.000",
+      "station_int_id": 2097
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:11:08.000",
+      "station_int_id": 2114
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:11:08.000",
+      "station_int_id": 2114
+    },
+    {
+      "route_int_id": 726,
+      "arrival_time": "2017-03-01 16:11:08.000",
+      "station_int_id": 2114
+    },
+    {
+      "route_int_id": 341,
+      "arrival_time": "2017-03-01 16:11:08.000",
+      "station_int_id": 2114
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:11:08.000",
+      "station_int_id": 2114
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:11:08.000",
+      "station_int_id": 2114
+    },
+    {
+      "route_int_id": 789,
+      "arrival_time": "2017-03-01 16:18:17.000",
+      "station_int_id": 2249
+    },
+    {
+      "route_int_id": 1575,
+      "arrival_time": "2017-03-01 16:18:17.000",
+      "station_int_id": 2249
+    },
+    {
+      "route_int_id": 1575,
+      "arrival_time": "2017-03-01 16:18:17.000",
+      "station_int_id": 2249
+    },
+    {
+      "route_int_id": 1575,
+      "arrival_time": "2017-03-01 16:18:17.000",
+      "station_int_id": 2249
+    },
+    {
+      "route_int_id": 1387,
+      "arrival_time": "2017-03-01 16:15:42.000",
+      "station_int_id": 3524
+    },
+    {
+      "route_int_id": 789,
+      "arrival_time": "2017-03-01 16:17:19.000",
+      "station_int_id": 3524
+    },
+    {
+      "route_int_id": 1386,
+      "arrival_time": "2017-03-01 16:17:19.000",
+      "station_int_id": 3524
+    },
+    {
+      "route_int_id": 1386,
+      "arrival_time": "2017-03-01 16:17:19.000",
+      "station_int_id": 3524
+    },
+    {
+      "route_int_id": 789,
+      "arrival_time": "2017-03-01 16:17:19.000",
+      "station_int_id": 3524
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:11:45.000",
+      "station_int_id": 2099
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:11:45.000",
+      "station_int_id": 2099
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:11:45.000",
+      "station_int_id": 2099
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:11:45.000",
+      "station_int_id": 2099
+    },
+    {
+      "route_int_id": 1542,
+      "arrival_time": "2017-03-01 16:11:45.000",
+      "station_int_id": 2099
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:11:45.000",
+      "station_int_id": 2099
+    },
+    {
+      "route_int_id": 1224,
+      "arrival_time": "2017-03-01 16:12:56.000",
+      "station_int_id": 3972
+    },
+    {
+      "route_int_id": 1205,
+      "arrival_time": "2017-03-01 16:12:56.000",
+      "station_int_id": 3972
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:12:56.000",
+      "station_int_id": 3972
+    },
+    {
+      "route_int_id": 1409,
+      "arrival_time": "2017-03-01 16:12:56.000",
+      "station_int_id": 3972
+    },
+    {
+      "route_int_id": 1225,
+      "arrival_time": "2017-03-01 16:14:27.000",
+      "station_int_id": 4460
+    },
+    {
+      "route_int_id": 1202,
+      "arrival_time": "2017-03-01 16:14:27.000",
+      "station_int_id": 4460
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:15:27.000",
+      "station_int_id": 4460
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:15:27.000",
+      "station_int_id": 4460
+    },
+    {
+      "route_int_id": 1563,
+      "arrival_time": "2017-03-01 16:15:27.000",
+      "station_int_id": 4460
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:15:27.000",
+      "station_int_id": 4460
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:15:27.000",
+      "station_int_id": 4460
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:15:27.000",
+      "station_int_id": 4460
+    },
+    {
+      "route_int_id": 1146,
+      "arrival_time": "2017-03-01 16:10:13.000",
+      "station_int_id": 1947
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:16:47.000",
+      "station_int_id": 1947
+    },
+    {
+      "route_int_id": 1409,
+      "arrival_time": "2017-03-01 16:16:47.000",
+      "station_int_id": 1947
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:16:47.000",
+      "station_int_id": 1947
+    },
+    {
+      "route_int_id": 1575,
+      "arrival_time": "2017-03-01 16:16:47.000",
+      "station_int_id": 1947
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:10:13.000",
+      "station_int_id": 1947
+    },
+    {
+      "route_int_id": 1562,
+      "arrival_time": "2017-03-01 16:10:13.000",
+      "station_int_id": 1947
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:16:47.000",
+      "station_int_id": 1947
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:16:47.000",
+      "station_int_id": 1947
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:16:47.000",
+      "station_int_id": 1947
+    },
+    {
+      "route_int_id": 1553,
+      "arrival_time": "2017-03-01 16:16:47.000",
+      "station_int_id": 1947
+    },
+    {
+      "route_int_id": 1409,
+      "arrival_time": "2017-03-01 16:16:47.000",
+      "station_int_id": 1947
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:16:47.000",
+      "station_int_id": 1947
+    },
+    {
+      "route_int_id": 1581,
+      "arrival_time": "2017-03-01 16:16:47.000",
+      "station_int_id": 1947
+    },
+    {
+      "route_int_id": 1146,
+      "arrival_time": "2017-03-01 16:16:47.000",
+      "station_int_id": 1947
+    },
+    {
+      "route_int_id": 1587,
+      "arrival_time": "2017-03-01 16:12:32.000",
+      "station_int_id": 1946
+    },
+    {
+      "route_int_id": 1096,
+      "arrival_time": "2017-03-01 16:16:11.000",
+      "station_int_id": 1946
+    },
+    {
+      "route_int_id": 1544,
+      "arrival_time": "2017-03-01 16:14:10.000",
+      "station_int_id": 1946
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:14:10.000",
+      "station_int_id": 1946
+    },
+    {
+      "route_int_id": 1582,
+      "arrival_time": "2017-03-01 16:15:06.000",
+      "station_int_id": 1946
+    },
+    {
+      "route_int_id": 1568,
+      "arrival_time": "2017-03-01 16:15:45.000",
+      "station_int_id": 1946
+    },
+    {
+      "route_int_id": 1544,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1946
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1946
+    },
+    {
+      "route_int_id": 1587,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1946
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:16:11.000",
+      "station_int_id": 1946
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1946
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1946
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1946
+    },
+    {
+      "route_int_id": 1542,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1946
+    },
+    {
+      "route_int_id": 1096,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1946
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1946
+    },
+    {
+      "route_int_id": 730,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1946
+    },
+    {
+      "route_int_id": 1587,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1946
+    },
+    {
+      "route_int_id": 1544,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1946
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:11:22.000",
+      "station_int_id": 1928
+    },
+    {
+      "route_int_id": 727,
+      "arrival_time": "2017-03-01 16:11:22.000",
+      "station_int_id": 1928
+    },
+    {
+      "route_int_id": 1458,
+      "arrival_time": "2017-03-01 16:11:22.000",
+      "station_int_id": 1928
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:11:22.000",
+      "station_int_id": 1928
+    },
+    {
+      "route_int_id": 727,
+      "arrival_time": "2017-03-01 16:11:22.000",
+      "station_int_id": 1928
+    },
+    {
+      "route_int_id": 1587,
+      "arrival_time": "2017-03-01 16:11:58.000",
+      "station_int_id": 1972
+    },
+    {
+      "route_int_id": 364,
+      "arrival_time": "2017-03-01 16:14:12.000",
+      "station_int_id": 1972
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:14:12.000",
+      "station_int_id": 1972
+    },
+    {
+      "route_int_id": 730,
+      "arrival_time": "2017-03-01 16:16:51.000",
+      "station_int_id": 1972
+    },
+    {
+      "route_int_id": 1618,
+      "arrival_time": "2017-03-01 16:16:51.000",
+      "station_int_id": 1972
+    },
+    {
+      "route_int_id": 1587,
+      "arrival_time": "2017-03-01 16:16:51.000",
+      "station_int_id": 1972
+    },
+    {
+      "route_int_id": 727,
+      "arrival_time": "2017-03-01 16:16:51.000",
+      "station_int_id": 1972
+    },
+    {
+      "route_int_id": 1586,
+      "arrival_time": "2017-03-01 16:15:10.000",
+      "station_int_id": 1973
+    },
+    {
+      "route_int_id": 726,
+      "arrival_time": "2017-03-01 16:11:26.000",
+      "station_int_id": 1973
+    },
+    {
+      "route_int_id": 1617,
+      "arrival_time": "2017-03-01 16:15:10.000",
+      "station_int_id": 1973
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:17:25.000",
+      "station_int_id": 1973
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:17:25.000",
+      "station_int_id": 1973
+    },
+    {
+      "route_int_id": 1575,
+      "arrival_time": "2017-03-01 16:17:25.000",
+      "station_int_id": 1973
+    },
+    {
+      "route_int_id": 1575,
+      "arrival_time": "2017-03-01 16:17:25.000",
+      "station_int_id": 1973
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:17:25.000",
+      "station_int_id": 1973
+    },
+    {
+      "route_int_id": 726,
+      "arrival_time": "2017-03-01 16:17:25.000",
+      "station_int_id": 1973
+    },
+    {
+      "route_int_id": 1370,
+      "arrival_time": "2017-03-01 16:10:41.000",
+      "station_int_id": 2299
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:11:20.000",
+      "station_int_id": 2299
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:11:20.000",
+      "station_int_id": 2299
+    },
+    {
+      "route_int_id": 341,
+      "arrival_time": "2017-03-01 16:11:20.000",
+      "station_int_id": 2299
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:11:20.000",
+      "station_int_id": 2299
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:11:20.000",
+      "station_int_id": 2299
+    },
+    {
+      "route_int_id": 1563,
+      "arrival_time": "2017-03-01 16:17:42.000",
+      "station_int_id": 2093
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:10:33.000",
+      "station_int_id": 2093
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:11:06.000",
+      "station_int_id": 2093
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:17:42.000",
+      "station_int_id": 2093
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:17:42.000",
+      "station_int_id": 2093
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:17:42.000",
+      "station_int_id": 2093
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:13:48.000",
+      "station_int_id": 2014
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:15:59.000",
+      "station_int_id": 2014
+    },
+    {
+      "route_int_id": 1575,
+      "arrival_time": "2017-03-01 16:15:59.000",
+      "station_int_id": 2014
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:17:04.000",
+      "station_int_id": 2014
+    },
+    {
+      "route_int_id": 1553,
+      "arrival_time": "2017-03-01 16:17:04.000",
+      "station_int_id": 2014
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:17:04.000",
+      "station_int_id": 2014
+    },
+    {
+      "route_int_id": 1581,
+      "arrival_time": "2017-03-01 16:17:04.000",
+      "station_int_id": 2014
+    },
+    {
+      "route_int_id": 1146,
+      "arrival_time": "2017-03-01 16:17:04.000",
+      "station_int_id": 2014
+    },
+    {
+      "route_int_id": 1145,
+      "arrival_time": "2017-03-01 16:11:02.000",
+      "station_int_id": 2015
+    },
+    {
+      "route_int_id": 1096,
+      "arrival_time": "2017-03-01 16:18:07.000",
+      "station_int_id": 2015
+    },
+    {
+      "route_int_id": 1582,
+      "arrival_time": "2017-03-01 16:16:26.000",
+      "station_int_id": 2015
+    },
+    {
+      "route_int_id": 1568,
+      "arrival_time": "2017-03-01 16:18:07.000",
+      "station_int_id": 2015
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:18:07.000",
+      "station_int_id": 2015
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:11:38.000",
+      "station_int_id": 2015
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:18:07.000",
+      "station_int_id": 2015
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:18:07.000",
+      "station_int_id": 2015
+    },
+    {
+      "route_int_id": 1096,
+      "arrival_time": "2017-03-01 16:18:07.000",
+      "station_int_id": 2015
+    },
+    {
+      "route_int_id": 730,
+      "arrival_time": "2017-03-01 16:18:07.000",
+      "station_int_id": 2015
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:11:54.000",
+      "station_int_id": 1942
+    },
+    {
+      "route_int_id": 1096,
+      "arrival_time": "2017-03-01 16:11:54.000",
+      "station_int_id": 1942
+    },
+    {
+      "route_int_id": 1544,
+      "arrival_time": "2017-03-01 16:14:08.000",
+      "station_int_id": 1942
+    },
+    {
+      "route_int_id": 1544,
+      "arrival_time": "2017-03-01 16:10:12.000",
+      "station_int_id": 1942
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:17:20.000",
+      "station_int_id": 1942
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:14:08.000",
+      "station_int_id": 1942
+    },
+    {
+      "route_int_id": 1219,
+      "arrival_time": "2017-03-01 16:14:08.000",
+      "station_int_id": 1942
+    },
+    {
+      "route_int_id": 1205,
+      "arrival_time": "2017-03-01 16:17:20.000",
+      "station_int_id": 1942
+    },
+    {
+      "route_int_id": 346,
+      "arrival_time": "2017-03-01 16:17:20.000",
+      "station_int_id": 1942
+    },
+    {
+      "route_int_id": 332,
+      "arrival_time": "2017-03-01 16:17:20.000",
+      "station_int_id": 1942
+    },
+    {
+      "route_int_id": 1542,
+      "arrival_time": "2017-03-01 16:17:20.000",
+      "station_int_id": 1942
+    },
+    {
+      "route_int_id": 1096,
+      "arrival_time": "2017-03-01 16:17:20.000",
+      "station_int_id": 1942
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:17:20.000",
+      "station_int_id": 1942
+    },
+    {
+      "route_int_id": 1544,
+      "arrival_time": "2017-03-01 16:17:20.000",
+      "station_int_id": 1942
+    },
+    {
+      "route_int_id": 726,
+      "arrival_time": "2017-03-01 16:17:20.000",
+      "station_int_id": 1942
+    },
+    {
+      "route_int_id": 1219,
+      "arrival_time": "2017-03-01 16:11:56.000",
+      "station_int_id": 1953
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:17:54.000",
+      "station_int_id": 1953
+    },
+    {
+      "route_int_id": 1205,
+      "arrival_time": "2017-03-01 16:17:54.000",
+      "station_int_id": 1953
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:11:56.000",
+      "station_int_id": 1953
+    },
+    {
+      "route_int_id": 1409,
+      "arrival_time": "2017-03-01 16:11:56.000",
+      "station_int_id": 1953
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:17:54.000",
+      "station_int_id": 1953
+    },
+    {
+      "route_int_id": 1224,
+      "arrival_time": "2017-03-01 16:13:34.000",
+      "station_int_id": 1953
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:17:54.000",
+      "station_int_id": 1953
+    },
+    {
+      "route_int_id": 1409,
+      "arrival_time": "2017-03-01 16:17:54.000",
+      "station_int_id": 1953
+    },
+    {
+      "route_int_id": 1231,
+      "arrival_time": "2017-03-01 16:17:54.000",
+      "station_int_id": 1953
+    },
+    {
+      "route_int_id": 1224,
+      "arrival_time": "2017-03-01 16:17:54.000",
+      "station_int_id": 1953
+    },
+    {
+      "route_int_id": 1544,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1952
+    },
+    {
+      "route_int_id": 1563,
+      "arrival_time": "2017-03-01 16:14:11.000",
+      "station_int_id": 1952
+    },
+    {
+      "route_int_id": 1544,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1952
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1952
+    },
+    {
+      "route_int_id": 1542,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1952
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1952
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1952
+    },
+    {
+      "route_int_id": 1544,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1952
+    },
+    {
+      "route_int_id": 971,
+      "arrival_time": "2017-03-01 16:13:09.000",
+      "station_int_id": 2001
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:14:24.000",
+      "station_int_id": 2001
+    },
+    {
+      "route_int_id": 730,
+      "arrival_time": "2017-03-01 16:14:24.000",
+      "station_int_id": 2001
+    },
+    {
+      "route_int_id": 1618,
+      "arrival_time": "2017-03-01 16:14:24.000",
+      "station_int_id": 2001
+    },
+    {
+      "route_int_id": 971,
+      "arrival_time": "2017-03-01 16:14:24.000",
+      "station_int_id": 2001
+    },
+    {
+      "route_int_id": 332,
+      "arrival_time": "2017-03-01 16:10:26.000",
+      "station_int_id": 2002
+    },
+    {
+      "route_int_id": 1617,
+      "arrival_time": "2017-03-01 16:10:26.000",
+      "station_int_id": 2002
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:10:26.000",
+      "station_int_id": 2002
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:10:26.000",
+      "station_int_id": 2002
+    },
+    {
+      "route_int_id": 1575,
+      "arrival_time": "2017-03-01 16:10:26.000",
+      "station_int_id": 2002
+    },
+    {
+      "route_int_id": 332,
+      "arrival_time": "2017-03-01 16:10:26.000",
+      "station_int_id": 2002
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:10:26.000",
+      "station_int_id": 2002
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:11:49.000",
+      "station_int_id": 3473
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:12:29.000",
+      "station_int_id": 3473
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:14:02.000",
+      "station_int_id": 3473
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:14:02.000",
+      "station_int_id": 3473
+    },
+    {
+      "route_int_id": 1451,
+      "arrival_time": "2017-03-01 16:14:02.000",
+      "station_int_id": 3473
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:14:02.000",
+      "station_int_id": 3473
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:14:02.000",
+      "station_int_id": 3473
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:14:02.000",
+      "station_int_id": 3473
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:14:02.000",
+      "station_int_id": 3473
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:14:02.000",
+      "station_int_id": 3473
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:14:02.000",
+      "station_int_id": 3473
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:14:02.000",
+      "station_int_id": 3473
+    },
+    {
+      "route_int_id": 789,
+      "arrival_time": "2017-03-01 16:15:48.000",
+      "station_int_id": 1992
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:10:15.000",
+      "station_int_id": 1992
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:15:48.000",
+      "station_int_id": 1992
+    },
+    {
+      "route_int_id": 790,
+      "arrival_time": "2017-03-01 16:15:48.000",
+      "station_int_id": 1992
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:15:48.000",
+      "station_int_id": 1992
+    },
+    {
+      "route_int_id": 789,
+      "arrival_time": "2017-03-01 16:15:48.000",
+      "station_int_id": 1992
+    },
+    {
+      "route_int_id": 346,
+      "arrival_time": "2017-03-01 16:16:44.000",
+      "station_int_id": 1936
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:13:27.000",
+      "station_int_id": 1936
+    },
+    {
+      "route_int_id": 1542,
+      "arrival_time": "2017-03-01 16:16:44.000",
+      "station_int_id": 1936
+    },
+    {
+      "route_int_id": 1134,
+      "arrival_time": "2017-03-01 16:16:44.000",
+      "station_int_id": 1936
+    },
+    {
+      "route_int_id": 341,
+      "arrival_time": "2017-03-01 16:16:44.000",
+      "station_int_id": 1936
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:16:44.000",
+      "station_int_id": 1936
+    },
+    {
+      "route_int_id": 726,
+      "arrival_time": "2017-03-01 16:16:44.000",
+      "station_int_id": 1936
+    },
+    {
+      "route_int_id": 1553,
+      "arrival_time": "2017-03-01 16:15:44.000",
+      "station_int_id": 1937
+    },
+    {
+      "route_int_id": 342,
+      "arrival_time": "2017-03-01 16:14:38.000",
+      "station_int_id": 1937
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:14:38.000",
+      "station_int_id": 1937
+    },
+    {
+      "route_int_id": 727,
+      "arrival_time": "2017-03-01 16:15:44.000",
+      "station_int_id": 1937
+    },
+    {
+      "route_int_id": 1458,
+      "arrival_time": "2017-03-01 16:15:44.000",
+      "station_int_id": 1937
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:15:44.000",
+      "station_int_id": 1937
+    },
+    {
+      "route_int_id": 1562,
+      "arrival_time": "2017-03-01 16:15:44.000",
+      "station_int_id": 1937
+    },
+    {
+      "route_int_id": 652,
+      "arrival_time": "2017-03-01 16:15:44.000",
+      "station_int_id": 1937
+    },
+    {
+      "route_int_id": 342,
+      "arrival_time": "2017-03-01 16:15:44.000",
+      "station_int_id": 1937
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:15:44.000",
+      "station_int_id": 1937
+    },
+    {
+      "route_int_id": 1553,
+      "arrival_time": "2017-03-01 16:15:44.000",
+      "station_int_id": 1937
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:15:44.000",
+      "station_int_id": 1937
+    },
+    {
+      "route_int_id": 727,
+      "arrival_time": "2017-03-01 16:15:44.000",
+      "station_int_id": 1937
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:16:53.000",
+      "station_int_id": 1985
+    },
+    {
+      "route_int_id": 1587,
+      "arrival_time": "2017-03-01 16:16:53.000",
+      "station_int_id": 1985
+    },
+    {
+      "route_int_id": 1370,
+      "arrival_time": "2017-03-01 16:16:53.000",
+      "station_int_id": 1985
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:16:53.000",
+      "station_int_id": 1985
+    },
+    {
+      "route_int_id": 727,
+      "arrival_time": "2017-03-01 16:16:53.000",
+      "station_int_id": 1985
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:13:36.000",
+      "station_int_id": 1986
+    },
+    {
+      "route_int_id": 1568,
+      "arrival_time": "2017-03-01 16:15:13.000",
+      "station_int_id": 1986
+    },
+    {
+      "route_int_id": 1568,
+      "arrival_time": "2017-03-01 16:13:36.000",
+      "station_int_id": 1986
+    },
+    {
+      "route_int_id": 726,
+      "arrival_time": "2017-03-01 16:15:13.000",
+      "station_int_id": 1986
+    },
+    {
+      "route_int_id": 1586,
+      "arrival_time": "2017-03-01 16:16:15.000",
+      "station_int_id": 1986
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:16:15.000",
+      "station_int_id": 1986
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:16:15.000",
+      "station_int_id": 1986
+    },
+    {
+      "route_int_id": 1568,
+      "arrival_time": "2017-03-01 16:16:15.000",
+      "station_int_id": 1986
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:16:15.000",
+      "station_int_id": 1986
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:16:15.000",
+      "station_int_id": 1986
+    },
+    {
+      "route_int_id": 726,
+      "arrival_time": "2017-03-01 16:16:15.000",
+      "station_int_id": 1986
+    },
+    {
+      "route_int_id": 342,
+      "arrival_time": "2017-03-01 16:18:10.000",
+      "station_int_id": 2042
+    },
+    {
+      "route_int_id": 1387,
+      "arrival_time": "2017-03-01 16:14:26.000",
+      "station_int_id": 2042
+    },
+    {
+      "route_int_id": 652,
+      "arrival_time": "2017-03-01 16:18:10.000",
+      "station_int_id": 2042
+    },
+    {
+      "route_int_id": 342,
+      "arrival_time": "2017-03-01 16:18:10.000",
+      "station_int_id": 2042
+    },
+    {
+      "route_int_id": 1387,
+      "arrival_time": "2017-03-01 16:18:10.000",
+      "station_int_id": 2042
+    },
+    {
+      "route_int_id": 971,
+      "arrival_time": "2017-03-01 16:11:01.000",
+      "station_int_id": 2003
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:11:01.000",
+      "station_int_id": 2003
+    },
+    {
+      "route_int_id": 730,
+      "arrival_time": "2017-03-01 16:11:01.000",
+      "station_int_id": 2003
+    },
+    {
+      "route_int_id": 1618,
+      "arrival_time": "2017-03-01 16:11:01.000",
+      "station_int_id": 2003
+    },
+    {
+      "route_int_id": 1587,
+      "arrival_time": "2017-03-01 16:14:12.000",
+      "station_int_id": 1974
+    },
+    {
+      "route_int_id": 364,
+      "arrival_time": "2017-03-01 16:15:11.000",
+      "station_int_id": 1974
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:16:13.000",
+      "station_int_id": 1974
+    },
+    {
+      "route_int_id": 1618,
+      "arrival_time": "2017-03-01 16:16:13.000",
+      "station_int_id": 1974
+    },
+    {
+      "route_int_id": 730,
+      "arrival_time": "2017-03-01 16:16:13.000",
+      "station_int_id": 1974
+    },
+    {
+      "route_int_id": 1587,
+      "arrival_time": "2017-03-01 16:16:13.000",
+      "station_int_id": 1974
+    },
+    {
+      "route_int_id": 727,
+      "arrival_time": "2017-03-01 16:16:13.000",
+      "station_int_id": 1974
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:17:25.000",
+      "station_int_id": 1975
+    },
+    {
+      "route_int_id": 1586,
+      "arrival_time": "2017-03-01 16:14:13.000",
+      "station_int_id": 1975
+    },
+    {
+      "route_int_id": 1617,
+      "arrival_time": "2017-03-01 16:14:42.000",
+      "station_int_id": 1975
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:17:25.000",
+      "station_int_id": 1975
+    },
+    {
+      "route_int_id": 1575,
+      "arrival_time": "2017-03-01 16:17:25.000",
+      "station_int_id": 1975
+    },
+    {
+      "route_int_id": 1575,
+      "arrival_time": "2017-03-01 16:17:25.000",
+      "station_int_id": 1975
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:17:25.000",
+      "station_int_id": 1975
+    },
+    {
+      "route_int_id": 726,
+      "arrival_time": "2017-03-01 16:17:25.000",
+      "station_int_id": 1975
+    },
+    {
+      "route_int_id": 1587,
+      "arrival_time": "2017-03-01 16:11:23.000",
+      "station_int_id": 1944
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:17:20.000",
+      "station_int_id": 1944
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:12:31.000",
+      "station_int_id": 1944
+    },
+    {
+      "route_int_id": 1582,
+      "arrival_time": "2017-03-01 16:13:32.000",
+      "station_int_id": 1944
+    },
+    {
+      "route_int_id": 1568,
+      "arrival_time": "2017-03-01 16:14:40.000",
+      "station_int_id": 1944
+    },
+    {
+      "route_int_id": 1587,
+      "arrival_time": "2017-03-01 16:17:52.000",
+      "station_int_id": 1944
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:15:44.000",
+      "station_int_id": 1944
+    },
+    {
+      "route_int_id": 987,
+      "arrival_time": "2017-03-01 16:17:20.000",
+      "station_int_id": 1944
+    },
+    {
+      "route_int_id": 1096,
+      "arrival_time": "2017-03-01 16:13:32.000",
+      "station_int_id": 1944
+    },
+    {
+      "route_int_id": 1544,
+      "arrival_time": "2017-03-01 16:11:55.000",
+      "station_int_id": 1944
+    },
+    {
+      "route_int_id": 1544,
+      "arrival_time": "2017-03-01 16:15:44.000",
+      "station_int_id": 1944
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:17:52.000",
+      "station_int_id": 1944
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:17:52.000",
+      "station_int_id": 1944
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:17:52.000",
+      "station_int_id": 1944
+    },
+    {
+      "route_int_id": 1542,
+      "arrival_time": "2017-03-01 16:17:52.000",
+      "station_int_id": 1944
+    },
+    {
+      "route_int_id": 1096,
+      "arrival_time": "2017-03-01 16:17:52.000",
+      "station_int_id": 1944
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:17:52.000",
+      "station_int_id": 1944
+    },
+    {
+      "route_int_id": 730,
+      "arrival_time": "2017-03-01 16:17:52.000",
+      "station_int_id": 1944
+    },
+    {
+      "route_int_id": 1587,
+      "arrival_time": "2017-03-01 16:17:52.000",
+      "station_int_id": 1944
+    },
+    {
+      "route_int_id": 987,
+      "arrival_time": "2017-03-01 16:17:52.000",
+      "station_int_id": 1944
+    },
+    {
+      "route_int_id": 1544,
+      "arrival_time": "2017-03-01 16:17:52.000",
+      "station_int_id": 1944
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:15:25.000",
+      "station_int_id": 2012
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:17:03.000",
+      "station_int_id": 2012
+    },
+    {
+      "route_int_id": 1562,
+      "arrival_time": "2017-03-01 16:14:54.000",
+      "station_int_id": 2012
+    },
+    {
+      "route_int_id": 1575,
+      "arrival_time": "2017-03-01 16:18:06.000",
+      "station_int_id": 2012
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:18:06.000",
+      "station_int_id": 2012
+    },
+    {
+      "route_int_id": 1553,
+      "arrival_time": "2017-03-01 16:18:06.000",
+      "station_int_id": 2012
+    },
+    {
+      "route_int_id": 1575,
+      "arrival_time": "2017-03-01 16:18:06.000",
+      "station_int_id": 2012
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:18:06.000",
+      "station_int_id": 2012
+    },
+    {
+      "route_int_id": 1581,
+      "arrival_time": "2017-03-01 16:18:06.000",
+      "station_int_id": 2012
+    },
+    {
+      "route_int_id": 1146,
+      "arrival_time": "2017-03-01 16:18:06.000",
+      "station_int_id": 2012
+    },
+    {
+      "route_int_id": 1582,
+      "arrival_time": "2017-03-01 16:16:26.000",
+      "station_int_id": 2013
+    },
+    {
+      "route_int_id": 1568,
+      "arrival_time": "2017-03-01 16:18:07.000",
+      "station_int_id": 2013
+    },
+    {
+      "route_int_id": 1145,
+      "arrival_time": "2017-03-01 16:10:26.000",
+      "station_int_id": 2013
+    },
+    {
+      "route_int_id": 1096,
+      "arrival_time": "2017-03-01 16:18:07.000",
+      "station_int_id": 2013
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:18:07.000",
+      "station_int_id": 2013
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:10:26.000",
+      "station_int_id": 2013
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:18:07.000",
+      "station_int_id": 2013
+    },
+    {
+      "route_int_id": 730,
+      "arrival_time": "2017-03-01 16:10:26.000",
+      "station_int_id": 2013
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:18:07.000",
+      "station_int_id": 2013
+    },
+    {
+      "route_int_id": 1096,
+      "arrival_time": "2017-03-01 16:18:07.000",
+      "station_int_id": 2013
+    },
+    {
+      "route_int_id": 730,
+      "arrival_time": "2017-03-01 16:18:07.000",
+      "station_int_id": 2013
+    },
+    {
+      "route_int_id": 1224,
+      "arrival_time": "2017-03-01 16:11:09.000",
+      "station_int_id": 3718
+    },
+    {
+      "route_int_id": 1219,
+      "arrival_time": "2017-03-01 16:11:09.000",
+      "station_int_id": 3718
+    },
+    {
+      "route_int_id": 1205,
+      "arrival_time": "2017-03-01 16:11:09.000",
+      "station_int_id": 3718
+    },
+    {
+      "route_int_id": 1134,
+      "arrival_time": "2017-03-01 16:11:09.000",
+      "station_int_id": 3718
+    },
+    {
+      "route_int_id": 1231,
+      "arrival_time": "2017-03-01 16:11:09.000",
+      "station_int_id": 3718
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:13:54.000",
+      "station_int_id": 2084
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:13:54.000",
+      "station_int_id": 2084
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:13:54.000",
+      "station_int_id": 2084
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:13:54.000",
+      "station_int_id": 2084
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:13:54.000",
+      "station_int_id": 2084
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:13:54.000",
+      "station_int_id": 2084
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:13:54.000",
+      "station_int_id": 2084
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:13:54.000",
+      "station_int_id": 2084
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:10:43.000",
+      "station_int_id": 2324
+    },
+    {
+      "route_int_id": 1370,
+      "arrival_time": "2017-03-01 16:10:43.000",
+      "station_int_id": 2324
+    },
+    {
+      "route_int_id": 1370,
+      "arrival_time": "2017-03-01 16:10:43.000",
+      "station_int_id": 2324
+    },
+    {
+      "route_int_id": 1370,
+      "arrival_time": "2017-03-01 16:10:43.000",
+      "station_int_id": 2324
+    },
+    {
+      "route_int_id": 1146,
+      "arrival_time": "2017-03-01 16:18:15.000",
+      "station_int_id": 3336
+    },
+    {
+      "route_int_id": 364,
+      "arrival_time": "2017-03-01 16:17:45.000",
+      "station_int_id": 3336
+    },
+    {
+      "route_int_id": 1616,
+      "arrival_time": "2017-03-01 16:18:15.000",
+      "station_int_id": 3336
+    },
+    {
+      "route_int_id": 1618,
+      "arrival_time": "2017-03-01 16:18:15.000",
+      "station_int_id": 3336
+    },
+    {
+      "route_int_id": 1146,
+      "arrival_time": "2017-03-01 16:18:15.000",
+      "station_int_id": 3336
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:16:43.000",
+      "station_int_id": 1923
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:15:03.000",
+      "station_int_id": 1923
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:10:43.000",
+      "station_int_id": 1923
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:15:03.000",
+      "station_int_id": 1923
+    },
+    {
+      "route_int_id": 727,
+      "arrival_time": "2017-03-01 16:16:43.000",
+      "station_int_id": 1923
+    },
+    {
+      "route_int_id": 1458,
+      "arrival_time": "2017-03-01 16:16:43.000",
+      "station_int_id": 1923
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:16:43.000",
+      "station_int_id": 1923
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:16:43.000",
+      "station_int_id": 1923
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:16:43.000",
+      "station_int_id": 1923
+    },
+    {
+      "route_int_id": 727,
+      "arrival_time": "2017-03-01 16:16:43.000",
+      "station_int_id": 1923
+    },
+    {
+      "route_int_id": 342,
+      "arrival_time": "2017-03-01 16:15:09.000",
+      "station_int_id": 1964
+    },
+    {
+      "route_int_id": 971,
+      "arrival_time": "2017-03-01 16:15:09.000",
+      "station_int_id": 1964
+    },
+    {
+      "route_int_id": 789,
+      "arrival_time": "2017-03-01 16:15:09.000",
+      "station_int_id": 1964
+    },
+    {
+      "route_int_id": 971,
+      "arrival_time": "2017-03-01 16:15:09.000",
+      "station_int_id": 1964
+    },
+    {
+      "route_int_id": 341,
+      "arrival_time": "2017-03-01 16:18:19.000",
+      "station_int_id": 1965
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:18:19.000",
+      "station_int_id": 1965
+    },
+    {
+      "route_int_id": 332,
+      "arrival_time": "2017-03-01 16:18:19.000",
+      "station_int_id": 1965
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:18:19.000",
+      "station_int_id": 1965
+    },
+    {
+      "route_int_id": 341,
+      "arrival_time": "2017-03-01 16:18:19.000",
+      "station_int_id": 1965
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:18:19.000",
+      "station_int_id": 1965
+    },
+    {
+      "route_int_id": 1370,
+      "arrival_time": "2017-03-01 16:14:43.000",
+      "station_int_id": 1983
+    },
+    {
+      "route_int_id": 1616,
+      "arrival_time": "2017-03-01 16:14:43.000",
+      "station_int_id": 1983
+    },
+    {
+      "route_int_id": 1370,
+      "arrival_time": "2017-03-01 16:14:43.000",
+      "station_int_id": 1983
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:14:43.000",
+      "station_int_id": 1983
+    },
+    {
+      "route_int_id": 1146,
+      "arrival_time": "2017-03-01 16:11:55.000",
+      "station_int_id": 1945
+    },
+    {
+      "route_int_id": 1387,
+      "arrival_time": "2017-03-01 16:14:10.000",
+      "station_int_id": 1945
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:10:46.000",
+      "station_int_id": 1945
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:17:21.000",
+      "station_int_id": 1945
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:10:12.000",
+      "station_int_id": 1945
+    },
+    {
+      "route_int_id": 1458,
+      "arrival_time": "2017-03-01 16:10:12.000",
+      "station_int_id": 1945
+    },
+    {
+      "route_int_id": 1411,
+      "arrival_time": "2017-03-01 16:17:21.000",
+      "station_int_id": 1945
+    },
+    {
+      "route_int_id": 1562,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1945
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1945
+    },
+    {
+      "route_int_id": 1409,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1945
+    },
+    {
+      "route_int_id": 1575,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1945
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1945
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1945
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1945
+    },
+    {
+      "route_int_id": 1387,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1945
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1945
+    },
+    {
+      "route_int_id": 1553,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1945
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1945
+    },
+    {
+      "route_int_id": 1409,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1945
+    },
+    {
+      "route_int_id": 1575,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1945
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1945
+    },
+    {
+      "route_int_id": 1581,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1945
+    },
+    {
+      "route_int_id": 1146,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1945
+    },
+    {
+      "route_int_id": 1387,
+      "arrival_time": "2017-03-01 16:17:53.000",
+      "station_int_id": 1945
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:12:23.000",
+      "station_int_id": 2116
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:12:23.000",
+      "station_int_id": 2116
+    },
+    {
+      "route_int_id": 726,
+      "arrival_time": "2017-03-01 16:12:23.000",
+      "station_int_id": 2116
+    },
+    {
+      "route_int_id": 341,
+      "arrival_time": "2017-03-01 16:12:23.000",
+      "station_int_id": 2116
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:12:23.000",
+      "station_int_id": 2116
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:12:23.000",
+      "station_int_id": 2116
+    },
+    {
+      "route_int_id": 341,
+      "arrival_time": "2017-03-01 16:12:23.000",
+      "station_int_id": 2116
+    },
+    {
+      "route_int_id": 1562,
+      "arrival_time": "2017-03-01 16:12:13.000",
+      "station_int_id": 2016
+    },
+    {
+      "route_int_id": 1575,
+      "arrival_time": "2017-03-01 16:12:13.000",
+      "station_int_id": 2016
+    },
+    {
+      "route_int_id": 1553,
+      "arrival_time": "2017-03-01 16:12:13.000",
+      "station_int_id": 2016
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:12:13.000",
+      "station_int_id": 2016
+    },
+    {
+      "route_int_id": 1581,
+      "arrival_time": "2017-03-01 16:12:13.000",
+      "station_int_id": 2016
+    },
+    {
+      "route_int_id": 730,
+      "arrival_time": "2017-03-01 16:11:39.000",
+      "station_int_id": 2017
+    },
+    {
+      "route_int_id": 1582,
+      "arrival_time": "2017-03-01 16:11:39.000",
+      "station_int_id": 2017
+    },
+    {
+      "route_int_id": 1568,
+      "arrival_time": "2017-03-01 16:11:39.000",
+      "station_int_id": 2017
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:11:39.000",
+      "station_int_id": 2017
+    },
+    {
+      "route_int_id": 1096,
+      "arrival_time": "2017-03-01 16:11:39.000",
+      "station_int_id": 2017
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:11:39.000",
+      "station_int_id": 2017
+    },
+    {
+      "route_int_id": 730,
+      "arrival_time": "2017-03-01 16:11:39.000",
+      "station_int_id": 2017
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:15:42.000",
+      "station_int_id": 1925
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:14:05.000",
+      "station_int_id": 1925
+    },
+    {
+      "route_int_id": 727,
+      "arrival_time": "2017-03-01 16:15:42.000",
+      "station_int_id": 1925
+    },
+    {
+      "route_int_id": 1458,
+      "arrival_time": "2017-03-01 16:15:42.000",
+      "station_int_id": 1925
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:15:42.000",
+      "station_int_id": 1925
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:15:42.000",
+      "station_int_id": 1925
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:15:42.000",
+      "station_int_id": 1925
+    },
+    {
+      "route_int_id": 727,
+      "arrival_time": "2017-03-01 16:15:42.000",
+      "station_int_id": 1925
+    },
+    {
+      "route_int_id": 1145,
+      "arrival_time": "2017-03-01 16:15:26.000",
+      "station_int_id": 2021
+    },
+    {
+      "route_int_id": 1096,
+      "arrival_time": "2017-03-01 16:15:26.000",
+      "station_int_id": 2021
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:15:26.000",
+      "station_int_id": 2021
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:15:26.000",
+      "station_int_id": 2021
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:13:15.000",
+      "station_int_id": 2090
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:10:32.000",
+      "station_int_id": 2090
+    },
+    {
+      "route_int_id": 987,
+      "arrival_time": "2017-03-01 16:12:48.000",
+      "station_int_id": 2090
+    },
+    {
+      "route_int_id": 1617,
+      "arrival_time": "2017-03-01 16:10:32.000",
+      "station_int_id": 2090
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:13:15.000",
+      "station_int_id": 2090
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:13:15.000",
+      "station_int_id": 2090
+    },
+    {
+      "route_int_id": 971,
+      "arrival_time": "2017-03-01 16:13:15.000",
+      "station_int_id": 2090
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:13:15.000",
+      "station_int_id": 2090
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:13:15.000",
+      "station_int_id": 2090
+    },
+    {
+      "route_int_id": 1579,
+      "arrival_time": "2017-03-01 16:12:20.000",
+      "station_int_id": 2089
+    },
+    {
+      "route_int_id": 1370,
+      "arrival_time": "2017-03-01 16:12:20.000",
+      "station_int_id": 2089
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:14:28.000",
+      "station_int_id": 2089
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:14:28.000",
+      "station_int_id": 2089
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:14:28.000",
+      "station_int_id": 2089
+    },
+    {
+      "route_int_id": 1370,
+      "arrival_time": "2017-03-01 16:14:28.000",
+      "station_int_id": 2089
+    },
+    {
+      "route_int_id": 1409,
+      "arrival_time": "2017-03-01 16:14:28.000",
+      "station_int_id": 2089
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:14:28.000",
+      "station_int_id": 2089
+    },
+    {
+      "route_int_id": 332,
+      "arrival_time": "2017-03-01 16:14:28.000",
+      "station_int_id": 2089
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:14:28.000",
+      "station_int_id": 2089
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:14:28.000",
+      "station_int_id": 2089
+    },
+    {
+      "route_int_id": 1370,
+      "arrival_time": "2017-03-01 16:14:28.000",
+      "station_int_id": 2089
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:14:28.000",
+      "station_int_id": 2089
+    },
+    {
+      "route_int_id": 1409,
+      "arrival_time": "2017-03-01 16:14:28.000",
+      "station_int_id": 2089
+    },
+    {
+      "route_int_id": 1581,
+      "arrival_time": "2017-03-01 16:14:28.000",
+      "station_int_id": 2089
+    },
+    {
+      "route_int_id": 1568,
+      "arrival_time": "2017-03-01 16:12:24.000",
+      "station_int_id": 3717
+    },
+    {
+      "route_int_id": 1568,
+      "arrival_time": "2017-03-01 16:12:24.000",
+      "station_int_id": 3717
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:11:09.000",
+      "station_int_id": 3717
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:12:24.000",
+      "station_int_id": 3717
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:12:24.000",
+      "station_int_id": 3717
+    },
+    {
+      "route_int_id": 1568,
+      "arrival_time": "2017-03-01 16:12:24.000",
+      "station_int_id": 3717
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:12:24.000",
+      "station_int_id": 3717
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:12:24.000",
+      "station_int_id": 3717
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:13:18.000",
+      "station_int_id": 2118
+    },
+    {
+      "route_int_id": 726,
+      "arrival_time": "2017-03-01 16:13:18.000",
+      "station_int_id": 2118
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:13:18.000",
+      "station_int_id": 2118
+    },
+    {
+      "route_int_id": 341,
+      "arrival_time": "2017-03-01 16:13:18.000",
+      "station_int_id": 2118
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:13:18.000",
+      "station_int_id": 2118
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:13:18.000",
+      "station_int_id": 2118
+    },
+    {
+      "route_int_id": 341,
+      "arrival_time": "2017-03-01 16:13:18.000",
+      "station_int_id": 2118
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:18:12.000",
+      "station_int_id": 2076
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:10:31.000",
+      "station_int_id": 2076
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:12:17.000",
+      "station_int_id": 2076
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:18:12.000",
+      "station_int_id": 2076
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:18:12.000",
+      "station_int_id": 2076
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:18:12.000",
+      "station_int_id": 2076
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:18:12.000",
+      "station_int_id": 2076
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:18:12.000",
+      "station_int_id": 2076
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:18:12.000",
+      "station_int_id": 2076
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:18:12.000",
+      "station_int_id": 2076
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:18:12.000",
+      "station_int_id": 2076
+    },
+    {
+      "route_int_id": 332,
+      "arrival_time": "2017-03-01 16:16:09.000",
+      "station_int_id": 1879
+    },
+    {
+      "route_int_id": 341,
+      "arrival_time": "2017-03-01 16:16:09.000",
+      "station_int_id": 1879
+    },
+    {
+      "route_int_id": 1579,
+      "arrival_time": "2017-03-01 16:16:09.000",
+      "station_int_id": 1879
+    },
+    {
+      "route_int_id": 332,
+      "arrival_time": "2017-03-01 16:16:09.000",
+      "station_int_id": 1879
+    },
+    {
+      "route_int_id": 341,
+      "arrival_time": "2017-03-01 16:16:09.000",
+      "station_int_id": 1879
+    },
+    {
+      "route_int_id": 1581,
+      "arrival_time": "2017-03-01 16:16:09.000",
+      "station_int_id": 1879
+    },
+    {
+      "route_int_id": 346,
+      "arrival_time": "2017-03-01 16:15:43.000",
+      "station_int_id": 1934
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:11:22.000",
+      "station_int_id": 1934
+    },
+    {
+      "route_int_id": 1542,
+      "arrival_time": "2017-03-01 16:15:43.000",
+      "station_int_id": 1934
+    },
+    {
+      "route_int_id": 1134,
+      "arrival_time": "2017-03-01 16:15:43.000",
+      "station_int_id": 1934
+    },
+    {
+      "route_int_id": 341,
+      "arrival_time": "2017-03-01 16:15:43.000",
+      "station_int_id": 1934
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:15:43.000",
+      "station_int_id": 1934
+    },
+    {
+      "route_int_id": 726,
+      "arrival_time": "2017-03-01 16:15:43.000",
+      "station_int_id": 1934
+    },
+    {
+      "route_int_id": 1410,
+      "arrival_time": "2017-03-01 16:13:10.000",
+      "station_int_id": 2011
+    },
+    {
+      "route_int_id": 1553,
+      "arrival_time": "2017-03-01 16:13:47.000",
+      "station_int_id": 2011
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:13:47.000",
+      "station_int_id": 2011
+    },
+    {
+      "route_int_id": 1386,
+      "arrival_time": "2017-03-01 16:13:47.000",
+      "station_int_id": 2011
+    },
+    {
+      "route_int_id": 1562,
+      "arrival_time": "2017-03-01 16:13:47.000",
+      "station_int_id": 2011
+    },
+    {
+      "route_int_id": 1553,
+      "arrival_time": "2017-03-01 16:13:47.000",
+      "station_int_id": 2011
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:13:47.000",
+      "station_int_id": 2011
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:11:04.000",
+      "station_int_id": 2079
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:12:18.000",
+      "station_int_id": 2079
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:12:18.000",
+      "station_int_id": 2079
+    },
+    {
+      "route_int_id": 1386,
+      "arrival_time": "2017-03-01 16:12:18.000",
+      "station_int_id": 2079
+    },
+    {
+      "route_int_id": 1386,
+      "arrival_time": "2017-03-01 16:12:18.000",
+      "station_int_id": 2079
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:17:41.000",
+      "station_int_id": 2080
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:15:29.000",
+      "station_int_id": 2080
+    },
+    {
+      "route_int_id": 1387,
+      "arrival_time": "2017-03-01 16:17:41.000",
+      "station_int_id": 2080
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:17:41.000",
+      "station_int_id": 2080
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:17:41.000",
+      "station_int_id": 2080
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:17:41.000",
+      "station_int_id": 2080
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:17:41.000",
+      "station_int_id": 2080
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:17:41.000",
+      "station_int_id": 2080
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:17:41.000",
+      "station_int_id": 2080
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:17:41.000",
+      "station_int_id": 2080
+    },
+    {
+      "route_int_id": 1145,
+      "arrival_time": "2017-03-01 16:18:08.000",
+      "station_int_id": 2029
+    },
+    {
+      "route_int_id": 1260,
+      "arrival_time": "2017-03-01 16:14:25.000",
+      "station_int_id": 2029
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:18:08.000",
+      "station_int_id": 2029
+    },
+    {
+      "route_int_id": 1096,
+      "arrival_time": "2017-03-01 16:18:08.000",
+      "station_int_id": 2029
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:18:08.000",
+      "station_int_id": 2029
+    },
+    {
+      "route_int_id": 1096,
+      "arrival_time": "2017-03-01 16:18:08.000",
+      "station_int_id": 2029
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:11:42.000",
+      "station_int_id": 2086
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:11:42.000",
+      "station_int_id": 2086
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:12:19.000",
+      "station_int_id": 2086
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:12:19.000",
+      "station_int_id": 2086
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:12:19.000",
+      "station_int_id": 2086
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:12:19.000",
+      "station_int_id": 2086
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:12:19.000",
+      "station_int_id": 2086
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:12:19.000",
+      "station_int_id": 2086
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:12:19.000",
+      "station_int_id": 2086
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:11:44.000",
+      "station_int_id": 2092
+    },
+    {
+      "route_int_id": 1409,
+      "arrival_time": "2017-03-01 16:12:21.000",
+      "station_int_id": 2092
+    },
+    {
+      "route_int_id": 1205,
+      "arrival_time": "2017-03-01 16:12:21.000",
+      "station_int_id": 2092
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:12:21.000",
+      "station_int_id": 2092
+    },
+    {
+      "route_int_id": 1409,
+      "arrival_time": "2017-03-01 16:12:21.000",
+      "station_int_id": 2092
+    },
+    {
+      "route_int_id": 1202,
+      "arrival_time": "2017-03-01 16:11:43.000",
+      "station_int_id": 2091
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:11:06.000",
+      "station_int_id": 2091
+    },
+    {
+      "route_int_id": 1563,
+      "arrival_time": "2017-03-01 16:15:31.000",
+      "station_int_id": 2091
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:15:31.000",
+      "station_int_id": 2091
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:15:31.000",
+      "station_int_id": 2091
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:15:31.000",
+      "station_int_id": 2091
+    },
+    {
+      "route_int_id": 346,
+      "arrival_time": "2017-03-01 16:17:52.000",
+      "station_int_id": 1938
+    },
+    {
+      "route_int_id": 332,
+      "arrival_time": "2017-03-01 16:18:18.000",
+      "station_int_id": 1938
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:15:05.000",
+      "station_int_id": 1938
+    },
+    {
+      "route_int_id": 1542,
+      "arrival_time": "2017-03-01 16:18:18.000",
+      "station_int_id": 1938
+    },
+    {
+      "route_int_id": 1096,
+      "arrival_time": "2017-03-01 16:18:18.000",
+      "station_int_id": 1938
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:18:18.000",
+      "station_int_id": 1938
+    },
+    {
+      "route_int_id": 1544,
+      "arrival_time": "2017-03-01 16:18:18.000",
+      "station_int_id": 1938
+    },
+    {
+      "route_int_id": 726,
+      "arrival_time": "2017-03-01 16:18:18.000",
+      "station_int_id": 1938
+    },
+    {
+      "route_int_id": 1553,
+      "arrival_time": "2017-03-01 16:12:54.000",
+      "station_int_id": 1939
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:11:54.000",
+      "station_int_id": 1939
+    },
+    {
+      "route_int_id": 727,
+      "arrival_time": "2017-03-01 16:16:44.000",
+      "station_int_id": 1939
+    },
+    {
+      "route_int_id": 971,
+      "arrival_time": "2017-03-01 16:13:30.000",
+      "station_int_id": 1939
+    },
+    {
+      "route_int_id": 1458,
+      "arrival_time": "2017-03-01 16:16:44.000",
+      "station_int_id": 1939
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:16:44.000",
+      "station_int_id": 1939
+    },
+    {
+      "route_int_id": 1562,
+      "arrival_time": "2017-03-01 16:16:44.000",
+      "station_int_id": 1939
+    },
+    {
+      "route_int_id": 652,
+      "arrival_time": "2017-03-01 16:16:44.000",
+      "station_int_id": 1939
+    },
+    {
+      "route_int_id": 971,
+      "arrival_time": "2017-03-01 16:16:44.000",
+      "station_int_id": 1939
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:16:44.000",
+      "station_int_id": 1939
+    },
+    {
+      "route_int_id": 1553,
+      "arrival_time": "2017-03-01 16:16:44.000",
+      "station_int_id": 1939
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:16:44.000",
+      "station_int_id": 1939
+    },
+    {
+      "route_int_id": 727,
+      "arrival_time": "2017-03-01 16:16:44.000",
+      "station_int_id": 1939
+    },
+    {
+      "route_int_id": 971,
+      "arrival_time": "2017-03-01 16:16:44.000",
+      "station_int_id": 1939
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:16:29.000",
+      "station_int_id": 2077
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:16:29.000",
+      "station_int_id": 2077
+    },
+    {
+      "route_int_id": 1386,
+      "arrival_time": "2017-03-01 16:16:29.000",
+      "station_int_id": 2077
+    },
+    {
+      "route_int_id": 1386,
+      "arrival_time": "2017-03-01 16:16:29.000",
+      "station_int_id": 2077
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:11:42.000",
+      "station_int_id": 2078
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:17:40.000",
+      "station_int_id": 2078
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:17:40.000",
+      "station_int_id": 2078
+    },
+    {
+      "route_int_id": 1387,
+      "arrival_time": "2017-03-01 16:17:40.000",
+      "station_int_id": 2078
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:17:40.000",
+      "station_int_id": 2078
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:17:40.000",
+      "station_int_id": 2078
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:17:40.000",
+      "station_int_id": 2078
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:17:40.000",
+      "station_int_id": 2078
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:17:40.000",
+      "station_int_id": 2078
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:17:40.000",
+      "station_int_id": 2078
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:17:40.000",
+      "station_int_id": 2078
+    },
+    {
+      "route_int_id": 1562,
+      "arrival_time": "2017-03-01 16:10:27.000",
+      "station_int_id": 2018
+    },
+    {
+      "route_int_id": 1575,
+      "arrival_time": "2017-03-01 16:10:27.000",
+      "station_int_id": 2018
+    },
+    {
+      "route_int_id": 1553,
+      "arrival_time": "2017-03-01 16:10:27.000",
+      "station_int_id": 2018
+    },
+    {
+      "route_int_id": 1146,
+      "arrival_time": "2017-03-01 16:10:27.000",
+      "station_int_id": 2018
+    },
+    {
+      "route_int_id": 1145,
+      "arrival_time": "2017-03-01 16:13:49.000",
+      "station_int_id": 2019
+    },
+    {
+      "route_int_id": 1260,
+      "arrival_time": "2017-03-01 16:10:27.000",
+      "station_int_id": 2019
+    },
+    {
+      "route_int_id": 1096,
+      "arrival_time": "2017-03-01 16:13:49.000",
+      "station_int_id": 2019
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:13:49.000",
+      "station_int_id": 2019
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:13:49.000",
+      "station_int_id": 2019
+    },
+    {
+      "route_int_id": 1568,
+      "arrival_time": "2017-03-01 16:13:18.000",
+      "station_int_id": 2121
+    },
+    {
+      "route_int_id": 1568,
+      "arrival_time": "2017-03-01 16:13:18.000",
+      "station_int_id": 2121
+    },
+    {
+      "route_int_id": 726,
+      "arrival_time": "2017-03-01 16:13:18.000",
+      "station_int_id": 2121
+    },
+    {
+      "route_int_id": 1568,
+      "arrival_time": "2017-03-01 16:13:18.000",
+      "station_int_id": 2121
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:11:52.000",
+      "station_int_id": 1921
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:17:18.000",
+      "station_int_id": 1921
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:16:43.000",
+      "station_int_id": 1921
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:11:52.000",
+      "station_int_id": 1921
+    },
+    {
+      "route_int_id": 727,
+      "arrival_time": "2017-03-01 16:17:51.000",
+      "station_int_id": 1921
+    },
+    {
+      "route_int_id": 1458,
+      "arrival_time": "2017-03-01 16:17:51.000",
+      "station_int_id": 1921
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:17:51.000",
+      "station_int_id": 1921
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:17:51.000",
+      "station_int_id": 1921
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:17:51.000",
+      "station_int_id": 1921
+    },
+    {
+      "route_int_id": 727,
+      "arrival_time": "2017-03-01 16:17:51.000",
+      "station_int_id": 1921
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:17:51.000",
+      "station_int_id": 1921
+    },
+    {
+      "route_int_id": 342,
+      "arrival_time": "2017-03-01 16:17:39.000",
+      "station_int_id": 2044
+    },
+    {
+      "route_int_id": 1387,
+      "arrival_time": "2017-03-01 16:13:12.000",
+      "station_int_id": 2044
+    },
+    {
+      "route_int_id": 652,
+      "arrival_time": "2017-03-01 16:17:39.000",
+      "station_int_id": 2044
+    },
+    {
+      "route_int_id": 342,
+      "arrival_time": "2017-03-01 16:17:39.000",
+      "station_int_id": 2044
+    },
+    {
+      "route_int_id": 1387,
+      "arrival_time": "2017-03-01 16:17:39.000",
+      "station_int_id": 2044
+    },
+    {
+      "route_int_id": 971,
+      "arrival_time": "2017-03-01 16:14:14.000",
+      "station_int_id": 1999
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:15:48.000",
+      "station_int_id": 1999
+    },
+    {
+      "route_int_id": 342,
+      "arrival_time": "2017-03-01 16:12:58.000",
+      "station_int_id": 1999
+    },
+    {
+      "route_int_id": 730,
+      "arrival_time": "2017-03-01 16:15:48.000",
+      "station_int_id": 1999
+    },
+    {
+      "route_int_id": 1618,
+      "arrival_time": "2017-03-01 16:15:48.000",
+      "station_int_id": 1999
+    },
+    {
+      "route_int_id": 789,
+      "arrival_time": "2017-03-01 16:15:48.000",
+      "station_int_id": 1999
+    },
+    {
+      "route_int_id": 971,
+      "arrival_time": "2017-03-01 16:15:48.000",
+      "station_int_id": 1999
+    },
+    {
+      "route_int_id": 789,
+      "arrival_time": "2017-03-01 16:15:48.000",
+      "station_int_id": 1999
+    },
+    {
+      "route_int_id": 1544,
+      "arrival_time": "2017-03-01 16:10:45.000",
+      "station_int_id": 1940
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:16:45.000",
+      "station_int_id": 1940
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:14:07.000",
+      "station_int_id": 1940
+    },
+    {
+      "route_int_id": 1098,
+      "arrival_time": "2017-03-01 16:10:11.000",
+      "station_int_id": 1940
+    },
+    {
+      "route_int_id": 346,
+      "arrival_time": "2017-03-01 16:16:45.000",
+      "station_int_id": 1940
+    },
+    {
+      "route_int_id": 332,
+      "arrival_time": "2017-03-01 16:16:45.000",
+      "station_int_id": 1940
+    },
+    {
+      "route_int_id": 1542,
+      "arrival_time": "2017-03-01 16:16:45.000",
+      "station_int_id": 1940
+    },
+    {
+      "route_int_id": 1134,
+      "arrival_time": "2017-03-01 16:16:45.000",
+      "station_int_id": 1940
+    },
+    {
+      "route_int_id": 798,
+      "arrival_time": "2017-03-01 16:16:45.000",
+      "station_int_id": 1940
+    },
+    {
+      "route_int_id": 726,
+      "arrival_time": "2017-03-01 16:16:45.000",
+      "station_int_id": 1940
+    },
+    {
+      "route_int_id": 971,
+      "arrival_time": "2017-03-01 16:13:31.000",
+      "station_int_id": 1941
+    },
+    {
+      "route_int_id": 1553,
+      "arrival_time": "2017-03-01 16:10:11.000",
+      "station_int_id": 1941
+    },
+    {
+      "route_int_id": 1458,
+      "arrival_time": "2017-03-01 16:17:19.000",
+      "station_int_id": 1941
+    },
+    {
+      "route_int_id": 727,
+      "arrival_time": "2017-03-01 16:14:07.000",
+      "station_int_id": 1941
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:17:19.000",
+      "station_int_id": 1941
+    },
+    {
+      "route_int_id": 652,
+      "arrival_time": "2017-03-01 16:17:19.000",
+      "station_int_id": 1941
+    },
+    {
+      "route_int_id": 1562,
+      "arrival_time": "2017-03-01 16:17:19.000",
+      "station_int_id": 1941
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:17:19.000",
+      "station_int_id": 1941
+    },
+    {
+      "route_int_id": 971,
+      "arrival_time": "2017-03-01 16:17:19.000",
+      "station_int_id": 1941
+    },
+    {
+      "route_int_id": 1553,
+      "arrival_time": "2017-03-01 16:17:19.000",
+      "station_int_id": 1941
+    },
+    {
+      "route_int_id": 799,
+      "arrival_time": "2017-03-01 16:17:19.000",
+      "station_int_id": 1941
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:17:19.000",
+      "station_int_id": 1941
+    },
+    {
+      "route_int_id": 727,
+      "arrival_time": "2017-03-01 16:17:19.000",
+      "station_int_id": 1941
+    },
+    {
+      "route_int_id": 971,
+      "arrival_time": "2017-03-01 16:17:19.000",
+      "station_int_id": 1941
+    },
+    {
+      "route_int_id": 1409,
+      "arrival_time": "2017-03-01 16:15:08.000",
+      "station_int_id": 1951
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:14:11.000",
+      "station_int_id": 1951
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:15:08.000",
+      "station_int_id": 1951
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:15:08.000",
+      "station_int_id": 1951
+    },
+    {
+      "route_int_id": 1409,
+      "arrival_time": "2017-03-01 16:15:08.000",
+      "station_int_id": 1951
+    },
+    {
+      "route_int_id": 1544,
+      "arrival_time": "2017-03-01 16:16:48.000",
+      "station_int_id": 1950
+    },
+    {
+      "route_int_id": 1563,
+      "arrival_time": "2017-03-01 16:13:33.000",
+      "station_int_id": 1950
+    },
+    {
+      "route_int_id": 1268,
+      "arrival_time": "2017-03-01 16:17:23.000",
+      "station_int_id": 1950
+    },
+    {
+      "route_int_id": 1544,
+      "arrival_time": "2017-03-01 16:17:23.000",
+      "station_int_id": 1950
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:17:23.000",
+      "station_int_id": 1950
+    },
+    {
+      "route_int_id": 1542,
+      "arrival_time": "2017-03-01 16:17:23.000",
+      "station_int_id": 1950
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:17:23.000",
+      "station_int_id": 1950
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:17:23.000",
+      "station_int_id": 1950
+    },
+    {
+      "route_int_id": 1544,
+      "arrival_time": "2017-03-01 16:17:23.000",
+      "station_int_id": 1950
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:16:15.000",
+      "station_int_id": 1994
+    },
+    {
+      "route_int_id": 789,
+      "arrival_time": "2017-03-01 16:16:15.000",
+      "station_int_id": 1994
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:16:15.000",
+      "station_int_id": 1994
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:16:15.000",
+      "station_int_id": 1994
+    },
+    {
+      "route_int_id": 789,
+      "arrival_time": "2017-03-01 16:16:15.000",
+      "station_int_id": 1994
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:11:53.000",
+      "station_int_id": 1927
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:12:53.000",
+      "station_int_id": 1927
+    },
+    {
+      "route_int_id": 1458,
+      "arrival_time": "2017-03-01 16:12:53.000",
+      "station_int_id": 1927
+    },
+    {
+      "route_int_id": 727,
+      "arrival_time": "2017-03-01 16:12:53.000",
+      "station_int_id": 1927
+    },
+    {
+      "route_int_id": 1193,
+      "arrival_time": "2017-03-01 16:12:53.000",
+      "station_int_id": 1927
+    },
+    {
+      "route_int_id": 727,
+      "arrival_time": "2017-03-01 16:12:53.000",
+      "station_int_id": 1927
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:12:57.000",
+      "station_int_id": 1989
+    },
+    {
+      "route_int_id": 1370,
+      "arrival_time": "2017-03-01 16:12:57.000",
+      "station_int_id": 1989
+    },
+    {
+      "route_int_id": 1587,
+      "arrival_time": "2017-03-01 16:12:57.000",
+      "station_int_id": 1989
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:12:57.000",
+      "station_int_id": 1989
+    },
+    {
+      "route_int_id": 727,
+      "arrival_time": "2017-03-01 16:12:57.000",
+      "station_int_id": 1989
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:17:27.000",
+      "station_int_id": 1990
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:13:37.000",
+      "station_int_id": 1990
+    },
+    {
+      "route_int_id": 1568,
+      "arrival_time": "2017-03-01 16:17:27.000",
+      "station_int_id": 1990
+    },
+    {
+      "route_int_id": 726,
+      "arrival_time": "2017-03-01 16:18:21.000",
+      "station_int_id": 1990
+    },
+    {
+      "route_int_id": 1568,
+      "arrival_time": "2017-03-01 16:13:37.000",
+      "station_int_id": 1990
+    },
+    {
+      "route_int_id": 1586,
+      "arrival_time": "2017-03-01 16:18:21.000",
+      "station_int_id": 1990
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:18:21.000",
+      "station_int_id": 1990
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:18:21.000",
+      "station_int_id": 1990
+    },
+    {
+      "route_int_id": 1568,
+      "arrival_time": "2017-03-01 16:18:21.000",
+      "station_int_id": 1990
+    },
+    {
+      "route_int_id": 1371,
+      "arrival_time": "2017-03-01 16:18:21.000",
+      "station_int_id": 1990
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:18:21.000",
+      "station_int_id": 1990
+    },
+    {
+      "route_int_id": 726,
+      "arrival_time": "2017-03-01 16:18:21.000",
+      "station_int_id": 1990
+    },
+    {
+      "route_int_id": 364,
+      "arrival_time": "2017-03-01 16:11:58.000",
+      "station_int_id": 1970
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:11:58.000",
+      "station_int_id": 1970
+    },
+    {
+      "route_int_id": 730,
+      "arrival_time": "2017-03-01 16:11:58.000",
+      "station_int_id": 1970
+    },
+    {
+      "route_int_id": 1618,
+      "arrival_time": "2017-03-01 16:11:58.000",
+      "station_int_id": 1970
+    },
+    {
+      "route_int_id": 1205,
+      "arrival_time": "2017-03-01 16:16:31.000",
+      "station_int_id": 2096
+    },
+    {
+      "route_int_id": 1409,
+      "arrival_time": "2017-03-01 16:11:07.000",
+      "station_int_id": 2096
+    },
+    {
+      "route_int_id": 1219,
+      "arrival_time": "2017-03-01 16:10:34.000",
+      "station_int_id": 2096
+    },
+    {
+      "route_int_id": 345,
+      "arrival_time": "2017-03-01 16:16:31.000",
+      "station_int_id": 2096
+    },
+    {
+      "route_int_id": 1224,
+      "arrival_time": "2017-03-01 16:11:07.000",
+      "station_int_id": 2096
+    },
+    {
+      "route_int_id": 1409,
+      "arrival_time": "2017-03-01 16:16:31.000",
+      "station_int_id": 2096
+    },
+    {
+      "route_int_id": 1224,
+      "arrival_time": "2017-03-01 16:16:31.000",
+      "station_int_id": 2096
+    },
+    {
+      "route_int_id": 1225,
+      "arrival_time": "2017-03-01 16:11:45.000",
+      "station_int_id": 2095
+    },
+    {
+      "route_int_id": 1202,
+      "arrival_time": "2017-03-01 16:13:15.000",
+      "station_int_id": 2095
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:11:45.000",
+      "station_int_id": 2095
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:12:22.000",
+      "station_int_id": 2095
+    },
+    {
+      "route_int_id": 1563,
+      "arrival_time": "2017-03-01 16:18:12.000",
+      "station_int_id": 2095
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:18:12.000",
+      "station_int_id": 2095
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:18:12.000",
+      "station_int_id": 2095
+    },
+    {
+      "route_int_id": 1564,
+      "arrival_time": "2017-03-01 16:18:12.000",
+      "station_int_id": 2095
+    },
+    {
+      "route_int_id": 1370,
+      "arrival_time": "2017-03-01 16:17:55.000",
+      "station_int_id": 1991
+    },
+    {
+      "route_int_id": 1587,
+      "arrival_time": "2017-03-01 16:17:55.000",
+      "station_int_id": 1991
+    },
+    {
+      "route_int_id": 1445,
+      "arrival_time": "2017-03-01 16:10:50.000",
+      "station_int_id": 1991
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:17:55.000",
+      "station_int_id": 1991
+    },
+    {
+      "route_int_id": 727,
+      "arrival_time": "2017-03-01 16:17:55.000",
+      "station_int_id": 1991
+    },
+    {
+      "route_int_id": 971,
+      "arrival_time": "2017-03-01 16:16:13.000",
+      "station_int_id": 1966
+    },
+    {
+      "route_int_id": 342,
+      "arrival_time": "2017-03-01 16:16:13.000",
+      "station_int_id": 1966
+    },
+    {
+      "route_int_id": 789,
+      "arrival_time": "2017-03-01 16:16:13.000",
+      "station_int_id": 1966
+    },
+    {
+      "route_int_id": 971,
+      "arrival_time": "2017-03-01 16:16:13.000",
+      "station_int_id": 1966
+    },
+    {
+      "route_int_id": 789,
+      "arrival_time": "2017-03-01 16:16:13.000",
+      "station_int_id": 1966
+    },
+    {
+      "route_int_id": 341,
+      "arrival_time": "2017-03-01 16:17:25.000",
+      "station_int_id": 1967
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:17:25.000",
+      "station_int_id": 1967
+    },
+    {
+      "route_int_id": 332,
+      "arrival_time": "2017-03-01 16:17:25.000",
+      "station_int_id": 1967
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:17:25.000",
+      "station_int_id": 1967
+    },
+    {
+      "route_int_id": 341,
+      "arrival_time": "2017-03-01 16:17:25.000",
+      "station_int_id": 1967
+    },
+    {
+      "route_int_id": 717,
+      "arrival_time": "2017-03-01 16:17:25.000",
+      "station_int_id": 1967
+    },
+    {
+      "route_int_id": 332,
+      "arrival_time": "2017-03-01 16:12:12.000",
+      "station_int_id": 2006
+    },
+    {
+      "route_int_id": 1617,
+      "arrival_time": "2017-03-01 16:12:12.000",
+      "station_int_id": 2006
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:12:12.000",
+      "station_int_id": 2006
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:12:12.000",
+      "station_int_id": 2006
+    },
+    {
+      "route_int_id": 332,
+      "arrival_time": "2017-03-01 16:12:12.000",
+      "station_int_id": 2006
+    },
+    {
+      "route_int_id": 737,
+      "arrival_time": "2017-03-01 16:12:12.000",
+      "station_int_id": 2006
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+3 litostorj - rudnik
+route_id = dc78be0d-0c14-43f1-886f-69101eba48fb // to je za linijo 3
+int_id = 1098 // to je za trijko v smeri rudnik
+
+kovinarska →
+int_id = 3642

@@ -1,0 +1,956 @@
+{
+  "1024": {
+    "route_num": "1",
+    "route_int_id": 1024,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1025": {
+    "route_num": "1",
+    "route_int_id": 1025,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1026": {
+    "route_num": "2",
+    "route_int_id": 1026,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1027": {
+    "route_num": "2",
+    "route_int_id": 1027,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1622": {
+    "route_num": "26",
+    "route_int_id": 1622,
+    "route_num_sub": "",
+    "route_name": "MALI LIPOGLAV"
+  },
+  "1542": {
+    "route_num": "1",
+    "route_int_id": 1542,
+    "route_num_sub": "D",
+    "route_name": "DOLGI MOST P+R"
+  },
+  "1031": {
+    "route_num": "5",
+    "route_int_id": 1031,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1544": {
+    "route_num": "1",
+    "route_int_id": 1544,
+    "route_num_sub": "",
+    "route_name": "MESTNI LOG"
+  },
+  "1452": {
+    "route_num": "21",
+    "route_int_id": 1452,
+    "route_num_sub": "",
+    "route_name": "BERI\u010cEVO"
+  },
+  "1034": {
+    "route_num": "7",
+    "route_int_id": 1034,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1628": {
+    "route_num": "24",
+    "route_int_id": 1628,
+    "route_num_sub": "",
+    "route_name": "BTC-ATLANTIS"
+  },
+  "1036": {
+    "route_num": "7",
+    "route_int_id": 1036,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1037": {
+    "route_num": "8",
+    "route_int_id": 1037,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1038": {
+    "route_num": "8",
+    "route_int_id": 1038,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1039": {
+    "route_num": "9",
+    "route_int_id": 1039,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1553": {
+    "route_num": "3",
+    "route_int_id": 1553,
+    "route_num_sub": "B",
+    "route_name": "LITOSTROJ"
+  },
+  "1042": {
+    "route_num": "11",
+    "route_int_id": 1042,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1043": {
+    "route_num": "13",
+    "route_int_id": 1043,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1044": {
+    "route_num": "13",
+    "route_int_id": 1044,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1045": {
+    "route_num": "14",
+    "route_int_id": 1045,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "790": {
+    "route_num": "24",
+    "route_int_id": 790,
+    "route_num_sub": "",
+    "route_name": "BTC ATLANTIS"
+  },
+  "791": {
+    "route_num": "11",
+    "route_int_id": 791,
+    "route_num_sub": "B",
+    "route_name": "ZALOG"
+  },
+  "792": {
+    "route_num": "11",
+    "route_int_id": 792,
+    "route_num_sub": "B",
+    "route_name": "BE\u017dIGRAD"
+  },
+  "1049": {
+    "route_num": "19",
+    "route_int_id": 1049,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1562": {
+    "route_num": "3",
+    "route_int_id": 1562,
+    "route_num_sub": "",
+    "route_name": "LITOSTROJ"
+  },
+  "943": {
+    "route_num": "1",
+    "route_int_id": 943,
+    "route_num_sub": "B",
+    "route_name": "MESTNI LOG"
+  },
+  "1052": {
+    "route_num": "20",
+    "route_int_id": 1052,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1053": {
+    "route_num": "22",
+    "route_int_id": 1053,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1054": {
+    "route_num": "22",
+    "route_int_id": 1054,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1055": {
+    "route_num": "25",
+    "route_int_id": 1055,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1568": {
+    "route_num": "11",
+    "route_int_id": 1568,
+    "route_num_sub": "",
+    "route_name": "ZALOG"
+  },
+  "944": {
+    "route_num": "1",
+    "route_int_id": 944,
+    "route_num_sub": "B",
+    "route_name": "GAMELJNE"
+  },
+  "1058": {
+    "route_num": "27",
+    "route_int_id": 1058,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "803": {
+    "route_num": "21",
+    "route_int_id": 803,
+    "route_num_sub": "",
+    "route_name": "JE\u017dICA"
+  },
+  "804": {
+    "route_num": "21",
+    "route_int_id": 804,
+    "route_num_sub": "",
+    "route_name": "BERI\u010cEVO"
+  },
+  "1030": {
+    "route_num": "5",
+    "route_int_id": 1030,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1062": {
+    "route_num": "8",
+    "route_int_id": 1062,
+    "route_num_sub": "",
+    "route_name": "BAVARSKI DVOR"
+  },
+  "1063": {
+    "route_num": "3",
+    "route_int_id": 1063,
+    "route_num_sub": "N",
+    "route_name": "\u0160KOFLJICA"
+  },
+  "1064": {
+    "route_num": "3",
+    "route_int_id": 1064,
+    "route_num_sub": "N",
+    "route_name": "BAVARSKI DVOR"
+  },
+  "363": {
+    "route_num": "12",
+    "route_int_id": 363,
+    "route_num_sub": "",
+    "route_name": "VEV\u010cE"
+  },
+  "1579": {
+    "route_num": "19",
+    "route_int_id": 1579,
+    "route_num_sub": "B",
+    "route_name": "TOMA\u010cEVO"
+  },
+  "1580": {
+    "route_num": "19",
+    "route_int_id": 1580,
+    "route_num_sub": "B",
+    "route_name": "JEZERO"
+  },
+  "1581": {
+    "route_num": "19",
+    "route_int_id": 1581,
+    "route_num_sub": "I",
+    "route_name": "TOMA\u010cEVO"
+  },
+  "1582": {
+    "route_num": "19",
+    "route_int_id": 1582,
+    "route_num_sub": "I",
+    "route_name": "I\u0160KA VAS"
+  },
+  "1583": {
+    "route_num": "19",
+    "route_int_id": 1583,
+    "route_num_sub": "B",
+    "route_name": "GARA\u017dA"
+  },
+  "1584": {
+    "route_num": "19",
+    "route_int_id": 1584,
+    "route_num_sub": "I",
+    "route_name": "GARA\u017dA"
+  },
+  "1585": {
+    "route_num": "19",
+    "route_int_id": 1585,
+    "route_num_sub": "I",
+    "route_name": "IG A.P."
+  },
+  "1586": {
+    "route_num": "9",
+    "route_int_id": 1586,
+    "route_num_sub": "",
+    "route_name": "\u0160TEPANJSKO NAS."
+  },
+  "1587": {
+    "route_num": "9",
+    "route_int_id": 1587,
+    "route_num_sub": "",
+    "route_name": "BARJE P+R"
+  },
+  "1588": {
+    "route_num": "9",
+    "route_int_id": 1588,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1630": {
+    "route_num": "23",
+    "route_int_id": 1630,
+    "route_num_sub": "",
+    "route_name": "PODUTIK"
+  },
+  "1590": {
+    "route_num": "18",
+    "route_int_id": 1590,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1033": {
+    "route_num": "6",
+    "route_int_id": 1033,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1625": {
+    "route_num": "26",
+    "route_int_id": 1625,
+    "route_num_sub": "",
+    "route_name": "TUJI GRM"
+  },
+  "1035": {
+    "route_num": "7",
+    "route_int_id": 1035,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1607": {
+    "route_num": "1",
+    "route_int_id": 1607,
+    "route_num_sub": "D",
+    "route_name": "DOLGI MOST P+R"
+  },
+  "1096": {
+    "route_num": "3",
+    "route_int_id": 1096,
+    "route_num_sub": "B",
+    "route_name": "\u0160KOFLJICA"
+  },
+  "1610": {
+    "route_num": "12",
+    "route_int_id": 1610,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1099": {
+    "route_num": "3",
+    "route_int_id": 1099,
+    "route_num_sub": "N",
+    "route_name": "RUDNIK"
+  },
+  "332": {
+    "route_num": "7",
+    "route_int_id": 332,
+    "route_num_sub": "",
+    "route_name": "NOVE JAR\u0160E"
+  },
+  "1101": {
+    "route_num": "3",
+    "route_int_id": 1101,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1615": {
+    "route_num": "13",
+    "route_int_id": 1615,
+    "route_num_sub": "",
+    "route_name": "SOSTRO"
+  },
+  "1616": {
+    "route_num": "13",
+    "route_int_id": 1616,
+    "route_num_sub": "",
+    "route_name": "BE\u017dIGRAD"
+  },
+  "1617": {
+    "route_num": "12",
+    "route_int_id": 1617,
+    "route_num_sub": "D",
+    "route_name": "PODGORICA"
+  },
+  "1618": {
+    "route_num": "12",
+    "route_int_id": 1618,
+    "route_num_sub": "D",
+    "route_name": "BE\u017dIGRAD"
+  },
+  "1619": {
+    "route_num": "26",
+    "route_int_id": 1619,
+    "route_num_sub": "",
+    "route_name": "TUJI GRM"
+  },
+  "1620": {
+    "route_num": "26",
+    "route_int_id": 1620,
+    "route_num_sub": "",
+    "route_name": "MALI LIPOGLAV"
+  },
+  "341": {
+    "route_num": "22",
+    "route_int_id": 341,
+    "route_num_sub": "",
+    "route_name": "FU\u017dINE P+R"
+  },
+  "342": {
+    "route_num": "22",
+    "route_int_id": 342,
+    "route_num_sub": "",
+    "route_name": "KAMNA GORICA"
+  },
+  "1623": {
+    "route_num": "26",
+    "route_int_id": 1623,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1624": {
+    "route_num": "26",
+    "route_int_id": 1624,
+    "route_num_sub": "",
+    "route_name": "SOSTRO"
+  },
+  "1369": {
+    "route_num": "20",
+    "route_int_id": 1369,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1370": {
+    "route_num": "20",
+    "route_int_id": 1370,
+    "route_num_sub": "",
+    "route_name": "N. STO\u017dICE P+R"
+  },
+  "1371": {
+    "route_num": "20",
+    "route_int_id": 1371,
+    "route_num_sub": "",
+    "route_name": "FU\u017dINE P+R"
+  },
+  "1372": {
+    "route_num": "20",
+    "route_int_id": 1372,
+    "route_num_sub": "Z",
+    "route_name": "ZALOG"
+  },
+  "1373": {
+    "route_num": "20",
+    "route_int_id": 1373,
+    "route_num_sub": "Z",
+    "route_name": "N. STO\u017dICE P+R"
+  },
+  "1374": {
+    "route_num": "20",
+    "route_int_id": 1374,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA: osnovna"
+  },
+  "1631": {
+    "route_num": "23",
+    "route_int_id": 1631,
+    "route_num_sub": "",
+    "route_name": "KAMNA GORICA"
+  },
+  "1636": {
+    "route_num": "1",
+    "route_int_id": 1636,
+    "route_num_sub": "D",
+    "route_name": "GAMELJNE"
+  },
+  "1640": {
+    "route_num": "18",
+    "route_int_id": 1640,
+    "route_num_sub": "L",
+    "route_name": "KOLODVOR"
+  },
+  "1641": {
+    "route_num": "18",
+    "route_int_id": 1641,
+    "route_num_sub": "L",
+    "route_name": "LITOSTROJ"
+  },
+  "1386": {
+    "route_num": "18",
+    "route_int_id": 1386,
+    "route_num_sub": "",
+    "route_name": "C. STO\u017dICE P+R"
+  },
+  "1131": {
+    "route_num": "15",
+    "route_int_id": 1131,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "364": {
+    "route_num": "12",
+    "route_int_id": 364,
+    "route_num_sub": "",
+    "route_name": "BE\u017dIGRAD"
+  },
+  "1554": {
+    "route_num": "3",
+    "route_int_id": 1554,
+    "route_num_sub": "B",
+    "route_name": "GARA\u017dA"
+  },
+  "1032": {
+    "route_num": "6",
+    "route_int_id": 1032,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "345": {
+    "route_num": "6",
+    "route_int_id": 345,
+    "route_num_sub": "",
+    "route_name": "\u010cRNU\u010cE"
+  },
+  "1144": {
+    "route_num": "19",
+    "route_int_id": 1144,
+    "route_num_sub": "I",
+    "route_name": "GARA\u017dA"
+  },
+  "1145": {
+    "route_num": "3",
+    "route_int_id": 1145,
+    "route_num_sub": "G",
+    "route_name": "GROSUPLJE"
+  },
+  "1146": {
+    "route_num": "3",
+    "route_int_id": 1146,
+    "route_num_sub": "G",
+    "route_name": "BE\u017dIGRAD"
+  },
+  "1223": {
+    "route_num": "24",
+    "route_int_id": 1223,
+    "route_num_sub": "",
+    "route_name": "BIZOVIK"
+  },
+  "789": {
+    "route_num": "24",
+    "route_int_id": 789,
+    "route_num_sub": "",
+    "route_name": "C. STO\u017dICE P+R"
+  },
+  "1409": {
+    "route_num": "6",
+    "route_int_id": 1409,
+    "route_num_sub": "B",
+    "route_name": "BE\u017dIGRAD"
+  },
+  "1410": {
+    "route_num": "18",
+    "route_int_id": 1410,
+    "route_num_sub": "L",
+    "route_name": "LITOSTROJSKA"
+  },
+  "1411": {
+    "route_num": "18",
+    "route_int_id": 1411,
+    "route_num_sub": "L",
+    "route_name": "KOLODVOR"
+  },
+  "1412": {
+    "route_num": "18",
+    "route_int_id": 1412,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1418": {
+    "route_num": "21",
+    "route_int_id": 1418,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1047": {
+    "route_num": "14",
+    "route_int_id": 1047,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "652": {
+    "route_num": "5",
+    "route_int_id": 652,
+    "route_num_sub": "",
+    "route_name": "PODUTIK"
+  },
+  "909": {
+    "route_num": "3",
+    "route_int_id": 909,
+    "route_num_sub": "N",
+    "route_name": "RUDNIK"
+  },
+  "910": {
+    "route_num": "3",
+    "route_int_id": 910,
+    "route_num_sub": "N",
+    "route_name": "BAVARSKI DVOR"
+  },
+  "911": {
+    "route_num": "5",
+    "route_int_id": 911,
+    "route_num_sub": "N",
+    "route_name": "\u0160TEPANJSKO NAS."
+  },
+  "912": {
+    "route_num": "5",
+    "route_int_id": 912,
+    "route_num_sub": "N",
+    "route_name": "PODUTIK"
+  },
+  "913": {
+    "route_num": "27",
+    "route_int_id": 913,
+    "route_num_sub": "B",
+    "route_name": "LETALI\u0160KA"
+  },
+  "914": {
+    "route_num": "27",
+    "route_int_id": 914,
+    "route_num_sub": "B",
+    "route_name": "BAVARSKI DVOR"
+  },
+  "1561": {
+    "route_num": "3",
+    "route_int_id": 1561,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1176": {
+    "route_num": "19",
+    "route_int_id": 1176,
+    "route_num_sub": "",
+    "route_name": "BARJE"
+  },
+  "1179": {
+    "route_num": "19",
+    "route_int_id": 1179,
+    "route_num_sub": "",
+    "route_name": "TOMA\u010cEVO"
+  },
+  "346": {
+    "route_num": "5",
+    "route_int_id": 346,
+    "route_num_sub": "",
+    "route_name": "\u0160TEPANJSKO NAS."
+  },
+  "1563": {
+    "route_num": "6",
+    "route_int_id": 1563,
+    "route_num_sub": "B",
+    "route_name": "NOTRANJE GORICE"
+  },
+  "1445": {
+    "route_num": "11",
+    "route_int_id": 1445,
+    "route_num_sub": "",
+    "route_name": "JE\u017dICA P+R"
+  },
+  "1446": {
+    "route_num": "11",
+    "route_int_id": 1446,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "936": {
+    "route_num": "13",
+    "route_int_id": 936,
+    "route_num_sub": "",
+    "route_name": "SOSTRO"
+  },
+  "1193": {
+    "route_num": "1",
+    "route_int_id": 1193,
+    "route_num_sub": "",
+    "route_name": "VI\u017dMARJE"
+  },
+  "1451": {
+    "route_num": "21",
+    "route_int_id": 1451,
+    "route_num_sub": "",
+    "route_name": "GAMELJNE"
+  },
+  "1196": {
+    "route_num": "1",
+    "route_int_id": 1196,
+    "route_num_sub": "N",
+    "route_name": "GAMELJNE"
+  },
+  "1197": {
+    "route_num": "1",
+    "route_int_id": 1197,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1455": {
+    "route_num": "15",
+    "route_int_id": 1455,
+    "route_num_sub": "",
+    "route_name": "MEDVODE"
+  },
+  "1200": {
+    "route_num": "1",
+    "route_int_id": 1200,
+    "route_num_sub": "",
+    "route_name": "MESTNI LOG"
+  },
+  "945": {
+    "route_num": "1",
+    "route_int_id": 945,
+    "route_num_sub": "N",
+    "route_name": "BROD"
+  },
+  "1458": {
+    "route_num": "1",
+    "route_int_id": 1458,
+    "route_num_sub": "D",
+    "route_name": "VI\u017dMARJE"
+  },
+  "1459": {
+    "route_num": "1",
+    "route_int_id": 1459,
+    "route_num_sub": "D",
+    "route_name": "GARA\u017dA"
+  },
+  "1460": {
+    "route_num": "1",
+    "route_int_id": 1460,
+    "route_num_sub": "N",
+    "route_name": "GAMELJNE"
+  },
+  "798": {
+    "route_num": "8",
+    "route_int_id": 798,
+    "route_num_sub": "",
+    "route_name": "BRN\u010cI\u010cEVA"
+  },
+  "1387": {
+    "route_num": "18",
+    "route_int_id": 1387,
+    "route_num_sub": "",
+    "route_name": "KOLODVOR"
+  },
+  "1098": {
+    "route_num": "3",
+    "route_int_id": 1098,
+    "route_num_sub": "",
+    "route_name": "RUDNIK"
+  },
+  "1564": {
+    "route_num": "6",
+    "route_int_id": 1564,
+    "route_num_sub": "",
+    "route_name": "DOLGI MOST P+R"
+  },
+  "799": {
+    "route_num": "8",
+    "route_int_id": 799,
+    "route_num_sub": "",
+    "route_name": "GAMELJNE"
+  },
+  "1312": {
+    "route_num": "19",
+    "route_int_id": 1312,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1626": {
+    "route_num": "26",
+    "route_int_id": 1626,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1222": {
+    "route_num": "24",
+    "route_int_id": 1222,
+    "route_num_sub": "",
+    "route_name": "\u017dALE"
+  },
+  "1057": {
+    "route_num": "27",
+    "route_int_id": 1057,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "971": {
+    "route_num": "7",
+    "route_int_id": 971,
+    "route_num_sub": "",
+    "route_name": "PR\u017dAN"
+  },
+  "972": {
+    "route_num": "7",
+    "route_int_id": 972,
+    "route_num_sub": "L",
+    "route_name": "LETALI\u0160KA"
+  },
+  "717": {
+    "route_num": "2",
+    "route_int_id": 717,
+    "route_num_sub": "",
+    "route_name": "ZELENA JAMA"
+  },
+  "333": {
+    "route_num": "7",
+    "route_int_id": 333,
+    "route_num_sub": "",
+    "route_name": "PR\u017dAN"
+  },
+  "1456": {
+    "route_num": "15",
+    "route_int_id": 1456,
+    "route_num_sub": "",
+    "route_name": "STANE\u017dI\u010cE"
+  },
+  "726": {
+    "route_num": "25",
+    "route_int_id": 726,
+    "route_num_sub": "",
+    "route_name": "ZADOBROVA"
+  },
+  "727": {
+    "route_num": "25",
+    "route_int_id": 727,
+    "route_num_sub": "",
+    "route_name": "MEDVODE"
+  },
+  "1060": {
+    "route_num": "1",
+    "route_int_id": 1060,
+    "route_num_sub": "",
+    "route_name": "BAVARSKI DVOR"
+  },
+  "730": {
+    "route_num": "27",
+    "route_int_id": 730,
+    "route_num_sub": "",
+    "route_name": "N.S. RUDNIK"
+  },
+  "987": {
+    "route_num": "14",
+    "route_int_id": 987,
+    "route_num_sub": "",
+    "route_name": "BOKALCE"
+  },
+  "988": {
+    "route_num": "14",
+    "route_int_id": 988,
+    "route_num_sub": "",
+    "route_name": "SAVLJE"
+  },
+  "1109": {
+    "route_num": "6",
+    "route_int_id": 1109,
+    "route_num_sub": "B",
+    "route_name": "GARA\u017dA"
+  },
+  "737": {
+    "route_num": "2",
+    "route_int_id": 737,
+    "route_num_sub": "",
+    "route_name": "NOVE JAR\u0160E"
+  },
+  "1627": {
+    "route_num": "24",
+    "route_int_id": 1627,
+    "route_num_sub": "",
+    "route_name": "VEV\u010cE"
+  },
+  "1056": {
+    "route_num": "25",
+    "route_int_id": 1056,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1621": {
+    "route_num": "26",
+    "route_int_id": 1621,
+    "route_num_sub": "",
+    "route_name": "SOSTRO"
+  },
+  "1575": {
+    "route_num": "27",
+    "route_int_id": 1575,
+    "route_num_sub": "",
+    "route_name": "LETALI\u0160KA"
+  },
+  "765": {
+    "route_num": "27",
+    "route_int_id": 765,
+    "route_num_sub": "K",
+    "route_name": "BAVARSKI DVOR"
+  },
+  "1576": {
+    "route_num": "27",
+    "route_int_id": 1576,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "1011": {
+    "route_num": "1",
+    "route_int_id": 1011,
+    "route_num_sub": "N",
+    "route_name": "VI\u017dMARJE"
+  },
+  "1012": {
+    "route_num": "1",
+    "route_int_id": 1012,
+    "route_num_sub": "N",
+    "route_name": "BROD"
+  },
+  "1013": {
+    "route_num": "1",
+    "route_int_id": 1013,
+    "route_num_sub": "N",
+    "route_name": "GAMELJNE"
+  },
+  "937": {
+    "route_num": "13",
+    "route_int_id": 937,
+    "route_num_sub": "",
+    "route_name": "C. STO\u017dICE P+R"
+  },
+  "1629": {
+    "route_num": "24",
+    "route_int_id": 1629,
+    "route_num_sub": "",
+    "route_name": "GARA\u017dA"
+  },
+  "764": {
+    "route_num": "27",
+    "route_int_id": 764,
+    "route_num_sub": "K",
+    "route_name": "BTC-ATLANTIS"
+  },
+  "1021": {
+    "route_num": "1",
+    "route_int_id": 1021,
+    "route_num_sub": "N",
+    "route_name": "BAVARSKI DVOR"
+  },
+  "946": {
+    "route_num": "1",
+    "route_int_id": 946,
+    "route_num_sub": "N",
+    "route_name": "BAVARSKI DVOR"
+  }
+}

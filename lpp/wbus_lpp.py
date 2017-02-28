@@ -6,5 +6,5 @@ def prihodi(postaja):
     req = Request(url, data.encode("utf-8"), headers)
     return urlopen(req).read().decode("utf-8")
 
-txt = prihodi('803211')
+txt = prihodi('503041')
 print(txt)

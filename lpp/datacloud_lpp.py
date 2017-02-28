@@ -1,6 +1,6 @@
 import requests
 
-sql = 'select+*+from+bus_data+where+bus_number==3+limit+20'
+sql = 'select+*+from+bus_data+order+by+retrieval_date+desc+limit+10'
 
 s = requests.Session()
 s.verify = 'DigiCertSHA2SecureServerCA.crt'
