@@ -1,11 +1,7 @@
-import requests
-from kafka import KafkaProducer
-import json
+import requests, json
+
 from time import sleep
-
-from kafka.client import KafkaClient
-
-client = KafkaClient(bootstrap_servers=['192.168.0.62:9092'])
+from kafka import KafkaProducer
 
 producer = KafkaProducer(bootstrap_servers=['192.168.0.62:9092'],
                          value_serializer=lambda m: json.dumps(m).encode('utf-8'))
@@ -33,9 +29,9 @@ for dist in data['data']:
     if dist['toBtId'] not in not_lj and dist['fromBtId'] not in not_lj:
         sensor_from = next(s for s in bt_sensors_data if s["btId"] == dist['fromBtId'])
         sensor_to = next(s for s in bt_sensors_data if s["btId"] == dist['toBtId'])
+
         dist['fromBtLoc'] = sensor_from['loc']
         dist['toBtLoc'] = sensor_to['loc']
         dist['distance'] = next(s for s in sensor_from['neighbours'] if s["btId"] == dist['toBtId'])['distance']
-        print(dist)
-        break
-        # producer.send('bt_json', dist)
+
+        producer.send('bt_json', dist)

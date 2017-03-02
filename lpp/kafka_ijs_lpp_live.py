@@ -2,12 +2,9 @@ import csv, json
 import requests
 
 from kafka import KafkaProducer
-from kafka.client import KafkaClient
 
-client = KafkaClient(bootstrap_servers=['192.168.0.62:9092'])
-client.add_topic('lpp_live_json')
-
-producer = KafkaProducer(bootstrap_servers=['192.168.0.62:9092'], value_serializer=lambda m: json.dumps(m).encode('utf-8'))
+producer = KafkaProducer(bootstrap_servers=['192.168.0.62:9092'],
+                         value_serializer=lambda m: json.dumps(m).encode('utf-8'))
 
 with open('postaje_lj.csv') as f:
     station_data = list(csv.reader(f))
@@ -18,7 +15,7 @@ for station in station_data:
 
     response = requests.get('http://194.33.12.24/timetables/liveBusArrival?station_int_id=' + station_int_id)
     if response.status_code != 200:
-        #print('napaka pri liveBusArrival: ' + station_int_id)
+        # print('napaka pri liveBusArrival: ' + station_int_id)
         continue
     routes_station_data = response.json()['data']
 

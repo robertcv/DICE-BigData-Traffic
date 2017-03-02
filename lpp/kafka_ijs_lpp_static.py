@@ -1,16 +1,11 @@
-import csv
+import csv, json
 import requests
 import datetime, pytz
 
 from kafka import KafkaProducer
-import json
-from kafka.client import KafkaClient
 
-client = KafkaClient(bootstrap_servers=['192.168.0.62:9092'])
-client.add_topic('lpp_static_json')
-client.add_topic('lpp_station_json')
-
-producer = KafkaProducer(bootstrap_servers=['192.168.0.62:9092'], value_serializer=lambda m: json.dumps(m).encode('utf-8'))
+producer = KafkaProducer(bootstrap_servers=['192.168.0.62:9092'],
+                         value_serializer=lambda m: json.dumps(m).encode('utf-8'))
 
 with open('postaje_lj.csv') as f:
     csv_data = list(csv.reader(f))
@@ -30,14 +25,14 @@ for d in csv_data:
 with open('linije.json') as data_file:
     route_data = json.load(data_file)
 
-
-day = str(round(datetime.datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0, tzinfo=pytz.utc).timestamp()*1000))
+day = str(round(
+    datetime.datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0, tzinfo=pytz.utc).timestamp() * 1000))
 
 for station_int_id in station_data:
 
     response = requests.get('http://194.33.12.24/stations/getRoutesOnStation?station_int_id=' + station_int_id)
-    if response.status_code!=200:
-        #print('napaka pri getRoutesOnStation: ' + station_int_id)
+    if response.status_code != 200:
+        # print('napaka pri getRoutesOnStation: ' + station_int_id)
         continue
     routes_station_data = response.json()['data']
 
@@ -48,12 +43,12 @@ for station_int_id in station_data:
 
             station_data[station_int_id].update(route_data[route_int_id])
             producer.send('lpp_station_json', station_data[station_int_id])
-            
+
             response = requests.get(
                 'http://194.33.12.24/timetables/getArrivalsOnStation?day=' + day + '&route_int_id=' + route_int_id +
                 '&station_int_id=' + station_int_id)
             if response.status_code != 200:
-                #print('napaka pri getArrivalsOnStation: ' + route_int_id + ' - '+ station_int_id)
+                # print('napaka pri getArrivalsOnStation: ' + route_int_id + ' - '+ station_int_id)
                 continue
             arrival_data = response.json()['data']
 
