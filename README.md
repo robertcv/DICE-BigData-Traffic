@@ -9,8 +9,17 @@ podatki bluetooth senzorejv na semaforjih
 ```json
 {
   "id": "58b7eca0c0a6834de255eb5c",
-  "fromBtId": "BTR0210",
-  "toBtId": "BTR0211",
+  "fromBtId": "BTR0201",
+  "fromBtLoc": {
+    "lng": 14.50808,
+    "lat": 46.06354
+  },
+  "toBtId": "BTR0202",
+  "toBtLoc": {
+    "lng": 14.50978,
+    "lat": 46.06826
+  },
+  "distance": 500,
   "allCount": 31,
   "avgSpeed": 46.015692307692305,
   "avgTravelTime": 0.015192307692307698,
