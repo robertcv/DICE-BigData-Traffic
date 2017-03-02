@@ -7,22 +7,22 @@ from kafka import KafkaProducer
 producer = KafkaProducer(bootstrap_servers=['192.168.0.62:9092'],
                          value_serializer=lambda m: json.dumps(m).encode('utf-8'))
 
-with open('postaje_lj.csv') as f:
-    csv_data = list(csv.reader(f))
+with open('data/stations_lj.csv') as f:
+    station_file = list(csv.reader(f))
 
 station_data = dict()
-for d in csv_data:
+for d in station_file:
     tmp = {
         'station_int_id': int(d[0]),
         'station_ref_id': int(d[1]),
-        'station_name': int(d[2]),
+        'station_name': d[2],
         'station_direction': d[3],
         'station_lng': float(d[4]),
         'station_lat': float(d[5])
     }
     station_data[d[0]] = tmp
 
-with open('linije.json') as data_file:
+with open('data/routes_ijs.json') as data_file:
     route_data = json.load(data_file)
 
 day = str(round(

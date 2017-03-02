@@ -6,7 +6,7 @@ from kafka import KafkaProducer
 producer = KafkaProducer(bootstrap_servers=['192.168.0.62:9092'],
                          value_serializer=lambda m: json.dumps(m).encode('utf-8'))
 
-with open('postaje_lj.csv') as f:
+with open('data/stations_lj.csv') as f:
     station_data = list(csv.reader(f))
 
 for station in station_data:

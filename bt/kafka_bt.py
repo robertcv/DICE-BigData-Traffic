@@ -9,12 +9,12 @@ producer = KafkaProducer(bootstrap_servers=['192.168.0.62:9092'],
 with open('bt_sensors.json') as data_file:
     bt_sensors_data = json.load(data_file)['data']
 
-n = 10
+n = 20
 while n > 0:
     sleep(2)
     try:
         response = requests.get('https://datacloud-timon.xlab.si/data_access/bt_sensors/velocities_avgs_last/',
-                                auth=('username', 'password'), verify='DigiCertSHA2SecureServerCA.crt', timeout=0.1)
+                                auth=('username', 'password'), verify='crt/datacloud.crt', timeout=0.1)
         if response.status_code == 200:
             data = response.json()
             break

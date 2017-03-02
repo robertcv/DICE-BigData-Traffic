@@ -29,7 +29,7 @@ podatki bluetooth senzorejv na semaforjih
 }
 ```
 
-![test](bt/bt_lj.png)
+![test](bt/image/bt_lj.png)
 
 #### inductive_json
 
@@ -68,7 +68,7 @@ podatki iz indukcijskih zank (znotraj lj)
 }
 ``` 
 
-![test](inductive/inductive.png)
+![test](inductive/image/inductive.png)
 
 #### lpp_live_json 
 trenutne napovedi prihodov lpp
@@ -119,7 +119,7 @@ podatki o postajh in linijah
 ```
 
 
-#### stevci_json 
+#### counter_json 
 podatki iz števcev prometa (obvoznica in izven lj)
 
 **Source:**  https://github.com/zejn/prometapi
@@ -195,7 +195,7 @@ podatki iz števcev prometa (obvoznica in izven lj)
 }
 ```
 
-#### zrak_json 
+#### pollution_json 
 podtaki o koncentraciji snovi v zraku (bezigrad in vosnjakova-tivolska )
 
 **Source:**  https://app.quickcode.io/datasets
