@@ -91,16 +91,9 @@ vozni red lpp
 
 ```json
 {
-  "station_int_id": 4236,
-  "station_name": "Na Žale",
-  "station_direction": "",
-  "station_ref_id": 203232,
-  "station_lat": 46.0716188375998,
-  "station_lng": 14.529913754516,
-  "route_int_id": 1579,
-  "route_num": 19,
-  "route_num_sub": "B",
-  "route_name": "TOMAČEVO"
+  "station_int_id": 3261,
+  "route_int_id": 911,
+  "arrival_time": "2017-03-02T21:13:00.000Z"
 }
 ```
 
@@ -112,9 +105,16 @@ podatki o postajh in linijah
 
 ```json
 {
-  "station_int_id": 3261,
-  "route_int_id": 911,
-  "arrival_time": "2017-03-02T21:13:00.000Z"
+  "station_int_id": 4236,
+  "station_name": "Na Žale",
+  "station_direction": "",
+  "station_ref_id": 203232,
+  "station_lat": 46.0716188375998,
+  "station_lng": 14.529913754516,
+  "route_int_id": 1579,
+  "route_num": 19,
+  "route_num_sub": "B",
+  "route_name": "TOMAČEVO"
 }
 ```
 
@@ -198,7 +198,7 @@ podatki iz števcev prometa (obvoznica in izven lj)
 #### pollution_json 
 podtaki o koncentraciji snovi v zraku (bezigrad in vosnjakova-tivolska )
 
-**Source:**  https://app.quickcode.io/datasets
+**Source:**  http://www.ljubljana.si/si/zivljenje-v-ljubljani/okolje-prostor-bivanje/stanje-okolja/zrak/
 
 ```json
 {
