@@ -20,8 +20,20 @@ max_lat = 46.1
 stevec = []
 lng = []
 lat = []
-time = data['Contents'][0]['ModifiedTime']
+
+ModifiedTime = data['Contents'][0]['ModifiedTime']
 
 for point in data['Contents'][0]['Data']['Items']:
     if min_lat < point['y_wgs'] < max_lat and min_lng < point['x_wgs'] < max_lng:
-        producer.send('counter_json', point)
+
+        for d in point['Data']:
+            tmp = point.copy()
+
+            del tmp['Data']
+            tmp['Id'] = d['Id']
+            tmp['ModifiedTime'] = ModifiedTime
+
+            for p in d['properties']:
+                tmp[p] = d['properties'][p]
+
+            producer.send('counter_json', tmp)

@@ -1,6 +1,6 @@
-## Kafka topics:
+# Kafka topics:
 
-#### bt_json
+### bt_json
 
 podatki bluetooth senzorejv na semaforjih
 
@@ -31,7 +31,7 @@ podatki bluetooth senzorejv na semaforjih
 
 ![test](bt/image/bt_lj.png)
 
-#### inductive_json
+### inductive_json
 
 podatki iz indukcijskih zank (znotraj lj)
 
@@ -70,7 +70,7 @@ podatki iz indukcijskih zank (znotraj lj)
 
 ![test](inductive/image/inductive.png)
 
-#### lpp_live_json 
+### lpp_live_json 
 trenutne napovedi prihodov lpp
 
 **Source:**  http://jozefstefaninstitute.github.io/LPPServer/
@@ -84,7 +84,7 @@ trenutne napovedi prihodov lpp
 ```
 
 
-#### lpp_static_json 
+### lpp_static_json 
 vozni red lpp
 
 **Source:**  http://jozefstefaninstitute.github.io/LPPServer/
@@ -98,7 +98,7 @@ vozni red lpp
 ```
 
 
-#### lpp_station_json 
+### lpp_station_json 
 podatki o postajh in linijah
 
 **Source:**  http://jozefstefaninstitute.github.io/LPPServer/
@@ -119,83 +119,37 @@ podatki o postajh in linijah
 ```
 
 
-#### counter_json 
+### counter_json 
 podatki iz števcev prometa (obvoznica in izven lj)
 
 **Source:**  https://github.com/zejn/prometapi
 
 ```json
 {
-  "CrsId": "EPSG:2170",
-  "X": 463074.0,
-  "Icon": "res/icons/stevci/stevec_4.png",
-  "stevci_lokacijaOpis": "LJ (južna obvoznica)",
+  "Id": "0178-21",
   "Title": "AC-A1, LJ (južna obvoznica)",
   "Description": "AC-A1, LJ (južna obvoznica)",
-  "Id": "0178",
-  "Y": 97385.0,
+  "stevci_lokacijaOpis": "LJ (južna obvoznica)",
   "stevci_cestaOpis": "AC-A1",
-  "Data": [
-    {
-      "Icon": "4",
-      "Id": "0178-21",
-      "properties": {
-        "stevci_smerOpis": "Barjanska - Peruzzijeva",
-        "stevci_statOpis": "Gost promet",
-        "stevci_stat": "4",
-        "stevci_pasOpis": "(v)",
-        "stevci_stev": "1200",
-        "stevci_gap": "2,5",
-        "stevci_hit": "96"
-      }
-    },
-    {
-      "Icon": "2",
-      "Id": "0178-22",
-      "properties": {
-        "stevci_smerOpis": "Barjanska - Peruzzijeva",
-        "stevci_statOpis": "Povečan promet",
-        "stevci_stat": "2",
-        "stevci_pasOpis": "(p)",
-        "stevci_stev": "636",
-        "stevci_gap": "5,2",
-        "stevci_hit": "127"
-      }
-    },
-    {
-      "Icon": "3",
-      "Id": "0178-11",
-      "properties": {
-        "stevci_smerOpis": "Peruzzijeva - Barjanska",
-        "stevci_statOpis": "Zgoščen promet",
-        "stevci_stat": "3",
-        "stevci_pasOpis": "(v)",
-        "stevci_stev": "1032",
-        "stevci_gap": "3,1",
-        "stevci_hit": "97"
-      }
-    },
-    {
-      "Icon": "2",
-      "Id": "0178-12",
-      "properties": {
-        "stevci_smerOpis": "Peruzzijeva - Barjanska",
-        "stevci_statOpis": "Povečan promet",
-        "stevci_stat": "2",
-        "stevci_pasOpis": "(p)",
-        "stevci_stev": "684",
-        "stevci_gap": "5,0",
-        "stevci_hit": "126"
-      }
-    }
-  ],
+  "stevci_smerOpis": "Barjanska - Peruzzijeva",
+  "stevci_pasOpis": "(v)",
   "x_wgs": 14.51818035950113,
   "y_wgs": 46.01962915242322,
-  "ContentName": "stevci"
+  "CrsId": "EPSG:2170",
+  "Y": 97385.0,
+  "X": 463074.0,
+  "stevci_statOpis": "Zgoščen promet",
+  "stevci_stev": "1056",
+  "stevci_hit": "95",
+  "stevci_gap": "3,0",
+  "stevci_stat": "3",
+  "ContentName": "stevci",
+  "Icon": "res/icons/stevci/stevec_3.png",
+  "ModifiedTime": "2017-03-03T10:19:14.2723429Z",
 }
 ```
 
-#### pollution_json 
+### pollution_json 
 podtaki o koncentraciji snovi v zraku (bezigrad in vosnjakova-tivolska )
 
 **Source:**  http://www.ljubljana.si/si/zivljenje-v-ljubljani/okolje-prostor-bivanje/stanje-okolja/zrak/
