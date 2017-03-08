@@ -9,21 +9,21 @@ echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-
 echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-selections
 sudo apt-get install oracle-java8-installer -y &> /dev/null
 
-#make confluent home folder
-mkdir confluent
+#make kafka home folder
+mkdir kafka
 
-echo 'download confluent'
-#download confluent
-wget http://packages.confluent.io/archive/3.1/confluent-3.1.1-2.11.tar.gz 2> /dev/null
+echo 'download kafka'
+#download kafka
+wget http://www.apache.si/kafka/0.10.2.0/kafka_2.11-0.10.2.0.tgz 2> /dev/null
 
-echo 'extract confluent archive'
-#extract archive to confluent folder
-tar -xvf confluent-3.1.1-2.11.tar.gz -C confluent > /dev/null
+echo 'extract kafka archive'
+#extract archive to kafka folder
+tar -xzf kafka_2.11-0.10.2.0.tgz > /dev/null
 
-mv confluent/confluent-3.1.1/* confluent > /dev/null
+mv kafka_2.11-0.10.2.0/* kafka > /dev/null
 
-rm confluent-3.1.1-2.11.tar.gz
-rmdir confluent/confluent-3.1.1/
+rm kafka_2.11-0.10.2.0.tgz
+rmdir kafka_2.11-0.10.2.0/
 
 #Stream reactor release 0.2.4
 mkdir stream-reactor

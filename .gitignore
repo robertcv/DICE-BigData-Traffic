@@ -92,3 +92,7 @@ ENV/
 .idea/
 
 test.json
+test_vm
+
+kafka_vm/.vagrant
+cassandra_vm/.vagrant
