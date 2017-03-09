@@ -40,8 +40,8 @@ podatki iz indukcijskih zank (znotraj lj)
   "region": "Ljubljana",
   "location": 18,
   "locationDescription": "Celovška cesta",
-  "deviceX": "46,057694",
-  "deviceY": "14,500324",
+  "deviceX": 46,057694,
+  "deviceY": 14,500324,
   "point": "46,057694 14,500324",
   "direction": 11,
   "directionDescription": "Tivolska cesta - Ruska ul.",
@@ -59,8 +59,7 @@ podatki iz indukcijskih zank (znotraj lj)
   "time": "11:00:00",
   "date": "02/03/2017",
   "pkgdate": "2017-03-02T10:00:19Z",
-  "updated": "2017-03-02T10:00:00Z",
-  "summary": "-, Celovška cesta : Tivolska cesta - Ruska ul. (r) - Normal traffic (444 vehicles/h, avg. speed=61km/h, avg. gap=7.3s, occupancy=5.6%)",
+  "updated": "2017-03-02T10:00:00Z"
 }
 ``` 
 
