@@ -10,7 +10,7 @@ WITH CLUSTERING ORDER BY (timestampTo DESC);
 CREATE INDEX ON bt_sensors(fromBtId);
 CREATE INDEX ON bt_sensors(toBtId);
 
-// inductive_json
+// inductive loops
 
 CREATE table inductive_loops (id varchar, title varchar, region varchar, location int, locationDescription varchar,
 deviceX float, deviceY float, point varchar, direction int, directionDescription varchar, laneDescription varchar,
@@ -19,7 +19,7 @@ avgSpeed int, occ int, chainage int, stat int, time varchar, date varchar, pkgda
 PRIMARY KEY (id, updated))
 WITH CLUSTERING ORDER BY (updated DESC);
 
-// counter_json
+// counters
 
 CREATE table counters (id varchar, Title varchar, Description varchar, stevci_lokacijaOpis varchar, stevci_cestaOpis
 varchar, stevci_smerOpis varchar, stevci_pasOpis varchar, x_wgs float, y_wgs float, CrsId varchar, Y float, X float,
@@ -36,4 +36,22 @@ benzene float, tolulene float, hour varchar, scraped timestamp,
 PRIMARY KEY (location, scraped))
 WITH CLUSTERING ORDER BY (scraped DESC);
 
+// lpp_station
 
+CREATE table lpp_station (station_int_id int, station_name varchar, station_direction varchar, station_ref_id int,
+station_lat float, station_lng float, route_int_id int, route_num int, route_num_sub varchar, route_name varchar,
+scraped timestamp,
+PRIMARY KEY (station_int_id, route_int_id, scraped))
+WITH CLUSTERING ORDER BY (route_int_id ASC, scraped DESC);
+
+// lpp_static
+
+CREATE table lpp_static (station_int_id int, route_int_id int, arrival_time timestamp,
+PRIMARY KEY (station_int_id, route_int_id, arrival_time))
+WITH CLUSTERING ORDER BY (route_int_id ASC, arrival_time DESC);
+
+// lpp_live
+
+CREATE table lpp_live (station_int_id int, route_int_id int, arrival_time timestamp,
+PRIMARY KEY (station_int_id, route_int_id, arrival_time))
+WITH CLUSTERING ORDER BY (route_int_id ASC, arrival_time DESC);

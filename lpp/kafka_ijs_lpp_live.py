@@ -3,7 +3,7 @@ import requests
 
 from kafka import KafkaProducer
 
-producer = KafkaProducer(bootstrap_servers=['192.168.0.62:9092'],
+producer = KafkaProducer(bootstrap_servers=['192.168.0.60:9092'],
                          value_serializer=lambda m: json.dumps(m).encode('utf-8'))
 
 with open('data/stations_lj.csv') as f:
@@ -26,3 +26,4 @@ for station in station_data:
             'arrival_time': route['local_timestamp']
         }
         producer.send('lpp_live_json', tmp)
+    producer.flush()

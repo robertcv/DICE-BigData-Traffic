@@ -4,7 +4,7 @@ import datetime, pytz
 
 from kafka import KafkaProducer
 
-producer = KafkaProducer(bootstrap_servers=['192.168.0.62:9092'],
+producer = KafkaProducer(bootstrap_servers=['192.168.0.60:9092'],
                          value_serializer=lambda m: json.dumps(m).encode('utf-8'))
 
 with open('data/stations_lj.csv') as f:
@@ -25,8 +25,9 @@ for d in station_file:
 with open('data/routes_ijs.json') as data_file:
     route_data = json.load(data_file)
 
-day = str(round(
-    datetime.datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0, tzinfo=pytz.utc).timestamp() * 1000))
+date = datetime.datetime.utcnow().replace(hour=0, minute=0, second=0, microsecond=0, tzinfo=pytz.utc)
+
+day = str(round(date.timestamp() * 1000))
 
 for station_int_id in station_data:
 
@@ -42,6 +43,8 @@ for station_int_id in station_data:
         if route_int_id in route_data:
 
             station_data[station_int_id].update(route_data[route_int_id])
+            station_data[station_int_id]['scraped'] = datetime.datetime.isoformat(date)
+            # print(station_data[station_int_id])
             producer.send('lpp_station_json', station_data[station_int_id])
 
             response = requests.get(
@@ -59,3 +62,5 @@ for station_int_id in station_data:
                     'arrival_time': arrival['arrival_time']
                 }
                 producer.send('lpp_static_json', tmp)
+
+            producer.flush()
