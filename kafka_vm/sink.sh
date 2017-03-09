@@ -14,6 +14,7 @@ sed -i 's/orders-topic/bt_json/' conf/cassandra-sink-bt-sensors.properties
 sed -i 's/orders/bt_sensors/' conf/cassandra-sink-bt-sensors.properties
 
 bin/cli.sh create cs-bt-sensors < conf/cassandra-sink-bt-sensors.properties
+sleep 3
 
 # inductive loops
 cp conf/cassandra-sink.properties conf/cassandra-sink-inductive-loops.properties
@@ -23,6 +24,7 @@ sed -i 's/orders-topic/inductive_json/' conf/cassandra-sink-inductive-loops.prop
 sed -i 's/orders/inductive_loops/' conf/cassandra-sink-inductive-loops.properties
 
 bin/cli.sh create cs-inductive-loops < conf/cassandra-sink-inductive-loops.properties
+sleep 3
 
 # counters
 cp conf/cassandra-sink.properties conf/cassandra-sink-counters.properties
@@ -32,4 +34,15 @@ sed -i 's/orders-topic/counter_json/' conf/cassandra-sink-counters.properties
 sed -i 's/orders/counters/' conf/cassandra-sink-counters.properties
 
 bin/cli.sh create cs-counters < conf/cassandra-sink-counters.properties
+sleep 3
+
+# pollution
+cp conf/cassandra-sink.properties conf/cassandra-sink-pollution.properties
+
+sed -i 's/cassandra-sink-orders/cs-pollution/' conf/cassandra-sink-pollution.properties
+sed -i 's/orders-topic/pollution_json/' conf/cassandra-sink-pollution.properties
+sed -i 's/orders/pollution/' conf/cassandra-sink-pollution.properties
+
+bin/cli.sh create cs-pollution < conf/cassandra-sink-pollution.properties
+sleep 3
 

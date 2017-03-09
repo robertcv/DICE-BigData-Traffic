@@ -40,8 +40,8 @@ podatki iz indukcijskih zank (znotraj lj)
   "region": "Ljubljana",
   "location": 18,
   "locationDescription": "Celovška cesta",
-  "deviceX": 46,057694,
-  "deviceY": 14,500324,
+  "deviceX": 46.057694,
+  "deviceY": 14.500324,
   "point": "46,057694 14,500324",
   "direction": 11,
   "directionDescription": "Tivolska cesta - Ruska ul.",
@@ -145,42 +145,29 @@ podatki iz števcev prometa (obvoznica in izven lj)
 ```
 
 ### pollution_json 
-podtaki o koncentraciji snovi v zraku (bezigrad in vosnjakova-tivolska )
+podtaki o koncentraciji snovi v zraku (bezigrad in vosnjakova-tivolska)
 
 **Source:**  http://www.ljubljana.si/si/zivljenje-v-ljubljani/okolje-prostor-bivanje/stanje-okolja/zrak/
 
 ```json
 {
   "location": "bezigrad",
-  "co": "0.48",
-  "no": "52.3",
-  "no2": "44.5",
-  "nox": "124.45",
-  "pm": "44.33",
-  "so2": "9.7",
-  "solar_radiation": "172",
-  "ozone": None,
-  "temperature": "4.3",
-  "pressure": "979.5",
-  "humidity": "84",
-  "windspeed": "1.1",
+  "co": 0.48,
+  "no": 52.3,
+  "no2": 44.5,
+  "nox": 124.45,
+  "pm": 44.33,
+  "so2": 9.7,
+  "solar_radiation": 172,
+  "temperature": 4.3,
+  "pressure": 979.5,
+  "humidity": 84,
+  "windspeed": 1.1,
   "wind_direction": "SV",
-  "hour": "10:00",
-  "scraped": "2017-03-02"
-}
-```
-
-```json
-{
-  "location": "vosnjakova-tivolska",
-  "no": "179",
-  "no2": "70",
-  "pm": "50",
-  "so2": "4",
-  "tolulene": "7",
-  "paraxylene": "5",
-  "benzene": "3",
-  "hour": "08:00",
-  "scraped": "2017-03-02"
+  "paraxylene": 4.0,
+  "benzene": 2.0,
+  "tolulene": 4.0,
+  "hour": "16:00",
+  "scraped": "2017-03-09T16:00:00"
 }
 ```

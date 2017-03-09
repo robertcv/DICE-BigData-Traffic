@@ -27,3 +27,13 @@ stevci_statOpis varchar, stevci_stev int, stevci_hit int, stevci_gap float, stev
 varchar, modified timestamp,
 PRIMARY KEY (id, modified))
 WITH CLUSTERING ORDER BY (modified DESC);
+
+// pollution
+
+CREATE table pollution (location varchar, co float, no float, no2 float, nox float, pm float, so2 float, solar_radiation
+float, temperature float, pressure float, humidity float, windspeed float, wind_direction varchar, paraxylene float,
+benzene float, tolulene float, hour varchar, scraped timestamp,
+PRIMARY KEY (location, scraped))
+WITH CLUSTERING ORDER BY (scraped DESC);
+
+
