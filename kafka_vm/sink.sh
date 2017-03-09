@@ -24,3 +24,12 @@ sed -i 's/orders/inductive_loops/' conf/cassandra-sink-inductive-loops.propertie
 
 bin/cli.sh create cs-inductive-loops < conf/cassandra-sink-inductive-loops.properties
 
+# counters
+cp conf/cassandra-sink.properties conf/cassandra-sink-counters.properties
+
+sed -i 's/cassandra-sink-orders/cs-counters/' conf/cassandra-sink-counters.properties
+sed -i 's/orders-topic/counter_json/' conf/cassandra-sink-counters.properties
+sed -i 's/orders/counters/' conf/cassandra-sink-counters.properties
+
+bin/cli.sh create cs-counters < conf/cassandra-sink-counters.properties
+

@@ -121,7 +121,7 @@ podatki iz števcev prometa (obvoznica in izven lj)
 
 ```json
 {
-  "Id": "0178-21",
+  "id": "0178-21",
   "Title": "AC-A1, LJ (južna obvoznica)",
   "Description": "AC-A1, LJ (južna obvoznica)",
   "stevci_lokacijaOpis": "LJ (južna obvoznica)",
@@ -134,13 +134,13 @@ podatki iz števcev prometa (obvoznica in izven lj)
   "Y": 97385.0,
   "X": 463074.0,
   "stevci_statOpis": "Zgoščen promet",
-  "stevci_stev": "1056",
-  "stevci_hit": "95",
-  "stevci_gap": "3,0",
-  "stevci_stat": "3",
+  "stevci_stev": 1056,
+  "stevci_hit": 95,
+  "stevci_gap": 3.0,
+  "stevci_stat": 3,
   "ContentName": "stevci",
   "Icon": "res/icons/stevci/stevec_3.png",
-  "ModifiedTime": "2017-03-03T10:19:14.2723429Z",
+  "modified": "2017-03-03T10:19:14.272Z",
 }
 ```
 

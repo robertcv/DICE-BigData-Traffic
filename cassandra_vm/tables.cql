@@ -19,3 +19,11 @@ avgSpeed int, occ int, chainage int, stat int, time varchar, date varchar, pkgda
 PRIMARY KEY (id, updated))
 WITH CLUSTERING ORDER BY (updated DESC);
 
+// counter_json
+
+CREATE table counters (id varchar, Title varchar, Description varchar, stevci_lokacijaOpis varchar, stevci_cestaOpis
+varchar, stevci_smerOpis varchar, stevci_pasOpis varchar, x_wgs float, y_wgs float, CrsId varchar, Y float, X float,
+stevci_statOpis varchar, stevci_stev int, stevci_hit int, stevci_gap float, stevci_stat int, ContentName varchar, Icon
+varchar, modified timestamp,
+PRIMARY KEY (id, modified))
+WITH CLUSTERING ORDER BY (modified DESC);

@@ -3,7 +3,7 @@ import requests
 
 from kafka import KafkaProducer
 
-producer = KafkaProducer(bootstrap_servers=['192.168.0.62:9092'],
+producer = KafkaProducer(bootstrap_servers=['192.168.0.60:9092'],
                          value_serializer=lambda m: json.dumps(m).encode('utf-8'))
 
 response = requests.get('https://opendata.si/promet/counters/')
@@ -21,7 +21,7 @@ stevec = []
 lng = []
 lat = []
 
-ModifiedTime = data['Contents'][0]['ModifiedTime']
+ModifiedTime = data['Contents'][0]['ModifiedTime'][:23]+'Z'
 
 for point in data['Contents'][0]['Data']['Items']:
     if min_lat < point['y_wgs'] < max_lat and min_lng < point['x_wgs'] < max_lng:
@@ -30,10 +30,15 @@ for point in data['Contents'][0]['Data']['Items']:
             tmp = point.copy()
 
             del tmp['Data']
-            tmp['Id'] = d['Id']
-            tmp['ModifiedTime'] = ModifiedTime
+            tmp['id'] = d['Id']
+            tmp['modified'] = ModifiedTime
 
             for p in d['properties']:
                 tmp[p] = d['properties'][p]
+
+            tmp['stevci_stev'] = int(tmp['stevci_stev'])
+            tmp['stevci_hit'] = int(tmp['stevci_hit'])
+            tmp['stevci_gap'] = float(tmp['stevci_gap'].replace(',', '.'))
+            tmp['stevci_stat'] = int(tmp['stevci_stat'])
 
             producer.send('counter_json', tmp)
