@@ -6,6 +6,7 @@ Vagrant.configure(2) do |config|
   config.vm.hostname = "kafka"
   config.vm.provision "shell", path: "kafka.sh", privileged: false
   config.vm.provision "shell", path: "setup.sh", privileged: false
+  config.vm.provision "shell", path: "sink.sh", privileged: false
   
   config.vm.provider "virtualbox" do |v|
     v.memory = 2048
