@@ -96,3 +96,5 @@ test_vm
 
 kafka_vm/.vagrant
 cassandra_vm/.vagrant
+spark_vm/.vagrant
+spark_vm/dice-chef-repo

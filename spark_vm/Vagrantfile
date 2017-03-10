@@ -1,0 +1,79 @@
+# vim: filetype=ruby
+
+Vagrant.configure(2) do |config|
+  config.vm.box = "ubuntu/trusty64"
+
+  config.vm.network "private_network", type: "dhcp"
+
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 2048
+    v.cpus = 2
+  end
+
+  # Master
+  config.vm.define "master" do |master|
+    master.vm.network "private_network", ip: "192.168.0.62"
+    master.vm.network "forwarded_port", guest: 8080, host: 18080
+
+    master.vm.provision "chef_zero" do |chef|
+      chef.cookbooks_path = "dice-chef-repo/cookbooks"
+      chef.nodes_path = "nodes"
+      chef.channel = "stable"
+      chef.version = "12.10.24"
+
+      chef.add_recipe "dice-common::host"
+      chef.add_recipe "apt::default"
+      chef.add_recipe "java::default"
+      chef.add_recipe "spark::default"
+      chef.add_recipe "spark::configure"
+
+      # Cloudify specific inputs (mock them in attr file)
+      chef.json = {
+        "spark" => {
+          "type" => "master"
+        },
+        "cloudify" => {
+          "runtime_properties" => {},
+          "properties" => {
+            "configuration" => {}
+          }
+        }
+      }
+    end
+  end
+
+  # Workers
+  (3..4).each do |i|
+    config.vm.define "worker-#{i}" do |worker|
+      worker.vm.network "private_network", ip: "192.168.0.6#{i}"
+
+      worker.vm.provision "chef_zero" do |chef|
+        chef.cookbooks_path = "dice-chef-repo/cookbooks"
+        chef.nodes_path = "nodes"
+        chef.channel = "stable"
+        chef.version = "12.10.24"
+
+        chef.add_recipe "dice-common::host"
+        chef.add_recipe "apt::default"
+        chef.add_recipe "java::default"
+        chef.add_recipe "spark::default"
+        chef.add_recipe "spark::configure"
+
+        # Cloudify specific inputs (mock them in attr file)
+        chef.json = {
+          "spark" => {
+            "type" => "worker"
+          },
+          "cloudify" => {
+            "runtime_properties" => {
+              "master_ip" => "192.168.0.62"
+            },
+            "properties" => {
+              "configuration" => {}
+            }
+          }
+        }
+      end
+    end
+  end
+end
