@@ -98,3 +98,7 @@ kafka_vm/.vagrant
 cassandra_vm/.vagrant
 spark_vm/.vagrant
 spark_vm/dice-chef-repo
+virtual_machines/kafka_vm/.vagrant
+virtual_machines/cassandra_vm/.vagrant
+virtual_machines/spark_vm/.vagrant
+virtual_machines/spark_vm/dice-chef-repo
