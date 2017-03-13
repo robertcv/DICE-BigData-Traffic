@@ -1,0 +1,5 @@
+elasticsearch
+kafka
+lxml
+pytz
+requests
