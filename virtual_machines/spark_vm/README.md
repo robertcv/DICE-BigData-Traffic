@@ -1,17 +1,9 @@
-# Setting up local Apache Spark cluster using Vagrant
+## Apache Spark
 
-This is a short guide on setting up local development cluster.
+The flowing guide for setting up a spark cluster is provided by 
+[Tadej Borovsak](https://gitlab.xlab.si/tadej.borovsak/local-spark).
 
-
-## Cluster contents
-
-By default, cluster is composed of:
-
-  * Apache Spark master node at 192.168.0.62 and
-  * two Apache Spark worker nodes at 192.168.0.6{3,4}
-
-
-## Setting up cluster
+#### Setting up cluster
 
 First thing we need to do is to clone this repo somewhere and move into it.
 Next, clone [dice-chef-repo][chef-repo] and create new empty folder `nodes`.
@@ -62,23 +54,5 @@ again and confirm that new worker can be seen by master. Now repeat the same
 thing for worker-4, just make sure to replace `192.168.0.63` with
 `192.168.0.64`.
 
-[chef-repo]: ssh://git@gitlab.xlab.si:13022/dice/dice-chef-repo.git
+[chef-repo]: https://gitlab.xlab.si/dice/dice-chef-repo
 [spark-ui]: http://192.168.0.62:8080
-
-
-## Testing if things really work
-
-Login to master VM using `vagrant ssh master` and then execute
-
-    $ /usr/share/spark-2.0.0-bin-hadoop2.7/bin/spark-shell \
-        --master spark://192.168.0.62:7077
-
-This should start scala REPL and Spark web UI should show one application that
-took all of the resources from cluster.
-
-
-## Final remarks
-
-Feel free to modify vagrant file with additional Chef recipes that
-automatically install monitoring agent. Any contribution in that direction
-will make it easier to add this functionality into final product.
