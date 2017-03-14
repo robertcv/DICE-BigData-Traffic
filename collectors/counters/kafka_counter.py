@@ -2,11 +2,11 @@ import json
 import requests
 
 from kafka import KafkaProducer
+from collectors.settings import KAFKA_URL, COUNTERS_URL, COUNTERS_KAFKA_TOPIC
 
-producer = KafkaProducer(bootstrap_servers=['192.168.0.60:9092'],
-                         value_serializer=lambda m: json.dumps(m).encode('utf-8'))
+producer = KafkaProducer(bootstrap_servers=[KAFKA_URL], value_serializer=lambda m: json.dumps(m).encode('utf-8'))
 
-response = requests.get('https://opendata.si/promet/counters/')
+response = requests.get(COUNTERS_URL)
 
 data = {'data': []}
 if response.status_code == 200:
@@ -21,7 +21,7 @@ stevec = []
 lng = []
 lat = []
 
-ModifiedTime = data['Contents'][0]['ModifiedTime'][:23]+'Z'
+ModifiedTime = data['Contents'][0]['ModifiedTime'][:23] + 'Z'
 
 for point in data['Contents'][0]['Data']['Items']:
     if min_lat < point['y_wgs'] < max_lat and min_lng < point['x_wgs'] < max_lng:
@@ -41,4 +41,4 @@ for point in data['Contents'][0]['Data']['Items']:
             tmp['stevci_gap'] = float(tmp['stevci_gap'].replace(',', '.'))
             tmp['stevci_stat'] = int(tmp['stevci_stat'])
 
-            producer.send('counter_json', tmp)
+            producer.send(COUNTERS_KAFKA_TOPIC, tmp)

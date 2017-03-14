@@ -19,6 +19,16 @@ and for ploting scripts:
 pip install -r requirements-plot.txt
 ```
 
+Additionally you have to set some environment variables or have a 
+`local_settings.py` file. All settings can be found in `settings.py` 
+Set at least those variables:
+```
+export KAFKA_HOST=host
+export KAFKA_PORT=port
+export TIMON_USERNAME=user
+export TIMON_PASSWORD=password
+```
+
 Every collector forwards his data to his unique Kafka topic. A Kafka 
 connector then takes those json messages and inserts them into Cassandra
 [tables](../virtual_machines/cassandra_vm/tables.cql).

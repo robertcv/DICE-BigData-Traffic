@@ -2,8 +2,9 @@ import json
 
 from kafka import KafkaProducer
 from elasticsearch import Elasticsearch
+from collectors.settings import KAFKA_URL, INDUCTIVE_LOOPS_HOST, INDUCTIVE_LOOPS_PORT, INDUCTIVE_LOOPS_KAFKA_TOPIC
 
-es = Elasticsearch([{'host': '10.30.1.132', 'port': 9200}])
+es = Elasticsearch([{'host': INDUCTIVE_LOOPS_HOST, 'port': INDUCTIVE_LOOPS_PORT}])
 data = es.search(index='inductive_loops', body={
     'size': 10000,
     "query": {
@@ -15,11 +16,10 @@ data = es.search(index='inductive_loops', body={
     }
 })
 
-producer = KafkaProducer(bootstrap_servers=['192.168.0.60:9092'],
-                         value_serializer=lambda m: json.dumps(m).encode('utf-8'))
+producer = KafkaProducer(bootstrap_servers=[KAFKA_URL], value_serializer=lambda m: json.dumps(m).encode('utf-8'))
 
 for hit in data['hits']['hits']:
     del hit['_source']['summary']
     hit['_source']['deviceX'] = float(hit['_source']['deviceX'].replace(',', '.'))
     hit['_source']['deviceY'] = float(hit['_source']['deviceY'].replace(',', '.'))
-    producer.send('inductive_json', hit['_source'])
+    producer.send(INDUCTIVE_LOOPS_KAFKA_TOPIC, hit['_source'])

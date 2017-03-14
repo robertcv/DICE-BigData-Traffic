@@ -4,21 +4,21 @@ import cartopy.crs as ccrs
 from cartopy.io.img_tiles import OSM
 
 from elasticsearch import Elasticsearch
+from collectors.settings import INDUCTIVE_LOOPS_HOST, INDUCTIVE_LOOPS_PORT
 
-
-es = Elasticsearch([{'host': '10.30.1.132', 'port': 9200}])
+es = Elasticsearch([{'host': INDUCTIVE_LOOPS_HOST, 'port': INDUCTIVE_LOOPS_PORT}])
 data = es.search(index='inductive_loops', body={
-    'size' : 10000,
-    "query" : {
-        "bool" : {
-            'must' : [
-                {"range" : { "updated" : { "gte" : 'now-1h' }}}
+    'size': 10000,
+    "query": {
+        "bool": {
+            'must': [
+                {"range": {"updated": {"gte": 'now-1h'}}}
             ]
         }
     },
-    "fields" : ["point", 'locationDescription', 'updated','location',],
-    "sort" : [
-        {"updated" : "asc"}
+    "fields": ["point", 'locationDescription', 'updated', 'location', ],
+    "sort": [
+        {"updated": "asc"}
     ]
 })
 
@@ -40,17 +40,15 @@ for k, v in locations.items():
 imagery = OSM()
 plt.figure(figsize=(20, 20), dpi=500)
 ax = plt.axes(projection=imagery.crs, )
-ax.set_extent((min(lng)-0.02, max(lng)+0.02, min(lat)-0.01, max(lat)+0.01))
+ax.set_extent((min(lng) - 0.02, max(lng) + 0.02, min(lat) - 0.01, max(lat) + 0.01))
 
 ax.add_image(imagery, 14)
 
-plt.plot(lng, lat, 'bo', transform=ccrs.Geodetic(),
-         markersize=5)
+plt.plot(lng, lat, 'bo', transform=ccrs.Geodetic(), markersize=5)
 
 for i in range(len(lng)):
-    plt.text(lng[i]+0.0005, lat[i]+0.00025, name[i],
-         horizontalalignment='left', fontsize=20,
-         transform=ccrs.Geodetic())
+    plt.text(lng[i] + 0.0005, lat[i] + 0.00025, name[i], horizontalalignment='left', fontsize=20,
+             transform=ccrs.Geodetic())
 
 plt.title('Inductive loops')
-plt.savefig("image/inductive.png")
+plt.savefig("./image/inductive.png")

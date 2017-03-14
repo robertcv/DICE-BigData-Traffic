@@ -2,9 +2,10 @@ import requests, datetime, re, json
 
 from lxml import html
 from kafka import KafkaProducer
+from collectors.settings import KAFKA_URL, POLLUTION_URL, POLLUTION_KAFKA_TOPIC
 
-producer = KafkaProducer(bootstrap_servers=['192.168.0.60:9092'],
-                         value_serializer=lambda m: json.dumps(m).encode('utf-8'))
+producer = KafkaProducer(bootstrap_servers=[KAFKA_URL], value_serializer=lambda m: json.dumps(m).encode('utf-8'))
+
 
 def process_table(table, date, source):
     header_row, = table.xpath('.//thead/tr')
@@ -72,18 +73,17 @@ def process_table(table, date, source):
         row.append(source)
         all_rows.append(dict(zip(english_headers, row)))
 
-
     for row in all_rows:
         tmp = default.copy()
         tmp.update(row)
         hour, minute = tmp['hour'].split(':')
-        isoformat_date = datetime.datetime.isoformat(date.replace(hour=int(hour), minute=int(minute), second=0, microsecond=0))
+        isoformat_date = datetime.datetime.isoformat(
+            date.replace(hour=int(hour), minute=int(minute), second=0, microsecond=0))
         tmp['scraped'] = isoformat_date
-        producer.send('pollution_json', tmp)
+        producer.send(POLLUTION_KAFKA_TOPIC, tmp)
 
 
-url = 'http://www.ljubljana.si/si/zivljenje-v-ljubljani/okolje-prostor-bivanje/stanje-okolja/zrak/' \
-      '?source={}&day={}&month={}&year={}'
+url = POLLUTION_URL + '?source={}&day={}&month={}&year={}'
 
 date = datetime.datetime.today()
 
