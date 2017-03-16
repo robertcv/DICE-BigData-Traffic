@@ -1,0 +1,5 @@
+include README.rst
+include collectors/bt_sensors/crt/datacloud.crt
+include collectors/bt_sensors/data/*
+include collectors/lpp/data/*
+exclude collectors/local_settings.py

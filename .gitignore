@@ -103,4 +103,4 @@ virtual_machines/cassandra_vm/.vagrant
 virtual_machines/spark_vm/.vagrant
 virtual_machines/spark_vm/dice-chef-repo
 
-collectors/local_settings.py
+pytraffic/local_settings.py
