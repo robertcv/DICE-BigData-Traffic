@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 import cartopy.crs as ccrs
 
 from cartopy.io.img_tiles import OSM
-from collectors.settings import COUNTERS_URL, LJ_MIN_LNG, LJ_MAX_LNG, LJ_MIN_LAT, LJ_MAX_LAT
+from collectors import settings
 
-response = requests.get(COUNTERS_URL)
+response = requests.get(settings.COUNTERS_URL)
 
 data = {'data': []}
 if response.status_code == 200:
@@ -20,7 +20,7 @@ lat = []
 time = data['Contents'][0]['ModifiedTime']
 
 for point in data['Contents'][0]['Data']['Items']:
-    if LJ_MIN_LAT < point['y_wgs'] < LJ_MAX_LAT and LJ_MIN_LNG < point['x_wgs'] < LJ_MAX_LNG:
+    if settings.LJ_MIN_LAT < point['y_wgs'] < settings.LJ_MAX_LAT and settings.LJ_MIN_LNG < point['x_wgs'] < settings.LJ_MAX_LNG:
         stevec.append(point)
         lng.append(point['x_wgs'])
         lat.append(point['y_wgs'])
@@ -35,4 +35,4 @@ ax.add_image(imagery, 14)
 plt.plot(lng, lat, 'bo', transform=ccrs.Geodetic(), markersize=8)
 
 plt.title('Stevci')
-plt.savefig("./image/counters.png")
+plt.savefig(settings.COUNTERS_IMG_DIR + "counters.png")

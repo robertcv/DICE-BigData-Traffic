@@ -9,22 +9,26 @@ BT_SENSORS_LAST_URL = 'https://datacloud-timon.xlab.si/data_access/bt_sensors/ve
 BT_SENSORS_URL = 'https://datacloud-timon.xlab.si/data_access/bt_sensors/sensors/'
 TIMON_USERNAME = 'username'
 TIMON_PASSWORD = 'password'
+TIMON_CRT_FILE = './crt/datacloud.crt'
+BT_SENSORS_IMG_DIR = './image/'
 BT_SENSORS_NOT_USE = ['BTR0219', 'BTR0218', 'BTR0217', 'BTR0213']
 BT_SENSORS_KAFKA_TOPIC = 'bt_json'
 
 # Traffic counters
 COUNTERS_URL = 'https://opendata.si/promet/counters/'
+COUNTERS_IMG_DIR = './image/'
 COUNTERS_KAFKA_TOPIC = 'counter_json'
 
 # Inductive loops
 INDUCTIVE_LOOPS_HOST = '10.30.1.132'
 INDUCTIVE_LOOPS_PORT = 9200
+INDUCTIVE_LOOPS_IMG_DIR = './image/'
 INDUCTIVE_LOOPS_KAFKA_TOPIC = 'inductive_json'
 
 # LPP traffic
 LPP_STATION_URL = 'http://194.33.12.24/stations/getRoutesOnStation'
 LPP_STATION_KAFKA_TOPIC = 'lpp_station_json'
-LPP_STATION_FILE = 'stations_lj.csv'
+LPP_STATION_FILE = './data/stations_lj.csv'
 
 LPP_STATIC_URL= 'http://194.33.12.24/timetables/getArrivalsOnStation'
 LPP_STATIC_KAFKA_TOPIC = 'lpp_static_json'
@@ -34,7 +38,7 @@ LPP_LIVE_KAFKA_TOPIC = 'lpp_live_json'
 
 LPP_ROUTE_GROUPS_URL = 'http://194.33.12.24/routes/getRouteGroups'
 LPP_ROUTE_URL = 'http://194.33.12.24/routes/getRoutes'
-LPP_ROUTE_FILE = 'routes_ijs.json'
+LPP_ROUTE_FILE = './data/routes_ijs.json'
 
 # Air pollution
 POLLUTION_URL = 'http://www.ljubljana.si/si/zivljenje-v-ljubljani/okolje-prostor-bivanje/stanje-okolja/zrak/'

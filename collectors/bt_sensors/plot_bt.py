@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 import cartopy.crs as ccrs
 
 from cartopy.io.img_tiles import OSM
-from collectors.settings import BT_SENSORS_URL, TIMON_USERNAME, TIMON_PASSWORD, BT_SENSORS_NOT_USE
+from collectors import settings
 
-response = requests.get(BT_SENSORS_URL, auth=(TIMON_USERNAME, TIMON_PASSWORD), verify='crt/datacloud.crt')
+response = requests.get(settings.BT_SENSORS_URL, auth=(settings.TIMON_USERNAME, settings.TIMON_PASSWORD), verify=settings.TIMON_CRT_FILE)
 
 if response.status_code == 200:
     data = response.json()
@@ -39,7 +39,7 @@ for i in range(len(lng)):
              transform=ccrs.Geodetic())
 
 # plt.title('BT v Ljubljani')
-# plt.savefig("image/bt_lj.png")
+# plt.savefig(settings.BT_SENSORS_IMG_DIR + "bt_lj.png")
 
 plt.title('Vse BT')
-plt.savefig("./image/vse_bt.png")
+plt.savefig(settings.BT_SENSORS_IMG_DIR + "vse_bt.png")

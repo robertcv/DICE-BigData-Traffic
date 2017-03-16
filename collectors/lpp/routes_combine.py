@@ -2,9 +2,9 @@ import json
 import requests
 from time import sleep
 
-from collectors.settings import LPP_ROUTE_GROUPS_URL, LPP_ROUTE_URL, LPP_ROUTE_FILE
+from collectors import settings
 
-response = requests.get(LPP_ROUTE_GROUPS_URL)
+response = requests.get(settings.LPP_ROUTE_GROUPS_URL)
 data = response.json()
 
 routes = dict()
@@ -14,7 +14,7 @@ for l in data['data']:
         continue
 
     sleep(0.01)
-    response = requests.get(LPP_ROUTE_URL + '?route_id=' + l['id'])
+    response = requests.get(settings.LPP_ROUTE_URL + '?route_id=' + l['id'])
     res_data = response.json()
     if res_data['success']:
         for d in res_data['data']:
@@ -37,5 +37,5 @@ for l in data['data']:
             tmp['route_name'] = name
             routes[d['int_id']] = tmp
 
-with open('data/' + LPP_ROUTE_FILE, 'w') as outfile:
+with open(settings.LPP_ROUTE_FILE, 'w') as outfile:
     json.dump(routes, outfile)

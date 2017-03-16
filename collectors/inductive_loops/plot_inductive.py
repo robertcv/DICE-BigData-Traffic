@@ -4,9 +4,9 @@ import cartopy.crs as ccrs
 from cartopy.io.img_tiles import OSM
 
 from elasticsearch import Elasticsearch
-from collectors.settings import INDUCTIVE_LOOPS_HOST, INDUCTIVE_LOOPS_PORT
+from collectors import settings
 
-es = Elasticsearch([{'host': INDUCTIVE_LOOPS_HOST, 'port': INDUCTIVE_LOOPS_PORT}])
+es = Elasticsearch([{'host': settings.INDUCTIVE_LOOPS_HOST, 'port': settings.INDUCTIVE_LOOPS_PORT}])
 data = es.search(index='inductive_loops', body={
     'size': 10000,
     "query": {
@@ -51,4 +51,4 @@ for i in range(len(lng)):
              transform=ccrs.Geodetic())
 
 plt.title('Inductive loops')
-plt.savefig("./image/inductive.png")
+plt.savefig(settings.INDUCTIVE_LOOPS_IMG_DIR + "inductive.png")

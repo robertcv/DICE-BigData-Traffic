@@ -2,9 +2,9 @@ import requests, datetime, re, json
 
 from lxml import html
 from kafka import KafkaProducer
-from collectors.settings import KAFKA_URL, POLLUTION_URL, POLLUTION_KAFKA_TOPIC
+from collectors import settings
 
-producer = KafkaProducer(bootstrap_servers=[KAFKA_URL], value_serializer=lambda m: json.dumps(m).encode('utf-8'))
+producer = KafkaProducer(bootstrap_servers=[settings.KAFKA_URL], value_serializer=lambda m: json.dumps(m).encode('utf-8'))
 
 
 def process_table(table, date, source):
@@ -80,10 +80,10 @@ def process_table(table, date, source):
         isoformat_date = datetime.datetime.isoformat(
             date.replace(hour=int(hour), minute=int(minute), second=0, microsecond=0))
         tmp['scraped'] = isoformat_date
-        producer.send(POLLUTION_KAFKA_TOPIC, tmp)
+        producer.send(settings.POLLUTION_KAFKA_TOPIC, tmp)
 
 
-url = POLLUTION_URL + '?source={}&day={}&month={}&year={}'
+url = settings.POLLUTION_URL + '?source={}&day={}&month={}&year={}'
 
 date = datetime.datetime.today()
 

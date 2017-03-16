@@ -2,20 +2,15 @@ import json
 import requests
 
 from kafka import KafkaProducer
-from collectors.settings import KAFKA_URL, COUNTERS_URL, COUNTERS_KAFKA_TOPIC
+from collectors import settings
 
-producer = KafkaProducer(bootstrap_servers=[KAFKA_URL], value_serializer=lambda m: json.dumps(m).encode('utf-8'))
+producer = KafkaProducer(bootstrap_servers=[settings.KAFKA_URL], value_serializer=lambda m: json.dumps(m).encode('utf-8'))
 
-response = requests.get(COUNTERS_URL)
+response = requests.get(settings.COUNTERS_URL)
 
 data = {'data': []}
 if response.status_code == 200:
     data = response.json()
-
-min_lng = 14.44
-max_lng = 14.6
-min_lat = 46.0
-max_lat = 46.1
 
 stevec = []
 lng = []
@@ -24,7 +19,7 @@ lat = []
 ModifiedTime = data['Contents'][0]['ModifiedTime'][:23] + 'Z'
 
 for point in data['Contents'][0]['Data']['Items']:
-    if min_lat < point['y_wgs'] < max_lat and min_lng < point['x_wgs'] < max_lng:
+    if settings.LJ_MIN_LAT < point['y_wgs'] < settings.LJ_MAX_LAT and settings.LJ_MIN_LNG < point['x_wgs'] < settings.LJ_MAX_LNG:
 
         for d in point['Data']:
             tmp = point.copy()
@@ -41,4 +36,4 @@ for point in data['Contents'][0]['Data']['Items']:
             tmp['stevci_gap'] = float(tmp['stevci_gap'].replace(',', '.'))
             tmp['stevci_stat'] = int(tmp['stevci_stat'])
 
-            producer.send(COUNTERS_KAFKA_TOPIC, tmp)
+            producer.send(settings.COUNTERS_KAFKA_TOPIC, tmp)

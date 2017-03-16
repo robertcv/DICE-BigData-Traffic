@@ -1,6 +1,6 @@
 import csv, json
 
-from collectors.settings import LPP_STATION_FILE, LJ_MIN_LNG, LJ_MAX_LNG, LJ_MIN_LAT, LJ_MAX_LAT
+from collectors import settings
 
 with open('data/stations_ijs.json') as data_file:
     ijs_file = json.load(data_file)
@@ -25,14 +25,14 @@ for d in direction_file:
     }
     direction_data[d[0]] = tmp
 
-ofile = open('data/' + LPP_STATION_FILE, 'w')
+ofile = open(settings.LPP_STATION_FILE, 'w')
 writer = csv.writer(ofile, delimiter=',')
 
 with open('data/stations_lpp_web.html') as f:
     for html_data in f.readlines():
         id = html_data[16:22]
         if id in ijs_data and id in direction_data:
-            if LJ_MIN_LAT < ijs_data[id]['lat'] < LJ_MAX_LAT and LJ_MIN_LNG < ijs_data[id]['lng'] < LJ_MAX_LNG:
+            if settings.LJ_MIN_LAT < ijs_data[id]['lat'] < settings.LJ_MAX_LAT and settings.LJ_MIN_LNG < ijs_data[id]['lng'] < settings.LJ_MAX_LNG:
                 writer.writerow(
                     [ijs_data[id]['int_id'], id, direction_data[id]['name'], direction_data[id]['direction'],
                      ijs_data[id]['lng'], ijs_data[id]['lat']])
