@@ -2,11 +2,12 @@ import csv, json
 import requests
 import datetime, pytz
 
-from kafka import KafkaProducer
 from pytraffic import settings
+from pytraffic.collectors.util import kafka_producer
 
-producer = KafkaProducer(bootstrap_servers=[settings.KAFKA_URL],
-                         value_serializer=lambda m: json.dumps(m).encode('utf-8'))
+
+station_producer = kafka_producer.Producer(settings.LPP_STATION_KAFKA_TOPIC)
+static_producer = kafka_producer.Producer(settings.LPP_STATIC_KAFKA_TOPIC)
 
 with open(settings.LPP_STATION_FILE) as f:
     station_file = list(csv.reader(f))
@@ -46,7 +47,7 @@ for station_int_id in station_data:
             station_data[station_int_id].update(route_data[route_int_id])
             station_data[station_int_id]['scraped'] = datetime.datetime.isoformat(date)
             # print(station_data[station_int_id])
-            producer.send(settings.LPP_STATION_KAFKA_TOPIC, station_data[station_int_id])
+            station_producer.send(station_data[station_int_id])
 
             response = requests.get(
                 settings.LPP_STATIC_URL + '?day=' + day + '&route_int_id=' + route_int_id + '&station_int_id=' + station_int_id)
@@ -61,6 +62,6 @@ for station_int_id in station_data:
                     'route_int_id': int(route_int_id),
                     'arrival_time': arrival['arrival_time']
                 }
-                producer.send(settings.LPP_STATIC_KAFKA_TOPIC, tmp)
+                static_producer.send(tmp)
 
-            producer.flush()
+            static_producer.flush()

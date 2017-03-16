@@ -1,10 +1,9 @@
-import json
 import requests
 
-from kafka import KafkaProducer
 from pytraffic import settings
+from pytraffic.collectors.util import kafka_producer
 
-producer = KafkaProducer(bootstrap_servers=[settings.KAFKA_URL], value_serializer=lambda m: json.dumps(m).encode('utf-8'))
+producer = kafka_producer.Producer(settings.COUNTERS_KAFKA_TOPIC)
 
 response = requests.get(settings.COUNTERS_URL)
 
@@ -36,4 +35,4 @@ for point in data['Contents'][0]['Data']['Items']:
             tmp['stevci_gap'] = float(tmp['stevci_gap'].replace(',', '.'))
             tmp['stevci_stat'] = int(tmp['stevci_stat'])
 
-            producer.send(settings.COUNTERS_KAFKA_TOPIC, tmp)
+            producer.send(tmp)

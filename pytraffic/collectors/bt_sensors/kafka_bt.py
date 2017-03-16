@@ -1,9 +1,9 @@
 import requests, json
 
 from time import sleep
-from kafka import KafkaProducer
 
 from pytraffic import settings
+from pytraffic.collectors.util import kafka_producer
 
 with open('data/bt_sensors.json') as data_file:
     bt_sensors_data = json.load(data_file)['data']
@@ -22,8 +22,7 @@ while n > 0:
 else:
     exit()
 
-producer = KafkaProducer(bootstrap_servers=[settings.KAFKA_URL],
-                         value_serializer=lambda m: json.dumps(m).encode('utf-8'))
+producer = kafka_producer.Producer(settings.BT_SENSORS_KAFKA_TOPIC)
 
 not_lj = settings.BT_SENSORS_NOT_USE
 
@@ -38,4 +37,4 @@ for dist in data['data']:
         dist['toBtLat'] = sensor_to['loc']['lat']
         dist['distance'] = next(s for s in sensor_from['neighbours'] if s["btId"] == dist['toBtId'])['distance']
 
-        producer.send(settings.BT_SENSORS_KAFKA_TOPIC, dist)
+        producer.send(dist)

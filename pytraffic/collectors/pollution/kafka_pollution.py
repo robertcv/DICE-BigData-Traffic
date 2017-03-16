@@ -1,10 +1,11 @@
-import requests, datetime, re, json
+import requests, datetime, re
 
 from lxml import html
-from kafka import KafkaProducer
 from pytraffic import settings
+from pytraffic.collectors.util import kafka_producer
 
-producer = KafkaProducer(bootstrap_servers=[settings.KAFKA_URL], value_serializer=lambda m: json.dumps(m).encode('utf-8'))
+
+producer = kafka_producer.Producer(settings.POLLUTION_KAFKA_TOPIC)
 
 
 def process_table(table, date, source):
@@ -80,7 +81,7 @@ def process_table(table, date, source):
         isoformat_date = datetime.datetime.isoformat(
             date.replace(hour=int(hour), minute=int(minute), second=0, microsecond=0))
         tmp['scraped'] = isoformat_date
-        producer.send(settings.POLLUTION_KAFKA_TOPIC, tmp)
+        producer.send(tmp)
 
 
 url = settings.POLLUTION_URL + '?source={}&day={}&month={}&year={}'

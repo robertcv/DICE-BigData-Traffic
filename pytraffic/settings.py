@@ -58,5 +58,3 @@ try:
     from pytraffic.local_settings import *
 except ImportError:
     pass
-
-KAFKA_URL = KAFKA_HOST + ':' + KAFKA_PORT

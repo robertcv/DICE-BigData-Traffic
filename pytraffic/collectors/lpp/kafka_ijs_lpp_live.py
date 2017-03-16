@@ -1,10 +1,11 @@
-import csv, json
+import csv
 import requests
 
-from kafka import KafkaProducer
 from pytraffic import settings
+from pytraffic.collectors.util import kafka_producer
 
-producer = KafkaProducer(bootstrap_servers=[settings.KAFKA_URL], value_serializer=lambda m: json.dumps(m).encode('utf-8'))
+
+producer = kafka_producer.Producer(settings.LPP_LIVE_KAFKA_TOPIC)
 
 with open(settings.LPP_STATION_FILE) as f:
     station_data = list(csv.reader(f))
@@ -25,5 +26,5 @@ for station in station_data:
             'route_int_id': route['route_int_id'],
             'arrival_time': route['local_timestamp']
         }
-        producer.send(settings.LPP_LIVE_KAFKA_TOPIC, tmp)
+        producer.send(tmp)
     producer.flush()
