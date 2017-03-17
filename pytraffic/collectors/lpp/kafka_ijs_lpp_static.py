@@ -1,13 +1,15 @@
 import csv, json
-import requests
 import datetime, pytz
 
 from pytraffic import settings
-from pytraffic.collectors.util import kafka_producer
+from pytraffic.collectors.util import kafka_producer, scraper
 
 
 station_producer = kafka_producer.Producer(settings.LPP_STATION_KAFKA_TOPIC)
 static_producer = kafka_producer.Producer(settings.LPP_STATIC_KAFKA_TOPIC)
+
+w_scraper_station = scraper.Scraper(retries=1)
+w_scraper_static = scraper.Scraper(retries=1, ignore_status_code=True)
 
 with open(settings.LPP_STATION_FILE) as f:
     station_file = list(csv.reader(f))
@@ -33,30 +35,24 @@ day = str(round(date.timestamp() * 1000))
 
 for station_int_id in station_data:
 
-    response = requests.get(settings.LPP_STATION_URL + '?station_int_id=' + station_int_id)
-    if response.status_code != 200:
-        # print('napaka pri getRoutesOnStation: ' + station_int_id)
-        continue
-    routes_station_data = response.json()['data']
+    data = w_scraper_station.get_json(settings.LPP_STATION_URL + '?station_int_id=' + station_int_id)
 
-    for route in routes_station_data:
+    for route in data['data']:
         route_int_id = str(route['route_int_id'])
 
         if route_int_id in route_data:
 
             station_data[station_int_id].update(route_data[route_int_id])
             station_data[station_int_id]['scraped'] = datetime.datetime.isoformat(date)
-            # print(station_data[station_int_id])
             station_producer.send(station_data[station_int_id])
 
-            response = requests.get(
+            data = w_scraper_static.get_json(
                 settings.LPP_STATIC_URL + '?day=' + day + '&route_int_id=' + route_int_id + '&station_int_id=' + station_int_id)
-            if response.status_code != 200:
-                # print('napaka pri getArrivalsOnStation: ' + route_int_id + ' - '+ station_int_id)
+            if data is None:
+                # print('napaka pri getArrivalsOnStation: ' + route_int_id + ' - '+ station_int_id + ' status code: ' + str(w_scraper_static.last_status_code))
                 continue
-            arrival_data = response.json()['data']
 
-            for arrival in arrival_data:
+            for arrival in data['data']:
                 tmp = {
                     'station_int_id': int(station_int_id),
                     'route_int_id': int(route_int_id),

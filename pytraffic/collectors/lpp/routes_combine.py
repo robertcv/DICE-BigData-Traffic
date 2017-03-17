@@ -1,11 +1,10 @@
 import json
-import requests
-from time import sleep
 
 from pytraffic import settings
+from pytraffic.collectors.util import scraper
 
-response = requests.get(settings.LPP_ROUTE_GROUPS_URL)
-data = response.json()
+w_scraper = scraper.Scraper()
+data = w_scraper.get_json(settings.LPP_ROUTE_GROUPS_URL)
 
 routes = dict()
 
@@ -13,9 +12,7 @@ for l in data['data']:
     if not l['name'].isnumeric() or int(l['name']) > 27:
         continue
 
-    sleep(0.01)
-    response = requests.get(settings.LPP_ROUTE_URL + '?route_id=' + l['id'])
-    res_data = response.json()
+    res_data = w_scraper.get_json(settings.LPP_ROUTE_URL + '?route_id=' + l['id'])
     if res_data['success']:
         for d in res_data['data']:
             tmp = {

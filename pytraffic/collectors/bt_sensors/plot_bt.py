@@ -1,16 +1,12 @@
-import requests
 import matplotlib.pyplot as plt
 import cartopy.crs as ccrs
 
 from cartopy.io.img_tiles import OSM
 from pytraffic import settings
+from pytraffic.collectors.util import scraper
 
-response = requests.get(settings.BT_SENSORS_URL, auth=(settings.TIMON_USERNAME, settings.TIMON_PASSWORD), verify=settings.TIMON_CRT_FILE)
-
-if response.status_code == 200:
-    data = response.json()
-else:
-    exit()
+w_scraper = scraper.Scraper(auth=(settings.TIMON_USERNAME, settings.TIMON_PASSWORD), verify=settings.TIMON_CRT_FILE)
+data = w_scraper.get_json(settings.BT_SENSORS_URL)
 
 name = []
 lng = []

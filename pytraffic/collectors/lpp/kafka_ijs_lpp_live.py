@@ -1,11 +1,12 @@
 import csv
-import requests
 
 from pytraffic import settings
-from pytraffic.collectors.util import kafka_producer
+from pytraffic.collectors.util import kafka_producer, scraper
 
 
 producer = kafka_producer.Producer(settings.LPP_LIVE_KAFKA_TOPIC)
+
+w_scraper = scraper.Scraper(retries=1)
 
 with open(settings.LPP_STATION_FILE) as f:
     station_data = list(csv.reader(f))
@@ -13,14 +14,9 @@ with open(settings.LPP_STATION_FILE) as f:
 for station in station_data:
 
     station_int_id = station[0]
+    data = w_scraper.get_json(settings.LPP_LIVE_URL + '?station_int_id=' + station_int_id)
 
-    response = requests.get(settings.LPP_LIVE_URL + '?station_int_id=' + station_int_id)
-    if response.status_code != 200:
-        # print('napaka pri liveBusArrival: ' + station_int_id)
-        continue
-    routes_station_data = response.json()['data']
-
-    for route in routes_station_data:
+    for route in data['data']:
         tmp = {
             'station_int_id': int(station_int_id),
             'route_int_id': route['route_int_id'],

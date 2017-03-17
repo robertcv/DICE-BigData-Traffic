@@ -50,6 +50,12 @@ LJ_MAX_LNG = 14.58
 LJ_MIN_LAT = 46.0
 LJ_MAX_LAT = 46.1
 
+# Web scraper
+SCRAPER_TIMEOUT = 0.5
+SCRAPER_RETRIES = 10
+SCRAPER_SLEEP = 5
+SCRAPER_IGNORE_STATUS_CODE = False
+
 # Environment overrides
 locals().update(os.environ)
 

@@ -1,19 +1,10 @@
-import requests
-
 from pytraffic import settings
-from pytraffic.collectors.util import kafka_producer
+from pytraffic.collectors.util import kafka_producer, scraper
 
 producer = kafka_producer.Producer(settings.COUNTERS_KAFKA_TOPIC)
 
-response = requests.get(settings.COUNTERS_URL)
-
-data = {'data': []}
-if response.status_code == 200:
-    data = response.json()
-
-stevec = []
-lng = []
-lat = []
+w_scraper = scraper.Scraper()
+data = w_scraper.get_json(settings.COUNTERS_URL)
 
 ModifiedTime = data['Contents'][0]['ModifiedTime'][:23] + 'Z'
 

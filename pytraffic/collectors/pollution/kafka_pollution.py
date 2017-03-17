@@ -1,12 +1,13 @@
-import requests, datetime, re
+import datetime, re
 
 from lxml import html
 from pytraffic import settings
-from pytraffic.collectors.util import kafka_producer
+from pytraffic.collectors.util import kafka_producer, scraper
 
 
 producer = kafka_producer.Producer(settings.POLLUTION_KAFKA_TOPIC)
 
+w_scraper = scraper.Scraper()
 
 def process_table(table, date, source):
     header_row, = table.xpath('.//thead/tr')
@@ -81,7 +82,8 @@ def process_table(table, date, source):
         isoformat_date = datetime.datetime.isoformat(
             date.replace(hour=int(hour), minute=int(minute), second=0, microsecond=0))
         tmp['scraped'] = isoformat_date
-        producer.send(tmp)
+        print(tmp)
+        #producer.send(tmp)
 
 
 url = settings.POLLUTION_URL + '?source={}&day={}&month={}&year={}'
@@ -89,7 +91,7 @@ url = settings.POLLUTION_URL + '?source={}&day={}&month={}&year={}'
 date = datetime.datetime.today()
 
 for source in ['bezigrad', 'vosnjakova-tivolska']:
-    response = requests.get(url.format(source, date.day, date.month, date.year))
-    etree = html.fromstring(response.text)
+    text = w_scraper.get_text(url.format(source, date.day, date.month, date.year))
+    etree = html.fromstring(text)
     table, = etree.xpath('.//table[@id="air-polution"]')
     process_table(table, date, source)

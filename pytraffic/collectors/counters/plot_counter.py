@@ -1,18 +1,12 @@
-import requests
-
 import matplotlib.pyplot as plt
 import cartopy.crs as ccrs
 
 from cartopy.io.img_tiles import OSM
 from pytraffic import settings
+from pytraffic.collectors.util import scraper
 
-response = requests.get(settings.COUNTERS_URL)
-
-data = {'data': []}
-if response.status_code == 200:
-    data = response.json()
-else:
-    exit()
+w_scraper = scraper.Scraper()
+data = w_scraper.get_json(settings.COUNTERS_URL)
 
 stevec = []
 lng = []
