@@ -22,6 +22,7 @@ COUNTERS_KAFKA_TOPIC = 'counter_json'
 # Inductive loops
 INDUCTIVE_LOOPS_HOST = '10.30.1.132'
 INDUCTIVE_LOOPS_PORT = 9200
+INDUCTIVE_LOOPS_INDEX = 'inductive_loops'
 INDUCTIVE_LOOPS_IMG_DIR = './image/'
 INDUCTIVE_LOOPS_KAFKA_TOPIC = 'inductive_json'
 

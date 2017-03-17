@@ -3,24 +3,26 @@ import matplotlib.pyplot as plt
 import cartopy.crs as ccrs
 from cartopy.io.img_tiles import OSM
 
-from elasticsearch import Elasticsearch
 from pytraffic import settings
+from pytraffic.collectors.util import es_search
 
-es = Elasticsearch([{'host': settings.INDUCTIVE_LOOPS_HOST, 'port': settings.INDUCTIVE_LOOPS_PORT}])
-data = es.search(index='inductive_loops', body={
-    'size': 10000,
+search_body = {
+    "size": 10000,
     "query": {
         "bool": {
-            'must': [
-                {"range": {"updated": {"gte": 'now-1h'}}}
+            "must": [
+                {"range": {"updated": {"gte": "now-1h"}}}
             ]
         }
     },
-    "fields": ["point", 'locationDescription', 'updated', 'location', ],
+    "fields": ["point", "locationDescription", "updated", "location", ],
     "sort": [
         {"updated": "asc"}
     ]
-})
+}
+
+ess = es_search.EsSearch(settings.INDUCTIVE_LOOPS_HOST, settings.INDUCTIVE_LOOPS_PORT, settings.INDUCTIVE_LOOPS_INDEX)
+data = ess.get_json(search_body)
 
 locations = dict()
 name = []

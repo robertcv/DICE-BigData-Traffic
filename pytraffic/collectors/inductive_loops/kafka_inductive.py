@@ -1,19 +1,19 @@
-from elasticsearch import Elasticsearch
 from pytraffic import settings
-from pytraffic.collectors.util import kafka_producer
+from pytraffic.collectors.util import kafka_producer, es_search
 
-
-es = Elasticsearch([{'host': settings.INDUCTIVE_LOOPS_HOST, 'port': settings.INDUCTIVE_LOOPS_PORT}])
-data = es.search(index='inductive_loops', body={
-    'size': 10000,
+search_body = {
+    "size": 10000,
     "query": {
         "bool": {
             'must': [
-                {"range": {"updated": {"gte": 'now-15m'}}}
+                {"range": {"updated": {"gte": "now-15m"}}}
             ]
         }
     }
-})
+}
+
+ess = es_search.EsSearch(settings.INDUCTIVE_LOOPS_HOST, settings.INDUCTIVE_LOOPS_PORT, settings.INDUCTIVE_LOOPS_INDEX)
+data = ess.get_json(search_body)
 
 producer = kafka_producer.Producer(settings.INDUCTIVE_LOOPS_KAFKA_TOPIC)
 
