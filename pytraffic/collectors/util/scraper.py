@@ -1,8 +1,8 @@
 import requests
-import sys
 
 from time import sleep
 from pytraffic import settings
+from pytraffic.collectors.util import exceptions
 
 
 class Scraper:
@@ -38,7 +38,7 @@ class Scraper:
                 retries -= 1
                 sleep(self.sleep_sec)
         else:
-            sys.exit(1)
+            raise exceptions.ConnectionError(url)
 
     def get_response(self, url):
         response = self.connect(url)
@@ -51,7 +51,7 @@ class Scraper:
             return None
 
         else:
-            sys.exit(1)
+            raise exceptions.StatusCodeError("{} from {}".format(self.last_status_code, url))
 
     def get_json(self, url):
         response = self.get_response(url)

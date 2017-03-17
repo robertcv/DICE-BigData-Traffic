@@ -1,5 +1,5 @@
-import sys
 from elasticsearch import Elasticsearch, ElasticsearchException
+from pytraffic.collectors.util import exceptions
 
 
 class EsSearch:
@@ -14,11 +14,11 @@ class EsSearch:
         try:
             self.es = Elasticsearch([{'host': self.host, 'port': self.port}])
         except ElasticsearchException:
-            sys.exit(1)
+            raise exceptions.ConnectionError('Elasticsearch on {}'.format(self.host + ':' + self.port))
 
     def get_json(self, body):
         try:
             data = self.es.search(index=self.index, body=body)
             return data
         except ElasticsearchException:
-            sys.exit(1)
+            raise exceptions.SearchError('{} on index {}'.format(body, self.index))
