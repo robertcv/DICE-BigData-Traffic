@@ -66,7 +66,8 @@ SCRAPER_SLEEP = 2
 SCRAPER_IGNORE_STATUS_CODE = False
 
 # Environment overrides
-locals().update(os.environ)
+def override():
+    locals().update(os.environ)
 
 # Local overrides
 try:
