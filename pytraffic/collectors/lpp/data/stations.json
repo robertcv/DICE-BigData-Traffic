@@ -1,0 +1,4214 @@
+{
+  "2211": {
+    "station_ref_id": "103061",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5072916018955,
+    "station_name": "Pohorskega bataljona",
+    "station_direction": "\u2192",
+    "station_int_id": 2211,
+    "station_lat": 46.0824088609516
+  },
+  "1875": {
+    "station_ref_id": "101032",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5101806614003,
+    "station_name": "Be\u017eigrad",
+    "station_direction": "",
+    "station_int_id": 1875,
+    "station_lat": 46.063337242755
+  },
+  "2024": {
+    "station_ref_id": "503041",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.532655721019,
+    "station_name": "Peruzzijeva",
+    "station_direction": "\u2192",
+    "station_int_id": 2024,
+    "station_lat": 46.0299221276014
+  },
+  "2038": {
+    "station_ref_id": "803142",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4676912359921,
+    "station_name": "Koseze",
+    "station_direction": "",
+    "station_int_id": 2038,
+    "station_lat": 46.0721727685109
+  },
+  "2104": {
+    "station_ref_id": "402022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5190345536217,
+    "station_name": "Poliklinika",
+    "station_direction": "",
+    "station_int_id": 2104,
+    "station_lat": 46.0535822010773
+  },
+  "3398": {
+    "station_ref_id": "614022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.499595613677,
+    "station_name": "Brglezov \u0161tradon",
+    "station_direction": "",
+    "station_int_id": 3398,
+    "station_lat": 46.0094289461203
+  },
+  "1995": {
+    "station_ref_id": "203052",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5364808386361,
+    "station_name": "Kav\u010di\u010deva",
+    "station_direction": "\u2192",
+    "station_int_id": 1995,
+    "station_lat": 46.0639666638168
+  },
+  "1930": {
+    "station_ref_id": "803031",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4802981654157,
+    "station_name": "Kompas",
+    "station_direction": "\u2192",
+    "station_int_id": 1930,
+    "station_lat": 46.0797182553747
+  },
+  "2058": {
+    "station_ref_id": "403012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5339355788506,
+    "station_name": "Jana Husa",
+    "station_direction": "",
+    "station_int_id": 2058,
+    "station_lat": 46.0534490553296
+  },
+  "2304": {
+    "station_ref_id": "102062",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4997909001977,
+    "station_name": "Mostovna",
+    "station_direction": "",
+    "station_int_id": 2304,
+    "station_lat": 46.0744557792793
+  },
+  "2020": {
+    "station_ref_id": "503021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5229852606273,
+    "station_name": "Rakovnik",
+    "station_direction": "\u2192",
+    "station_int_id": 2020,
+    "station_lat": 46.03622560865
+  },
+  "2336": {
+    "station_ref_id": "104092",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5470074985983,
+    "station_name": "Cesta na Brod",
+    "station_direction": "",
+    "station_int_id": 2336,
+    "station_lat": 46.0960606197726
+  },
+  "3802": {
+    "station_ref_id": "604062",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5153520637604,
+    "station_name": "I\u017eica",
+    "station_direction": "",
+    "station_int_id": 3802,
+    "station_lat": 46.0041582427621
+  },
+  "2017": {
+    "station_ref_id": "602112",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5116395329957,
+    "station_name": "Privoz",
+    "station_direction": "",
+    "station_int_id": 2017,
+    "station_lat": 46.0436871390557
+  },
+  "1885": {
+    "station_ref_id": "204022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.564377,
+    "station_name": "GZL",
+    "station_direction": "",
+    "station_int_id": 1885,
+    "station_lat": 46.061968
+  },
+  "1945": {
+    "station_ref_id": "601011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5035070930001,
+    "station_name": "Po\u0161ta",
+    "station_direction": "\u2192",
+    "station_int_id": 1945,
+    "station_lat": 46.052064807962
+  },
+  "2162": {
+    "station_ref_id": "403061",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5527966953013,
+    "station_name": "Rast",
+    "station_direction": "\u2192",
+    "station_int_id": 2162,
+    "station_lat": 46.0467650358979
+  },
+  "1932": {
+    "station_ref_id": "803021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4822732496708,
+    "station_name": "Avtomonta\u017ea",
+    "station_direction": "\u2192",
+    "station_int_id": 1932,
+    "station_lat": 46.0769346799793
+  },
+  "2065": {
+    "station_ref_id": "303041",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5478810412379,
+    "station_name": "\u0160tepanjsko naselje",
+    "station_direction": "\u2192",
+    "station_int_id": 2065,
+    "station_lat": 46.0538135256933
+  },
+  "1957": {
+    "station_ref_id": "603021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4900057577242,
+    "station_name": "Gerbi\u010deva",
+    "station_direction": "\u2192",
+    "station_int_id": 1957,
+    "station_lat": 46.0407648558072
+  },
+  "2153": {
+    "station_ref_id": "204071",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5690663487487,
+    "station_name": "Sneberje",
+    "station_direction": "\u2192",
+    "station_int_id": 2153,
+    "station_lat": 46.0778165548515
+  },
+  "2237": {
+    "station_ref_id": "803172",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4676108743937,
+    "station_name": "Spar",
+    "station_direction": "",
+    "station_int_id": 2237,
+    "station_lat": 46.0770029462891
+  },
+  "1900": {
+    "station_ref_id": "804161",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4770886855179,
+    "station_name": "IMP",
+    "station_direction": "\u2192",
+    "station_int_id": 1900,
+    "station_lat": 46.0890354971728
+  },
+  "2003": {
+    "station_ref_id": "203101",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5399354977784,
+    "station_name": "Kodrova",
+    "station_direction": "\u2192",
+    "station_int_id": 2003,
+    "station_lat": 46.0692253015597
+  },
+  "3335": {
+    "station_ref_id": "502013",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5172493587762,
+    "station_name": "Ambro\u017eev trg",
+    "station_direction": "\u2192",
+    "station_int_id": 3335,
+    "station_lat": 46.0495728420941
+  },
+  "3953": {
+    "station_ref_id": "714021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4426154752052,
+    "station_name": "Gmajna",
+    "station_direction": "\u2192",
+    "station_int_id": 3953,
+    "station_lat": 46.044814694232
+  },
+  "1940": {
+    "station_ref_id": "801011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4973438354549,
+    "station_name": "Tivoli",
+    "station_direction": "\u2192",
+    "station_int_id": 1940,
+    "station_lat": 46.0603002787038
+  },
+  "2303": {
+    "station_ref_id": "102061",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4994673368048,
+    "station_name": "Mostovna",
+    "station_direction": "\u2192",
+    "station_int_id": 2303,
+    "station_lat": 46.0742984465222
+  },
+  "2312": {
+    "station_ref_id": "203032",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5274983509624,
+    "station_name": "Toma\u010devska",
+    "station_direction": "",
+    "station_int_id": 2312,
+    "station_lat": 46.0692545747422
+  },
+  "3974": {
+    "station_ref_id": "701012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4977540673445,
+    "station_name": "Tivolska",
+    "station_direction": "",
+    "station_int_id": 3974,
+    "station_lat": 46.0529711439703
+  },
+  "2195": {
+    "station_ref_id": "702012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4919779753942,
+    "station_name": "Pod Ro\u017enikom",
+    "station_direction": "",
+    "station_int_id": 2195,
+    "station_lat": 46.0511971984579
+  },
+  "2330": {
+    "station_ref_id": "102032",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5170917229402,
+    "station_name": "Gasilska brigada",
+    "station_direction": "",
+    "station_int_id": 2330,
+    "station_lat": 46.0684989225221
+  },
+  "3491": {
+    "station_ref_id": "504071",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.549358308207,
+    "station_name": "Pod Hribom",
+    "station_direction": "\u2192",
+    "station_int_id": 3491,
+    "station_lat": 46.0063029846471
+  },
+  "2023": {
+    "station_ref_id": "503032",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5290982905482,
+    "station_name": "Akademija",
+    "station_direction": "",
+    "station_int_id": 2023,
+    "station_lat": 46.0320795364951
+  },
+  "2194": {
+    "station_ref_id": "702021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4884871017185,
+    "station_name": "\u0160tudentsko naselje",
+    "station_direction": "\u2192",
+    "station_int_id": 2194,
+    "station_lat": 46.0495360420264
+  },
+  "3372": {
+    "station_ref_id": "403072",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5442050044137,
+    "station_name": "Bile\u010danska",
+    "station_direction": "",
+    "station_int_id": 3372,
+    "station_lat": 46.0457009959408
+  },
+  "2028": {
+    "station_ref_id": "504021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5401874811351,
+    "station_name": "Spodnji Rudnik",
+    "station_direction": "\u2192",
+    "station_int_id": 2028,
+    "station_lat": 46.0236765791319
+  },
+  "1959": {
+    "station_ref_id": "603031",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4897181962958,
+    "station_name": "Krimska",
+    "station_direction": "\u2192",
+    "station_int_id": 1959,
+    "station_lat": 46.0365812948747
+  },
+  "2008": {
+    "station_ref_id": "203171",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5512191149212,
+    "station_name": "Nove Jar\u0161e",
+    "station_direction": "\u2192",
+    "station_int_id": 2008,
+    "station_lat": 46.0695989381466
+  },
+  "2093": {
+    "station_ref_id": "703082",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4814343274799,
+    "station_name": "Glince",
+    "station_direction": "",
+    "station_int_id": 2093,
+    "station_lat": 46.0434445186122
+  },
+  "1884": {
+    "station_ref_id": "204021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.563411,
+    "station_name": "GZL",
+    "station_direction": "\u2192",
+    "station_int_id": 1884,
+    "station_lat": 46.062134
+  },
+  "1971": {
+    "station_ref_id": "202012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5211296660527,
+    "station_name": "Viadukt",
+    "station_direction": "",
+    "station_int_id": 1971,
+    "station_lat": 46.059471046818
+  },
+  "3330": {
+    "station_ref_id": "600022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5039868517979,
+    "station_name": "Ajdov\u0161\u010dina",
+    "station_direction": "",
+    "station_int_id": 3330,
+    "station_lat": 46.0535390082324
+  },
+  "2193": {
+    "station_ref_id": "702022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4874220959407,
+    "station_name": "\u0160tudentsko naselje",
+    "station_direction": "",
+    "station_int_id": 2193,
+    "station_lat": 46.0493868667932
+  },
+  "1929": {
+    "station_ref_id": "803041",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4776295445231,
+    "station_name": "Dravlje",
+    "station_direction": "\u2192",
+    "station_int_id": 1929,
+    "station_lat": 46.0835784412999
+  },
+  "3328": {
+    "station_ref_id": "504061",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.535336,
+    "station_name": "NS Rudnik",
+    "station_direction": "\u2192",
+    "station_int_id": 3328,
+    "station_lat": 46.018421
+  },
+  "3319": {
+    "station_ref_id": "603121",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5130939713252,
+    "station_name": "I\u017eanska",
+    "station_direction": "\u2192",
+    "station_int_id": 3319,
+    "station_lat": 46.0353721580662
+  },
+  "2116": {
+    "station_ref_id": "304012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5586838234352,
+    "station_name": "Preglov trg",
+    "station_direction": "",
+    "station_int_id": 2116,
+    "station_lat": 46.0545282823353
+  },
+  "1926": {
+    "station_ref_id": "804011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4740952834977,
+    "station_name": "Trata",
+    "station_direction": "\u2192",
+    "station_int_id": 1926,
+    "station_lat": 46.0870811635291
+  },
+  "2091": {
+    "station_ref_id": "703072",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4865134291888,
+    "station_name": "Stan in dom",
+    "station_direction": "",
+    "station_int_id": 2091,
+    "station_lat": 46.0448634378802
+  },
+  "2034": {
+    "station_ref_id": "804202",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.45286424872,
+    "station_name": "Omersova",
+    "station_direction": "",
+    "station_int_id": 2034,
+    "station_lat": 46.0741445860599
+  },
+  "2300": {
+    "station_ref_id": "103051",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5010738402604,
+    "station_name": "Tovarna Lek",
+    "station_direction": "\u2192",
+    "station_int_id": 2300,
+    "station_lat": 46.0793690268546
+  },
+  "3367": {
+    "station_ref_id": "403071",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5442139875665,
+    "station_name": "Bile\u010danska",
+    "station_direction": "\u2192",
+    "station_int_id": 3367,
+    "station_lat": 46.0459449524855
+  },
+  "2098": {
+    "station_ref_id": "703101",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4737691945907,
+    "station_name": "Bonifacija",
+    "station_direction": "\u2192",
+    "station_int_id": 2098,
+    "station_lat": 46.0399914117333
+  },
+  "1913": {
+    "station_ref_id": "603071",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5014376009105,
+    "station_name": "Pot na Rakovo jel\u0161o",
+    "station_direction": "\u2192",
+    "station_int_id": 1913,
+    "station_lat": 46.0328981940404
+  },
+  "1868": {
+    "station_ref_id": "803091",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4804184082228,
+    "station_name": "Zgornja \u0160i\u0161ka",
+    "station_direction": "\u2192",
+    "station_int_id": 1868,
+    "station_lat": 46.0699732179614
+  },
+  "2060": {
+    "station_ref_id": "403022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5391041111301,
+    "station_name": "Kodeljevo",
+    "station_direction": "",
+    "station_int_id": 2060,
+    "station_lat": 46.0512200388844
+  },
+  "3640": {
+    "station_ref_id": "103201",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.497189982638,
+    "station_name": "Litostroj",
+    "station_direction": "\u2192",
+    "station_int_id": 3640,
+    "station_lat": 46.0826421091
+  },
+  "2311": {
+    "station_ref_id": "203031",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5273421781761,
+    "station_name": "Toma\u010devska",
+    "station_direction": "\u2192",
+    "station_int_id": 2311,
+    "station_lat": 46.0695306961881
+  },
+  "1902": {
+    "station_ref_id": "803071",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4803785080757,
+    "station_name": "Tehnounion",
+    "station_direction": "\u2192",
+    "station_int_id": 1902,
+    "station_lat": 46.0858335781574
+  },
+  "1946": {
+    "station_ref_id": "602022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5017333205319,
+    "station_name": "Drama",
+    "station_direction": "",
+    "station_int_id": 1946,
+    "station_lat": 46.0488142650673
+  },
+  "3510": {
+    "station_ref_id": "603142",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4782336762206,
+    "station_name": "Tbilisijska",
+    "station_direction": "",
+    "station_int_id": 3510,
+    "station_lat": 46.0339792531908
+  },
+  "2218": {
+    "station_ref_id": "103122",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5124448134791,
+    "station_name": "\u010cerinova",
+    "station_direction": "",
+    "station_int_id": 2218,
+    "station_lat": 46.0902824219899
+  },
+  "3561": {
+    "station_ref_id": "604052",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5144537484762,
+    "station_name": "Pri Maranzu",
+    "station_direction": "",
+    "station_int_id": 3561,
+    "station_lat": 46.0068186965887
+  },
+  "3324": {
+    "station_ref_id": "504041",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5276550152748,
+    "station_name": "Jur\u010dkova",
+    "station_direction": "\u2192",
+    "station_int_id": 3324,
+    "station_lat": 46.0265681277864
+  },
+  "2246": {
+    "station_ref_id": "203111",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.54187936884,
+    "station_name": "BTC-uprava",
+    "station_direction": "\u2192",
+    "station_int_id": 2246,
+    "station_lat": 46.0683627436705
+  },
+  "1865": {
+    "station_ref_id": "803112",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4715954707461,
+    "station_name": "\u010cebelarska",
+    "station_direction": "",
+    "station_int_id": 1865,
+    "station_lat": 46.0789262533192
+  },
+  "1947": {
+    "station_ref_id": "602021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5023260218633,
+    "station_name": "Drama",
+    "station_direction": "\u2192",
+    "station_int_id": 1947,
+    "station_lat": 46.0489598659593
+  },
+  "1993": {
+    "station_ref_id": "203062",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5394172706079,
+    "station_name": "Tovorni kolodvor",
+    "station_direction": "\u2192",
+    "station_int_id": 1993,
+    "station_lat": 46.060729764712
+  },
+  "3473": {
+    "station_ref_id": "104032",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5170319133417,
+    "station_name": "Je\u017eica",
+    "station_direction": "",
+    "station_int_id": 3473,
+    "station_lat": 46.0982380295797
+  },
+  "2328": {
+    "station_ref_id": "102092",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5196174922125,
+    "station_name": "Kardeljeva plo\u0161\u010dad",
+    "station_direction": "",
+    "station_int_id": 2328,
+    "station_lat": 46.0725598758594
+  },
+  "1871": {
+    "station_ref_id": "802042",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.485504304584,
+    "station_name": "Bolnica P. Dr\u017eaja",
+    "station_direction": "",
+    "station_int_id": 1871,
+    "station_lat": 46.0679190680763
+  },
+  "2121": {
+    "station_ref_id": "304062",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5761047898288,
+    "station_name": "Studenec",
+    "station_direction": "",
+    "station_int_id": 2121,
+    "station_lat": 46.0544873028857
+  },
+  "3718": {
+    "station_ref_id": "300013",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.51054,
+    "station_name": "AP Ljubljana",
+    "station_direction": "",
+    "station_int_id": 3718,
+    "station_lat": 46.05782
+  },
+  "2191": {
+    "station_ref_id": "703012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4819687322362,
+    "station_name": "Ro\u017ena dolina",
+    "station_direction": "",
+    "station_int_id": 2191,
+    "station_lat": 46.0479019720208
+  },
+  "1933": {
+    "station_ref_id": "803022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4824498264085,
+    "station_name": "Avtomonta\u017ea",
+    "station_direction": "",
+    "station_int_id": 1933,
+    "station_lat": 46.0773180697392
+  },
+  "1986": {
+    "station_ref_id": "402032",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5209650400139,
+    "station_name": "Klini\u010dni center",
+    "station_direction": "",
+    "station_int_id": 1986,
+    "station_lat": 46.0523047836622
+  },
+  "1881": {
+    "station_ref_id": "203182",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5510579735067,
+    "station_name": "Bratislavska",
+    "station_direction": "",
+    "station_int_id": 1881,
+    "station_lat": 46.065833148618
+  },
+  "1910": {
+    "station_ref_id": "603082",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5055322633425,
+    "station_name": "Veliki \u0161tradon",
+    "station_direction": "",
+    "station_int_id": 1910,
+    "station_lat": 46.0378636579932
+  },
+  "2332": {
+    "station_ref_id": "204121",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.555810025269,
+    "station_name": "Brn\u010di\u010deva",
+    "station_direction": "\u2192",
+    "station_int_id": 2332,
+    "station_lat": 46.093735103828
+  },
+  "1941": {
+    "station_ref_id": "801012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4979610166072,
+    "station_name": "Tivoli",
+    "station_direction": "",
+    "station_int_id": 1941,
+    "station_lat": 46.0600747882683
+  },
+  "2239": {
+    "station_ref_id": "803162",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4638432106842,
+    "station_name": "Bratov Babnik",
+    "station_direction": "",
+    "station_int_id": 2239,
+    "station_lat": 46.0749701988413
+  },
+  "3317": {
+    "station_ref_id": "503014",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5169515609741,
+    "station_name": "Orlova",
+    "station_direction": "",
+    "station_int_id": 3317,
+    "station_lat": 46.038932800293
+  },
+  "2217": {
+    "station_ref_id": "103121",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5121427492657,
+    "station_name": "\u010cerinova",
+    "station_direction": "\u2192",
+    "station_int_id": 2217,
+    "station_lat": 46.0899877293292
+  },
+  "3416": {
+    "station_ref_id": "704102",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.447189,
+    "station_name": "Kozarje",
+    "station_direction": "",
+    "station_int_id": 3416,
+    "station_lat": 46.0321
+  },
+  "1997": {
+    "station_ref_id": "203022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5320453199363,
+    "station_name": "Ro\u017ei\u010deva",
+    "station_direction": "\u2192",
+    "station_int_id": 1997,
+    "station_lat": 46.0633347305643
+  },
+  "2302": {
+    "station_ref_id": "103012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5003913078894,
+    "station_name": "Toplarna",
+    "station_direction": "",
+    "station_int_id": 2302,
+    "station_lat": 46.0763351988842
+  },
+  "1869": {
+    "station_ref_id": "803092",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4784491185266,
+    "station_name": "Zgornja \u0160i\u0161ka",
+    "station_direction": "",
+    "station_int_id": 1869,
+    "station_lat": 46.0711072255671
+  },
+  "3307": {
+    "station_ref_id": "201011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5134899323093,
+    "station_name": "\u017delezna",
+    "station_direction": "\u2192",
+    "station_int_id": 3307,
+    "station_lat": 46.0611179589993
+  },
+  "3346": {
+    "station_ref_id": "704012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.462638433127,
+    "station_name": "Dolgi most - obra\u010dali\u0161\u010de izstop",
+    "station_direction": "",
+    "station_int_id": 3346,
+    "station_lat": 46.0360554290211
+  },
+  "1863": {
+    "station_ref_id": "803122",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4696368664751,
+    "station_name": "Ple\u0161i\u010deva",
+    "station_direction": "",
+    "station_int_id": 1863,
+    "station_lat": 46.0818567495464
+  },
+  "1870": {
+    "station_ref_id": "802041",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4857786602125,
+    "station_name": "Bolnica P. Dr\u017eaja",
+    "station_direction": "\u2192",
+    "station_int_id": 1870,
+    "station_lat": 46.0675141042531
+  },
+  "3954": {
+    "station_ref_id": "714022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4430646328473,
+    "station_name": "Gmajna",
+    "station_direction": "",
+    "station_int_id": 3954,
+    "station_lat": 46.045177506867
+  },
+  "2005": {
+    "station_ref_id": "203151",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5452580430306,
+    "station_name": "\u017dito",
+    "station_direction": "\u2192",
+    "station_int_id": 2005,
+    "station_lat": 46.0699275349816
+  },
+  "2084": {
+    "station_ref_id": "102082",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5116842768961,
+    "station_name": "Mercator",
+    "station_direction": "",
+    "station_int_id": 2084,
+    "station_lat": 46.0747260644736
+  },
+  "1928": {
+    "station_ref_id": "803042",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4783480068958,
+    "station_name": "Dravlje",
+    "station_direction": "",
+    "station_int_id": 1928,
+    "station_lat": 46.0835599023968
+  },
+  "2201": {
+    "station_ref_id": "101021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5047452664051,
+    "station_name": "Parmova",
+    "station_direction": "\u2192",
+    "station_int_id": 2201,
+    "station_lat": 46.0637332738403
+  },
+  "3799": {
+    "station_ref_id": "504122",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5315397051802,
+    "station_name": "Bobrova",
+    "station_direction": "",
+    "station_int_id": 3799,
+    "station_lat": 46.0245121322412
+  },
+  "3471": {
+    "station_ref_id": "203161",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5484280325217,
+    "station_name": "Nove Jar\u0161e-\u0160martinska",
+    "station_direction": "\u2192",
+    "station_int_id": 3471,
+    "station_lat": 46.0703746047442
+  },
+  "2117": {
+    "station_ref_id": "304031",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5635381579658,
+    "station_name": "Rusjanov trg",
+    "station_direction": "\u2192",
+    "station_int_id": 2117,
+    "station_lat": 46.0547213197494
+  },
+  "3261": {
+    "station_ref_id": "804191",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4558888690389,
+    "station_name": "Pod Kamno Gorico",
+    "station_direction": "\u2192",
+    "station_int_id": 3261,
+    "station_lat": 46.0737110332312
+  },
+  "2151": {
+    "station_ref_id": "204061",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5633281342416,
+    "station_name": "Hrastje",
+    "station_direction": "\u2192",
+    "station_int_id": 2151,
+    "station_lat": 46.074654664111
+  },
+  "1989": {
+    "station_ref_id": "303011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5344568660752,
+    "station_name": "Tr\u017enica Moste",
+    "station_direction": "\u2192",
+    "station_int_id": 1989,
+    "station_lat": 46.0558777600207
+  },
+  "2134": {
+    "station_ref_id": "304022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5621699638457,
+    "station_name": "Osenjakova",
+    "station_direction": "",
+    "station_int_id": 2134,
+    "station_lat": 46.0555715988365
+  },
+  "2095": {
+    "station_ref_id": "703092",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4773615599551,
+    "station_name": "Vi\u010d",
+    "station_direction": "",
+    "station_int_id": 2095,
+    "station_lat": 46.0422099163163
+  },
+  "2216": {
+    "station_ref_id": "103112",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5086353966768,
+    "station_name": "7. septembra",
+    "station_direction": "",
+    "station_int_id": 2216,
+    "station_lat": 46.0898229796124
+  },
+  "3527": {
+    "station_ref_id": "103192",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5203377135873,
+    "station_name": "Bo\u017ei\u010deva",
+    "station_direction": "",
+    "station_int_id": 3527,
+    "station_lat": 46.0756108212601
+  },
+  "2079": {
+    "station_ref_id": "103071",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5130944086417,
+    "station_name": "Smelt",
+    "station_direction": "\u2192",
+    "station_int_id": 2079,
+    "station_lat": 46.0822915734937
+  },
+  "2319": {
+    "station_ref_id": "603112",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5110600058389,
+    "station_name": "Lahova pot",
+    "station_direction": "",
+    "station_int_id": 2319,
+    "station_lat": 46.0244493799523
+  },
+  "1976": {
+    "station_ref_id": "600012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5051456871461,
+    "station_name": "Bavarski dvor (Kozolec)",
+    "station_direction": "",
+    "station_int_id": 1976,
+    "station_lat": 46.0561009080242
+  },
+  "1888": {
+    "station_ref_id": "204041",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5701118255108,
+    "station_name": "Letali\u0161ka",
+    "station_direction": "\u2192",
+    "station_int_id": 1888,
+    "station_lat": 46.0622142671473
+  },
+  "2240": {
+    "station_ref_id": "802052",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4962090122151,
+    "station_name": "Drenikova",
+    "station_direction": "\u2192",
+    "station_int_id": 2240,
+    "station_lat": 46.0668381822726
+  },
+  "1873": {
+    "station_ref_id": "802032",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4897452389028,
+    "station_name": "Na jami",
+    "station_direction": "",
+    "station_int_id": 1873,
+    "station_lat": 46.0666625666718
+  },
+  "2105": {
+    "station_ref_id": "402021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5195247598878,
+    "station_name": "Poliklinika",
+    "station_direction": "\u2192",
+    "station_int_id": 2105,
+    "station_lat": 46.0538088922616
+  },
+  "3404": {
+    "station_ref_id": "614051",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.481656257453,
+    "station_name": "Zidarjevec",
+    "station_direction": "\u2192",
+    "station_int_id": 3404,
+    "station_lat": 46.0021862938895
+  },
+  "2183": {
+    "station_ref_id": "703062",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4588031173976,
+    "station_name": "Preval",
+    "station_direction": "",
+    "station_int_id": 2183,
+    "station_lat": 46.047461876198
+  },
+  "2002": {
+    "station_ref_id": "203092",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5387445215647,
+    "station_name": "Jar\u0161e",
+    "station_direction": "",
+    "station_int_id": 2002,
+    "station_lat": 46.0687318055859
+  },
+  "1985": {
+    "station_ref_id": "402031",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5205554330943,
+    "station_name": "Klini\u010dni center",
+    "station_direction": "\u2192",
+    "station_int_id": 1985,
+    "station_lat": 46.0524267760194
+  },
+  "3340": {
+    "station_ref_id": "701012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4979228973389,
+    "station_name": "Tivolska",
+    "station_direction": "",
+    "station_int_id": 3340,
+    "station_lat": 46.052978515625
+  },
+  "2339": {
+    "station_ref_id": "104071",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5356621798438,
+    "station_name": "\u0160landrova",
+    "station_direction": "\u2192",
+    "station_int_id": 2339,
+    "station_lat": 46.0979042125744
+  },
+  "1931": {
+    "station_ref_id": "803032",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4807016995688,
+    "station_name": "Kompas",
+    "station_direction": "",
+    "station_int_id": 1931,
+    "station_lat": 46.0798333635307
+  },
+  "2106": {
+    "station_ref_id": "303032",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5398492793268,
+    "station_name": "Ob soto\u010dju",
+    "station_direction": "",
+    "station_int_id": 2106,
+    "station_lat": 46.0538213183786
+  },
+  "2229": {
+    "station_ref_id": "204142",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5757280921188,
+    "station_name": "Belinka",
+    "station_direction": "",
+    "station_int_id": 2229,
+    "station_lat": 46.0911968501555
+  },
+  "3406": {
+    "station_ref_id": "614062",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.475942972246,
+    "station_name": "Rutar",
+    "station_direction": "",
+    "station_int_id": 3406,
+    "station_lat": 46.0002205347651
+  },
+  "2075": {
+    "station_ref_id": "103131",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.51384,
+    "station_name": "Ruski car",
+    "station_direction": "\u2192",
+    "station_int_id": 2075,
+    "station_lat": 46.09022
+  },
+  "3951": {
+    "station_ref_id": "714011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4422741153973,
+    "station_name": "Kozarje GD",
+    "station_direction": "\u2192",
+    "station_int_id": 3951,
+    "station_lat": 46.0374578380059
+  },
+  "2164": {
+    "station_ref_id": "404011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5592465274681,
+    "station_name": "Hru\u0161ica",
+    "station_direction": "\u2192",
+    "station_int_id": 2164,
+    "station_lat": 46.045579741671
+  },
+  "2252": {
+    "station_ref_id": "203131",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5485897737553,
+    "station_name": "BTC-Kolosej",
+    "station_direction": "\u2192",
+    "station_int_id": 2252,
+    "station_lat": 46.0656260766576
+  },
+  "2186": {
+    "station_ref_id": "703051",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4650218068887,
+    "station_name": "Podmornica",
+    "station_direction": "\u2192",
+    "station_int_id": 2186,
+    "station_lat": 46.0472638488987
+  },
+  "1925": {
+    "station_ref_id": "804022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4713579672898,
+    "station_name": "Pru\u0161nikova",
+    "station_direction": "",
+    "station_int_id": 1925,
+    "station_lat": 46.0907175876449
+  },
+  "2188": {
+    "station_ref_id": "703041",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4695828205199,
+    "station_name": "Vi\u0161ko polje",
+    "station_direction": "\u2192",
+    "station_int_id": 2188,
+    "station_lat": 46.0459405458918
+  },
+  "2180": {
+    "station_ref_id": "704031",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4552457075807,
+    "station_name": "Vrhovci",
+    "station_direction": "\u2192",
+    "station_int_id": 2180,
+    "station_lat": 46.0439071594799
+  },
+  "3503": {
+    "station_ref_id": "504081",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5553350992308,
+    "station_name": "Lavrica pri Mal\u010di",
+    "station_direction": "\u2192",
+    "station_int_id": 3503,
+    "station_lat": 46.0003370728329
+  },
+  "2314": {
+    "station_ref_id": "102022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5148355703627,
+    "station_name": "Topni\u0161ka",
+    "station_direction": "",
+    "station_int_id": 2314,
+    "station_lat": 46.0670790150096
+  },
+  "2244": {
+    "station_ref_id": "502022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5207411189343,
+    "station_name": "Ro\u0161ka",
+    "station_direction": "",
+    "station_int_id": 2244,
+    "station_lat": 46.0486676620314
+  },
+  "2163": {
+    "station_ref_id": "403062",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5529696589914,
+    "station_name": "Rast",
+    "station_direction": "",
+    "station_int_id": 2163,
+    "station_lat": 46.046550417811
+  },
+  "2249": {
+    "station_ref_id": "203142",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5449699852891,
+    "station_name": "BTC-Emporium",
+    "station_direction": "",
+    "station_int_id": 2249,
+    "station_lat": 46.0617841842246
+  },
+  "3323": {
+    "station_ref_id": "503051",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.521560938484,
+    "station_name": "Mihov \u0161tradon",
+    "station_direction": "\u2192",
+    "station_int_id": 3323,
+    "station_lat": 46.0293798924376
+  },
+  "4235": {
+    "station_ref_id": "203231",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5292849338171,
+    "station_name": "Na \u017dale",
+    "station_direction": "\u2192",
+    "station_int_id": 4235,
+    "station_lat": 46.0715438092827
+  },
+  "2187": {
+    "station_ref_id": "703042",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4690759204989,
+    "station_name": "Vi\u0161ko polje",
+    "station_direction": "",
+    "station_int_id": 2187,
+    "station_lat": 46.0463661760391
+  },
+  "3521": {
+    "station_ref_id": "103161",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5196909265827,
+    "station_name": "Maroltova",
+    "station_direction": "",
+    "station_int_id": 3521,
+    "station_lat": 46.0797931830415
+  },
+  "1943": {
+    "station_ref_id": "700012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5019390996907,
+    "station_name": "Hotel Lev",
+    "station_direction": "",
+    "station_int_id": 1943,
+    "station_lat": 46.0563512087656
+  },
+  "2111": {
+    "station_ref_id": "303024",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5419185875166,
+    "station_name": "Zalo\u0161ka",
+    "station_direction": "",
+    "station_int_id": 2111,
+    "station_lat": 46.0557930676559
+  },
+  "2154": {
+    "station_ref_id": "204072",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5695140029539,
+    "station_name": "Sneberje",
+    "station_direction": "",
+    "station_int_id": 2154,
+    "station_lat": 46.0778972251394
+  },
+  "2213": {
+    "station_ref_id": "103091",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5075294684764,
+    "station_name": "Gorjan\u010deva",
+    "station_direction": "\u2192",
+    "station_int_id": 2213,
+    "station_lat": 46.0849519977653
+  },
+  "2012": {
+    "station_ref_id": "602061",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5016451401323,
+    "station_name": "Kri\u017eanke",
+    "station_direction": "\u2192",
+    "station_int_id": 2012,
+    "station_lat": 46.0462959189535
+  },
+  "2254": {
+    "station_ref_id": "703111",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4671790974108,
+    "station_name": "Dolgi most",
+    "station_direction": "\u2192",
+    "station_int_id": 2254,
+    "station_lat": 46.0370583059353
+  },
+  "1907": {
+    "station_ref_id": "803052",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4889747268173,
+    "station_name": "Litostrojska",
+    "station_direction": "",
+    "station_int_id": 1907,
+    "station_lat": 46.0767540512211
+  },
+  "2040": {
+    "station_ref_id": "803132",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4733813920661,
+    "station_name": "Bratov U\u010dakar",
+    "station_direction": "",
+    "station_int_id": 2040,
+    "station_lat": 46.0697392773975
+  },
+  "2056": {
+    "station_ref_id": "402052",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5270949974698,
+    "station_name": "Glonarjeva",
+    "station_direction": "",
+    "station_int_id": 2056,
+    "station_lat": 46.0505565109467
+  },
+  "2324": {
+    "station_ref_id": "103081",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.519774,
+    "station_name": "Nove Sto\u017eice",
+    "station_direction": "\u2192",
+    "station_int_id": 2324,
+    "station_lat": 46.081845
+  },
+  "2253": {
+    "station_ref_id": "703112",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4653790164028,
+    "station_name": "Dolgi most",
+    "station_direction": "",
+    "station_int_id": 2253,
+    "station_lat": 46.0368441633802
+  },
+  "3369": {
+    "station_ref_id": "403025",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5394530435319,
+    "station_name": "Kodeljevo - obra\u010dali\u0161\u010de",
+    "station_direction": "",
+    "station_int_id": 3369,
+    "station_lat": 46.0518431482064
+  },
+  "2019": {
+    "station_ref_id": "503012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5176450608338,
+    "station_name": "Streli\u0161\u010de",
+    "station_direction": "",
+    "station_int_id": 2019,
+    "station_lat": 46.0386440849511
+  },
+  "2165": {
+    "station_ref_id": "404012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5604542338362,
+    "station_name": "Hru\u0161ica",
+    "station_direction": "",
+    "station_int_id": 2165,
+    "station_lat": 46.0451824142776
+  },
+  "2210": {
+    "station_ref_id": "103022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5063455897371,
+    "station_name": "Brinje",
+    "station_direction": "",
+    "station_int_id": 2210,
+    "station_lat": 46.0779175872901
+  },
+  "2203": {
+    "station_ref_id": "101061",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5029670392812,
+    "station_name": "Bratov \u017didan",
+    "station_direction": "\u2192",
+    "station_int_id": 2203,
+    "station_lat": 46.0652125914215
+  },
+  "3642": {
+    "station_ref_id": "803211",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4913580625216,
+    "station_name": "Kovinarska",
+    "station_direction": "\u2192",
+    "station_int_id": 3642,
+    "station_lat": 46.0803964420806
+  },
+  "1864": {
+    "station_ref_id": "803111",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4717184718765,
+    "station_name": "\u010cebelarska",
+    "station_direction": "\u2192",
+    "station_int_id": 1864,
+    "station_lat": 46.0783920213723
+  },
+  "2090": {
+    "station_ref_id": "100021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5070188919119,
+    "station_name": "Razstavi\u0161\u010de",
+    "station_direction": "\u2192",
+    "station_int_id": 2090,
+    "station_lat": 46.0607888162495
+  },
+  "3310": {
+    "station_ref_id": "501022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5102044360555,
+    "station_name": "Zmajski most",
+    "station_direction": "",
+    "station_int_id": 3310,
+    "station_lat": 46.0522134847809
+  },
+  "2318": {
+    "station_ref_id": "603101",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5119981644784,
+    "station_name": "Ilovica",
+    "station_direction": "\u2192",
+    "station_int_id": 2318,
+    "station_lat": 46.0287453037109
+  },
+  "1886": {
+    "station_ref_id": "204031",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.566488,
+    "station_name": "Rog",
+    "station_direction": "\u2192",
+    "station_int_id": 1886,
+    "station_lat": 46.062149
+  },
+  "1992": {
+    "station_ref_id": "303022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5406648756758,
+    "station_name": "Kajuhova",
+    "station_direction": "\u2192",
+    "station_int_id": 1992,
+    "station_lat": 46.0567921339455
+  },
+  "1874": {
+    "station_ref_id": "101031",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5117702100289,
+    "station_name": "Be\u017eigrad",
+    "station_direction": "\u2192",
+    "station_int_id": 1874,
+    "station_lat": 46.0637341978335
+  },
+  "2099": {
+    "station_ref_id": "704011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4632149619944,
+    "station_name": "Dolgi most - obra\u010dali\u0161\u010de",
+    "station_direction": "\u2192",
+    "station_int_id": 2099,
+    "station_lat": 46.037391581951
+  },
+  "1904": {
+    "station_ref_id": "803061",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4866913944941,
+    "station_name": "Ljubljanske brigade",
+    "station_direction": "\u2192",
+    "station_int_id": 1904,
+    "station_lat": 46.0797538084623
+  },
+  "2096": {
+    "station_ref_id": "703091",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4780545673349,
+    "station_name": "Vi\u010d",
+    "station_direction": "\u2192",
+    "station_int_id": 2096,
+    "station_lat": 46.0421398444185
+  },
+  "2202": {
+    "station_ref_id": "101022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5044379113636,
+    "station_name": "Parmova",
+    "station_direction": "",
+    "station_int_id": 2202,
+    "station_lat": 46.0638467697702
+  },
+  "1921": {
+    "station_ref_id": "804042",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4653547563056,
+    "station_name": "\u0160entvid",
+    "station_direction": "",
+    "station_int_id": 1921,
+    "station_lat": 46.0966915278023
+  },
+  "1942": {
+    "station_ref_id": "700011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.50390213335,
+    "station_name": "Kolizej",
+    "station_direction": "\u2192",
+    "station_int_id": 1942,
+    "station_lat": 46.0547112836872
+  },
+  "2088": {
+    "station_ref_id": "101052",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5090730833369,
+    "station_name": "Astra",
+    "station_direction": "",
+    "station_int_id": 2088,
+    "station_lat": 46.0648973517199
+  },
+  "2130": {
+    "station_ref_id": "303052",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5511274159203,
+    "station_name": "Pot na Fu\u017eine",
+    "station_direction": "",
+    "station_int_id": 2130,
+    "station_lat": 46.0559793120522
+  },
+  "1859": {
+    "station_ref_id": "804181",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4587585391091,
+    "station_name": "Pr\u017ean",
+    "station_direction": "\u2192",
+    "station_int_id": 1859,
+    "station_lat": 46.088468380925
+  },
+  "1999": {
+    "station_ref_id": "203041",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.533173796629,
+    "station_name": "\u0160ola Jar\u0161e",
+    "station_direction": "\u2192",
+    "station_int_id": 1999,
+    "station_lat": 46.0667535149744
+  },
+  "3798": {
+    "station_ref_id": "504121",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5323392057831,
+    "station_name": "Bobrova",
+    "station_direction": "\u2192",
+    "station_int_id": 3798,
+    "station_lat": 46.0241304097288
+  },
+  "3364": {
+    "station_ref_id": "404121",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5719944841569,
+    "station_name": "Bizovik",
+    "station_direction": "",
+    "station_int_id": 3364,
+    "station_lat": 46.0378720155047
+  },
+  "2243": {
+    "station_ref_id": "203044",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5341802327549,
+    "station_name": "\u0160ola Jar\u0161e",
+    "station_direction": "",
+    "station_int_id": 2243,
+    "station_lat": 46.0664026885602
+  },
+  "2085": {
+    "station_ref_id": "102041",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.51023,
+    "station_name": "Stadion",
+    "station_direction": "\u2192",
+    "station_int_id": 2085,
+    "station_lat": 46.06938
+  },
+  "2152": {
+    "station_ref_id": "204062",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5637845561949,
+    "station_name": "Hrastje",
+    "station_direction": "",
+    "station_int_id": 2152,
+    "station_lat": 46.0746909404647
+  },
+  "1970": {
+    "station_ref_id": "202011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.52062,
+    "station_name": "Viadukt",
+    "station_direction": "\u2192",
+    "station_int_id": 1970,
+    "station_lat": 46.05941
+  },
+  "3524": {
+    "station_ref_id": "103173",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5246136943398,
+    "station_name": "Center Sto\u017eice",
+    "station_direction": "\u2192",
+    "station_int_id": 3524,
+    "station_lat": 46.0791274024066
+  },
+  "3373": {
+    "station_ref_id": "404102",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5565439364464,
+    "station_name": "Kro\u017ena pot",
+    "station_direction": "",
+    "station_int_id": 3373,
+    "station_lat": 46.0407058849986
+  },
+  "1958": {
+    "station_ref_id": "603032",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4892577226481,
+    "station_name": "Krimska",
+    "station_direction": "",
+    "station_int_id": 1958,
+    "station_lat": 46.0366909125103
+  },
+  "2209": {
+    "station_ref_id": "103021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5056154640785,
+    "station_name": "Brinje",
+    "station_direction": "\u2192",
+    "station_int_id": 2209,
+    "station_lat": 46.076962365076
+  },
+  "2334": {
+    "station_ref_id": "204112",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5533908952253,
+    "station_name": "Slovenijales",
+    "station_direction": "",
+    "station_int_id": 2334,
+    "station_lat": 46.0935650658959
+  },
+  "2080": {
+    "station_ref_id": "103072",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5134640245604,
+    "station_name": "Smelt",
+    "station_direction": "",
+    "station_int_id": 2080,
+    "station_lat": 46.0822741463821
+  },
+  "3715": {
+    "station_ref_id": "603151",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5172115763985,
+    "station_name": "Goluhova",
+    "station_direction": "\u2192",
+    "station_int_id": 3715,
+    "station_lat": 46.0315140794488
+  },
+  "2226": {
+    "station_ref_id": "703021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4809096078738,
+    "station_name": "Cesta XV",
+    "station_direction": "\u2192",
+    "station_int_id": 2226,
+    "station_lat": 46.0459573556179
+  },
+  "2212": {
+    "station_ref_id": "103062",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5074840738995,
+    "station_name": "Pohorskega bataljona",
+    "station_direction": "",
+    "station_int_id": 2212,
+    "station_lat": 46.0820525723104
+  },
+  "2120": {
+    "station_ref_id": "304061",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.576019820884,
+    "station_name": "Studenec",
+    "station_direction": "\u2192",
+    "station_int_id": 2120,
+    "station_lat": 46.0547196858719
+  },
+  "2310": {
+    "station_ref_id": "203072",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5321195846937,
+    "station_name": "Nove \u017dale",
+    "station_direction": "",
+    "station_int_id": 2310,
+    "station_lat": 46.074574781396
+  },
+  "3477": {
+    "station_ref_id": "703122",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4718466545505,
+    "station_name": "\u017divalski vrt",
+    "station_direction": "",
+    "station_int_id": 3477,
+    "station_lat": 46.0526896915896
+  },
+  "3313": {
+    "station_ref_id": "501031",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5107649777746,
+    "station_name": "Krekov trg",
+    "station_direction": "",
+    "station_int_id": 3313,
+    "station_lat": 46.0505445674127
+  },
+  "1936": {
+    "station_ref_id": "802021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.489376,
+    "station_name": "Kino \u0160i\u0161ka",
+    "station_direction": "\u2192",
+    "station_int_id": 1936,
+    "station_lat": 46.069726
+  },
+  "2004": {
+    "station_ref_id": "203102",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5414942639509,
+    "station_name": "Kodrova",
+    "station_direction": "",
+    "station_int_id": 2004,
+    "station_lat": 46.0691507508133
+  },
+  "2192": {
+    "station_ref_id": "703011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4822085265935,
+    "station_name": "Ro\u017ena dolina",
+    "station_direction": "\u2192",
+    "station_int_id": 2192,
+    "station_lat": 46.0477793973284
+  },
+  "1950": {
+    "station_ref_id": "602042",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4935786010422,
+    "station_name": "Toba\u010dna",
+    "station_direction": "",
+    "station_int_id": 1950,
+    "station_lat": 46.0470755662802
+  },
+  "1953": {
+    "station_ref_id": "602031",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4904055379179,
+    "station_name": "Hajdrihova",
+    "station_direction": "\u2192",
+    "station_int_id": 1953,
+    "station_lat": 46.045525262675
+  },
+  "1955": {
+    "station_ref_id": "603011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4886758245036,
+    "station_name": "Jadranska",
+    "station_direction": "\u2192",
+    "station_int_id": 1955,
+    "station_lat": 46.0437795777789
+  },
+  "2061": {
+    "station_ref_id": "403043",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5385547626929,
+    "station_name": "\u0160tepanja vas",
+    "station_direction": "\u2192",
+    "station_int_id": 2061,
+    "station_lat": 46.048686027518
+  },
+  "2320": {
+    "station_ref_id": "603111",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.511304459977,
+    "station_name": "Lahova pot",
+    "station_direction": "\u2192",
+    "station_int_id": 2320,
+    "station_lat": 46.0244871008917
+  },
+  "2242": {
+    "station_ref_id": "102012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5049636004673,
+    "station_name": "Samova",
+    "station_direction": "\u2192",
+    "station_int_id": 2242,
+    "station_lat": 46.0667738851436
+  },
+  "2333": {
+    "station_ref_id": "204111",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5525718253956,
+    "station_name": "Slovenijales",
+    "station_direction": "\u2192",
+    "station_int_id": 2333,
+    "station_lat": 46.0938797664379
+  },
+  "3952": {
+    "station_ref_id": "714012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4433970095024,
+    "station_name": "Kozarje GD",
+    "station_direction": "",
+    "station_int_id": 3952,
+    "station_lat": 46.0374077879885
+  },
+  "1966": {
+    "station_ref_id": "202061",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5272767513117,
+    "station_name": "\u017dale",
+    "station_direction": "\u2192",
+    "station_int_id": 1966,
+    "station_lat": 46.0669620118359
+  },
+  "1964": {
+    "station_ref_id": "203011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5292756102799,
+    "station_name": "Pokopali\u0161ka",
+    "station_direction": "\u2192",
+    "station_int_id": 1964,
+    "station_lat": 46.065626401728
+  },
+  "2014": {
+    "station_ref_id": "602101",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5063616966418,
+    "station_name": "Gornji trg",
+    "station_direction": "\u2192",
+    "station_int_id": 2014,
+    "station_lat": 46.0459373831064
+  },
+  "2133": {
+    "station_ref_id": "304021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5608268973777,
+    "station_name": "Osenjakova",
+    "station_direction": "\u2192",
+    "station_int_id": 2133,
+    "station_lat": 46.0561815767354
+  },
+  "3403": {
+    "station_ref_id": "614052",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4805782791121,
+    "station_name": "Zidarjevec",
+    "station_direction": "",
+    "station_int_id": 3403,
+    "station_lat": 46.0022864580773
+  },
+  "3365": {
+    "station_ref_id": "404111",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5643275095289,
+    "station_name": "Hru\u0161evska",
+    "station_direction": "\u2192",
+    "station_int_id": 3365,
+    "station_lat": 46.0397776852003
+  },
+  "2309": {
+    "station_ref_id": "203071",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5315843856506,
+    "station_name": "Nove \u017dale",
+    "station_direction": "\u2192",
+    "station_int_id": 2309,
+    "station_lat": 46.0743922225175
+  },
+  "2089": {
+    "station_ref_id": "100022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5077089966774,
+    "station_name": "Razstavi\u0161\u010de",
+    "station_direction": "",
+    "station_int_id": 2089,
+    "station_lat": 46.0610219292677
+  },
+  "2299": {
+    "station_ref_id": "304051",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5657533369432,
+    "station_name": "Fu\u017eine",
+    "station_direction": "\u2192",
+    "station_int_id": 2299,
+    "station_lat": 46.0520364175342
+  },
+  "1969": {
+    "station_ref_id": "202042",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.524853932852,
+    "station_name": "Savsko naselje",
+    "station_direction": "",
+    "station_int_id": 1969,
+    "station_lat": 46.0627649957494
+  },
+  "4236": {
+    "station_ref_id": "203232",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.529913754516,
+    "station_name": "Na \u017dale",
+    "station_direction": "",
+    "station_int_id": 4236,
+    "station_lat": 46.0716188375998
+  },
+  "2015": {
+    "station_ref_id": "602102",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5064869358443,
+    "station_name": "Gornji trg",
+    "station_direction": "",
+    "station_int_id": 2015,
+    "station_lat": 46.0457408698752
+  },
+  "1917": {
+    "station_ref_id": "602093",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5001231726554,
+    "station_name": "Ziherlova",
+    "station_direction": "\u2192",
+    "station_int_id": 1917,
+    "station_lat": 46.0418212314252
+  },
+  "1889": {
+    "station_ref_id": "204042",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.571226,
+    "station_name": "Letali\u0161ka",
+    "station_direction": "",
+    "station_int_id": 1889,
+    "station_lat": 46.062066
+  },
+  "2205": {
+    "station_ref_id": "102051",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5033811152253,
+    "station_name": "Podmil\u0161\u010dakova",
+    "station_direction": "\u2192",
+    "station_int_id": 2205,
+    "station_lat": 46.0694200442557
+  },
+  "3334": {
+    "station_ref_id": "502014",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5168919025372,
+    "station_name": "Ambro\u017eev trg",
+    "station_direction": "",
+    "station_int_id": 3334,
+    "station_lat": 46.0495752574493
+  },
+  "3329": {
+    "station_ref_id": "704024",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4538894322047,
+    "station_name": "Brdo",
+    "station_direction": "",
+    "station_int_id": 3329,
+    "station_lat": 46.0478184633981
+  },
+  "3402": {
+    "station_ref_id": "614042",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4903609325562,
+    "station_name": "Capuder",
+    "station_direction": "",
+    "station_int_id": 3402,
+    "station_lat": 46.0059266764209
+  },
+  "3311": {
+    "station_ref_id": "501021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5107176337077,
+    "station_name": "Zmajski most",
+    "station_direction": "\u2192",
+    "station_int_id": 3311,
+    "station_lat": 46.0515774565414
+  },
+  "1880": {
+    "station_ref_id": "203181",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5515032876908,
+    "station_name": "Bratislavska",
+    "station_direction": "\u2192",
+    "station_int_id": 1880,
+    "station_lat": 46.0661748219224
+  },
+  "3716": {
+    "station_ref_id": "603152",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5174631046781,
+    "station_name": "Goluhova",
+    "station_direction": "",
+    "station_int_id": 3716,
+    "station_lat": 46.0310197800233
+  },
+  "2029": {
+    "station_ref_id": "504022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5404867282094,
+    "station_name": "Spodnji Rudnik",
+    "station_direction": "",
+    "station_int_id": 2029,
+    "station_lat": 46.022754200005
+  },
+  "1973": {
+    "station_ref_id": "301012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5167482582541,
+    "station_name": "Fri\u0161kovec",
+    "station_direction": "",
+    "station_int_id": 1973,
+    "station_lat": 46.0574878665168
+  },
+  "2297": {
+    "station_ref_id": "203191",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.552712,
+    "station_name": "Yulon",
+    "station_direction": "\u2192",
+    "station_int_id": 2297,
+    "station_lat": 46.061986
+  },
+  "2000": {
+    "station_ref_id": "203042",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5345499734436,
+    "station_name": "\u0160ola Jar\u0161e",
+    "station_direction": "",
+    "station_int_id": 2000,
+    "station_lat": 46.0671498839754
+  },
+  "1860": {
+    "station_ref_id": "804172",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4651100051609,
+    "station_name": "Andreja Bitenca",
+    "station_direction": "",
+    "station_int_id": 1860,
+    "station_lat": 46.0859041528413
+  },
+  "2251": {
+    "station_ref_id": "203132",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5477370207839,
+    "station_name": "BTC-Kolosej",
+    "station_direction": "",
+    "station_int_id": 2251,
+    "station_lat": 46.0659349521535
+  },
+  "3520": {
+    "station_ref_id": "103162",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5199244885565,
+    "station_name": "Maroltova",
+    "station_direction": "\u2192",
+    "station_int_id": 3520,
+    "station_lat": 46.0794399764814
+  },
+  "2308": {
+    "station_ref_id": "203081",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5367319984973,
+    "station_name": "Toma\u010devo",
+    "station_direction": "\u2192",
+    "station_int_id": 2308,
+    "station_lat": 46.0795024004748
+  },
+  "2119": {
+    "station_ref_id": "304042",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5674585490773,
+    "station_name": "Chengdujska",
+    "station_direction": "",
+    "station_int_id": 2119,
+    "station_lat": 46.0548199178901
+  },
+  "1967": {
+    "station_ref_id": "202062",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5276637870277,
+    "station_name": "\u017dale",
+    "station_direction": "",
+    "station_int_id": 1967,
+    "station_lat": 46.066898944631
+  },
+  "2298": {
+    "station_ref_id": "203192",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.553738,
+    "station_name": "Yulon",
+    "station_direction": "",
+    "station_int_id": 2298,
+    "station_lat": 46.061852
+  },
+  "1998": {
+    "station_ref_id": "203021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5317005640753,
+    "station_name": "Ro\u017ei\u010deva",
+    "station_direction": "",
+    "station_int_id": 1998,
+    "station_lat": 46.0633447391051
+  },
+  "2168": {
+    "station_ref_id": "404031",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5796107563175,
+    "station_name": "Dobrunje",
+    "station_direction": "\u2192",
+    "station_int_id": 2168,
+    "station_lat": 46.0432198441493
+  },
+  "2128": {
+    "station_ref_id": "204081",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.57993,
+    "station_name": "Zadobrova",
+    "station_direction": "\u2192",
+    "station_int_id": 2128,
+    "station_lat": 46.071015
+  },
+  "2042": {
+    "station_ref_id": "803082",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4809774479051,
+    "station_name": "Kneza Koclja",
+    "station_direction": "",
+    "station_int_id": 2042,
+    "station_lat": 46.0717449040447
+  },
+  "3417": {
+    "station_ref_id": "704101",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.445909,
+    "station_name": "Kozarje",
+    "station_direction": "\u2192",
+    "station_int_id": 3417,
+    "station_lat": 46.031497
+  },
+  "3397": {
+    "station_ref_id": "614021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5001076533889,
+    "station_name": "Brglezov \u0161tradon",
+    "station_direction": "\u2192",
+    "station_int_id": 3397,
+    "station_lat": 46.0093538327583
+  },
+  "3641": {
+    "station_ref_id": "803212",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4918072201637,
+    "station_name": "Kovinarska",
+    "station_direction": "",
+    "station_int_id": 3641,
+    "station_lat": 46.0804464528947
+  },
+  "3331": {
+    "station_ref_id": "704041",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.448009,
+    "station_name": "Bokalce",
+    "station_direction": "\u2192",
+    "station_int_id": 3331,
+    "station_lat": 46.051926
+  },
+  "1991": {
+    "station_ref_id": "303021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5395127552736,
+    "station_name": "Zalo\u0161ka",
+    "station_direction": "\u2192",
+    "station_int_id": 1991,
+    "station_lat": 46.0561411194173
+  },
+  "3573": {
+    "station_ref_id": "603132",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5047429602549,
+    "station_name": "Hladnikova",
+    "station_direction": "",
+    "station_int_id": 3573,
+    "station_lat": 46.0368196968669
+  },
+  "2206": {
+    "station_ref_id": "102052",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.503734900294,
+    "station_name": "Podmil\u0161\u010dakova",
+    "station_direction": "",
+    "station_int_id": 2206,
+    "station_lat": 46.0696646188722
+  },
+  "2184": {
+    "station_ref_id": "703061",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4592277950216,
+    "station_name": "Preval",
+    "station_direction": "\u2192",
+    "station_int_id": 2184,
+    "station_lat": 46.04725743627
+  },
+  "2011": {
+    "station_ref_id": "803012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4865567638802,
+    "station_name": "Slovenija avto",
+    "station_direction": "",
+    "station_int_id": 2011,
+    "station_lat": 46.0738537171375
+  },
+  "1903": {
+    "station_ref_id": "803072",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4796957407311,
+    "station_name": "Tehnounion",
+    "station_direction": "",
+    "station_int_id": 1903,
+    "station_lat": 46.0870563684513
+  },
+  "2135": {
+    "station_ref_id": "304041",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5659071731747,
+    "station_name": "Chengdujska",
+    "station_direction": "\u2192",
+    "station_int_id": 2135,
+    "station_lat": 46.0551790871287
+  },
+  "2043": {
+    "station_ref_id": "803081",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4809568373857,
+    "station_name": "Kneza Koclja",
+    "station_direction": "\u2192",
+    "station_int_id": 2043,
+    "station_lat": 46.0714477548823
+  },
+  "3502": {
+    "station_ref_id": "504082",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5542211882784,
+    "station_name": "Lavrica pri Mal\u010di",
+    "station_direction": "",
+    "station_int_id": 3502,
+    "station_lat": 46.0014733378539
+  },
+  "2045": {
+    "station_ref_id": "500011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5063137855025,
+    "station_name": "Tav\u010darjeva",
+    "station_direction": "\u2192",
+    "station_int_id": 2045,
+    "station_lat": 46.0547360452192
+  },
+  "2235": {
+    "station_ref_id": "803181",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4651971684716,
+    "station_name": "Kamna Gorica",
+    "station_direction": "\u2192",
+    "station_int_id": 2235,
+    "station_lat": 46.0794128450809
+  },
+  "2082": {
+    "station_ref_id": "103032",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.51221,
+    "station_name": "AMZS",
+    "station_direction": "",
+    "station_int_id": 2082,
+    "station_lat": 46.07735
+  },
+  "1965": {
+    "station_ref_id": "203012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5290011802691,
+    "station_name": "Pokopali\u0161ka",
+    "station_direction": "",
+    "station_int_id": 1965,
+    "station_lat": 46.0656090130998
+  },
+  "2032": {
+    "station_ref_id": "804212",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4489268845816,
+    "station_name": "Murkova",
+    "station_direction": "",
+    "station_int_id": 2032,
+    "station_lat": 46.0741641610318
+  },
+  "1968": {
+    "station_ref_id": "202041",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5243578154065,
+    "station_name": "Savsko naselje",
+    "station_direction": "\u2192",
+    "station_int_id": 1968,
+    "station_lat": 46.0626691785687
+  },
+  "1984": {
+    "station_ref_id": "502012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5156647031503,
+    "station_name": "Poljanska",
+    "station_direction": "",
+    "station_int_id": 1984,
+    "station_lat": 46.0500317413051
+  },
+  "2326": {
+    "station_ref_id": "103042",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5199693652432,
+    "station_name": "Puhova",
+    "station_direction": "",
+    "station_int_id": 2326,
+    "station_lat": 46.0768816213189
+  },
+  "1862": {
+    "station_ref_id": "803121",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4694274912936,
+    "station_name": "Ple\u0161i\u010deva",
+    "station_direction": "\u2192",
+    "station_int_id": 1862,
+    "station_lat": 46.0815100577848
+  },
+  "1879": {
+    "station_ref_id": "202032",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5230283655615,
+    "station_name": "Savske stolpnice",
+    "station_direction": "",
+    "station_int_id": 1879,
+    "station_lat": 46.065866186599
+  },
+  "3801": {
+    "station_ref_id": "604061",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5155047773587,
+    "station_name": "I\u017eica",
+    "station_direction": "\u2192",
+    "station_int_id": 3801,
+    "station_lat": 46.0044336839578
+  },
+  "3562": {
+    "station_ref_id": "604051",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5146873104501,
+    "station_name": "Pri Maranzu",
+    "station_direction": "\u2192",
+    "station_int_id": 3562,
+    "station_lat": 46.0072067990893
+  },
+  "1916": {
+    "station_ref_id": "602092",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4996355985021,
+    "station_name": "Ziherlova",
+    "station_direction": "",
+    "station_int_id": 1916,
+    "station_lat": 46.0405037688203
+  },
+  "2220": {
+    "station_ref_id": "104022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5111587770356,
+    "station_name": "Kali\u0161nikov trg",
+    "station_direction": "",
+    "station_int_id": 2220,
+    "station_lat": 46.0935912186703
+  },
+  "3321": {
+    "station_ref_id": "603093",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5129519669234,
+    "station_name": "Galjevica",
+    "station_direction": "\u2192",
+    "station_int_id": 3321,
+    "station_lat": 46.0333866931329
+  },
+  "1956": {
+    "station_ref_id": "603022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4898329587134,
+    "station_name": "Gerbi\u010deva",
+    "station_direction": "",
+    "station_int_id": 1956,
+    "station_lat": 46.0403670659872
+  },
+  "1990": {
+    "station_ref_id": "303012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5339650999744,
+    "station_name": "Tr\u017enica Moste",
+    "station_direction": "",
+    "station_int_id": 1990,
+    "station_lat": 46.0554975381072
+  },
+  "3362": {
+    "station_ref_id": "404101",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5564451217651,
+    "station_name": "Kro\u017ena pot",
+    "station_direction": "\u2192",
+    "station_int_id": 3362,
+    "station_lat": 46.0410499572754
+  },
+  "2030": {
+    "station_ref_id": "504031",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5438013202765,
+    "station_name": "Rudnik",
+    "station_direction": "\u2192",
+    "station_int_id": 2030,
+    "station_lat": 46.0177844342114
+  },
+  "1922": {
+    "station_ref_id": "804031",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4692993577114,
+    "station_name": "Podgora",
+    "station_direction": "\u2192",
+    "station_int_id": 1922,
+    "station_lat": 46.0925702680057
+  },
+  "1974": {
+    "station_ref_id": "300011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5094296324936,
+    "station_name": "Kolodvor",
+    "station_direction": "\u2192",
+    "station_int_id": 1974,
+    "station_lat": 46.0577343087827
+  },
+  "1934": {
+    "station_ref_id": "803011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4863817754814,
+    "station_name": "Slovenija avto",
+    "station_direction": "\u2192",
+    "station_int_id": 1934,
+    "station_lat": 46.0729871704143
+  },
+  "3400": {
+    "station_ref_id": "614031",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4959933693876,
+    "station_name": "Dornig",
+    "station_direction": "\u2192",
+    "station_int_id": 3400,
+    "station_lat": 46.0075072636593
+  },
+  "1878": {
+    "station_ref_id": "202031",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5217855318437,
+    "station_name": "Savske stolpnice",
+    "station_direction": "\u2192",
+    "station_int_id": 1878,
+    "station_lat": 46.065797444571
+  },
+  "1901": {
+    "station_ref_id": "804162",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4773244519037,
+    "station_name": "IMP",
+    "station_direction": "",
+    "station_int_id": 1901,
+    "station_lat": 46.0893348633412
+  },
+  "1882": {
+    "station_ref_id": "204011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.558657,
+    "station_name": "Lesko\u0161kova",
+    "station_direction": "\u2192",
+    "station_int_id": 1882,
+    "station_lat": 46.06205
+  },
+  "2022": {
+    "station_ref_id": "503031",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.52924188551,
+    "station_name": "Akademija",
+    "station_direction": "\u2192",
+    "station_int_id": 2022,
+    "station_lat": 46.0321902788228
+  },
+  "1949": {
+    "station_ref_id": "602051",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.498692577197,
+    "station_name": "A\u0161ker\u010deva",
+    "station_direction": "\u2192",
+    "station_int_id": 1949,
+    "station_lat": 46.0466149021947
+  },
+  "3378": {
+    "station_ref_id": "704051",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4529943236577,
+    "station_name": "Dolgi most Rotar",
+    "station_direction": "\u2192",
+    "station_int_id": 3378,
+    "station_lat": 46.0337101762823
+  },
+  "1951": {
+    "station_ref_id": "602041",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4944646192484,
+    "station_name": "Toba\u010dna",
+    "station_direction": "\u2192",
+    "station_int_id": 1951,
+    "station_lat": 46.0469033031607
+  },
+  "2044": {
+    "station_ref_id": "803016",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4850548474213,
+    "station_name": "\u0160i\u0161enska",
+    "station_direction": "",
+    "station_int_id": 2044,
+    "station_lat": 46.0737811474814
+  },
+  "2036": {
+    "station_ref_id": "803152",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4614593041291,
+    "station_name": "Draveljska gmajna",
+    "station_direction": "",
+    "station_int_id": 2036,
+    "station_lat": 46.0739502116334
+  },
+  "2331": {
+    "station_ref_id": "101034",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5142398703514,
+    "station_name": "Kr\u017ei\u010deva",
+    "station_direction": "",
+    "station_int_id": 2331,
+    "station_lat": 46.0653036134428
+  },
+  "3326": {
+    "station_ref_id": "504052",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5347886575055,
+    "station_name": "NS Rudnik",
+    "station_direction": "",
+    "station_int_id": 3326,
+    "station_lat": 46.0203070759981
+  },
+  "2315": {
+    "station_ref_id": "603092",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5124860998746,
+    "station_name": "Livada",
+    "station_direction": "",
+    "station_int_id": 2315,
+    "station_lat": 46.0331502007534
+  },
+  "2046": {
+    "station_ref_id": "500012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5074699497496,
+    "station_name": "Turist",
+    "station_direction": "",
+    "station_int_id": 2046,
+    "station_lat": 46.0535979234662
+  },
+  "1927": {
+    "station_ref_id": "804012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4746134585934,
+    "station_name": "Trata",
+    "station_direction": "",
+    "station_int_id": 1927,
+    "station_lat": 46.0871662820164
+  },
+  "1935": {
+    "station_ref_id": "803014",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4855071825561,
+    "station_name": "Remiza",
+    "station_direction": "",
+    "station_int_id": 1935,
+    "station_lat": 46.0743539437374
+  },
+  "1861": {
+    "station_ref_id": "804171",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4651328356827,
+    "station_name": "Andreja Bitenca",
+    "station_direction": "\u2192",
+    "station_int_id": 1861,
+    "station_lat": 46.0853832906922
+  },
+  "2057": {
+    "station_ref_id": "403011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5329079230999,
+    "station_name": "Jana Husa",
+    "station_direction": "\u2192",
+    "station_int_id": 2057,
+    "station_lat": 46.0532800749137
+  },
+  "2077": {
+    "station_ref_id": "103101",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5138290303445,
+    "station_name": "Sto\u017eice",
+    "station_direction": "\u2192",
+    "station_int_id": 2077,
+    "station_lat": 46.0862351317798
+  },
+  "2031": {
+    "station_ref_id": "804221",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4437468732627,
+    "station_name": "Podutik",
+    "station_direction": "\u2192",
+    "station_int_id": 2031,
+    "station_lat": 46.074700607212
+  },
+  "2115": {
+    "station_ref_id": "304011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5588679432511,
+    "station_name": "Preglov trg",
+    "station_direction": "\u2192",
+    "station_int_id": 2115,
+    "station_lat": 46.0546966918945
+  },
+  "2006": {
+    "station_ref_id": "203152",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5467393442049,
+    "station_name": "\u017dito",
+    "station_direction": "",
+    "station_int_id": 2006,
+    "station_lat": 46.0698226895654
+  },
+  "1938": {
+    "station_ref_id": "802011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4943382197834,
+    "station_name": "Stara cerkev",
+    "station_direction": "\u2192",
+    "station_int_id": 1938,
+    "station_lat": 46.0640674962697
+  },
+  "3478": {
+    "station_ref_id": "202082",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5295005294853,
+    "station_name": "Flaj\u0161manova",
+    "station_direction": "",
+    "station_int_id": 3478,
+    "station_lat": 46.064665777555
+  },
+  "3315": {
+    "station_ref_id": "502031",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5169512539615,
+    "station_name": "Streli\u0161ka",
+    "station_direction": "\u2192",
+    "station_int_id": 3315,
+    "station_lat": 46.0446072780575
+  },
+  "2047": {
+    "station_ref_id": "501011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5137765606089,
+    "station_name": "Ilirska",
+    "station_direction": "\u2192",
+    "station_int_id": 2047,
+    "station_lat": 46.0530533396928
+  },
+  "4460": {
+    "station_ref_id": "703112",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4653428518935,
+    "station_name": "Dolgi most",
+    "station_direction": "",
+    "station_int_id": 4460,
+    "station_lat": 46.0368196968669
+  },
+  "2059": {
+    "station_ref_id": "403023",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5395596910308,
+    "station_name": "Kodeljevo",
+    "station_direction": "\u2192",
+    "station_int_id": 2059,
+    "station_lat": 46.051574636556
+  },
+  "2048": {
+    "station_ref_id": "501012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5141083545737,
+    "station_name": "Ilirska",
+    "station_direction": "",
+    "station_int_id": 2048,
+    "station_lat": 46.0528795585258
+  },
+  "2181": {
+    "station_ref_id": "704022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4535815047364,
+    "station_name": "Brdo",
+    "station_direction": "",
+    "station_int_id": 2181,
+    "station_lat": 46.0473518748528
+  },
+  "3399": {
+    "station_ref_id": "614032",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4948794584353,
+    "station_name": "Dornig",
+    "station_direction": "",
+    "station_int_id": 3399,
+    "station_lat": 46.0076825338998
+  },
+  "1937": {
+    "station_ref_id": "802022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.49028,
+    "station_name": "Kino \u0160i\u0161ka",
+    "station_direction": "",
+    "station_int_id": 1937,
+    "station_lat": 46.069271
+  },
+  "1890": {
+    "station_ref_id": "204051",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5732202133182,
+    "station_name": "Letali\u0161ka-obra\u010dali\u0161\u010de",
+    "station_direction": "\u2192",
+    "station_int_id": 1890,
+    "station_lat": 46.0621538094006
+  },
+  "3396": {
+    "station_ref_id": "614011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5064946750589,
+    "station_name": "Ple\u010dnikova cerkev",
+    "station_direction": "\u2192",
+    "station_int_id": 3396,
+    "station_lat": 46.0118200011569
+  },
+  "2189": {
+    "station_ref_id": "703032",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4744900543158,
+    "station_name": "Jamnikarjeva",
+    "station_direction": "",
+    "station_int_id": 2189,
+    "station_lat": 46.0451372022588
+  },
+  "2113": {
+    "station_ref_id": "303071",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5530999343792,
+    "station_name": "Brodarjev trg",
+    "station_direction": "\u2192",
+    "station_int_id": 2113,
+    "station_lat": 46.0544323043463
+  },
+  "3639": {
+    "station_ref_id": "203211",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5258623525846,
+    "station_name": "Kranj\u010deva",
+    "station_direction": "\u2192",
+    "station_int_id": 3639,
+    "station_lat": 46.0689677747977
+  },
+  "1908": {
+    "station_ref_id": "104033",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5162963269339,
+    "station_name": "Je\u017eica",
+    "station_direction": "\u2192",
+    "station_int_id": 1908,
+    "station_lat": 46.0974609029863
+  },
+  "2108": {
+    "station_ref_id": "303043",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.548200669132,
+    "station_name": "\u0160tepanjsko naselje",
+    "station_direction": "\u2192",
+    "station_int_id": 2108,
+    "station_lat": 46.0535669144503
+  },
+  "2196": {
+    "station_ref_id": "702011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4922797762011,
+    "station_name": "Pod Ro\u017enikom",
+    "station_direction": "\u2192",
+    "station_int_id": 2196,
+    "station_lat": 46.0511154924379
+  },
+  "2342": {
+    "station_ref_id": "104062",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5275079429496,
+    "station_name": "Elma",
+    "station_direction": "",
+    "station_int_id": 2342,
+    "station_lat": 46.0983366746928
+  },
+  "2329": {
+    "station_ref_id": "102031",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5163895242491,
+    "station_name": "Gasilska brigada",
+    "station_direction": "\u2192",
+    "station_int_id": 2329,
+    "station_lat": 46.0683122204821
+  },
+  "2016": {
+    "station_ref_id": "602111",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5113775201499,
+    "station_name": "Privoz",
+    "station_direction": "\u2192",
+    "station_int_id": 2016,
+    "station_lat": 46.0440087305618
+  },
+  "1961": {
+    "station_ref_id": "603041",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4845342445523,
+    "station_name": "Koprska",
+    "station_direction": "\u2192",
+    "station_int_id": 1961,
+    "station_lat": 46.0353959724272
+  },
+  "2247": {
+    "station_ref_id": "203122",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5439740522248,
+    "station_name": "BTC-tr\u017enica",
+    "station_direction": "",
+    "station_int_id": 2247,
+    "station_lat": 46.0654937304734
+  },
+  "2013": {
+    "station_ref_id": "602062",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5021824108121,
+    "station_name": "Kri\u017eanke",
+    "station_direction": "",
+    "station_int_id": 2013,
+    "station_lat": 46.0459610063461
+  },
+  "2050": {
+    "station_ref_id": "402012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5178402366579,
+    "station_name": "Hrvatski trg",
+    "station_direction": "",
+    "station_int_id": 2050,
+    "station_lat": 46.0521860232111
+  },
+  "3405": {
+    "station_ref_id": "614061",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4766706076262,
+    "station_name": "Rutar",
+    "station_direction": "\u2192",
+    "station_int_id": 3405,
+    "station_lat": 46.0002174045193
+  },
+  "3717": {
+    "station_ref_id": "502024",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5197080563576,
+    "station_name": "Ro\u0161ka",
+    "station_direction": "",
+    "station_int_id": 3717,
+    "station_lat": 46.0494182535155
+  },
+  "2219": {
+    "station_ref_id": "104021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5107395210725,
+    "station_name": "Kali\u0161nikov trg",
+    "station_direction": "\u2192",
+    "station_int_id": 2219,
+    "station_lat": 46.0936096229744
+  },
+  "3327": {
+    "station_ref_id": "504051",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5351957555686,
+    "station_name": "NS Rudnik",
+    "station_direction": "\u2192",
+    "station_int_id": 3327,
+    "station_lat": 46.0201996502363
+  },
+  "3332": {
+    "station_ref_id": "703131",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4702849043708,
+    "station_name": "\u017divalski vrt",
+    "station_direction": "\u2192",
+    "station_int_id": 3332,
+    "station_lat": 46.0535823879398
+  },
+  "3395": {
+    "station_ref_id": "614012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.505982635347,
+    "station_name": "Ple\u010dnikova cerkev",
+    "station_direction": "",
+    "station_int_id": 3395,
+    "station_lat": 46.0122268457141
+  },
+  "3103": {
+    "station_ref_id": "604031",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.472651640192,
+    "station_name": "Mestni log",
+    "station_direction": "\u2192",
+    "station_int_id": 3103,
+    "station_lat": 46.0300779457793
+  },
+  "2341": {
+    "station_ref_id": "104061",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5271842337291,
+    "station_name": "Elma",
+    "station_direction": "\u2192",
+    "station_int_id": 2341,
+    "station_lat": 46.0985848889383
+  },
+  "2063": {
+    "station_ref_id": "403051",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5448415145015,
+    "station_name": "Emona",
+    "station_direction": "\u2192",
+    "station_int_id": 2063,
+    "station_lat": 46.0477987299173
+  },
+  "1977": {
+    "station_ref_id": "600011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.505488014758,
+    "station_name": "Bavarski dvor (Korabar)",
+    "station_direction": "",
+    "station_int_id": 1977,
+    "station_lat": 46.0562502760306
+  },
+  "2327": {
+    "station_ref_id": "102091",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.519127204168,
+    "station_name": "Kardeljeva plo\u0161\u010dad",
+    "station_direction": "\u2192",
+    "station_int_id": 2327,
+    "station_lat": 46.0717802316615
+  },
+  "1987": {
+    "station_ref_id": "402041",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5282085175713,
+    "station_name": "Bolnica",
+    "station_direction": "\u2192",
+    "station_int_id": 1987,
+    "station_lat": 46.0543085654282
+  },
+  "2208": {
+    "station_ref_id": "102072",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5051744436035,
+    "station_name": "Vodovodna",
+    "station_direction": "",
+    "station_int_id": 2208,
+    "station_lat": 46.075412353716
+  },
+  "1909": {
+    "station_ref_id": "602121",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.509281380943,
+    "station_name": "Trnovo",
+    "station_direction": "\u2192",
+    "station_int_id": 1909,
+    "station_lat": 46.0409531476367
+  },
+  "3526": {
+    "station_ref_id": "103191",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.520355679893,
+    "station_name": "Bo\u017ei\u010deva",
+    "station_direction": "\u2192",
+    "station_int_id": 3526,
+    "station_lat": 46.075776496368
+  },
+  "2026": {
+    "station_ref_id": "504011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5354591916259,
+    "station_name": "Gornji Rudnik",
+    "station_direction": "\u2192",
+    "station_int_id": 2026,
+    "station_lat": 46.0283415248652
+  },
+  "2033": {
+    "station_ref_id": "804211",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4500348271652,
+    "station_name": "Murkova",
+    "station_direction": "\u2192",
+    "station_int_id": 2033,
+    "station_lat": 46.0735555583435
+  },
+  "2182": {
+    "station_ref_id": "704021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4544401124732,
+    "station_name": "Brdo",
+    "station_direction": "\u2192",
+    "station_int_id": 2182,
+    "station_lat": 46.0475893289083
+  },
+  "3031": {
+    "station_ref_id": "204131",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5580112653559,
+    "station_name": "Nadgorica",
+    "station_direction": "\u2192",
+    "station_int_id": 3031,
+    "station_lat": 46.0974956006654
+  },
+  "1954": {
+    "station_ref_id": "603012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4892784678837,
+    "station_name": "Jadranska",
+    "station_direction": "",
+    "station_int_id": 1954,
+    "station_lat": 46.0422488747526
+  },
+  "2197": {
+    "station_ref_id": "602012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4970181229667,
+    "station_name": "Cankarjev dom",
+    "station_direction": "",
+    "station_int_id": 2197,
+    "station_lat": 46.0500969106315
+  },
+  "2054": {
+    "station_ref_id": "402062",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5245678375734,
+    "station_name": "Gornje Poljane",
+    "station_direction": "",
+    "station_int_id": 2054,
+    "station_lat": 46.0487326038029
+  },
+  "2166": {
+    "station_ref_id": "404021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5699107187337,
+    "station_name": "Cesta v Bizovik",
+    "station_direction": "\u2192",
+    "station_int_id": 2166,
+    "station_lat": 46.044648308075
+  },
+  "3523": {
+    "station_ref_id": "103182",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5252065824273,
+    "station_name": "Titova",
+    "station_direction": "",
+    "station_int_id": 3523,
+    "station_lat": 46.0763391628087
+  },
+  "2025": {
+    "station_ref_id": "503042",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5317593452538,
+    "station_name": "Peruzzijeva",
+    "station_direction": "",
+    "station_int_id": 2025,
+    "station_lat": 46.0302659686408
+  },
+  "2160": {
+    "station_ref_id": "403032",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5299234236632,
+    "station_name": "Pod Golovcem",
+    "station_direction": "",
+    "station_int_id": 2160,
+    "station_lat": 46.0484020012933
+  },
+  "2097": {
+    "station_ref_id": "703102",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4737331862327,
+    "station_name": "Bonifacija",
+    "station_direction": "",
+    "station_int_id": 2097,
+    "station_lat": 46.0404553425657
+  },
+  "2199": {
+    "station_ref_id": "101011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.507314712315,
+    "station_name": "Hranilni\u0161ka",
+    "station_direction": "\u2192",
+    "station_int_id": 2199,
+    "station_lat": 46.0637352088869
+  },
+  "1912": {
+    "station_ref_id": "603072",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5019511368623,
+    "station_name": "Pot na Rakovo jel\u0161o",
+    "station_direction": "",
+    "station_int_id": 1912,
+    "station_lat": 46.0334289421751
+  },
+  "3374": {
+    "station_ref_id": "404112",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5647766671709,
+    "station_name": "Hru\u0161evska",
+    "station_direction": "",
+    "station_int_id": 3374,
+    "station_lat": 46.039508677188
+  },
+  "2337": {
+    "station_ref_id": "104081",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5422142160388,
+    "station_name": "Obrtna cona",
+    "station_direction": "\u2192",
+    "station_int_id": 2337,
+    "station_lat": 46.0977519102331
+  },
+  "2248": {
+    "station_ref_id": "203121",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5442369722116,
+    "station_name": "BTC-tr\u017enica",
+    "station_direction": "\u2192",
+    "station_int_id": 2248,
+    "station_lat": 46.0656605142907
+  },
+  "3572": {
+    "station_ref_id": "603064",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5005157571694,
+    "station_name": "Murgle",
+    "station_direction": "",
+    "station_int_id": 3572,
+    "station_lat": 46.0378633192509
+  },
+  "3325": {
+    "station_ref_id": "504042",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5287127283254,
+    "station_name": "Jur\u010dkova",
+    "station_direction": "",
+    "station_int_id": 3325,
+    "station_lat": 46.0258763313666
+  },
+  "2245": {
+    "station_ref_id": "203112",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5420302286368,
+    "station_name": "BTC-uprava",
+    "station_direction": "",
+    "station_int_id": 2245,
+    "station_lat": 46.0681796083574
+  },
+  "2039": {
+    "station_ref_id": "803141",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4673609645689,
+    "station_name": "Koseze",
+    "station_direction": "\u2192",
+    "station_int_id": 2039,
+    "station_lat": 46.072124031422
+  },
+  "2018": {
+    "station_ref_id": "503011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5171085645323,
+    "station_name": "Streli\u0161\u010de",
+    "station_direction": "\u2192",
+    "station_int_id": 2018,
+    "station_lat": 46.0393406347181
+  },
+  "2053": {
+    "station_ref_id": "402061",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5223698735479,
+    "station_name": "Gornje Poljane",
+    "station_direction": "\u2192",
+    "station_int_id": 2053,
+    "station_lat": 46.0489022481686
+  },
+  "2086": {
+    "station_ref_id": "102042",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.51042,
+    "station_name": "Stadion",
+    "station_direction": "",
+    "station_int_id": 2086,
+    "station_lat": 46.06942
+  },
+  "2322": {
+    "station_ref_id": "604011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5106727296962,
+    "station_name": "I\u0161ki most",
+    "station_direction": "\u2192",
+    "station_int_id": 2322,
+    "station_lat": 46.0196012053216
+  },
+  "1911": {
+    "station_ref_id": "603081",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5047099987106,
+    "station_name": "Veliki \u0161tradon",
+    "station_direction": "\u2192",
+    "station_int_id": 1911,
+    "station_lat": 46.0374530185592
+  },
+  "2083": {
+    "station_ref_id": "102081",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5111779382601,
+    "station_name": "Mercator",
+    "station_direction": "\u2192",
+    "station_int_id": 2083,
+    "station_lat": 46.0742667424902
+  },
+  "2301": {
+    "station_ref_id": "103011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5002135465797,
+    "station_name": "Toplarna",
+    "station_direction": "\u2192",
+    "station_int_id": 2301,
+    "station_lat": 46.0765221526591
+  },
+  "1996": {
+    "station_ref_id": "203051",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.535905113622,
+    "station_name": "Kav\u010di\u010deva",
+    "station_direction": "",
+    "station_int_id": 1996,
+    "station_lat": 46.0640695390938
+  },
+  "2037": {
+    "station_ref_id": "803151",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.461609180508,
+    "station_name": "Draveljska gmajna",
+    "station_direction": "\u2192",
+    "station_int_id": 2037,
+    "station_lat": 46.0737654431551
+  },
+  "2103": {
+    "station_ref_id": "602071",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5007129425827,
+    "station_name": "Mirje",
+    "station_direction": "\u2192",
+    "station_int_id": 2103,
+    "station_lat": 46.0446703595961
+  },
+  "1939": {
+    "station_ref_id": "802012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4942089544609,
+    "station_name": "Stara cerkev",
+    "station_direction": "",
+    "station_int_id": 1939,
+    "station_lat": 46.0650025718064
+  },
+  "2081": {
+    "station_ref_id": "103031",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.51192,
+    "station_name": "AMZS",
+    "station_direction": "\u2192",
+    "station_int_id": 2081,
+    "station_lat": 46.07782
+  },
+  "2307": {
+    "station_ref_id": "802051",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.496233611701,
+    "station_name": "Drenikova",
+    "station_direction": "\u2192",
+    "station_int_id": 2307,
+    "station_lat": 46.0670750543992
+  },
+  "2150": {
+    "station_ref_id": "202044",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5263063553858,
+    "station_name": "Sredi\u0161ka",
+    "station_direction": "",
+    "station_int_id": 2150,
+    "station_lat": 46.0630727786738
+  },
+  "2340": {
+    "station_ref_id": "104072",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5360097084519,
+    "station_name": "\u0160landrova",
+    "station_direction": "",
+    "station_int_id": 2340,
+    "station_lat": 46.09779540501
+  },
+  "2041": {
+    "station_ref_id": "803131",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4727939732586,
+    "station_name": "Bratov U\u010dakar",
+    "station_direction": "\u2192",
+    "station_int_id": 2041,
+    "station_lat": 46.0698730895148
+  },
+  "1944": {
+    "station_ref_id": "601012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5028208626036,
+    "station_name": "Konzorcij",
+    "station_direction": "",
+    "station_int_id": 1944,
+    "station_lat": 46.0512362310992
+  },
+  "2200": {
+    "station_ref_id": "101012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5076000429589,
+    "station_name": "Hranilni\u0161ka",
+    "station_direction": "",
+    "station_int_id": 2200,
+    "station_lat": 46.0638776016509
+  },
+  "1866": {
+    "station_ref_id": "803101",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4758989929015,
+    "station_name": "Tr\u017enica Koseze",
+    "station_direction": "\u2192",
+    "station_int_id": 1866,
+    "station_lat": 46.073932320023
+  },
+  "3336": {
+    "station_ref_id": "100012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5093692228477,
+    "station_name": "Navje",
+    "station_direction": "",
+    "station_int_id": 3336,
+    "station_lat": 46.0596030795498
+  },
+  "2064": {
+    "station_ref_id": "403052",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5454590738668,
+    "station_name": "Emona",
+    "station_direction": "",
+    "station_int_id": 2064,
+    "station_lat": 46.0474984725596
+  },
+  "2221": {
+    "station_ref_id": "104011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.503254,
+    "station_name": "Savlje",
+    "station_direction": "\u2192",
+    "station_int_id": 2221,
+    "station_lat": 46.095171
+  },
+  "2078": {
+    "station_ref_id": "103102",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5140151073556,
+    "station_name": "Sto\u017eice",
+    "station_direction": "",
+    "station_int_id": 2078,
+    "station_lat": 46.0860541515796
+  },
+  "3309": {
+    "station_ref_id": "600032",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5052983679243,
+    "station_name": "Dalmatinova",
+    "station_direction": "",
+    "station_int_id": 3309,
+    "station_lat": 46.0541199976755
+  },
+  "2241": {
+    "station_ref_id": "102011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.505442213679,
+    "station_name": "Samova",
+    "station_direction": "",
+    "station_int_id": 2241,
+    "station_lat": 46.0671138382894
+  },
+  "1963": {
+    "station_ref_id": "202051",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.529347,
+    "station_name": "Zelena jama",
+    "station_direction": "\u2192",
+    "station_int_id": 1963,
+    "station_lat": 46.063581
+  },
+  "1876": {
+    "station_ref_id": "202021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5158912218391,
+    "station_name": "Prekmurska",
+    "station_direction": "\u2192",
+    "station_int_id": 1876,
+    "station_lat": 46.0645765757045
+  },
+  "2338": {
+    "station_ref_id": "104082",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5433187221436,
+    "station_name": "Obrtna cona",
+    "station_direction": "",
+    "station_int_id": 2338,
+    "station_lat": 46.097300000303
+  },
+  "2167": {
+    "station_ref_id": "404022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5702847383715,
+    "station_name": "Cesta v Bizovik",
+    "station_direction": "",
+    "station_int_id": 2167,
+    "station_lat": 46.0444428781081
+  },
+  "2306": {
+    "station_ref_id": "802062",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.495428416438,
+    "station_name": "Tiki",
+    "station_direction": "",
+    "station_int_id": 2306,
+    "station_lat": 46.072781524367
+  },
+  "2027": {
+    "station_ref_id": "504012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5355323015909,
+    "station_name": "Gornji Rudnik",
+    "station_direction": "",
+    "station_int_id": 2027,
+    "station_lat": 46.0280429889558
+  },
+  "3507": {
+    "station_ref_id": "504033",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5432447533323,
+    "station_name": "Rudnik",
+    "station_direction": "\u2192",
+    "station_int_id": 3507,
+    "station_lat": 46.0187265613968
+  },
+  "1924": {
+    "station_ref_id": "804021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4716311635353,
+    "station_name": "Pru\u0161nikova",
+    "station_direction": "\u2192",
+    "station_int_id": 1924,
+    "station_lat": 46.089910023321
+  },
+  "1877": {
+    "station_ref_id": "202022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5165665689864,
+    "station_name": "Prekmurska",
+    "station_direction": "",
+    "station_int_id": 1877,
+    "station_lat": 46.0645865836567
+  },
+  "3320": {
+    "station_ref_id": "603094",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5130390305002,
+    "station_name": "Galjevica",
+    "station_direction": "",
+    "station_int_id": 3320,
+    "station_lat": 46.0331605568042
+  },
+  "1867": {
+    "station_ref_id": "803102",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4758692630004,
+    "station_name": "Tr\u017enica Koseze",
+    "station_direction": "",
+    "station_int_id": 1867,
+    "station_lat": 46.0743592966343
+  },
+  "2021": {
+    "station_ref_id": "503022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5237769348064,
+    "station_name": "Rakovnik",
+    "station_direction": "",
+    "station_int_id": 2021,
+    "station_lat": 46.0356131885114
+  },
+  "2207": {
+    "station_ref_id": "102071",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5045382628815,
+    "station_name": "Vodovodna",
+    "station_direction": "\u2192",
+    "station_int_id": 2207,
+    "station_lat": 46.0746816258463
+  },
+  "1923": {
+    "station_ref_id": "804032",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4691406660577,
+    "station_name": "Podgora",
+    "station_direction": "",
+    "station_int_id": 1923,
+    "station_lat": 46.0935450967278
+  },
+  "1920": {
+    "station_ref_id": "804041",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4663668666688,
+    "station_name": "\u0160entvid",
+    "station_direction": "\u2192",
+    "station_int_id": 1920,
+    "station_lat": 46.095469885169
+  },
+  "3508": {
+    "station_ref_id": "504032",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.543262719638,
+    "station_name": "Rudnik",
+    "station_direction": "",
+    "station_int_id": 3508,
+    "station_lat": 46.0176125578445
+  },
+  "3316": {
+    "station_ref_id": "502032",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5183204559035,
+    "station_name": "Streli\u0161ka",
+    "station_direction": "",
+    "station_int_id": 3316,
+    "station_lat": 46.0449877191722
+  },
+  "3574": {
+    "station_ref_id": "603131",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.504850758089,
+    "station_name": "Hladnikova",
+    "station_direction": "\u2192",
+    "station_int_id": 3574,
+    "station_lat": 46.037019898807
+  },
+  "2236": {
+    "station_ref_id": "803171",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4670230843961,
+    "station_name": "Spar",
+    "station_direction": "\u2192",
+    "station_int_id": 2236,
+    "station_lat": 46.0768851769341
+  },
+  "3472": {
+    "station_ref_id": "104031",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5170408964945,
+    "station_name": "Je\u017eica",
+    "station_direction": "\u2192",
+    "station_int_id": 3472,
+    "station_lat": 46.0975162283911
+  },
+  "2149": {
+    "station_ref_id": "202043",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5248530374981,
+    "station_name": "Sredi\u0161ka",
+    "station_direction": "\u2192",
+    "station_int_id": 2149,
+    "station_lat": 46.0625303856775
+  },
+  "2055": {
+    "station_ref_id": "402051",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5264661162759,
+    "station_name": "Glonarjeva",
+    "station_direction": "\u2192",
+    "station_int_id": 2055,
+    "station_lat": 46.0502893202748
+  },
+  "2316": {
+    "station_ref_id": "603091",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5113156846602,
+    "station_name": "Livada",
+    "station_direction": "\u2192",
+    "station_int_id": 2316,
+    "station_lat": 46.0343603175769
+  },
+  "1983": {
+    "station_ref_id": "502011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5147725070593,
+    "station_name": "Poljanska",
+    "station_direction": "\u2192",
+    "station_int_id": 1983,
+    "station_lat": 46.0505552898975
+  },
+  "1994": {
+    "station_ref_id": "203061",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5391211009896,
+    "station_name": "Tovorni kolodvor",
+    "station_direction": "\u2192",
+    "station_int_id": 1994,
+    "station_lat": 46.0614408098368
+  },
+  "2132": {
+    "station_ref_id": "303062",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5567446524791,
+    "station_name": "Archinetova",
+    "station_direction": "",
+    "station_int_id": 2132,
+    "station_lat": 46.056019318024
+  },
+  "1906": {
+    "station_ref_id": "803051",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4884700644529,
+    "station_name": "Litostrojska",
+    "station_direction": "\u2192",
+    "station_int_id": 1906,
+    "station_lat": 46.0767783216972
+  },
+  "3490": {
+    "station_ref_id": "504072",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5483521950888,
+    "station_name": "Pod Hribom",
+    "station_direction": "",
+    "station_int_id": 3490,
+    "station_lat": 46.0064156609062
+  },
+  "1988": {
+    "station_ref_id": "402042",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5289485995372,
+    "station_name": "Bolnica",
+    "station_direction": "",
+    "station_int_id": 1988,
+    "station_lat": 46.0542549933401
+  },
+  "2159": {
+    "station_ref_id": "403031",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5299335821447,
+    "station_name": "Pod Golovcem",
+    "station_direction": "\u2192",
+    "station_int_id": 2159,
+    "station_lat": 46.0485397859698
+  },
+  "2225": {
+    "station_ref_id": "703022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4802774130743,
+    "station_name": "Cesta XV",
+    "station_direction": "",
+    "station_int_id": 2225,
+    "station_lat": 46.0466046027991
+  },
+  "2198": {
+    "station_ref_id": "602011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4985177210652,
+    "station_name": "Cankarjev dom",
+    "station_direction": "\u2192",
+    "station_int_id": 2198,
+    "station_lat": 46.0510371818915
+  },
+  "2107": {
+    "station_ref_id": "403021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5391744150322,
+    "station_name": "Kodeljevo",
+    "station_direction": "\u2192",
+    "station_int_id": 2107,
+    "station_lat": 46.0521922899648
+  },
+  "2317": {
+    "station_ref_id": "603102",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5116712282574,
+    "station_name": "Ilovica",
+    "station_direction": "",
+    "station_int_id": 2317,
+    "station_lat": 46.0283243333925
+  },
+  "1948": {
+    "station_ref_id": "602052",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4993791192346,
+    "station_name": "A\u0161ker\u010deva",
+    "station_direction": "",
+    "station_int_id": 1948,
+    "station_lat": 46.0466733978688
+  },
+  "3476": {
+    "station_ref_id": "703121",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4712807159216,
+    "station_name": "\u017divalski vrt",
+    "station_direction": "\u2192",
+    "station_int_id": 3476,
+    "station_lat": 46.0529961618898
+  },
+  "3314": {
+    "station_ref_id": "502021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.519437789917,
+    "station_name": "Ro\u0161ka",
+    "station_direction": "\u2192",
+    "station_int_id": 3314,
+    "station_lat": 46.048454284668
+  },
+  "2114": {
+    "station_ref_id": "303072",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5534459082234,
+    "station_name": "Brodarjev trg",
+    "station_direction": "",
+    "station_int_id": 2114,
+    "station_lat": 46.0542080945127
+  },
+  "1975": {
+    "station_ref_id": "300012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5109627482171,
+    "station_name": "Kolodvor",
+    "station_direction": "",
+    "station_int_id": 1975,
+    "station_lat": 46.0574747093719
+  },
+  "2112": {
+    "station_ref_id": "303051",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5495750133502,
+    "station_name": "Pot na Fu\u017eine",
+    "station_direction": "\u2192",
+    "station_int_id": 2112,
+    "station_lat": 46.0562549828926
+  },
+  "3352": {
+    "station_ref_id": "704052",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4522756714304,
+    "station_name": "Dolgi most Rotar",
+    "station_direction": "",
+    "station_int_id": 3352,
+    "station_lat": 46.03369140625
+  },
+  "2102": {
+    "station_ref_id": "602072",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.500669119305,
+    "station_name": "Mirje",
+    "station_direction": "",
+    "station_int_id": 2102,
+    "station_lat": 46.0456223330086
+  },
+  "2001": {
+    "station_ref_id": "203091",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5366875508196,
+    "station_name": "Jar\u0161e",
+    "station_direction": "\u2192",
+    "station_int_id": 2001,
+    "station_lat": 46.0684510441875
+  },
+  "2227": {
+    "station_ref_id": "204132",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5587907666205,
+    "station_name": "Nadgorica",
+    "station_direction": "",
+    "station_int_id": 2227,
+    "station_lat": 46.0965760067762
+  },
+  "2190": {
+    "station_ref_id": "703031",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4752195167235,
+    "station_name": "Jamnikarjeva",
+    "station_direction": "\u2192",
+    "station_int_id": 2190,
+    "station_lat": 46.0448326076806
+  },
+  "1952": {
+    "station_ref_id": "602032",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.489879993166,
+    "station_name": "Hajdrihova",
+    "station_direction": "",
+    "station_int_id": 1952,
+    "station_lat": 46.0458430605145
+  },
+  "3509": {
+    "station_ref_id": "603044",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4832452268611,
+    "station_name": "Koprska",
+    "station_direction": "",
+    "station_int_id": 3509,
+    "station_lat": 46.0352461611615
+  },
+  "2228": {
+    "station_ref_id": "204141",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5746803012386,
+    "station_name": "Belinka",
+    "station_direction": "\u2192",
+    "station_int_id": 2228,
+    "station_lat": 46.0914284680761
+  },
+  "1914": {
+    "station_ref_id": "603062",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4997611723307,
+    "station_name": "Murgle",
+    "station_direction": "",
+    "station_int_id": 1914,
+    "station_lat": 46.0372877455475
+  },
+  "1887": {
+    "station_ref_id": "204032",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.567524,
+    "station_name": "Rog",
+    "station_direction": "",
+    "station_int_id": 1887,
+    "station_lat": 46.062026
+  },
+  "3318": {
+    "station_ref_id": "603122",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5127596969969,
+    "station_name": "I\u017eanska",
+    "station_direction": "",
+    "station_int_id": 3318,
+    "station_lat": 46.0349717611473
+  },
+  "1972": {
+    "station_ref_id": "301011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5183160715773,
+    "station_name": "Fri\u0161kovec",
+    "station_direction": "\u2192",
+    "station_int_id": 1972,
+    "station_lat": 46.057442524105
+  },
+  "2049": {
+    "station_ref_id": "402011",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5168527242346,
+    "station_name": "Hrvatski trg",
+    "station_direction": "\u2192",
+    "station_int_id": 2049,
+    "station_lat": 46.0524970098127
+  },
+  "2087": {
+    "station_ref_id": "101051",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5084860025511,
+    "station_name": "Astra",
+    "station_direction": "\u2192",
+    "station_int_id": 2087,
+    "station_lat": 46.0647389188896
+  },
+  "3511": {
+    "station_ref_id": "603141",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4781438446922,
+    "station_name": "Tbilisijska",
+    "station_direction": "\u2192",
+    "station_int_id": 3511,
+    "station_lat": 46.0337352434663
+  },
+  "2185": {
+    "station_ref_id": "703052",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4643458194798,
+    "station_name": "Podmornica",
+    "station_direction": "",
+    "station_int_id": 2185,
+    "station_lat": 46.047409180621
+  },
+  "2215": {
+    "station_ref_id": "103111",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5084696098982,
+    "station_name": "7. septembra",
+    "station_direction": "\u2192",
+    "station_int_id": 2215,
+    "station_lat": 46.0900125259025
+  },
+  "2204": {
+    "station_ref_id": "101062",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5031369934877,
+    "station_name": "Bratov \u017didan",
+    "station_direction": "",
+    "station_int_id": 2204,
+    "station_lat": 46.0654599623076
+  },
+  "2118": {
+    "station_ref_id": "304032",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.56285010191,
+    "station_name": "Rusjanov trg",
+    "station_direction": "",
+    "station_int_id": 2118,
+    "station_lat": 46.0545252114319
+  },
+  "2325": {
+    "station_ref_id": "103041",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5195276329798,
+    "station_name": "Puhova",
+    "station_direction": "\u2192",
+    "station_int_id": 2325,
+    "station_lat": 46.0764620845281
+  },
+  "3322": {
+    "station_ref_id": "503052",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.521880358945,
+    "station_name": "Mihov \u0161tradon",
+    "station_direction": "",
+    "station_int_id": 3322,
+    "station_lat": 46.0290365700358
+  },
+  "2092": {
+    "station_ref_id": "703071",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4861148282617,
+    "station_name": "Stan in dom",
+    "station_direction": "\u2192",
+    "station_int_id": 2092,
+    "station_lat": 46.044401664897
+  },
+  "2313": {
+    "station_ref_id": "102021",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5149228423992,
+    "station_name": "Topni\u0161ka",
+    "station_direction": "\u2192",
+    "station_int_id": 2313,
+    "station_lat": 46.0672344350151
+  },
+  "2321": {
+    "station_ref_id": "604012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5103365236176,
+    "station_name": "I\u0161ki most",
+    "station_direction": "",
+    "station_int_id": 2321,
+    "station_lat": 46.0198198672622
+  },
+  "3401": {
+    "station_ref_id": "614041",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4907831407397,
+    "station_name": "Capuder",
+    "station_direction": "\u2192",
+    "station_int_id": 3401,
+    "station_lat": 46.0057013216667
+  },
+  "1872": {
+    "station_ref_id": "802031",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4901457775681,
+    "station_name": "Na jami",
+    "station_direction": "\u2192",
+    "station_int_id": 1872,
+    "station_lat": 46.0666307062578
+  },
+  "3972": {
+    "station_ref_id": "703111",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.467858134689,
+    "station_name": "Dolgi most",
+    "station_direction": "\u2192",
+    "station_int_id": 3972,
+    "station_lat": 46.0373577379256
+  },
+  "1883": {
+    "station_ref_id": "204012",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.558216,
+    "station_name": "Lesko\u0161kova",
+    "station_direction": "",
+    "station_int_id": 1883,
+    "station_lat": 46.061921
+  },
+  "2238": {
+    "station_ref_id": "803161",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4629982766378,
+    "station_name": "Bratov Babnik",
+    "station_direction": "\u2192",
+    "station_int_id": 2238,
+    "station_lat": 46.0747447580168
+  },
+  "2076": {
+    "station_ref_id": "103132",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.51398,
+    "station_name": "Ruski car",
+    "station_direction": "",
+    "station_int_id": 2076,
+    "station_lat": 46.09064
+  },
+  "2214": {
+    "station_ref_id": "103092",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5079036791005,
+    "station_name": "Gorjan\u010deva",
+    "station_direction": "",
+    "station_int_id": 2214,
+    "station_lat": 46.0860602839651
+  },
+  "2161": {
+    "station_ref_id": "403041",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5375551922354,
+    "station_name": "\u0160tepanja vas",
+    "station_direction": "\u2192",
+    "station_int_id": 2161,
+    "station_lat": 46.048018191623
+  },
+  "2335": {
+    "station_ref_id": "104091",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5461328227218,
+    "station_name": "Cesta na Brod",
+    "station_direction": "\u2192",
+    "station_int_id": 2335,
+    "station_lat": 46.0965950903672
+  },
+  "3571": {
+    "station_ref_id": "604023",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5122216455221,
+    "station_name": "Barje",
+    "station_direction": "\u2192",
+    "station_int_id": 3571,
+    "station_lat": 46.0149206439703
+  },
+  "3312": {
+    "station_ref_id": "501032",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5104436548026,
+    "station_name": "Krekov trg",
+    "station_direction": "\u2192",
+    "station_int_id": 3312,
+    "station_lat": 46.0502050925444
+  },
+  "2094": {
+    "station_ref_id": "703081",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4821914599498,
+    "station_name": "Glince",
+    "station_direction": "\u2192",
+    "station_int_id": 2094,
+    "station_lat": 46.0432357780323
+  },
+  "1915": {
+    "station_ref_id": "603061",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4999838811257,
+    "station_name": "Murgle",
+    "station_direction": "\u2192",
+    "station_int_id": 1915,
+    "station_lat": 46.0384535917753
+  },
+  "1905": {
+    "station_ref_id": "803062",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4852617844443,
+    "station_name": "Ljubljanske brigade",
+    "station_direction": "",
+    "station_int_id": 1905,
+    "station_lat": 46.0816800238783
+  },
+  "2035": {
+    "station_ref_id": "804201",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.454199290376,
+    "station_name": "Omersova",
+    "station_direction": "\u2192",
+    "station_int_id": 2035,
+    "station_lat": 46.0740682324078
+  },
+  "2305": {
+    "station_ref_id": "802061",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.4951453995516,
+    "station_name": "Tiki",
+    "station_direction": "\u2192",
+    "station_int_id": 2305,
+    "station_lat": 46.0729595617098
+  },
+  "2062": {
+    "station_ref_id": "403042",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.539141192577,
+    "station_name": "\u0160tepanja vas",
+    "station_direction": "",
+    "station_int_id": 2062,
+    "station_lat": 46.0479287229107
+  },
+  "2250": {
+    "station_ref_id": "203141",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.544999032953,
+    "station_name": "BTC-Emporium",
+    "station_direction": "\u2192",
+    "station_int_id": 2250,
+    "station_lat": 46.0621495427638
+  },
+  "3570": {
+    "station_ref_id": "604022",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5117994373386,
+    "station_name": "Barje",
+    "station_direction": "",
+    "station_int_id": 3570,
+    "station_lat": 46.0151835136562
+  },
+  "2131": {
+    "station_ref_id": "303061",
+    "scraped": "2017-03-21T00:00:00+00:00",
+    "station_lng": 14.5553811524467,
+    "station_name": "Archinetova",
+    "station_direction": "\u2192",
+    "station_int_id": 2131,
+    "station_lat": 46.056254518624
+  }
+}

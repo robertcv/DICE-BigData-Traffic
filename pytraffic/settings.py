@@ -29,9 +29,13 @@ INDUCTIVE_LOOPS_IMG_DIR = 'image/'
 INDUCTIVE_LOOPS_KAFKA_TOPIC = 'inductive_json'
 
 # LPP traffic
-LPP_STATION_URL = 'http://194.33.12.24/stations/getRoutesOnStation'
+LPP_STATION_URL = 'http://194.33.12.24/stations/getAllStations'
 LPP_STATION_KAFKA_TOPIC = 'lpp_station_json'
-LPP_STATION_FILE = 'data/stations_lj.csv'
+LPP_STATION_FILE = 'data/stations.json'
+LPP_STATION_DIRECTION_FILE = 'data/stations_directions.csv'
+
+LPP_ROUTES_ON_STATION_URL = 'http://194.33.12.24/stations/getRoutesOnStation'
+LPP_ROUTES_ON_STATION_FILE = 'data/routes_on_station.json'
 
 LPP_STATIC_URL= 'http://194.33.12.24/timetables/getArrivalsOnStation'
 LPP_STATIC_KAFKA_TOPIC = 'lpp_static_json'
@@ -41,7 +45,9 @@ LPP_LIVE_KAFKA_TOPIC = 'lpp_live_json'
 
 LPP_ROUTE_GROUPS_URL = 'http://194.33.12.24/routes/getRouteGroups'
 LPP_ROUTE_URL = 'http://194.33.12.24/routes/getRoutes'
-LPP_ROUTE_FILE = 'data/routes_ijs.json'
+LPP_ROUTE_FILE = 'data/routes.json'
+
+LPP_DATA_AGE = 60 * 60 * 24 # 1 day
 
 # Air pollution
 POLLUTION_URL = 'http://www.ljubljana.si/si/zivljenje-v-ljubljani/okolje-prostor-bivanje/stanje-okolja/zrak/'
