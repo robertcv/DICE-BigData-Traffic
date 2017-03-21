@@ -1,6 +1,6 @@
-import logging
+import logging, argparse
 from pytraffic.settings import override
-from pytraffic.pytraffic.pytraffic import PyTraffic
+from pytraffic.pytraffic.app import PyTraffic
 
 
 def _configure_logging():
@@ -24,9 +24,21 @@ def _configure_logging():
     return log
 
 
+def _create_parser():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--kafka', help='Kafka bootstrap server address in format hostname:port')
+    parser.add_argument('--bt_collector', action='store_true', help='Start bluetooth collector')
+    parser.add_argument('--counters_collector', action='store_true', help='Start counters collector')
+    parser.add_argument('--il_collector', action='store_true', help='Start inductive loops collector')
+    parser.add_argument('--pollution_collector', action='store_true', help='Start pollution collector')
+    parser.add_argument('--lpp_collector', nargs='*', choices=['station', 'static', 'live'], help='Start lpp collector')
+    parser.add_argument('--plot', nargs='*', choices=['bt', 'counters', 'il'], help='Plot map')
+    return parser
+
 def main():
     override()
     log = _configure_logging()
+    parser = _create_parser()
+    args = parser.parse_args()
 
-    pt = PyTraffic(log)
-    pt.run()
+    PyTraffic(log, args)
