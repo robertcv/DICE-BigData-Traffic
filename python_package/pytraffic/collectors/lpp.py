@@ -1,7 +1,7 @@
 import json, csv
 
-from pytraffic import settings
-from pytraffic.collectors.util import kafka_producer, scraper, files, date_time
+from .. import settings
+from .util import kafka_producer, scraper, files, date_time
 
 
 class LppTraffic:

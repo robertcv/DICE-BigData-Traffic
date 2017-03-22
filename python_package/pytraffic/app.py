@@ -1,9 +1,9 @@
-from pytraffic.collectors.bt_sensors.bt_sensors import BtSensors
-from pytraffic.collectors.counters.counters import TrafficCounter
-from pytraffic.collectors.inductive_loops.inductive_loops import InductiveLoops
-from pytraffic.collectors.lpp.lpp import LppTraffic
-from pytraffic.collectors.pollution.pollution import AirPollution
-from pytraffic import settings
+from . import settings
+from .collectors.bt_sensors import BtSensors
+from .collectors.counters import TrafficCounter
+from .collectors.inductive_loops import InductiveLoops
+from .collectors.lpp import LppTraffic
+from .collectors.pollution import AirPollution
 
 
 class PyTraffic:

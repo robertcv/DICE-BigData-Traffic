@@ -1,8 +1,8 @@
 import datetime, re
 
 from lxml import html
-from pytraffic import settings
-from pytraffic.collectors.util import kafka_producer, scraper
+from .. import settings
+from .util import kafka_producer, scraper
 
 
 class AirPollution:

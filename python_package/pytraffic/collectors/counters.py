@@ -1,5 +1,5 @@
-from pytraffic import settings
-from pytraffic.collectors.util import kafka_producer, scraper, plot, files
+from .. import settings
+from .util import kafka_producer, scraper, plot, files
 
 
 class TrafficCounter:

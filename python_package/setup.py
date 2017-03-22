@@ -1,5 +1,4 @@
-from setuptools import setup
-
+from setuptools import setup, find_packages
 
 def readme():
     with open('README.rst') as f:
@@ -17,7 +16,7 @@ setup(name='pytraffic',
       keywords='traffic bigdata collector scraping',
       author='Robert Cvitkovic',
       author_email='robert.cvitkovic@xlab.si',
-      packages=['pytraffic'],
+      packages=find_packages(),
       install_requires=[
           'elasticsearch',
           'kafka',
@@ -29,7 +28,7 @@ setup(name='pytraffic',
       zip_safe=False,
       entry_points = {
           'console_scripts': [
-              'pytraffic = pytraffic.cli:main'
+              'pytraffic = pytraffic.cli_tool.cli:main'
           ]
       }
       )

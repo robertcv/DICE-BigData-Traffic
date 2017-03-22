@@ -1,6 +1,6 @@
 import logging, argparse
-from pytraffic.settings import override
-from pytraffic.pytraffic.app import PyTraffic
+from .settings import override
+from .app import PyTraffic
 
 
 def _configure_logging():
@@ -12,11 +12,11 @@ def _configure_logging():
     fmt_file = logging.Formatter(
         "%(asctime)s %(name)s:%(lineno)s [%(levelname)s] - %(message)s"
     )
-    handler_file = logging.FileHandler(".pytraffic.log")
+    handler_file = logging.FileHandler(".cli_tool.log")
     handler_file.setFormatter(fmt_file)
     handler_file.setLevel(logging.DEBUG)
 
-    log = logging.getLogger("pytraffic")
+    log = logging.getLogger("cli_tool")
     log.addHandler(handler_stream)
     log.addHandler(handler_file)
     log.setLevel(logging.DEBUG)
