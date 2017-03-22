@@ -1,4 +1,5 @@
-import datetime, re
+import datetime
+import re
 
 from lxml import html
 from .. import settings
@@ -6,6 +7,15 @@ from .util import kafka_producer, scraper
 
 
 class AirPollution:
+    """
+    This combines everything pollution related. One can use run method to send
+    data to Kafka.
+
+    Attributes:
+        english (dict): Dictionary of table header mapping.
+        default (dict): Default dictionary for pollution data.
+
+    """
     english = {'ura': 'hour',
                'SO2µg/m3(normativi)': 'so2',
                'NOµg/m3': 'no',
@@ -43,23 +53,41 @@ class AirPollution:
                'location': None}
 
     def __init__(self):
+        """
+        Initialize Kafka producer and web scraper classes.
+        """
         self.producer = kafka_producer.Producer(settings.POLLUTION_KAFKA_TOPIC)
         self.w_scraper = scraper.Scraper()
 
-    def process_table(self, table, date, source):
+    def process_table(self, table, date, location):
+        """
+        This function processes html table of data and sends it to Kafka.
+
+        Args:
+            table (str): String of html code which contains the air pollution
+                table.
+            date (:obj:datetime): Datetime object of today.
+            location (str): Location where the pollution data is collected.
+
+        """
         header_row, = table.xpath('.//thead/tr')
 
-        headers = [re.sub('[\r\n\t]', '', header_cell.text_content().strip()) for header_cell in
+        headers = [re.sub('[\r\n\t]', '', header_cell.text_content().strip())
+                   for header_cell in
                    header_row.xpath('./th')]
 
-        english_headers = [self.english[header] for header in headers if header in self.english]
+        # map Slovenian headers to English
+        english_headers = [self.english[header] for header in headers if
+                           header in self.english]
 
         english_headers.append('scraped')
         english_headers.append('location')
 
-        value_rows = table.xpath('.//tbody/tr[not(@class="limits") and not(@class="alarms")]')
+        value_rows = table.xpath(
+            './/tbody/tr[not(@class="limits") and not(@class="alarms")]')
         all_rows = []
 
+        # get all table rows
         for value_row in value_rows:
             row = []
 
@@ -74,23 +102,31 @@ class AirPollution:
                 row.append(v)
 
             row.append(None)
-            row.append(source)
+            row.append(location)
             all_rows.append(dict(zip(english_headers, row)))
 
+        # update the default dict with the fetched data, rearrange it and send
+        # it to Kafka
         for row in all_rows:
             tmp = self.default.copy()
             tmp.update(row)
             hour, minute = tmp['hour'].split(':')
             isoformat_date = datetime.datetime.isoformat(
-                date.replace(hour=int(hour), minute=int(minute), second=0, microsecond=0))
+                date.replace(hour=int(hour), minute=int(minute), second=0,
+                             microsecond=0))
             tmp['scraped'] = isoformat_date
             self.producer.send(tmp)
 
     def run(self):
+        """
+        This fetches the html code from source url. It then calls process_table
+        to further process the code and sends data Kafka.
+        """
         url = settings.POLLUTION_URL + '?source={}&day={}&month={}&year={}'
         date = datetime.datetime.today()
-        for source in ['bezigrad', 'vosnjakova-tivolska']:
-            text = self.w_scraper.get_text(url.format(source, date.day, date.month, date.year))
+        for location in ['bezigrad', 'vosnjakova-tivolska']:
+            text = self.w_scraper.get_text(
+                url.format(location, date.day, date.month, date.year))
             etree = html.fromstring(text)
             table, = etree.xpath('.//table[@id="air-polution"]')
-            self.process_table(table, date, source)
+            self.process_table(table, date, location)

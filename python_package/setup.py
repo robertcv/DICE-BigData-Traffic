@@ -1,8 +1,10 @@
 from setuptools import setup, find_packages
 
+
 def readme():
     with open('README.rst') as f:
         return f.read()
+
 
 setup(name='pytraffic',
       version='0.1',
@@ -26,9 +28,9 @@ setup(name='pytraffic',
       ],
       include_package_data=True,
       zip_safe=False,
-      entry_points = {
+      entry_points={
           'console_scripts': [
-              'pytraffic = pytraffic.cli_tool.cli:main'
+              'pytraffic = pytraffic.cli:main'
           ]
       }
       )

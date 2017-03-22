@@ -1,37 +1,10 @@
 ## Collectors
 
-Here are all collectors for scraping data from different sources and
-forwarding it the data in json format to Apache Kafka. The main scripts 
-have kafka in their names. There are also some other files for which 
-purposes reference the readme.
-
-For running the scripts you need some additional python modules which 
-you can install using pip:
-
-```
-pip install --upgrade pip
-pip install -r requirements.txt
-```
-
-and for ploting scripts:
-
-```
-pip install -r requirements-plot.txt
-```
-
-Additionally you have to set some environment variables or have a 
-`local_settings.py` file. All settings can be found in `settings.py` 
-Set at least those variables:
-```
-export KAFKA_HOST=host
-export KAFKA_PORT=port
-export TIMON_USERNAME=user
-export TIMON_PASSWORD=password
-```
-
-Every collector forwards his data to his unique Kafka topic. A Kafka 
-connector then takes those json messages and inserts them into Cassandra
-[tables](../virtual_machines/cassandra_vm/tables.cql).
+Here are all collectors for scraping data from different sources and forwarding
+it the data in json format to Apache Kafka. Every collector forwards his data to
+his unique Kafka topic. A Kafka connector then takes those json messages and
+inserts them into Cassandra
+[tables](../../../virtual_machines/cassandra_vm/tables.cql).
 
 |      Collector     |    Kafka topic   | Cassandra table |
 |:------------------:|:----------------:|:---------------:|
@@ -46,17 +19,17 @@ connector then takes those json messages and inserts them into Cassandra
 
 ### Bluetooth sensors
 
-On some traffic lights in Ljubljana there are bluetooth sensors. They
-collect ids of bluetooth devices that drive near them. If the same
-device is detected on a different locations the average speed can be
-calculated based on the distance and travel time. The data is generously
-provided by the [Timon project](https://gitlab-timon.xlab.si/).
+On some traffic lights in Ljubljana there are bluetooth sensors. They collect
+ids of bluetooth devices that drive near them. If the same device is detected on
+a different locations the average speed can be calculated based on the distance
+and travel time. The data is generously provided by the
+[Timon project](https://gitlab-timon.xlab.si/).
 
 **Data source:**
 https://datacloud-timon.xlab.si/data_access/
 
 **JSON data:**
-```json
+```bash
 {
   "id": "58b7eca0c0a6834de255eb5c",
   "fromBtId": "BTR0201",
@@ -80,9 +53,9 @@ https://datacloud-timon.xlab.si/data_access/
 
 ### Traffic counters
 
-The data is similar to inductive loops except for the location which is
-on Ljubljana highway ring and outside the ring. This data is publicly
-available at opendata Slovenia.
+The data is similar to inductive loops except for the location which is on
+Ljubljana highway ring and outside the ring. This data is publicly available at
+opendata Slovenia.
 
 **Data source:**
 https://opendata.si/promet/counters/
@@ -109,7 +82,7 @@ https://opendata.si/promet/counters/
   "stevci_stat": 3,
   "ContentName": "stevci",
   "Icon": "res/icons/stevci/stevec_3.png",
-  "modified": "2017-03-03T10:19:14.272Z",
+  "modified": "2017-03-03T10:19:14.272Z"
 }
 ```
 
@@ -118,16 +91,17 @@ https://opendata.si/promet/counters/
 
 ### Inductive loops
 
-The data is similar to traffic counters except for the location which is
-mostly inside Ljubljana highway ring. The data is generously provided by
-the [Timon project](https://gitlab-timon.xlab.si/).
+The data is similar to traffic counters except for the location which is mostly
+inside Ljubljana highway ring. The data is generously provided by the
+[Timon project](https://gitlab-timon.xlab.si/).
 
 **Data source:**
 http://10.30.1.132:9200/_plugin/hq/
 
 **WARNING:**
 Source is located on Arcture Openstack. You need to connect with OpenVPN.
-More information on [wiki](https://wiki.xlab.si/robert_plestenjak/openstack-arctur).
+More information on
+[wiki](https://wiki.xlab.si/robert_plestenjak/openstack-arctur).
 
 **JSON data:**
 ```json
@@ -165,12 +139,12 @@ More information on [wiki](https://wiki.xlab.si/robert_plestenjak/openstack-arct
 
 ### LPP traffic
 
-LPP company runs the city bus traffic in Ljubljana. They have stations
-all over the city. Their data is collected combined with station static
-arrival time. Those arrival times are predicted in advance by LPP if
-there is no traffic. But because this is not the case one can also get
-live prediction on arrival data. The data is generously provided by the
-Timon project.
+LPP company runs the city bus traffic in Ljubljana. They have stations all over
+the city. Their data is collected combined with station static arrival time.
+Those arrival times are predicted in advance by LPP if there is no traffic. But
+because this is not the case one can also get live prediction on arrival data.
+The data is generously provided by the
+[Timon project](https://gitlab-timon.xlab.si/).
 
 **Data source:**
 http://jozefstefaninstitute.github.io/LPPServer/
@@ -220,9 +194,9 @@ http://jozefstefaninstitute.github.io/LPPServer/
 
 ### Air pollution
 
-Data about air pollution collected on Bežigrad and Vošnjakova-Tivolska
-in Ljubljana. They have slightly different data. The result is that the
-json is a combination of both formats and will contain some null fields.
+Data about air pollution collected on Bežigrad and Vošnjakova-Tivolska in
+Ljubljana. They have slightly different data. The result is that the json is a
+combination of both formats and will contain some null fields.
 
 **Data source:**
 http://www.ljubljana.si/si/zivljenje-v-ljubljani/okolje-prostor-bivanje/stanje-okolja/zrak/
