@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import cartopy.crs as ccrs
 from cartopy.io.img_tiles import OSM
+from . import files
 
 
 class PlotOnMap():
@@ -68,4 +69,9 @@ class PlotOnMap():
             file_name (str): Name of saved file.
 
         """
-        plt.savefig(dir + file_name)
+        if dir is None:
+            dir = files.file_path(__file__, '../image/')
+        if dir[-1] != '/':
+            dir += '/'
+        files.directory_exists_or_make(dir)
+        plt.savefig(dir + file_name, bbox_inches='tight')

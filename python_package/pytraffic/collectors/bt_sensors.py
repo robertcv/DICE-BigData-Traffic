@@ -115,5 +115,4 @@ class BtSensors:
         map = plot.PlotOnMap(lng, lat, title)  # lng, lat, 'BT v Ljubljani'
         map.generate(figsize, dpi, zoom, markersize)  # (18, 18), 400, 14, 5
         map.label(labels, lableoffset, fontsize)  # labels, (0.001, 0.0005), 10
-        map.save(files.file_path(__file__, settings.BT_SENSORS_IMG_DIR),
-                 file_name)  # 'bt_lj.png'
+        map.save(settings.BT_SENSORS_IMG_DIR, file_name)  # 'bt_lj.png'

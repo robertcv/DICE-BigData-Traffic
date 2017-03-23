@@ -1,5 +1,5 @@
 from .. import settings
-from .util import kafka_producer, es_search, plot, files
+from .util import kafka_producer, es_search, plot
 
 
 class InductiveLoops:
@@ -103,5 +103,4 @@ class InductiveLoops:
         map = plot.PlotOnMap(lng, lat, title)  # 'Inductive loops'
         map.generate(figsize, dpi, zoom, markersize)  # (20, 20), 500, 14, 5
         map.label(labels, lableoffset, fontsize)  # (0.0005, 0.00025), 20
-        map.save(files.file_path(__file__, settings.INDUCTIVE_LOOPS_IMG_DIR),
-                 file_name)  # 'inductive.png'
+        map.save(settings.INDUCTIVE_LOOPS_IMG_DIR, file_name)  # 'inductive.png'

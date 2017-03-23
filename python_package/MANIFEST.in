@@ -1,5 +1,4 @@
 include README.rst
 include pytraffic/collectors/crt/datacloud.crt
 include pytraffic/collectors/data/*
-include pytraffic/collectors/image
 exclude pytraffic/local_settings.py

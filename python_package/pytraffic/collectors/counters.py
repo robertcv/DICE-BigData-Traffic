@@ -1,5 +1,5 @@
 from .. import settings
-from .util import kafka_producer, scraper, plot, files
+from .util import kafka_producer, scraper, plot
 
 
 class TrafficCounter:
@@ -82,5 +82,4 @@ class TrafficCounter:
 
         map = plot.PlotOnMap(lng, lat, title)  # (lng, lat, 'Stevci')
         map.generate(figsize, dpi, zoom, markersize)  # ((20, 20), 500, 14, 8)
-        map.save(files.file_path(__file__, settings.COUNTERS_IMG_DIR),
-                 file_name)  # "counters.png"
+        map.save(settings.COUNTERS_IMG_DIR, file_name)  # "counters.png"

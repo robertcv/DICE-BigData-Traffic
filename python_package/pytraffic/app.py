@@ -126,8 +126,8 @@ class PyTraffic:
                 self.logger.info(
                     'Finished initializing bluetooth sensors collector.')
             self.logger.info('Start crating bluetooth sensors map.')
-            self.bs.plot_map('BT v Ljubljani', (18, 18), 400, 14, 5,
-                             (0.001, 0.0005), 10, 'bt_lj.png')
+            self.bs.plot_map('BT v Ljubljani', (18, 18), 200, 14, 2,
+                             (0.001, 0.0005), 5, 'bt_lj.png')
             self.logger.info('Finished crating bluetooth sensors map.')
 
         if 'counters' in args:
@@ -138,7 +138,7 @@ class PyTraffic:
                 self.logger.info(
                     'Finished initializing traffic counter collector.')
             self.logger.info('Start crating traffic counters map.')
-            self.tc.plot_map('Stevci', (20, 20), 500, 14, 8, "counters.png")
+            self.tc.plot_map('Stevci', (18, 18), 200, 14, 2, "counters.png")
             self.logger.info('Finished crating traffic counters map.')
 
         if 'il' in args:
@@ -149,6 +149,6 @@ class PyTraffic:
                 self.logger.info(
                     'Finished initializing inductive loops collector.')
             self.logger.info('Start crating inductive loops map.')
-            self.il.plot_map('Inductive loops', (20, 20), 500, 14, 5,
-                             (0.0005, 0.00025), 20, 'inductive.png')
+            self.il.plot_map('Inductive loops', (18, 18), 200, 14, 2,
+                             (0.001, 0.0005), 5, 'inductive.png')
             self.logger.info('Finished crating inductive loops map.')

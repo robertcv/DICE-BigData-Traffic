@@ -10,7 +10,7 @@ BT_SENSORS_URL = 'https://datacloud-timon.xlab.si/data_access/bt_sensors/sensors
 TIMON_USERNAME = 'username'
 TIMON_PASSWORD = 'password'
 TIMON_CRT_FILE = 'crt/datacloud.crt'
-BT_SENSORS_IMG_DIR = 'image/'
+BT_SENSORS_IMG_DIR = None
 BT_SENSORS_DATA_FILE = 'data/bt_sensors.json'
 BT_SENSORS_DATA_AGE = 60 * 60 * 24 # 1 day
 BT_SENSORS_NOT_USE = ['BTR0219', 'BTR0218', 'BTR0217', 'BTR0213']
@@ -18,14 +18,14 @@ BT_SENSORS_KAFKA_TOPIC = 'bt_json'
 
 # Traffic counters
 COUNTERS_URL = 'https://opendata.si/promet/counters/'
-COUNTERS_IMG_DIR = 'image/'
+COUNTERS_IMG_DIR = None
 COUNTERS_KAFKA_TOPIC = 'counter_json'
 
 # Inductive loops
 INDUCTIVE_LOOPS_HOST = '10.30.1.132'
 INDUCTIVE_LOOPS_PORT = 9200
 INDUCTIVE_LOOPS_INDEX = 'inductive_loops'
-INDUCTIVE_LOOPS_IMG_DIR = 'image/'
+INDUCTIVE_LOOPS_IMG_DIR = None
 INDUCTIVE_LOOPS_KAFKA_TOPIC = 'inductive_json'
 
 # LPP traffic

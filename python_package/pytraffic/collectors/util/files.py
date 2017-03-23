@@ -43,3 +43,15 @@ def file_path(source_file_path, file_path):
     """
     return os.path.join(os.path.dirname(os.path.realpath(source_file_path)),
                         file_path)
+
+
+def directory_exists_or_make(directory):
+    """
+    This function checks if the given directory exists. If not then we create it.
+
+    Args:
+        directory: Directory we want to create.
+
+    """
+    if not os.path.exists(directory):
+        os.makedirs(directory)
