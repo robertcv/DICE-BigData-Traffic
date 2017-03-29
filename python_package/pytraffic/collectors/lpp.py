@@ -264,4 +264,4 @@ class LppTraffic:
         for routes_on_station in self.routes_on_stations_data:
             self.station_producer.send(routes_on_station)
 
-        self.static_producer.flush()
+        self.station_producer.flush()
