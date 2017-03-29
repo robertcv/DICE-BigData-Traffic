@@ -9,3 +9,9 @@ virtual_machines/kafka_vm/.vagrant
 virtual_machines/cassandra_vm/.vagrant
 virtual_machines/spark_vm/.vagrant
 virtual_machines/spark_vm/dice-chef-repo
+
+python_package/__pycache__/
+python_package/pytraffic/__pycache__/
+python_package/pytraffic/collectors/__pycache__/
+python_package/pytraffic/collectors/util/__pycache__/
+python_package/tests/__pycache__/
