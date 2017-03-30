@@ -1,7 +1,6 @@
 import json
 import csv
 
-from .. import settings
 from .util import kafka_producer, scraper, files, date_time
 
 
@@ -12,29 +11,49 @@ class LppTraffic:
     then use run_station, run_static or run_live method to send data to Kafka.
     """
 
-    def __init__(self):
+    def __init__(self, conf):
         """
         Initialize Kafka producers and web scrapers classes. Also load station
         and routes data.
+
+        Args:
+            conf (dict): This dict contains all configurations.
+
         """
+        self.conf = conf['lpp'] # global lpp settings
+        self.conf_lj = conf['location'] # lng and lat boundaries of Ljubljana
+        self.conf_s = conf['scraper'].copy() # scraper settings
+        self.conf_s['timeout'] = 1
+        self.conf_si = self.conf_s.copy() # settings for ignoring status code
+        self.conf_si['ignore_status_code'] = True
+        self.w_scraper = scraper.Scraper(self.conf_s)
+        # Some combinations of route - station do not have arrival time data
+        # which means that we get a response code different form 200. When this
+        # happens we do not wont to interrupt the program because this is not
+        # really an error. The solution is to create a web scraper that ignores
+        # status code errors.
+        self.w_scraper_ignore = scraper.Scraper(self.conf_si)
         self.day = date_time.today_timestamp()
-        self.w_scraper = scraper.Scraper(timeout=1)
-        self.w_scraper_ignore = scraper.Scraper(timeout=1,
-                                                ignore_status_code=True)
         self.live_producer = kafka_producer.Producer(
-            settings.LPP_LIVE_KAFKA_TOPIC)
+            conf['kafka_host'],
+            self.conf['live']['kafka_topic'])
         self.station_producer = kafka_producer.Producer(
-            settings.LPP_STATION_KAFKA_TOPIC)
+            conf['kafka_host'],
+            self.conf['station']['kafka_topic'])
         self.static_producer = kafka_producer.Producer(
-            settings.LPP_STATIC_KAFKA_TOPIC)
-        self.stations_data_file = files.file_path(__file__,
-                                                  settings.LPP_STATION_FILE)
+            conf['kafka_host'],
+            self.conf['static']['kafka_topic'])
+        self.stations_data_file = files.file_path(
+            __file__,
+            self.conf['station']['data_file'])
         self.stations_data = None
-        self.routes_data_file = files.file_path(__file__,
-                                                settings.LPP_ROUTE_FILE)
+        self.routes_data_file = files.file_path(
+            __file__,
+            self.conf['route']['data_file'])
         self.routes_data = None
-        self.routes_on_stations_data_file = \
-            files.file_path(__file__, settings.LPP_ROUTES_ON_STATION_FILE)
+        self.routes_on_stations_data_file = files.file_path(
+            __file__,
+            self.conf['routes_on_station']['data_file'])
         self.routes_on_stations_data = []
         self.load_routes_on_stations_data()
 
@@ -58,12 +77,12 @@ class LppTraffic:
         data about station direction. Then it checks if the station is located
         inside given area. Last it saves the data to a local file.
         """
-        ijs_station_data = self.w_scraper.get_json(settings.LPP_STATION_URL)
+        ijs_station_data = self.w_scraper.get_json(self.conf['station']['url'])
 
         data = dict()
 
         direction_file = files.file_path(__file__,
-                                         settings.LPP_STATION_DIRECTION_FILE)
+                                         self.conf['station']['direction_file'])
 
         with open(direction_file) as data_file:
             direction_data = list(csv.reader(data_file))
@@ -78,8 +97,8 @@ class LppTraffic:
 
         for station in ijs_station_data['data']:
             if station['ref_id'] in direction_data_dict and \
-                    settings.LJ_MIN_LAT < station['geometry']['coordinates'][1] < settings.LJ_MAX_LAT and \
-                    settings.LJ_MIN_LNG < station['geometry']['coordinates'][0] < settings.LJ_MAX_LNG:
+                self.conf_lj['min_lat'] < station['geometry']['coordinates'][1] < self.conf_lj['max_lat'] and \
+                self.conf_lj['min_lng'] < station['geometry']['coordinates'][0] < self.conf_lj['max_lng']:
 
                 tmp = {
                     'station_int_id': station['int_id'],
@@ -103,14 +122,15 @@ class LppTraffic:
         name to get only the routes which drive regularly. Last it saves the
         data to a local file.
         """
-        ijs_group_data = self.w_scraper.get_json(settings.LPP_ROUTE_GROUPS_URL)
+        ijs_group_data = self.w_scraper.get_json(
+            self.conf['route']['groups_url'])
 
         data = dict()
         for group in ijs_group_data['data']:
             if group['name'].isnumeric() and int(group['name']) <= 27:
 
                 ijs_route_data = self.w_scraper_ignore.get_json(
-                    settings.LPP_ROUTE_URL + '?route_id=' + group['id'])
+                    self.conf['route']['url'] + '?route_id=' + group['id'])
 
                 if ijs_route_data is None:
                     continue
@@ -147,7 +167,7 @@ class LppTraffic:
         and then create a local copy.
         """
         if files.old_or_not_exists(self.stations_data_file,
-                                   settings.LPP_DATA_AGE):
+                                   self.conf['data_age']):
             self.get_web_stations_data()
         else:
             self.stations_data = self.get_local_data(self.stations_data_file)
@@ -159,7 +179,7 @@ class LppTraffic:
         then create a local copy.
         """
         if files.old_or_not_exists(self.routes_data_file,
-                                   settings.LPP_DATA_AGE):
+                                   self.conf['data_age']):
             self.get_web_routes_data()
         else:
             self.routes_data = self.get_local_data(self.routes_data_file)
@@ -173,7 +193,7 @@ class LppTraffic:
         for station_int_id in self.stations_data:
 
             ijs_station_data = self.w_scraper_ignore.get_json(
-                settings.LPP_ROUTES_ON_STATION_URL +
+                self.conf['routes_on_station']['url'] +
                 '?station_int_id=' + station_int_id)
 
             for route in ijs_station_data['data']:
@@ -200,7 +220,7 @@ class LppTraffic:
         self.load_routes_data()
 
         if files.old_or_not_exists(self.routes_on_stations_data_file,
-                                   settings.LPP_DATA_AGE):
+                                   self.conf['data_age']):
             self.get_web_routes_on_stations_data()
         else:
             self.routes_on_stations_data = \
@@ -215,7 +235,7 @@ class LppTraffic:
         for station_int_id in self.stations_data:
 
             data = self.w_scraper.get_json(
-                settings.LPP_LIVE_URL + '?station_int_id=' + station_int_id)
+                self.conf['live']['url'] + '?station_int_id=' + station_int_id)
 
             for route in data['data']:
                 if route['eta'] == 0:
@@ -238,7 +258,7 @@ class LppTraffic:
             station_int_id = routes_on_station['station_int_id']
 
             data = self.w_scraper_ignore.get_json(
-                settings.LPP_STATIC_URL +
+                self.conf['static']['url'] +
                 '?day=' + self.day +
                 '&route_int_id=' + str(route_int_id) +
                 '&station_int_id=' + str(station_int_id))

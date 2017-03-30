@@ -1,7 +1,6 @@
 import requests
 
 from time import sleep
-from pytraffic import settings
 from pytraffic.collectors.util import exceptions
 
 
@@ -11,39 +10,22 @@ class Scraper:
     to connect multiple times before throwing an exception.
     """
 
-    def __init__(self, ignore_status_code=None, retries=None, sleep_sec=None,
-                 **kwargs):
+    def __init__(self, conf, **kwargs):
         """
         This __init__ sets the necessary arguments for connecting with request.
 
         Args:
-            ignore_status_code (bool, optional): Raise exception for status
-                codes if not set.
-            retries (int, optional): Number of connection retries before raising
-                an exception.
-            sleep_sec (int, optional): Number of seconds between retiring to
-                connect.
+            conf (dict): This dict contains scraper configuration.
             **kwargs: Request arguments.
 
         """
+        self.conf = conf
         self.kwarg = kwargs
-        self.sleep_sec = settings.SCRAPER_SLEEP
-        self.ignore_status_code = settings.SCRAPER_IGNORE_STATUS_CODE
-        self.retries = settings.SCRAPER_RETRIES
         self.last_status_code = None
         self.last_exception = None
 
-        if ignore_status_code is not None:
-            self.ignore_status_code = ignore_status_code
-
-        if retries is not None:
-            self.retries = retries
-
-        if sleep_sec is not None:
-            self.sleep_sec = sleep_sec
-
         if 'timeout' not in self.kwarg:
-            self.kwarg['timeout'] = settings.SCRAPER_TIMEOUT
+            self.kwarg['timeout'] = self.conf['timeout']
 
     def connect(self, url):
         """
@@ -58,7 +40,7 @@ class Scraper:
             ConnectionError: If no response after multiple attempts.
 
         """
-        retries = self.retries
+        retries = self.conf['retries']
         while retries > 0:
             try:
                 response = requests.get(url, **self.kwarg)
@@ -66,7 +48,7 @@ class Scraper:
             except Exception as e:
                 self.last_exception = e
                 retries -= 1
-                sleep(self.sleep_sec)
+                sleep(self.conf['sleep'])
         else:
             raise exceptions.ConnectionError(url)
 
@@ -89,7 +71,7 @@ class Scraper:
         if self.last_status_code == 200:
             return response
 
-        elif self.ignore_status_code:
+        elif self.conf['ignore_status_code']:
             return None
 
         else:

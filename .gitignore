@@ -1,17 +1,22 @@
 .idea/
 
 python_package/docs/
-python_package/pytraffic/local_settings.py
+python_package/local.conf
+python_package/datacloud.crt
+python_package/.pytraffic.log
 
-test.json
+python_package/test.json
+python_package/test.py
 
 virtual_machines/kafka_vm/.vagrant
 virtual_machines/cassandra_vm/.vagrant
 virtual_machines/spark_vm/.vagrant
 virtual_machines/spark_vm/dice-chef-repo
+virtual_machines/spark_vm/nodes
 
 python_package/__pycache__/
 python_package/pytraffic/__pycache__/
 python_package/pytraffic/collectors/__pycache__/
 python_package/pytraffic/collectors/util/__pycache__/
 python_package/tests/__pycache__/
+python_package/tests/util/__pycache__/

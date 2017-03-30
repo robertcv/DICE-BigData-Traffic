@@ -1,33 +1,33 @@
-from . import settings
-from .collectors.bt_sensors import BtSensors
-from .collectors.counters import TrafficCounter
-from .collectors.inductive_loops import InductiveLoops
-from .collectors.lpp import LppTraffic
-from .collectors.pollution import AirPollution
+from pytraffic.collectors.bt_sensors import BtSensors
+from pytraffic.collectors.counters import TrafficCounter
+from pytraffic.collectors.inductive_loops import InductiveLoops
+from pytraffic.collectors.lpp import LppTraffic
+from pytraffic.collectors.pollution import AirPollution
 
 
-class PyTraffic:
+class PyTraffic(object):
     """
     This class drives all collectors. Its main purpose is to fetch cli program
     arguments and act according to them.
     """
 
-    def __init__(self, logger, args):
+    def __init__(self, logger, conf, args):
         """
         Parse arguments and call the appropriate functions.
 
         Args:
             logger (:obj:Logger): Logger object.
+            conf (dict): Dictionary with configuration settings.
             args: (:obj:Namespace): Arguments object.
 
         """
 
         self.logger = logger
+        self.conf = conf
         self.args = args
 
         if self.args.kafka:
-            settings.KAFKA_HOST, settings.KAFKA_PORT = self.args.kafka.split(
-                ':')
+            self.conf['kafka_host'] = self.args.kafka
 
         self.bs = None
         self.tc = None
@@ -35,7 +35,10 @@ class PyTraffic:
         self.ap = None
         self.lt = None
 
-        # run required collectors
+    def run(self):
+        """
+        This runs by the arguments given collectors.
+        """
         if self.args.bt_collector:
             self.bt_sensors()
         if self.args.counters_collector:
@@ -54,7 +57,7 @@ class PyTraffic:
         This initializes and runs bluetooth sensors collector.
         """
         self.logger.info('Start initializing bluetooth sensors collector.')
-        self.bs = BtSensors()
+        self.bs = BtSensors(self.conf)
         self.logger.info('Finished initializing bluetooth sensors collector.')
         self.logger.info('Start sending bluetooth sensors data to Kafka.')
         self.bs.run()
@@ -65,7 +68,7 @@ class PyTraffic:
         This initializes and runs traffic counters collector.
         """
         self.logger.info('Start initializing traffic counter collector.')
-        self.tc = TrafficCounter()
+        self.tc = TrafficCounter(self.conf)
         self.logger.info('Finished initializing traffic counter collector.')
         self.logger.info('Start sending traffic counters data to Kafka.')
         self.tc.run()
@@ -76,7 +79,7 @@ class PyTraffic:
         This initializes and runs inductive loops collector.
         """
         self.logger.info('Start initializing inductive loops collector.')
-        self.il = InductiveLoops()
+        self.il = InductiveLoops(self.conf)
         self.logger.info('Finished initializing inductive loops collector.')
         self.logger.info('Start sending inductive loops data to Kafka.')
         self.il.run()
@@ -87,7 +90,7 @@ class PyTraffic:
         This initializes and runs air pollution collector.
         """
         self.logger.info('Start initializing air pollution collector.')
-        self.ap = AirPollution()
+        self.ap = AirPollution(self.conf)
         self.logger.info('Finished initializing air pollution collector.')
         self.logger.info('Start sending air pollution data to Kafka.')
         self.ap.run()
@@ -98,7 +101,7 @@ class PyTraffic:
         This initializes lpp runs collector and starts given collectors.
         """
         self.logger.info('Start initializing lpp collector.')
-        self.lt = LppTraffic()
+        self.lt = LppTraffic(self.conf)
         self.logger.info('Finished initializing lpp collector.')
         if 'station' in args:
             self.logger.info('Start sending lpp station data to Kafka.')
@@ -122,7 +125,7 @@ class PyTraffic:
             if self.bs is None:
                 self.logger.info(
                     'Start initializing bluetooth sensors collector.')
-                self.bs = BtSensors()
+                self.bs = BtSensors(self.conf)
                 self.logger.info(
                     'Finished initializing bluetooth sensors collector.')
             self.logger.info('Start crating bluetooth sensors map.')
@@ -134,7 +137,7 @@ class PyTraffic:
             if self.tc is None:
                 self.logger.info(
                     'Start initializing traffic counter collector.')
-                self.tc = TrafficCounter()
+                self.tc = TrafficCounter(self.conf)
                 self.logger.info(
                     'Finished initializing traffic counter collector.')
             self.logger.info('Start crating traffic counters map.')
@@ -145,7 +148,7 @@ class PyTraffic:
             if self.il is None:
                 self.logger.info(
                     'Start initializing inductive loops collector.')
-                self.il = InductiveLoops()
+                self.il = InductiveLoops(self.conf)
                 self.logger.info(
                     'Finished initializing inductive loops collector.')
             self.logger.info('Start crating inductive loops map.')

@@ -1,7 +1,7 @@
 import logging
 import argparse
-from .settings import override
-from .app import PyTraffic
+from pytraffic import config
+from pytraffic.app import PyTraffic
 
 
 def _configure_logging():
@@ -44,17 +44,21 @@ def _create_parser():
                         help='Start lpp collector')
     parser.add_argument('--plot', nargs='*', choices=['bt', 'counters', 'il'],
                         help='Plot map')
+    parser.add_argument("--config", help="Configuration file to use",
+                        default="local.conf")
     return parser
 
 
 def main():
     """
-    Override settings with environment variables, configure logger and argument
+    Override config with environment variables, configure logger and argument
     parser and start collectors.
     """
-    override()
     log = _configure_logging()
     parser = _create_parser()
     args = parser.parse_args()
+    conf_obj = config.Config()
+    conf = conf_obj.load_from_file(args.config)
 
-    PyTraffic(log, args)
+    py = PyTraffic(log, conf, args)
+    py.run()

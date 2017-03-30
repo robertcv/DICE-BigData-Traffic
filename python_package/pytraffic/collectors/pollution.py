@@ -2,7 +2,6 @@ import datetime
 import re
 
 from lxml import html
-from .. import settings
 from .util import kafka_producer, scraper
 
 
@@ -52,12 +51,18 @@ class AirPollution:
                'scraped': None,
                'location': None}
 
-    def __init__(self):
+    def __init__(self, conf):
         """
         Initialize Kafka producer and web scraper classes.
+
+        Args:
+            conf (dict): This dict contains all configurations.
+
         """
-        self.producer = kafka_producer.Producer(settings.POLLUTION_KAFKA_TOPIC)
-        self.w_scraper = scraper.Scraper()
+        self.conf = conf['pollution']
+        self.producer = kafka_producer.Producer(conf['kafka_host'],
+                                                self.conf['kafka_topic'])
+        self.w_scraper = scraper.Scraper(conf['scraper'])
 
     def process_table(self, table, date, location):
         """
@@ -122,7 +127,7 @@ class AirPollution:
         This fetches the html code from source url. It then calls process_table
         to further process the code and sends data Kafka.
         """
-        url = settings.POLLUTION_URL + '?source={}&day={}&month={}&year={}'
+        url = self.conf['url'] + '?source={}&day={}&month={}&year={}'
         date = datetime.datetime.today()
         for location in ['bezigrad', 'vosnjakova-tivolska']:
             text = self.w_scraper.get_text(

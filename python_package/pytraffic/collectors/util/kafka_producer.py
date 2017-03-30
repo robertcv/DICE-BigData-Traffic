@@ -2,7 +2,6 @@ import json
 
 from kafka import KafkaProducer
 from kafka.errors import KafkaError
-from pytraffic import settings
 from pytraffic.collectors.util import exceptions
 
 
@@ -11,15 +10,16 @@ class Producer():
     This class is a wrapper around the official kafka module.
     Its main purpose is to catch connection exceptions.
     """
-    def __init__(self, topic):
+    def __init__(self, kafka_host, topic):
         """
         Initialize Kafka connection.
 
         Args:
+            kafka_host (str): Hostname and port for Kafka (host:port).
             topic (str): Name of topic to which data is send.
 
         """
-        self.kafka_url = settings.KAFKA_HOST + ':' + settings.KAFKA_PORT
+        self.kafka_host = kafka_host
         self.connection = None
         self.topic = topic
         self.connect()
@@ -32,11 +32,11 @@ class Producer():
             ConnectionError: If connection couldn't be established.
         """
         try:
-            self.connection = KafkaProducer(bootstrap_servers=[self.kafka_url],
+            self.connection = KafkaProducer(bootstrap_servers=[self.kafka_host],
                                             value_serializer=lambda m: json.dumps(m).encode('utf-8'),
                                             retries=5)
         except KafkaError:
-            raise exceptions.ConnectionError('Kafka on {}'.format(self.kafka_url))
+            raise exceptions.ConnectionError('Kafka on {}'.format(self.kafka_host))
 
     def send(self, data):
         """

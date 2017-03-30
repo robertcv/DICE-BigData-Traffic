@@ -1,4 +1,3 @@
-from .. import settings
 from .util import kafka_producer, scraper, plot
 
 
@@ -9,13 +8,20 @@ class TrafficCounter:
     map of counters location.
     """
 
-    def __init__(self):
+    def __init__(self, conf):
         """
         Initialize Kafka producer and web scraper classes. Also load counters
         data.
+
+        Args:
+            conf (dict): This dict contains all configurations.
+
         """
-        self.producer = kafka_producer.Producer(settings.COUNTERS_KAFKA_TOPIC)
-        self.w_scraper = scraper.Scraper()
+        self.conf = conf['counters']
+        self.conf_lj = conf['location']
+        self.producer = kafka_producer.Producer(conf['kafka_host'],
+                                                self.conf['kafka_topic'])
+        self.w_scraper = scraper.Scraper(conf['scraper'])
         self.counters_data = None
         self.load_data()
 
@@ -25,7 +31,7 @@ class TrafficCounter:
         counters location before we use run method.
         """
         self.counters_data = self.w_scraper.get_json(
-            settings.COUNTERS_URL)['Contents'][0]['Data']['Items']
+                self.conf['url'])['Contents'][0]['Data']['Items']
 
     def run(self):
         """
@@ -33,12 +39,12 @@ class TrafficCounter:
         inside the set area. If it is then we modify it structure and foreward
         it to Kafka.
         """
-        self.counters_data = self.w_scraper.get_json(settings.COUNTERS_URL)
+        self.counters_data = self.w_scraper.get_json(self.conf['url'])
         modified = self.counters_data['Contents'][0]['ModifiedTime'][:23] + 'Z'
         self.counters_data = self.counters_data['Contents'][0]['Data']['Items']
         for point in self.counters_data:
-            if settings.LJ_MIN_LAT < point['y_wgs'] < settings.LJ_MAX_LAT and \
-                    settings.LJ_MIN_LNG < point['x_wgs'] < settings.LJ_MAX_LNG:
+            if self.conf_lj['min_lat'] < point['y_wgs'] < self.conf_lj['max_lat'] and \
+                    self.conf_lj['min_lng'] < point['x_wgs'] < self.conf_lj['max_lng']:
 
                 for d in point['Data']:
                     tmp = point.copy()
@@ -75,11 +81,11 @@ class TrafficCounter:
         lat = []
 
         for point in self.counters_data:
-            if settings.LJ_MIN_LAT < point['y_wgs'] < settings.LJ_MAX_LAT and \
-                    settings.LJ_MIN_LNG < point['x_wgs'] < settings.LJ_MAX_LNG:
+            if self.conf_lj['min_lat'] < point['y_wgs'] < self.conf_lj['max_lat'] and \
+                    self.conf_lj['min_lng'] < point['x_wgs'] < self.conf_lj['max_lng']:
                 lng.append(point['x_wgs'])
                 lat.append(point['y_wgs'])
 
         map = plot.PlotOnMap(lng, lat, title)  # (lng, lat, 'Stevci')
         map.generate(figsize, dpi, zoom, markersize)  # ((20, 20), 500, 14, 8)
-        map.save(settings.COUNTERS_IMG_DIR, file_name)  # "counters.png"
+        map.save(self.conf['img_dir'], file_name)  # "counters.png"
