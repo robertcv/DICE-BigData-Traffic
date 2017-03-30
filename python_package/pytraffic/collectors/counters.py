@@ -1,4 +1,4 @@
-from pytraffic.collectors.util import kafka_producer, scraper, plot
+from pytraffic.collectors.util import kafka_producer, scraper
 
 
 class TrafficCounter(object):
@@ -79,6 +79,10 @@ class TrafficCounter(object):
             file_name (str): Name of saved file.
 
         """
+        # This import is here so the main collector is not dependent on plot
+        # requirements.
+        from pytraffic.collectors.util import plot
+
         if self.counters_data is None:
             self.counters_data = self.load_data()
 

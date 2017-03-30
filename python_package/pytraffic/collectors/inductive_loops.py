@@ -1,4 +1,4 @@
-from pytraffic.collectors.util import kafka_producer, es_search, plot
+from pytraffic.collectors.util import kafka_producer, es_search
 
 
 class InductiveLoops(object):
@@ -85,6 +85,9 @@ class InductiveLoops(object):
             file_name (str): Name of saved file.
 
         """
+        # This import is here so the main collector is not dependent on plot
+        # requirements.
+        from pytraffic.collectors.util import plot
 
         data = self.ess.get_json(self.map_search_body)
         locations = dict()

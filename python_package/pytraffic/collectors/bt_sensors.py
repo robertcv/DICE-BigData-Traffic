@@ -1,6 +1,6 @@
 import json
 
-from pytraffic.collectors.util import kafka_producer, scraper, plot, files
+from pytraffic.collectors.util import kafka_producer, scraper, files
 
 
 class BtSensors(object):
@@ -109,6 +109,10 @@ class BtSensors(object):
             file_name (str): Name of saved file.
 
         """
+        # This import is here so the main collector is not dependent on plot
+        # requirements.
+        from pytraffic.collectors.util import plot
+
         labels = []
         lng = []
         lat = []
