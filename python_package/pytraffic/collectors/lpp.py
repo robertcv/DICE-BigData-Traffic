@@ -1,10 +1,10 @@
 import json
 import csv
 
-from .util import kafka_producer, scraper, files, date_time
+from pytraffic.collectors.util import kafka_producer, scraper, files, date_time
 
 
-class LppTraffic:
+class LppTraffic(object):
     """
     This combines everything lpp related. On init it loads stations and
     routes data or fetches it from web if it’s older the one day. One can
@@ -34,6 +34,7 @@ class LppTraffic:
         # status code errors.
         self.w_scraper_ignore = scraper.Scraper(self.conf_si)
         self.day = date_time.today_timestamp()
+
         self.live_producer = kafka_producer.Producer(
             conf['kafka_host'],
             self.conf['live']['kafka_topic'])
@@ -43,19 +44,21 @@ class LppTraffic:
         self.static_producer = kafka_producer.Producer(
             conf['kafka_host'],
             self.conf['static']['kafka_topic'])
+
         self.stations_data_file = files.file_path(
             __file__,
             self.conf['station']['data_file'])
         self.stations_data = None
+
         self.routes_data_file = files.file_path(
             __file__,
             self.conf['route']['data_file'])
         self.routes_data = None
+
         self.routes_on_stations_data_file = files.file_path(
             __file__,
             self.conf['routes_on_station']['data_file'])
-        self.routes_on_stations_data = []
-        self.load_routes_on_stations_data()
+        self.routes_on_stations_data = None
 
     def get_local_data(self, file):
         """
@@ -166,11 +169,12 @@ class LppTraffic:
         yes we load it from local file, if not we get the data from souse url
         and then create a local copy.
         """
-        if files.old_or_not_exists(self.stations_data_file,
-                                   self.conf['data_age']):
-            self.get_web_stations_data()
-        else:
-            self.stations_data = self.get_local_data(self.stations_data_file)
+        if self.stations_data is None:
+            if files.old_or_not_exists(self.stations_data_file,
+                                       self.conf['data_age']):
+                self.get_web_stations_data()
+            else:
+                self.stations_data = self.get_local_data(self.stations_data_file)
 
     def load_routes_data(self):
         """
@@ -178,11 +182,12 @@ class LppTraffic:
         we load it from local file, if not we get the data from souse url and
         then create a local copy.
         """
-        if files.old_or_not_exists(self.routes_data_file,
-                                   self.conf['data_age']):
-            self.get_web_routes_data()
-        else:
-            self.routes_data = self.get_local_data(self.routes_data_file)
+        if self.routes_data is None:
+            if files.old_or_not_exists(self.routes_data_file,
+                                       self.conf['data_age']):
+                self.get_web_routes_data()
+            else:
+                self.routes_data = self.get_local_data(self.routes_data_file)
 
     def get_web_routes_on_stations_data(self):
         """
@@ -216,15 +221,16 @@ class LppTraffic:
         file, if not we get the data from souse url and then create a local
         copy.
         """
-        self.load_stations_data()
-        self.load_routes_data()
+        if self.routes_on_stations_data is None:
+            self.load_stations_data()
+            self.load_routes_data()
 
-        if files.old_or_not_exists(self.routes_on_stations_data_file,
-                                   self.conf['data_age']):
-            self.get_web_routes_on_stations_data()
-        else:
-            self.routes_on_stations_data = \
-                self.get_local_data(self.routes_on_stations_data_file)['data']
+            if files.old_or_not_exists(self.routes_on_stations_data_file,
+                                       self.conf['data_age']):
+                self.get_web_routes_on_stations_data()
+            else:
+                self.routes_on_stations_data = \
+                    self.get_local_data(self.routes_on_stations_data_file)['data']
 
     def run_live(self):
         """

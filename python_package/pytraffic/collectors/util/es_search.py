@@ -2,7 +2,7 @@ from elasticsearch import Elasticsearch, ElasticsearchException
 from pytraffic.collectors.util import exceptions
 
 
-class EsSearch:
+class EsSearch(object):
     """
     This class is a wrapper around the official elasticsearch module.
     Its main purpose is to catch connection or search exceptions.
@@ -21,19 +21,21 @@ class EsSearch:
         self.host = host
         self.port = port
         self.index = index
-        self.es = None
-        self.connect()
+        self.es = self.connect()
 
     def connect(self):
         """
         Start a connection to elasticsearch.
+
+        Returns:
+            Elasticsearch object used to search for data.
 
         Raises:
             ConnectionError: If connection couldn't be established.
 
         """
         try:
-            self.es = Elasticsearch([{'host': self.host, 'port': self.port}])
+            return Elasticsearch([{'host': self.host, 'port': self.port}])
         except ElasticsearchException:
             raise exceptions.ConnectionError('Elasticsearch on {}'.format(self.host + ':' + self.port))
 

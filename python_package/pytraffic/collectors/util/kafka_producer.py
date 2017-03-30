@@ -5,11 +5,12 @@ from kafka.errors import KafkaError
 from pytraffic.collectors.util import exceptions
 
 
-class Producer():
+class Producer(object):
     """
     This class is a wrapper around the official kafka module.
     Its main purpose is to catch connection exceptions.
     """
+
     def __init__(self, kafka_host, topic):
         """
         Initialize Kafka connection.
@@ -22,21 +23,25 @@ class Producer():
         self.kafka_host = kafka_host
         self.connection = None
         self.topic = topic
-        self.connect()
+        self.connection = self.connect()
 
     def connect(self):
         """
         Start a connection with Kafka.
 
+        Returns:
+            KafkaProducer object that is used to send data to Kafka.
+
         Raises:
             ConnectionError: If connection couldn't be established.
         """
         try:
-            self.connection = KafkaProducer(bootstrap_servers=[self.kafka_host],
-                                            value_serializer=lambda m: json.dumps(m).encode('utf-8'),
-                                            retries=5)
+            return KafkaProducer(bootstrap_servers=[self.kafka_host],
+                                 value_serializer=lambda m: json.dumps(m).encode('utf-8'),
+                                 retries=5)
         except KafkaError:
-            raise exceptions.ConnectionError('Kafka on {}'.format(self.kafka_host))
+            raise exceptions.ConnectionError(
+                'Kafka on {}'.format(self.kafka_host))
 
     def send(self, data):
         """
@@ -45,14 +50,8 @@ class Producer():
         Args:
             data (dict): Data to be send to Kafka.
 
-        Raises:
-            ConnectionError: If it was not possible to send data.
-
         """
-        try:
-            future = self.connection.send(self.topic, data)
-        except KafkaError:
-            raise exceptions.ConnectionError('Kafka topic {}'.format(self.topic))
+        self.connection.send(self.topic, data)
 
     def flush(self):
         """

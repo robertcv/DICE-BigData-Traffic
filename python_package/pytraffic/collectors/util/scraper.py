@@ -4,7 +4,7 @@ from time import sleep
 from pytraffic.collectors.util import exceptions
 
 
-class Scraper:
+class Scraper(object):
     """
     This class enables easy usage of request module. Its main feature is trying
     to connect multiple times before throwing an exception.

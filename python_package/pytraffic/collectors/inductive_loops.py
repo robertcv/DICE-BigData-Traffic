@@ -1,7 +1,7 @@
-from .util import kafka_producer, es_search, plot
+from pytraffic.collectors.util import kafka_producer, es_search, plot
 
 
-class InductiveLoops:
+class InductiveLoops(object):
     """
     This combines everything inductive loops related. One can use run
     method to send data to Kafka or use plot method to plot a
@@ -104,7 +104,7 @@ class InductiveLoops:
             lng.append(float(lng_t))
             lat.append(float(lat_t))
 
-        map = plot.PlotOnMap(lng, lat, title)  # 'Inductive loops'
-        map.generate(figsize, dpi, zoom, markersize)  # (20, 20), 500, 14, 5
-        map.label(labels, lableoffset, fontsize)  # (0.0005, 0.00025), 20
-        map.save(self.conf['img_dir'], file_name)  # 'inductive.png'
+        map_plot = plot.PlotOnMap(lng, lat, title)  # 'Inductive loops'
+        map_plot.generate(figsize, dpi, zoom, markersize)  # (20, 20), 500, 14, 5
+        map_plot.label(labels, lableoffset, fontsize)  # (0.0005, 0.00025), 20
+        map_plot.save(self.conf['img_dir'], file_name)  # 'inductive.png'

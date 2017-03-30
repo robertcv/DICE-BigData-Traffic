@@ -1,10 +1,10 @@
 import matplotlib.pyplot as plt
 import cartopy.crs as ccrs
 from cartopy.io.img_tiles import OSM
-from . import files
+from pytraffic.collectors.util import files
 
 
-class PlotOnMap():
+class PlotOnMap(object):
     """
     This class enables plotting geographic points onto a map.
     """
@@ -22,7 +22,6 @@ class PlotOnMap():
         self.lng = lng
         self.lat = lat
         self.title = title
-        self.plt = plt
 
     def generate(self, figsize, dpi, zoom, markersize):
         """
@@ -36,14 +35,14 @@ class PlotOnMap():
 
         """
         imagery = OSM()
-        self.plt.figure(figsize=figsize, dpi=dpi)
-        ax = self.plt.axes(projection=imagery.crs)
+        plt.figure(figsize=figsize, dpi=dpi)
+        ax = plt.axes(projection=imagery.crs)
         ax.set_extent((min(self.lng) - 0.02, max(self.lng) + 0.02,
                        min(self.lat) - 0.01, max(self.lat) + 0.01))
         ax.add_image(imagery, zoom)
-        self.plt.plot(self.lng, self.lat, 'bo', transform=ccrs.Geodetic(),
+        plt.plot(self.lng, self.lat, 'bo', transform=ccrs.Geodetic(),
                       markersize=markersize)
-        self.plt.title(self.title)
+        plt.title(self.title)
 
     def label(self, labels, offset, fontsize):
         """
@@ -60,7 +59,7 @@ class PlotOnMap():
                      labels[i], horizontalalignment='left',
                      fontsize=fontsize, transform=ccrs.Geodetic())
 
-    def save(self, dir, file_name):
+    def save(self, img_dir, file_name):
         """
         This saves plot into a file.
 
@@ -69,9 +68,9 @@ class PlotOnMap():
             file_name (str): Name of saved file.
 
         """
-        if dir is None:
-            dir = files.file_path(__file__, '../image/')
-        if dir[-1] != '/':
-            dir += '/'
-        files.directory_exists_or_make(dir)
-        plt.savefig(dir + file_name, bbox_inches='tight')
+        if img_dir is None:
+            img_dir = files.file_path(__file__, '../image/')
+        if img_dir[-1] != '/':
+            img_dir += '/'
+        files.directory_exists_or_make(img_dir)
+        plt.savefig(img_dir + file_name, bbox_inches='tight')

@@ -1,9 +1,9 @@
 import json
 
-from .util import kafka_producer, scraper, plot, files
+from pytraffic.collectors.util import kafka_producer, scraper, plot, files
 
 
-class BtSensors:
+class BtSensors(object):
     """
     This combines everything bluetooth sensors related. On init it loads sensors
     data or fetches it from web if it’s older then one day. One can use run
@@ -34,7 +34,6 @@ class BtSensors:
         self.sensors_data_file = files.file_path(__file__,
                                                  self.conf['data_file'])
         self.sensors_data = None
-        self.load_data()
 
     def get_web_data(self):
         """
@@ -120,7 +119,7 @@ class BtSensors:
                 lng.append(point['loc']['lng'])
                 lat.append(point['loc']['lat'])
 
-        map = plot.PlotOnMap(lng, lat, title)  # lng, lat, 'BT v Ljubljani'
-        map.generate(figsize, dpi, zoom, markersize)  # (18, 18), 400, 14, 5
-        map.label(labels, lableoffset, fontsize)  # labels, (0.001, 0.0005), 10
-        map.save(self.conf['img_dir'], file_name)  # 'bt_lj.png'
+        map_plot = plot.PlotOnMap(lng, lat, title)  # lng, lat, 'BT v Ljubljani'
+        map_plot.generate(figsize, dpi, zoom, markersize)  # (18, 18), 400, 14, 5
+        map_plot.label(labels, lableoffset, fontsize)  # labels, (0.001, 0.0005), 10
+        map_plot.save(self.conf['img_dir'], file_name)  # 'bt_lj.png'

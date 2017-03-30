@@ -1,7 +1,7 @@
-from .util import kafka_producer, scraper, plot
+from pytraffic.collectors.util import kafka_producer, scraper, plot
 
 
-class TrafficCounter:
+class TrafficCounter(object):
     """
     This combines everything traffic counters related. One can use run
     method to send data to Kafka or use plot method to plot a
@@ -23,15 +23,17 @@ class TrafficCounter:
                                                 self.conf['kafka_topic'])
         self.w_scraper = scraper.Scraper(conf['scraper'])
         self.counters_data = None
-        self.load_data()
 
     def load_data(self):
         """
         This loads data from the web. This data is needed if we wont to plot
         counters location before we use run method.
+
+        Returns:
+            Dictionary of counters data.
         """
-        self.counters_data = self.w_scraper.get_json(
-                self.conf['url'])['Contents'][0]['Data']['Items']
+        return self.w_scraper.get_json(
+            self.conf['url'])['Contents'][0]['Data']['Items']
 
     def run(self):
         """
@@ -77,6 +79,9 @@ class TrafficCounter:
             file_name (str): Name of saved file.
 
         """
+        if self.counters_data is None:
+            self.counters_data = self.load_data()
+
         lng = []
         lat = []
 
@@ -86,6 +91,6 @@ class TrafficCounter:
                 lng.append(point['x_wgs'])
                 lat.append(point['y_wgs'])
 
-        map = plot.PlotOnMap(lng, lat, title)  # (lng, lat, 'Stevci')
-        map.generate(figsize, dpi, zoom, markersize)  # ((20, 20), 500, 14, 8)
-        map.save(self.conf['img_dir'], file_name)  # "counters.png"
+        map_plot = plot.PlotOnMap(lng, lat, title)  # (lng, lat, 'Stevci')
+        map_plot.generate(figsize, dpi, zoom, markersize)  # ((20, 20), 500, 14, 8)
+        map_plot.save(self.conf['img_dir'], file_name)  # "counters.png"

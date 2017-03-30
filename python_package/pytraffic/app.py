@@ -59,6 +59,9 @@ class PyTraffic(object):
         self.logger.info('Start initializing bluetooth sensors collector.')
         self.bs = BtSensors(self.conf)
         self.logger.info('Finished initializing bluetooth sensors collector.')
+        self.logger.info('Start loading bluetooth sensors data.')
+        self.bs.load_data()
+        self.logger.info('Finished loading bluetooth sensors data.')
         self.logger.info('Start sending bluetooth sensors data to Kafka.')
         self.bs.run()
         self.logger.info('Finished sending bluetooth sensors data to Kafka.')
@@ -104,14 +107,23 @@ class PyTraffic(object):
         self.lt = LppTraffic(self.conf)
         self.logger.info('Finished initializing lpp collector.')
         if 'station' in args:
+            self.logger.info('Start loading lpp routes on station data.')
+            self.lt.load_routes_on_stations_data()
+            self.logger.info('Finished loading lpp routes on station data.')
             self.logger.info('Start sending lpp station data to Kafka.')
             self.lt.run_station()
             self.logger.info('Finished sending lpp station data to Kafka.')
         if 'static' in args:
+            self.logger.info('Start loading lpp routes on station data.')
+            self.lt.load_routes_on_stations_data()
+            self.logger.info('Finished loading lpp routes on station data.')
             self.logger.info('Start sending lpp static data to Kafka.')
             self.lt.run_static()
             self.logger.info('Finished sending lpp static data to Kafka.')
         if 'live' in args:
+            self.logger.info('Start loading lpp station data.')
+            self.lt.load_stations_data()
+            self.logger.info('Finished loading lpp station data.')
             self.logger.info('Start sending lpp live data to Kafka.')
             self.lt.run_live()
             self.logger.info('Finished sending lpp live data to Kafka.')
@@ -128,6 +140,9 @@ class PyTraffic(object):
                 self.bs = BtSensors(self.conf)
                 self.logger.info(
                     'Finished initializing bluetooth sensors collector.')
+                self.logger.info('Start loading bluetooth sensors data.')
+                self.bs.load_data()
+                self.logger.info('Finished loading bluetooth sensors data.')
             self.logger.info('Start crating bluetooth sensors map.')
             self.bs.plot_map('BT v Ljubljani', (18, 18), 200, 14, 2,
                              (0.001, 0.0005), 5, 'bt_lj.png')

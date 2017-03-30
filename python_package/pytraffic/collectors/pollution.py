@@ -2,10 +2,10 @@ import datetime
 import re
 
 from lxml import html
-from .util import kafka_producer, scraper
+from pytraffic.collectors.util import kafka_producer, scraper
 
 
-class AirPollution:
+class AirPollution(object):
     """
     This combines everything pollution related. One can use run method to send
     data to Kafka.
