@@ -16,6 +16,7 @@ For more information on them use:
                      [--il_collector] [--pollution_collector]
                      [--lpp_collector [{station,static,live} [{station,static,live} ...]]]
                      [--plot [{bt,counters,il} [{bt,counters,il} ...]]]
+                     [--config CONFIG]
 
     optional arguments:
       -h, --help            show this help message and exit
@@ -29,16 +30,25 @@ For more information on them use:
                             Start lpp collector
       --plot [{bt,counters,il} [{bt,counters,il} ...]]
                             Plot map
+      --config CONFIG       Configuration file to use
 
-Additionally you have to set some environment variables or have a
-``local_settings.py`` file. All settings can be found in ``settings.py``.
 
-Set at least those variables:
+Additionally you have to create a configuration file that's in JSON format. This
+overrides the default settings set in ``config.py``. For ``pytraffic`` to fully
+work you have to have set at least those settings:
 
 .. code:: bash
 
-    $ export TIMON_USERNAME=user
-    $ export TIMON_PASSWORD=password
+    $ cat local.conf
+    {
+        "kafka_host": "127.0.0.1:9092",
+        "bt_sensors": {
+            "timon_username": "username",
+            "timon_password": "password",
+            "timon_crt_file": "datacloud.crt"
+        }
+    }
+
 
 If you want to plot maps of collectors location you have to install additional
 requirements. Use:
@@ -46,6 +56,7 @@ requirements. Use:
 .. code:: bash
 
     $ pip install -r requirements-plot.txt`
+
 
 Some examples
 ~~~~~~~~~~~~~
@@ -59,20 +70,33 @@ which sends static and live arrival times to Kafka.
 
 .. code:: bash
 
-    $ export KAFKA_HOST=127.0.0.1
-    $ export KAFKA_PORT=9092
+    $ cat local.conf
+    {
+        "kafka_host": "127.0.0.1:9092",
+        "bt_sensors": {
+            "timon_username": "username",
+            "timon_password": "password",
+            "timon_crt_file": "datacloud.crt"
+        }
+    }
     $ pytraffic --bt_collector --il_collector --pollution_collector
 
-This takes Kafka host and port as defined with ``KAFKA_HOST`` and ``KAFKA_PORT``
-environment variables. It then runs bluetooth sensors, inductive loops and air
-pollution collectors.
+This runs bluetooth sensors, inductive loops and air pollution collectors. Note:
+because we saved configurations in a ``local.conf`` file, ``pytraffic``
+automatically loads it and we don't have to specify the ``--config`` argument.
 
 .. code:: bash
 
-    $ export BT_SENSORS_IMG_DIR=/home/user/image
-    $ pytraffic --kafka 127.0.0.1:9092 --bt_collector --plot bt
+    $ cat conf/pytraffic.conf
+    {
+        "kafka_host": "127.0.0.1:9092",
+        "inductive_loops": {
+            "img_dir": "/home/user/image"
+        }
+    }
+    $ pytraffic --il_collector --plot il --config conf/pytraffic.conf
 
-This sets Kafka host to 127.0.0.1 and port to 9092. It then sends bluetooth data
-to Kafka. Finally it saves a plot of sensors location into the directory
-specified with ``BT_SENSORS_IMG_DIR``. Warning: as for now to just plot data you
+This loads configurations from ``conf/pytraffic.conf`` and runs inductive loops
+collector. It also generates a plot of inductive loops location and saves it
+into the directory set in ``img_dir``. Warning: as for now to just plot data you
 still have to have a working Kafka.
