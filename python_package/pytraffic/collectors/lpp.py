@@ -100,9 +100,12 @@ class LppTraffic(object):
 
         for station in ijs_station_data['data']:
             if station['ref_id'] in direction_data_dict and \
-                self.conf_lj['min_lat'] < station['geometry']['coordinates'][1] < self.conf_lj['max_lat'] and \
-                self.conf_lj['min_lng'] < station['geometry']['coordinates'][0] < self.conf_lj['max_lng']:
-
+                                    self.conf_lj['min_lat'] < \
+                                    station['geometry']['coordinates'][1] < \
+                            self.conf_lj['max_lat'] and \
+                                    self.conf_lj['min_lng'] < \
+                                    station['geometry']['coordinates'][0] < \
+                            self.conf_lj['max_lng']:
                 tmp = {
                     'station_int_id': station['int_id'],
                     'station_ref_id': station['ref_id'],
@@ -174,7 +177,8 @@ class LppTraffic(object):
                                        self.conf['data_age']):
                 self.get_web_stations_data()
             else:
-                self.stations_data = self.get_local_data(self.stations_data_file)
+                self.stations_data = self.get_local_data(
+                    self.stations_data_file)
 
     def load_routes_data(self):
         """
@@ -230,7 +234,8 @@ class LppTraffic(object):
                 self.get_web_routes_on_stations_data()
             else:
                 self.routes_on_stations_data = \
-                    self.get_local_data(self.routes_on_stations_data_file)['data']
+                    self.get_local_data(self.routes_on_stations_data_file)[
+                        'data']
 
     def run_live(self):
         """
@@ -248,7 +253,7 @@ class LppTraffic(object):
                     tmp = {
                         'station_int_id': int(station_int_id),
                         'route_int_id': route['route_int_id'],
-                        'arrival_time': route['local_timestamp']
+                        'arrival_time': route['utc_timestamp']
                     }
                     self.live_producer.send(tmp)
             self.live_producer.flush()
@@ -276,7 +281,8 @@ class LppTraffic(object):
                 tmp = {
                     'station_int_id': station_int_id,
                     'route_int_id': route_int_id,
-                    'arrival_time': arrival['arrival_time']
+                    'arrival_time': date_time.local_to_utc(
+                        arrival['arrival_time'])
                 }
                 self.static_producer.send(tmp)
 

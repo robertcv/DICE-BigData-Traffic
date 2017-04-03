@@ -2,7 +2,7 @@ import datetime
 import re
 
 from lxml import html
-from pytraffic.collectors.util import kafka_producer, scraper
+from pytraffic.collectors.util import kafka_producer, scraper, date_time
 
 
 class AirPollution(object):
@@ -64,7 +64,7 @@ class AirPollution(object):
                                                 self.conf['kafka_topic'])
         self.w_scraper = scraper.Scraper(conf['scraper'])
 
-    def process_table(self, table, date, location):
+    def process_table(self, table, location):
         """
         This function processes html table of data and sends it to Kafka.
 
@@ -116,10 +116,7 @@ class AirPollution(object):
             tmp = self.default.copy()
             tmp.update(row)
             hour, minute = tmp['hour'].split(':')
-            isoformat_date = datetime.datetime.isoformat(
-                date.replace(hour=int(hour), minute=int(minute), second=0,
-                             microsecond=0))
-            tmp['scraped'] = isoformat_date
+            tmp['scraped'] = date_time.hour_minut_to_utc(int(hour), int(minute))
             self.producer.send(tmp)
 
     def run(self):
@@ -134,4 +131,4 @@ class AirPollution(object):
                 url.format(location, date.day, date.month, date.year))
             etree = html.fromstring(text)
             table, = etree.xpath('.//table[@id="air-polution"]')
-            self.process_table(table, date, location)
+            self.process_table(table, location)

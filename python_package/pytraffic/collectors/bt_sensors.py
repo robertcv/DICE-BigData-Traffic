@@ -1,6 +1,6 @@
 import json
 
-from pytraffic.collectors.util import kafka_producer, scraper, files
+from pytraffic.collectors.util import kafka_producer, scraper, files, date_time
 
 
 class BtSensors(object):
@@ -90,6 +90,11 @@ class BtSensors(object):
 
                 dist['distance'] = next(s for s in sensor_from['neighbours'] if
                                         s["btId"] == dist['toBtId'])['distance']
+
+                dist['timestampTo'] = date_time.isoformat_to_utc(
+                    dist['timestampTo'])
+                dist['timestampFrom'] = date_time.isoformat_to_utc(
+                    dist['timestampFrom'])
 
                 self.producer.send(dist)
 
