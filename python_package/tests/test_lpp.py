@@ -5,7 +5,6 @@ from pytraffic.collectors import lpp
 
 
 @mock.patch('pytraffic.collectors.lpp.kafka_producer.Producer')
-@mock.patch('pytraffic.collectors.lpp.files')
 class LppTrafficTest(unittest.TestCase):
     conf = {
         'kafka_host': 'host',
@@ -46,11 +45,13 @@ class LppTrafficTest(unittest.TestCase):
             'retries': 10,
             'sleep': 2,
             'ignore_status_code': False
-        }
+        },
+        'data_dir': '.pytraffic/'
     }
+
     @mock.patch('builtins.open')
     @mock.patch('pytraffic.collectors.lpp.json')
-    def test_get_local_data(self, mock_json, mock_open, mock_f, mock_p):
+    def test_get_local_data(self, mock_json, mock_open, mock_p):
         lt = lpp.LppTraffic(self.conf)
         data_file = mock.Mock()
         mock_open.return_value.__enter__.return_value = data_file
@@ -59,8 +60,8 @@ class LppTrafficTest(unittest.TestCase):
         mock_open.assert_called_once_with('file.json')
         mock_json.load.assert_called_once_with(data_file)
 
+    @mock.patch('pytraffic.collectors.lpp.files')
     def test_load_stations_data(self, mock_f, mock_p):
-        mock_f.file_path.return_value = 'data/stations.json'
         lt = lpp.LppTraffic(self.conf)
         lt.get_web_stations_data = mock.Mock()
         lt.get_local_data = mock.Mock(return_value={'data': [1, 2, 3]})
@@ -75,9 +76,10 @@ class LppTrafficTest(unittest.TestCase):
         self.assertEqual(lt.get_web_stations_data.call_count, 1)
         self.assertEqual(lt.get_local_data.call_count, 1)
 
-        lt.get_local_data.assert_called_with('data/stations.json')
+        lt.get_local_data.assert_called_with('.pytraffic/data/stations.json')
         self.assertEqual(lt.stations_data, {'data': [1, 2, 3]})
 
+    @mock.patch('pytraffic.collectors.lpp.files')
     def test_load_routes_data(self, mock_f, mock_p):
         mock_f.file_path.return_value = 'data/routes.json'
         lt = lpp.LppTraffic(self.conf)
@@ -94,9 +96,10 @@ class LppTrafficTest(unittest.TestCase):
         self.assertEqual(lt.get_web_routes_data.call_count, 1)
         self.assertEqual(lt.get_local_data.call_count, 1)
 
-        lt.get_local_data.assert_called_with('data/routes.json')
+        lt.get_local_data.assert_called_with('.pytraffic/data/routes.json')
         self.assertEqual(lt.routes_data, {'data': [1, 2, 3]})
 
+    @mock.patch('pytraffic.collectors.lpp.files')
     def test_load_routes_on_stations_data(self, mock_f, mock_p):
         mock_f.file_path.return_value = 'data/routes_on_station.json'
         lt = lpp.LppTraffic(self.conf)
@@ -115,12 +118,13 @@ class LppTrafficTest(unittest.TestCase):
         self.assertEqual(lt.get_web_routes_on_stations_data.call_count, 1)
         self.assertEqual(lt.get_local_data.call_count, 1)
 
-        lt.get_local_data.assert_called_with('data/routes_on_station.json')
+        lt.get_local_data.assert_called_with('.pytraffic/data/routes_on_station.json')
 
         self.assertEqual(lt.routes_on_stations_data, [1, 2, 3])
         self.assertEqual(lt.load_stations_data.call_count, 2)
         self.assertEqual(lt.load_routes_data.call_count, 2)
 
+    @mock.patch('pytraffic.collectors.lpp.files')
     @mock.patch('pytraffic.collectors.lpp.date_time')
     @mock.patch('pytraffic.collectors.lpp.csv')
     @mock.patch('builtins.open')
@@ -128,7 +132,6 @@ class LppTrafficTest(unittest.TestCase):
     def test_get_web_stations_data(self, mock_json, mock_open, mock_csv,
                                    mock_time, mock_f, mock_p):
         lt = lpp.LppTraffic(self.conf)
-        lt.stations_data_file = 'file.json'
         lt.w_scraper = mock.Mock()
         lt.w_scraper.get_json.return_value = {
             "success": True,
@@ -211,15 +214,17 @@ class LppTrafficTest(unittest.TestCase):
         args2, kwargs2 = call[1]
         self.assertEqual(args1, ('file',))
         mock_csv.reader.assert_called_once_with(data_file)
-        self.assertEqual(args2, ('file.json', 'w'))
+        mock_f.make_dir.assert_called_once_with('.pytraffic/data/stations.json')
+        self.assertEqual(args2, ('.pytraffic/data/stations.json', 'w'))
         mock_json.dump.assert_called_with(res, data_file)
 
+    @mock.patch('pytraffic.collectors.lpp.files')
     @mock.patch('pytraffic.collectors.lpp.date_time')
     @mock.patch('builtins.open')
     @mock.patch('pytraffic.collectors.lpp.json')
-    def test_get_web_routes_data(self, mock_json, mock_open, mock_time, mock_f, mock_p):
+    def test_get_web_routes_data(self, mock_json, mock_open, mock_time, mock_f,
+                                 mock_p):
         lt = lpp.LppTraffic(self.conf)
-        lt.routes_data_file = 'file.json'
         lt.w_scraper = mock.Mock()
         lt.w_scraper.get_json.return_value = {
             "success": True,
@@ -317,16 +322,17 @@ class LppTrafficTest(unittest.TestCase):
         lt.w_scraper_ignore.get_json.assert_called_once()
         args, kwargs = lt.w_scraper_ignore.get_json.call_args
         self.assertIn('?route_id=dc78be0d-0c14-43f1-886f-69101eba48fb', args[0])
-        mock_open.assert_called_once_with('file.json', 'w')
+        mock_f.make_dir.assert_called_once_with('.pytraffic/data/routes.json')
+        mock_open.assert_called_once_with('.pytraffic/data/routes.json', 'w')
         mock_json.dump.assert_called_with(res, data_file)
 
+    @mock.patch('pytraffic.collectors.lpp.files')
     @mock.patch('pytraffic.collectors.lpp.date_time')
     @mock.patch('builtins.open')
     @mock.patch('pytraffic.collectors.lpp.json')
     def test_get_web_routes_on_stations_data(self, mock_json, mock_open,
                                              mock_time, mock_f, mock_p):
         lt = lpp.LppTraffic(self.conf)
-        lt.routes_on_stations_data_file = 'file.json'
         lt.stations_data = {
             "3641": {
                 "station_ref_id": "803212",
@@ -427,10 +433,13 @@ class LppTrafficTest(unittest.TestCase):
         lt.w_scraper_ignore.get_json.assert_called_once()
         args, kwargs = lt.w_scraper_ignore.get_json.call_args
         self.assertIn('?station_int_id=3641', args[0])
-        mock_open.assert_called_once_with('file.json', 'w')
+        mock_f.make_dir.assert_called_once_with(
+            '.pytraffic/data/routes_on_station.json')
+        mock_open.assert_called_once_with(
+            '.pytraffic/data/routes_on_station.json', 'w')
         mock_json.dump.assert_called_with({'data': res}, data_file)
 
-    def test_run_live(self, mock_f, mock_p):
+    def test_run_live(self, mock_p):
         lt = lpp.LppTraffic(self.conf)
         lt.stations_data = {
             "1944": {
@@ -506,7 +515,7 @@ class LppTrafficTest(unittest.TestCase):
         self.assertEqual(args2[0], res2)
         lt.live_producer.flush.assert_called_once()
 
-    def test_run_static(self, mock_f, mock_p):
+    def test_run_static(self, mock_p):
         lt = lpp.LppTraffic(self.conf)
         lt.routes_on_stations_data = [
             {
@@ -575,7 +584,7 @@ class LppTrafficTest(unittest.TestCase):
         self.assertEqual(args2[0], res2)
         lt.static_producer.flush.assert_called_once()
 
-    def test_run_station(self, mock_f, mock_p):
+    def test_run_station(self, mock_p):
         lt = lpp.LppTraffic(self.conf)
         lt.routes_on_stations_data = [
             {
@@ -607,31 +616,31 @@ class LppTrafficTest(unittest.TestCase):
         ]
         lt.station_producer = mock.Mock()
         res1 = {
-                "station_ref_id": "103061",
-                "scraped": "2017-03-21T00:00:00Z",
-                "route_name": "GARA\u017dA",
-                "station_lng": 14.5072916018955,
-                "station_name": "Pohorskega bataljona",
-                "route_num_sub": "",
-                "station_direction": "\u2192",
-                "station_int_id": 2211,
-                "route_int_id": 1047,
-                "route_num": 14,
-                "station_lat": 46.0824088609516
-            }
+            "station_ref_id": "103061",
+            "scraped": "2017-03-21T00:00:00Z",
+            "route_name": "GARA\u017dA",
+            "station_lng": 14.5072916018955,
+            "station_name": "Pohorskega bataljona",
+            "route_num_sub": "",
+            "station_direction": "\u2192",
+            "station_int_id": 2211,
+            "route_int_id": 1047,
+            "route_num": 14,
+            "station_lat": 46.0824088609516
+        }
         res2 = {
-                "station_ref_id": "103061",
-                "scraped": "2017-03-21T00:00:00Z",
-                "route_name": "BOKALCE",
-                "station_lng": 14.5072916018955,
-                "station_name": "Pohorskega bataljona",
-                "route_num_sub": "",
-                "station_direction": "\u2192",
-                "station_int_id": 2211,
-                "route_int_id": 987,
-                "route_num": 14,
-                "station_lat": 46.0824088609516
-            }
+            "station_ref_id": "103061",
+            "scraped": "2017-03-21T00:00:00Z",
+            "route_name": "BOKALCE",
+            "station_lng": 14.5072916018955,
+            "station_name": "Pohorskega bataljona",
+            "route_num_sub": "",
+            "station_direction": "\u2192",
+            "station_int_id": 2211,
+            "route_int_id": 987,
+            "route_num": 14,
+            "station_lat": 46.0824088609516
+        }
 
         lt.run_station()
 
@@ -641,6 +650,7 @@ class LppTrafficTest(unittest.TestCase):
         args2, kwargs2 = lt.station_producer.send.call_args_list[1]
         self.assertEqual(args2[0], res2)
         lt.station_producer.flush.assert_called_once()
+
 
 if __name__ == '__main__':
     unittest.main()

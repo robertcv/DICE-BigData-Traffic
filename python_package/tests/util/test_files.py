@@ -30,16 +30,11 @@ class FilesTest(unittest.TestCase):
         mock_os.path.dirname.assert_called_once_with('/test1/test2.txt')
         mock_os.path.join.assert_called_once_with('/test1', 'image1/image2.png')
 
-    def test_directory_exists_or_make(self, mock_os):
-        mock_os.path.exists.return_value = True
-        files.directory_exists_or_make("any path")
-
-        self.assertFalse(mock_os.makedirs.called)
-
-        mock_os.path.exists.return_value = False
-        files.directory_exists_or_make("any path")
-
-        mock_os.makedirs.assert_called_once_with("any path")
+    def test_make_dir(self, mock_os):
+        mock_os.path.dirname.return_value = '.pytraffic/data'
+        files.make_dir(".pytraffic/data/bt_sensors.json")
+        mock_os.makedirs.assert_called_once_with('.pytraffic/data',
+                                                 exist_ok=True)
 
 
 if __name__ == '__main__':

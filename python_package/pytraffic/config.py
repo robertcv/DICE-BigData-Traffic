@@ -12,7 +12,7 @@ CONF = {
         'timon_username': 'username',
         'timon_password': 'password',
         'timon_crt_file': 'crt',
-        'img_dir': None,
+        'img_dir': 'image/',
         'data_file': 'data/bt_sensors.json',
         'data_age': 60 * 60 * 24,  # 1 day
         'not_lj': ['BTR0219', 'BTR0218', 'BTR0217', 'BTR0213'],
@@ -21,7 +21,7 @@ CONF = {
     # Traffic counters
     'counters': {
         'url': 'https://opendata.si/promet/counters/',
-        'img_dir': None,
+        'img_dir': 'image/',
         'kafka_topic': 'counter_json'
     },
     # Inductive loops
@@ -29,7 +29,7 @@ CONF = {
         'es_host': '10.30.1.132',
         'es_port': 9200,
         'es_index': 'inductive_loops',
-        'img_dir': None,
+        'img_dir': 'image/',
         'kafka_topic': 'inductive_json'
     },
     # LPP traffic
@@ -77,7 +77,8 @@ CONF = {
         'retries': 10,
         'sleep': 2,
         'ignore_status_code': False
-    }
+    },
+    'data_dir': None
 }
 
 

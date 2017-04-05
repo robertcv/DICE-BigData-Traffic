@@ -20,11 +20,11 @@ class LppTraffic(object):
             conf (dict): This dict contains all configurations.
 
         """
-        self.conf = conf['lpp'] # global lpp settings
-        self.conf_lj = conf['location'] # lng and lat boundaries of Ljubljana
-        self.conf_s = conf['scraper'].copy() # scraper settings
+        self.conf = conf['lpp']  # global lpp settings
+        self.conf_lj = conf['location']  # lng and lat boundaries of Ljubljana
+        self.conf_s = conf['scraper'].copy()  # scraper settings
         self.conf_s['timeout'] = 1
-        self.conf_si = self.conf_s.copy() # settings for ignoring status code
+        self.conf_si = self.conf_s.copy()  # settings for ignoring status code
         self.conf_si['ignore_status_code'] = True
         self.w_scraper = scraper.Scraper(self.conf_s)
         # Some combinations of route - station do not have arrival time data
@@ -45,19 +45,16 @@ class LppTraffic(object):
             conf['kafka_host'],
             self.conf['static']['kafka_topic'])
 
-        self.stations_data_file = files.file_path(
-            __file__,
-            self.conf['station']['data_file'])
+        self.stations_data_file = \
+            conf['data_dir'] + self.conf['station']['data_file']
         self.stations_data = None
 
-        self.routes_data_file = files.file_path(
-            __file__,
-            self.conf['route']['data_file'])
+        self.routes_data_file = \
+            conf['data_dir'] + self.conf['route']['data_file']
         self.routes_data = None
 
-        self.routes_on_stations_data_file = files.file_path(
-            __file__,
-            self.conf['routes_on_station']['data_file'])
+        self.routes_on_stations_data_file = \
+            conf['data_dir'] + self.conf['routes_on_station']['data_file']
         self.routes_on_stations_data = None
 
     def get_local_data(self, file):
@@ -118,6 +115,7 @@ class LppTraffic(object):
                 tmp.update(direction_data_dict[station['ref_id']])
                 data[str(station['int_id'])] = tmp
 
+        files.make_dir(self.stations_data_file)
         with open(self.stations_data_file, 'w') as outfile:
             json.dump(data, outfile)
             self.stations_data = data
@@ -162,6 +160,7 @@ class LppTraffic(object):
                     tmp['route_name'] = name
                     data[str(route['int_id'])] = tmp
 
+        files.make_dir(self.routes_data_file)
         with open(self.routes_data_file, 'w') as outfile:
             json.dump(data, outfile)
             self.routes_data = data
@@ -214,6 +213,7 @@ class LppTraffic(object):
                     tmp['scraped'] = date_time.now_isoformat()
                     data.append(tmp)
 
+        files.make_dir(self.routes_on_stations_data_file)
         with open(self.routes_on_stations_data_file, 'w') as outfile:
             json.dump({'data': data}, outfile)
             self.routes_on_stations_data = data

@@ -54,6 +54,7 @@ class InductiveLoops(object):
         self.ess = es_search.EsSearch(self.conf['es_host'],
                                       self.conf['es_port'],
                                       self.conf['es_index'])
+        self.img_dir = conf['data_dir'] + self.conf['img_dir']
 
     def run(self):
         """
@@ -124,4 +125,4 @@ class InductiveLoops(object):
         map_plot = plot.PlotOnMap(lng, lat, title)  # 'Inductive loops'
         map_plot.generate(figsize, dpi, zoom, markersize)  # (20, 20), 500, 14, 5
         map_plot.label(labels, lableoffset, fontsize)  # (0.0005, 0.00025), 20
-        map_plot.save(self.conf['img_dir'], file_name)  # 'inductive.png'
+        map_plot.save(self.img_dir, file_name)  # 'inductive.png'

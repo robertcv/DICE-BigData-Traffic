@@ -13,9 +13,10 @@ class InductiveLoopsTest(unittest.TestCase):
             'es_host': '127.0.0.1',
             'es_port': 9200,
             'es_index': 'inductive_loops',
-            'img_dir': None,
+            'img_dir': 'img/',
             'kafka_topic': 'inductive_json'
-        }
+        },
+        'data_dir': '.pytraffic/'
     }
 
     def test_run(self, mock_e, mock_p):

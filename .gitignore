@@ -4,6 +4,7 @@ python_package/docs/
 python_package/local.conf
 python_package/datacloud.crt
 python_package/.pytraffic.log
+python_package/.pytraffic/
 
 python_package/test.json
 python_package/test.py

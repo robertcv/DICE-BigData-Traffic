@@ -57,14 +57,7 @@ class PlotTest(unittest.TestCase):
         mock_plt = mock.Mock()
         self.plot.plt = mock_plt
         pom = self.plot.PlotOnMap([1, 2], [3, 4], 'title')
-        mock_files.file_path.return_value = '/test1/../image/'
-        pom.save(None, 'file_name')
-        mock_plt.savefig.assert_called_with('/test1/../image/file_name',
-                                            bbox_inches='tight')
         pom.save('/test1/', 'file_name')
-        mock_plt.savefig.assert_called_with('/test1/file_name',
-                                            bbox_inches='tight')
-        pom.save('/test1', 'file_name')
         mock_plt.savefig.assert_called_with('/test1/file_name',
                                             bbox_inches='tight')
 

@@ -6,7 +6,6 @@ from pytraffic.collectors import bt_sensors
 
 @mock.patch('pytraffic.collectors.bt_sensors.kafka_producer')
 @mock.patch('pytraffic.collectors.bt_sensors.scraper')
-@mock.patch('pytraffic.collectors.bt_sensors.files')
 class BtSensorsTest(unittest.TestCase):
     conf = {
         'kafka_host': 'host',
@@ -22,9 +21,11 @@ class BtSensorsTest(unittest.TestCase):
             'not_lj': ['BTR0215'],
             'kafka_topic': 'bt_json'
         },
-        'scraper': 'scraper'
+        'scraper': 'scraper',
+        'data_dir': '.pytraffic/'
     }
 
+    @mock.patch('pytraffic.collectors.bt_sensors.files')
     def test_load_data(self, mock_f, mock_s, mock_k):
         bt = bt_sensors.BtSensors(self.conf)
         bt.get_web_data = mock.Mock()
@@ -43,27 +44,29 @@ class BtSensorsTest(unittest.TestCase):
 
     @mock.patch('builtins.open')
     @mock.patch('pytraffic.collectors.bt_sensors.json')
-    def test_get_local_data(self, mock_json, mock_open, mock_f, mock_s, mock_k):
-        mock_f.file_path.return_value = '~/data/bt_sensors.json'
+    def test_get_local_data(self, mock_json, mock_open, mock_s, mock_k):
         bt = bt_sensors.BtSensors(self.conf)
         data_file = mock.Mock()
         mock_open.return_value.__enter__.return_value = data_file
         mock_json.load.return_value = {'data': [1, 2, 3]}
         bt.get_local_data()
-        mock_open.assert_called_once_with('~/data/bt_sensors.json')
+        mock_open.assert_called_once_with('.pytraffic/data/bt_sensors.json')
         mock_json.load.assert_called_once_with(data_file)
         self.assertEqual(bt.sensors_data, [1, 2, 3])
 
+    @mock.patch('pytraffic.collectors.bt_sensors.files')
     @mock.patch('builtins.open')
     @mock.patch('pytraffic.collectors.bt_sensors.json')
     def test_get_web_data(self, mock_json, mock_open, mock_f, mock_s, mock_k):
-        mock_f.file_path.return_value = '~/data/bt_sensors.json'
         data_file = mock.Mock()
         mock_open.return_value.__enter__.return_value = data_file
         mock_s.Scraper.return_value.get_json.return_value = {'data': [1, 2, 3]}
         bt = bt_sensors.BtSensors(self.conf)
         bt.get_web_data()
-        mock_open.assert_called_once_with('~/data/bt_sensors.json', 'w')
+        mock_f.make_dir.assert_called_once_with(
+            '.pytraffic/data/bt_sensors.json')
+        mock_open.assert_called_once_with('.pytraffic/data/bt_sensors.json',
+                                          'w')
         mock_json.dump.assert_called_once_with({'data': [1, 2, 3]}, data_file)
         self.assertEqual(bt.sensors_data, [1, 2, 3])
 
@@ -72,7 +75,7 @@ class BtSensorsTest(unittest.TestCase):
         bt.get_web_data()
         self.assertEqual(bt.get_local_data.call_count, 1)
 
-    def test_run(self, mock_f, mock_s, mock_k):
+    def test_run(self, mock_s, mock_k):
         mock_s.Scraper.return_value.get_json.return_value = {
             "totalPages": 1,
             "currentPage": 1,
@@ -185,8 +188,7 @@ class BtSensorsTest(unittest.TestCase):
         bt.run()
         mock_k.Producer.return_value.send.assert_called_once_with(res)
 
-    def test_get_plot_data(self, mock_f, mock_s, mock_k):
-
+    def test_get_plot_data(self, mock_s, mock_k):
         bt = bt_sensors.BtSensors(self.conf)
         bt.sensors_data = [
             {

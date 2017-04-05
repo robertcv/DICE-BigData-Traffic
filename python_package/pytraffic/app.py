@@ -28,6 +28,10 @@ class PyTraffic(object):
 
         if self.args.kafka:
             self.conf['kafka_host'] = self.args.kafka
+        if self.args.data_dir:
+            if self.args.data_dir[-1] != '/':
+                self.args.data_dir += '/'
+            self.conf['data_dir'] = self.args.data_dir
 
         self.bs = None
         self.tc = None

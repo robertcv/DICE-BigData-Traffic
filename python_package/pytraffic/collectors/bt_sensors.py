@@ -31,8 +31,8 @@ class BtSensors(object):
 
         self.not_lj = self.conf['not_lj']
 
-        self.sensors_data_file = files.file_path(__file__,
-                                                 self.conf['data_file'])
+        self.img_dir = conf['data_dir'] + self.conf['img_dir']
+        self.sensors_data_file = conf['data_dir'] + self.conf['data_file']
         self.sensors_data = None
 
     def get_web_data(self):
@@ -42,6 +42,7 @@ class BtSensors(object):
         """
         self.sensors_data = self.w_scraper.get_json(self.conf['sensors_url'])
         if self.sensors_data is not None:
+            files.make_dir(self.sensors_data_file)
             with open(self.sensors_data_file, 'w') as outfile:
                 json.dump(self.sensors_data, outfile)
             self.sensors_data = self.sensors_data['data']
@@ -143,4 +144,4 @@ class BtSensors(object):
         map_plot = plot.PlotOnMap(lng, lat, title)  # lng, lat, 'BT v Ljubljani'
         map_plot.generate(figsize, dpi, zoom, markersize)  # (18, 18), 400, 14, 5
         map_plot.label(labels, lableoffset, fontsize)  # labels, (0.001, 0.0005), 10
-        map_plot.save(self.conf['img_dir'], file_name)  # 'bt_lj.png'
+        map_plot.save(self.img_dir, file_name)  # 'bt_lj.png'

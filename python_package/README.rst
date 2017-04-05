@@ -16,7 +16,7 @@ For more information on them use:
                      [--il_collector] [--pollution_collector]
                      [--lpp_collector [{station,static,live} [{station,static,live} ...]]]
                      [--plot [{bt,counters,il} [{bt,counters,il} ...]]]
-                     [--config CONFIG]
+                     [--config CONFIG] [--data_dir DATA_DIR]
 
     optional arguments:
       -h, --help            show this help message and exit
@@ -31,6 +31,7 @@ For more information on them use:
       --plot [{bt,counters,il} [{bt,counters,il} ...]]
                             Plot map
       --config CONFIG       Configuration file to use
+      --data_dir DATA_DIR   Directory to save data and images to.
 
 
 Additionally you have to create a configuration file that's in JSON format. This
@@ -46,7 +47,8 @@ work you have to have set at least those settings:
             "timon_username": "username",
             "timon_password": "password",
             "timon_crt_file": "datacloud.crt"
-        }
+        },
+        "data_dir": ".pytraffic/"
     }
 
 
@@ -91,12 +93,13 @@ automatically loads it and we don't have to specify the ``--config`` argument.
     {
         "kafka_host": "127.0.0.1:9092",
         "inductive_loops": {
-            "img_dir": "/home/user/image"
+            "img_dir": "image/inductive_loops/"
         }
+        "data_dir": "/home/user/.pytraffic/"
     }
     $ pytraffic --il_collector --plot il --config conf/pytraffic.conf
 
 This loads configurations from ``conf/pytraffic.conf`` and runs inductive loops
 collector. It also generates a plot of inductive loops location and saves it
-into the directory set in ``img_dir``. Warning: as for now to just plot data you
-still have to have a working Kafka.
+into the directory set in ``/home/user/.pytraffic/image/inductive_loops/``.
+Warning: as for now to just plot data you still have to have a working Kafka.

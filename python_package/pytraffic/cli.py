@@ -46,6 +46,8 @@ def _create_parser():
                         help='Plot map')
     parser.add_argument("--config", help="Configuration file to use",
                         default="local.conf")
+    parser.add_argument("--data_dir",
+                        help="Directory to save data and images to.")
     return parser
 
 

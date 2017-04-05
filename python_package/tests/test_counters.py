@@ -20,7 +20,8 @@ class TrafficCounterTest(unittest.TestCase):
             'min_lat': 46.0,
             'max_lat': 46.1
         },
-        'scraper': 'scraper'
+        'scraper': 'scraper',
+        'data_dir': '.pytraffic/'
     }
 
     def test_load_data(self, mock_s, mock_k):

@@ -68,9 +68,5 @@ class PlotOnMap(object):
             file_name (str): Name of saved file.
 
         """
-        if img_dir is None:
-            img_dir = files.file_path(__file__, '../image/')
-        if img_dir[-1] != '/':
-            img_dir += '/'
-        files.directory_exists_or_make(img_dir)
+        files.make_dir(img_dir)
         plt.savefig(img_dir + file_name, bbox_inches='tight')

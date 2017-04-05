@@ -23,6 +23,7 @@ class TrafficCounter(object):
                                                 self.conf['kafka_topic'])
         self.w_scraper = scraper.Scraper(conf['scraper'])
         self.counters_data = None
+        self.img_dir = conf['data_dir'] + self.conf['img_dir']
 
     def load_data(self):
         """
@@ -110,4 +111,4 @@ class TrafficCounter(object):
 
         map_plot = plot.PlotOnMap(lng, lat, title)  # (lng, lat, 'Stevci')
         map_plot.generate(figsize, dpi, zoom, markersize)  # ((20, 20), 500, 14, 8)
-        map_plot.save(self.conf['img_dir'], file_name)  # "counters.png"
+        map_plot.save(self.img_dir, file_name)  # "counters.png"
