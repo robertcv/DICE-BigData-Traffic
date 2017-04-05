@@ -256,7 +256,7 @@ class LppTraffic(object):
                         'arrival_time': route['utc_timestamp']
                     }
                     self.live_producer.send(tmp)
-            self.live_producer.flush()
+        self.live_producer.flush()
 
     def run_static(self):
         """
@@ -286,7 +286,7 @@ class LppTraffic(object):
                 }
                 self.static_producer.send(tmp)
 
-            self.static_producer.flush()
+        self.static_producer.flush()
 
     def run_station(self):
         """

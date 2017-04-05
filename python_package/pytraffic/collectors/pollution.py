@@ -118,6 +118,7 @@ class AirPollution(object):
             hour, minute = tmp['hour'].split(':')
             tmp['scraped'] = date_time.hour_minut_to_utc(int(hour), int(minute))
             self.producer.send(tmp)
+        self.producer.flush()
 
     def run(self):
         """

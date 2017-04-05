@@ -66,6 +66,7 @@ class TrafficCounter(object):
                     tmp['stevci_stat'] = int(tmp['stevci_stat'])
 
                     self.producer.send(tmp)
+        self.producer.flush()
 
     def get_plot_data(self):
         """

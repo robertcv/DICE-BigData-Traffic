@@ -69,6 +69,7 @@ class InductiveLoops(object):
             hit['_source']['deviceY'] = float(
                 hit['_source']['deviceY'].replace(',', '.'))
             self.producer.send(hit['_source'])
+        self.producer.flush()
 
     def get_plot_data(self):
         """

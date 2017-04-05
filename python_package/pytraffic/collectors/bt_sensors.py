@@ -98,6 +98,7 @@ class BtSensors(object):
                     dist['timestampFrom'])
 
                 self.producer.send(dist)
+        self.producer.flush()
 
     def get_plot_data(self):
         """
