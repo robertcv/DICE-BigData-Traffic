@@ -4,13 +4,22 @@ import unittest.mock as mock
 from pytraffic.collectors import inductive_loops
 
 
-@mock.patch('pytraffic.collectors.inductive_loops.InductiveLoops.__init__',
-            mock.Mock(return_value=None))
+@mock.patch('pytraffic.collectors.inductive_loops.kafka_producer.Producer')
+@mock.patch('pytraffic.collectors.inductive_loops.es_search.EsSearch')
 class InductiveLoopsTest(unittest.TestCase):
-    def test_run(self):
-        il = inductive_loops.InductiveLoops()
-        il.ess = mock.Mock()
-        il.ess.get_json.return_value = {
+    conf = {
+        'kafka_host': 'host',
+        'inductive_loops': {
+            'es_host': '127.0.0.1',
+            'es_port': 9200,
+            'es_index': 'inductive_loops',
+            'img_dir': None,
+            'kafka_topic': 'inductive_json'
+        }
+    }
+
+    def test_run(self, mock_e, mock_p):
+        mock_e.return_value.get_json.return_value = {
             "hits": {
                 "hits": [
                     {
@@ -59,7 +68,7 @@ class InductiveLoopsTest(unittest.TestCase):
             },
             "timed_out": False
         }
-
+        il = inductive_loops.InductiveLoops(self.conf)
         kafka_search_body = {
             "size": 10000,
             "query": {
@@ -85,16 +94,12 @@ class InductiveLoopsTest(unittest.TestCase):
             'roadDescription': '-', 'StatusDescription': 'Normal traffic',
             'locationDescription': 'Zaloška cesta', 'date': '28/03/2017'
         }
-        il.producer = mock.Mock()
         il.run()
-        il.ess.get_json.assert_called_once_with(kafka_search_body)
-        il.producer.send.assert_called_once_with(res)
+        mock_e.return_value.get_json.assert_called_once_with(kafka_search_body)
+        mock_p.return_value.send.assert_called_once_with(res)
 
-    @mock.patch('pytraffic.collectors.inductive_loops.plot')
-    def test_plot(self, mock_plot):
-        il = inductive_loops.InductiveLoops()
-        il.ess = mock.Mock()
-        il.ess.get_json.return_value = {
+    def test_get_plot_data(self, mock_e, mock_p):
+        mock_e.return_value.get_json.return_value = {
             "hits": {
                 "hits": [
                     {
@@ -179,6 +184,8 @@ class InductiveLoopsTest(unittest.TestCase):
             "timed_out": False
         }
 
+        il = inductive_loops.InductiveLoops(self.conf)
+
         map_search_body = {
             "size": 10000,
             "query": {
@@ -194,16 +201,12 @@ class InductiveLoopsTest(unittest.TestCase):
             ]
         }
 
-        il.plot_map('title', (10, 10), 100, 15, 5, (0.1, 0.2), 10, 'image.png')
+        lng, lat, labels = il.get_plot_data()
 
         il.ess.get_json.assert_called_once_with(map_search_body)
-        mock_plot.PlotOnMap.assert_called_once_with(
-            [14.545549, 14.500324], [46.05598, 46.057694], 'title')
-        mock_plot.PlotOnMap().generate.assert_called_once_with(
-            (10, 10), 100, 15, 5)
-        mock_plot.PlotOnMap().label.assert_called_once_with(
-            [1010, 18], (0.1, 0.2), 10)
-        mock_plot.PlotOnMap().save.assert_called_once_with(None, 'image.png')
+        self.assertEqual(lng, [14.545549, 14.500324])
+        self.assertEqual(lat, [46.05598, 46.057694])
+        self.assertEqual(labels, [1010, 18])
 
 
 if __name__ == '__main__':

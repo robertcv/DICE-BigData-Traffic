@@ -12,9 +12,13 @@ class EsSearchTest(unittest.TestCase):
 
     def test_get_json(self, mock_es):
         es = es_search.EsSearch('host', 'port', 'index')
-        mock_es().search.return_value = {'test': []}
-        self.assertEqual(es.get_json({'body': []}), {'test': []})
-        mock_es().search.assert_called_once_with(index='index', body={'body': []})
+        mock_es().search.return_value = {'test': [1, 2, 3]}
+        self.assertEqual(
+            es.get_json({"query": {"updated": {"gte": "now-15m"}}}),
+            {'test': [1, 2, 3]})
+        mock_es().search.assert_called_once_with(index='index', body={
+            "query": {"updated": {"gte": "now-15m"}}})
+
 
 if __name__ == '__main__':
     unittest.main()

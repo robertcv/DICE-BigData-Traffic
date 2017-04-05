@@ -4,62 +4,76 @@ import unittest.mock as mock
 from pytraffic.collectors import bt_sensors
 
 
-@mock.patch('pytraffic.collectors.bt_sensors.BtSensors.__init__',
-            mock.Mock(return_value=None))
+@mock.patch('pytraffic.collectors.bt_sensors.kafka_producer')
+@mock.patch('pytraffic.collectors.bt_sensors.scraper')
+@mock.patch('pytraffic.collectors.bt_sensors.files')
 class BtSensorsTest(unittest.TestCase):
-    @mock.patch('pytraffic.collectors.bt_sensors.files')
-    def test_load_data(self, mock_files):
-        bt = bt_sensors.BtSensors()
+    conf = {
+        'kafka_host': 'host',
+        'bt_sensors': {
+            'last_url': 'https://test.si/bt_sensors/velocities_avgs_last/',
+            'sensors_url': 'https://test.si/bt_sensors/sensors/',
+            'timon_username': 'username',
+            'timon_password': 'password',
+            'timon_crt_file': 'crt',
+            'img_dir': 'img/',
+            'data_file': 'data/bt_sensors.json',
+            'data_age': 60 * 60 * 24,
+            'not_lj': ['BTR0215'],
+            'kafka_topic': 'bt_json'
+        },
+        'scraper': 'scraper'
+    }
+
+    def test_load_data(self, mock_f, mock_s, mock_k):
+        bt = bt_sensors.BtSensors(self.conf)
         bt.get_web_data = mock.Mock()
         bt.get_local_data = mock.Mock()
-        bt.sensors_data_file = 'file.json'
 
-        mock_files.old_or_not_exists.return_value = False
+        mock_f.old_or_not_exists.return_value = False
         bt.load_data()
-        bt.get_web_data.assert_not_called()
-        bt.get_local_data.assert_called_once()
+        self.assertEqual(bt.get_web_data.call_count, 0)
+        self.assertEqual(bt.get_local_data.call_count, 1)
 
-        mock_files.old_or_not_exists.return_value = True
+        mock_f.old_or_not_exists.return_value = True
         bt.load_data()
-        bt.get_web_data.assert_called_once()
+        self.assertEqual(bt.get_web_data.call_count, 1)
+        # just one call from before
+        self.assertEqual(bt.get_local_data.call_count, 1)
 
-    @mock.patch('pytraffic.collectors.bt_sensors.open')
+    @mock.patch('builtins.open')
     @mock.patch('pytraffic.collectors.bt_sensors.json')
-    def test_get_local_data(self, mock_json, mock_open):
-        bt = bt_sensors.BtSensors()
-        bt.sensors_data_file = 'file.json'
+    def test_get_local_data(self, mock_json, mock_open, mock_f, mock_s, mock_k):
+        mock_f.file_path.return_value = '~/data/bt_sensors.json'
+        bt = bt_sensors.BtSensors(self.conf)
         data_file = mock.Mock()
         mock_open.return_value.__enter__.return_value = data_file
         mock_json.load.return_value = {'data': [1, 2, 3]}
         bt.get_local_data()
-        mock_open.assert_called_once_with('file.json')
+        mock_open.assert_called_once_with('~/data/bt_sensors.json')
         mock_json.load.assert_called_once_with(data_file)
         self.assertEqual(bt.sensors_data, [1, 2, 3])
 
-    @mock.patch('pytraffic.collectors.bt_sensors.open')
+    @mock.patch('builtins.open')
     @mock.patch('pytraffic.collectors.bt_sensors.json')
-    def test_get_web_data(self, mock_json, mock_open):
+    def test_get_web_data(self, mock_json, mock_open, mock_f, mock_s, mock_k):
+        mock_f.file_path.return_value = '~/data/bt_sensors.json'
         data_file = mock.Mock()
         mock_open.return_value.__enter__.return_value = data_file
-        bt = bt_sensors.BtSensors()
-        bt.sensors_data_file = 'file.json'
-        bt.w_scraper = mock.Mock(
-            **{'get_json.return_value': {'data': [1, 2, 3]}})
-
+        mock_s.Scraper.return_value.get_json.return_value = {'data': [1, 2, 3]}
+        bt = bt_sensors.BtSensors(self.conf)
         bt.get_web_data()
-        mock_open.assert_called_once_with('file.json', 'w')
+        mock_open.assert_called_once_with('~/data/bt_sensors.json', 'w')
         mock_json.dump.assert_called_once_with({'data': [1, 2, 3]}, data_file)
         self.assertEqual(bt.sensors_data, [1, 2, 3])
 
         bt.get_local_data = mock.Mock()
-        bt.w_scraper = mock.Mock(**{'get_json.return_value': None})
+        bt.w_scraper.get_json.return_value = None
         bt.get_web_data()
-        bt.get_local_data.assert_called_once()
+        self.assertEqual(bt.get_local_data.call_count, 1)
 
-    def test_run(self):
-        bt = bt_sensors.BtSensors()
-        bt.w_scraper = mock.Mock()
-        bt.w_scraper.get_json.return_value = {
+    def test_run(self, mock_f, mock_s, mock_k):
+        mock_s.Scraper.return_value.get_json.return_value = {
             "totalPages": 1,
             "currentPage": 1,
             "totalElements": 28,
@@ -90,6 +104,7 @@ class BtSensorsTest(unittest.TestCase):
             ]
         }
 
+        bt = bt_sensors.BtSensors(self.conf)
         bt.sensors_data = [
             {
                 "neighbours": [
@@ -150,15 +165,13 @@ class BtSensorsTest(unittest.TestCase):
                 }
             }]
 
-        bt.not_lj = ['BTR0215']
-
         res = {
             'toBtLng': 14.49663,
             'id': '58da2ef0c0a6834de258c020',
             'toBtLat': 46.06703,
             'avgTravelTime': 0.030294117647058826,
-            'timestampTo': '2017-03-28T11:30:00+02:00',
-            'timestampFrom': '2017-03-28T11:15:00+02:00',
+            'timestampTo': '2017-03-28T09:30:00Z',
+            'timestampFrom': '2017-03-28T09:15:00Z',
             'fromBtId': 'BTR0202',
             'fromBtLng': 14.50978,
             'fromBtLat': 46.06826,
@@ -169,13 +182,12 @@ class BtSensorsTest(unittest.TestCase):
             'distance': 1010
         }
 
-        bt.producer = mock.Mock()
         bt.run()
-        bt.producer.send.assert_called_once_with(res)
+        mock_k.Producer.return_value.send.assert_called_once_with(res)
 
-    @mock.patch('pytraffic.collectors.bt_sensors.plot')
-    def test_plot(self, mock_plot):
-        bt = bt_sensors.BtSensors()
+    def test_get_plot_data(self, mock_f, mock_s, mock_k):
+
+        bt = bt_sensors.BtSensors(self.conf)
         bt.sensors_data = [
             {
                 "neighbours": [
@@ -253,18 +265,11 @@ class BtSensorsTest(unittest.TestCase):
                     "lat": 46.01633
                 }
             }]
-        bt.not_lj = ['BTR0215']
 
-        bt.plot_map('title', (10, 10), 100, 15, 5, (0.1, 0.2), 10, 'image.png')
-        mock_plot.PlotOnMap.assert_called_once_with(
-            [14.50978, 14.50072, 14.49663],
-            [46.06826, 46.04619, 46.06703],
-            'title')
-        mock_plot.PlotOnMap().generate.assert_called_once_with(
-            (10, 10), 100, 15, 5)
-        mock_plot.PlotOnMap().label.assert_called_once_with(
-            ['BTR0202', 'BTR0206', 'BTR0212'], (0.1, 0.2), 10)
-        mock_plot.PlotOnMap().save.assert_called_once_with(None, 'image.png')
+        lng, lat, labels = bt.get_plot_data()
+        self.assertEqual(lng, [14.50978, 14.50072, 14.49663])
+        self.assertEqual(lat, [46.06826, 46.04619, 46.06703])
+        self.assertEqual(labels, ['BTR0202', 'BTR0206', 'BTR0212'])
 
 
 if __name__ == '__main__':

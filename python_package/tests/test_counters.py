@@ -4,21 +4,33 @@ import unittest.mock as mock
 from pytraffic.collectors import counters
 
 
-@mock.patch('pytraffic.collectors.counters.TrafficCounter.__init__',
-            mock.Mock(return_value=None))
+@mock.patch('pytraffic.collectors.counters.kafka_producer.Producer')
+@mock.patch('pytraffic.collectors.counters.scraper.Scraper')
 class TrafficCounterTest(unittest.TestCase):
-    def test_load_data(self):
-        tc = counters.TrafficCounter()
-        tc.w_scraper = mock.Mock()
-        tc.w_scraper.get_json.return_value = {
-            'Contents': [{'Data': {'Items': 'data'}}]}
-        tc.load_data()
-        self.assertEqual(tc.counters_data, 'data')
+    conf = {
+        'kafka_host': 'host',
+        'counters': {
+            'url': 'https://test.si/promet/counters/',
+            'img_dir': 'img/',
+            'kafka_topic': 'counter_json'
+        },
+        'location': {
+            'min_lng': 14.44,
+            'max_lng': 14.58,
+            'min_lat': 46.0,
+            'max_lat': 46.1
+        },
+        'scraper': 'scraper'
+    }
 
-    def test_run(self):
-        tc = counters.TrafficCounter()
-        tc.w_scraper = mock.Mock()
-        tc.w_scraper.get_json.return_value = {
+    def test_load_data(self, mock_s, mock_k):
+        mock_s.return_value.get_json.return_value = {
+            'Contents': [{'Data': {'Items': 'data'}}]}
+        tc = counters.TrafficCounter(self.conf)
+        self.assertEqual(tc.load_data(), 'data')
+
+    def test_run(self, mock_s, mock_k):
+        mock_s.return_value.get_json.return_value = {
             "RoutingVersion": 1,
             "updated": 1490700723,
             "TileVersion": 0,
@@ -127,7 +139,7 @@ class TrafficCounterTest(unittest.TestCase):
                 }
             ]
         }
-
+        tc = counters.TrafficCounter(self.conf)
         res1 = {
             'stevci_hit': 95,
             'y_wgs': 46.0842126150332,
@@ -163,20 +175,18 @@ class TrafficCounterTest(unittest.TestCase):
             'stevci_statOpis': 'Zgoščen promet', 'stevci_gap': 3.1,
             'X': 461802.0
         }
-
-        tc.producer = mock.Mock()
         tc.run()
-        call = tc.producer.send.call_args_list
+        self.assertEqual(mock_k.return_value.send.call_count, 2)
+        call = mock_k.return_value.send.call_args_list
         args1, kwargs1 = call[0]
         args2, kwargs2 = call[1]
         self.assertEqual(args1[0], res1)
         self.assertEqual(args2[0], res2)
-        self.assertEqual(tc.producer.send.call_count, 2)
 
-    @mock.patch('pytraffic.collectors.counters.plot')
-    def test_plot(self, mock_plot):
-        tc = counters.TrafficCounter()
-        tc.counters_data = [
+    def test_get_plot_data(self, mock_s, mock_k):
+        tc = counters.TrafficCounter(self.conf)
+        tc.load_data = mock.Mock()
+        tc.load_data.return_value = [
             {
                 "y_wgs": 46.0842126150332,
                 "Description": "HC-H3, LJ (S obvoznica)",
@@ -263,12 +273,10 @@ class TrafficCounterTest(unittest.TestCase):
             }
         ]
 
-        tc.plot_map('title', (10, 10), 100, 15, 5, 'image.png')
-        mock_plot.PlotOnMap.assert_called_once_with(
-            [14.501172525698411], [46.0842126150332], 'title')
-        mock_plot.PlotOnMap().generate.assert_called_once_with(
-            (10, 10), 100, 15, 5)
-        mock_plot.PlotOnMap().save.assert_called_once_with(None, 'image.png')
+        lng, lat = tc.get_plot_data()
+        self.assertEqual(tc.load_data.call_count, 1)
+        self.assertEqual(lng, [14.501172525698411])
+        self.assertEqual(lat, [46.0842126150332])
 
 
 if __name__ == '__main__':
