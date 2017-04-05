@@ -66,6 +66,29 @@ class TrafficCounter(object):
 
                     self.producer.send(tmp)
 
+    def get_plot_data(self):
+        """
+        This function preparers coordinates for plotting.
+
+        Returns:
+             lng Longitude part of points coordinates.
+             lat Latitude part of points coordinates.
+
+        """
+        if self.counters_data is None:
+            self.counters_data = self.load_data()
+
+        lng = []
+        lat = []
+
+        for point in self.counters_data:
+            if self.conf_lj['min_lat'] < point['y_wgs'] < self.conf_lj['max_lat'] and \
+                    self.conf_lj['min_lng'] < point['x_wgs'] < self.conf_lj['max_lng']:
+                lng.append(point['x_wgs'])
+                lat.append(point['y_wgs'])
+        return lng, lat
+
+
     def plot_map(self, title, figsize, dpi, zoom, markersize, file_name):
         """
         This function crates a map of traffic counters location.
@@ -83,17 +106,7 @@ class TrafficCounter(object):
         # requirements.
         from pytraffic.collectors.util import plot
 
-        if self.counters_data is None:
-            self.counters_data = self.load_data()
-
-        lng = []
-        lat = []
-
-        for point in self.counters_data:
-            if self.conf_lj['min_lat'] < point['y_wgs'] < self.conf_lj['max_lat'] and \
-                    self.conf_lj['min_lng'] < point['x_wgs'] < self.conf_lj['max_lng']:
-                lng.append(point['x_wgs'])
-                lat.append(point['y_wgs'])
+        lng, lat = self.get_plot_data()
 
         map_plot = plot.PlotOnMap(lng, lat, title)  # (lng, lat, 'Stevci')
         map_plot.generate(figsize, dpi, zoom, markersize)  # ((20, 20), 500, 14, 8)

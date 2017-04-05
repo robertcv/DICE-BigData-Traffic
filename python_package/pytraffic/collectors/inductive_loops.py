@@ -69,6 +69,36 @@ class InductiveLoops(object):
                 hit['_source']['deviceY'].replace(',', '.'))
             self.producer.send(hit['_source'])
 
+    def get_plot_data(self):
+        """
+        This function preparers coordinates and labels for plotting.
+
+        Returns:
+             lng Longitude part of points coordinates.
+             lat Latitude part of points coordinates.
+             labels Points labels.
+
+        """
+        data = self.ess.get_json(self.map_search_body)
+        locations = dict()
+        labels = []
+        lng = []
+        lat = []
+
+        # If we have duplicate location this overrides itself and we end up
+        # with only one copy of it.
+        for hit in data['hits']['hits']:
+            fields = hit['fields']
+            locations[fields['location'][0]] = fields['point'][0]
+
+        for k, v in locations.items():
+            lat_t, lng_t = v.replace(',', '.').split()
+            labels.append(k)
+            lng.append(float(lng_t))
+            lat.append(float(lat_t))
+
+        return lng, lat, labels
+
     def plot_map(self, title, figsize, dpi, zoom, markersize, lableoffset,
                  fontsize, file_name):
         """
@@ -89,23 +119,7 @@ class InductiveLoops(object):
         # requirements.
         from pytraffic.collectors.util import plot
 
-        data = self.ess.get_json(self.map_search_body)
-        locations = dict()
-        labels = []
-        lng = []
-        lat = []
-
-        # If we have duplicate location this overrides itself and we end up
-        # with only one copy of it.
-        for hit in data['hits']['hits']:
-            fields = hit['fields']
-            locations[fields['location'][0]] = fields['point'][0]
-
-        for k, v in locations.items():
-            lat_t, lng_t = v.replace(',', '.').split()
-            labels.append(k)
-            lng.append(float(lng_t))
-            lat.append(float(lat_t))
+        lng, lat, labels = self.get_plot_data()
 
         map_plot = plot.PlotOnMap(lng, lat, title)  # 'Inductive loops'
         map_plot.generate(figsize, dpi, zoom, markersize)  # (20, 20), 500, 14, 5

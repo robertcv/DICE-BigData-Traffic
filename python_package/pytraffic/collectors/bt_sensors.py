@@ -98,6 +98,26 @@ class BtSensors(object):
 
                 self.producer.send(dist)
 
+    def get_plot_data(self):
+        """
+        This function preparers coordinates and labels for plotting.
+
+        Returns:
+             lng Longitude part of points coordinates.
+             lat Latitude part of points coordinates.
+             labels Points labels.
+
+        """
+        labels = []
+        lng = []
+        lat = []
+        for point in self.sensors_data:
+            if point['btId'] not in self.not_lj:
+                labels.append(point['btId'])
+                lng.append(point['loc']['lng'])
+                lat.append(point['loc']['lat'])
+        return lng, lat, labels
+
     def plot_map(self, title, figsize, dpi, zoom, markersize, lableoffset,
                  fontsize, file_name):
         """
@@ -118,15 +138,7 @@ class BtSensors(object):
         # requirements.
         from pytraffic.collectors.util import plot
 
-        labels = []
-        lng = []
-        lat = []
-
-        for point in self.sensors_data:
-            if point['btId'] not in self.not_lj:
-                labels.append(point['btId'])
-                lng.append(point['loc']['lng'])
-                lat.append(point['loc']['lat'])
+        lng, lat, labels = self.get_plot_data()
 
         map_plot = plot.PlotOnMap(lng, lat, title)  # lng, lat, 'BT v Ljubljani'
         map_plot.generate(figsize, dpi, zoom, markersize)  # (18, 18), 400, 14, 5
