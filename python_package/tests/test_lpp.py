@@ -118,7 +118,8 @@ class LppTrafficTest(unittest.TestCase):
         self.assertEqual(lt.get_web_routes_on_stations_data.call_count, 1)
         self.assertEqual(lt.get_local_data.call_count, 1)
 
-        lt.get_local_data.assert_called_with('.pytraffic/data/routes_on_station.json')
+        lt.get_local_data.assert_called_with(
+            '.pytraffic/data/routes_on_station.json')
 
         self.assertEqual(lt.routes_on_stations_data, [1, 2, 3])
         self.assertEqual(lt.load_stations_data.call_count, 2)
@@ -178,9 +179,9 @@ class LppTrafficTest(unittest.TestCase):
         data_file = mock.Mock()
         mock_open.return_value.__enter__.return_value = data_file
         mock_csv.reader.return_value = [
-            ['502013', 'Ambrožev trg', '→'],
-            ['502014', 'Ambrožev trg', ''],
-            ['505141', 'Grosuplje', '→']
+            ['502013', 'Ambrožev trg', 'to_center'],
+            ['502014', 'Ambrožev trg', 'from_center'],
+            ['505141', 'Grosuplje', 'to_center']
         ]
         mock_time.now_isoformat.return_value = '2017-03-28T16:00:00Z'
 
@@ -194,7 +195,7 @@ class LppTrafficTest(unittest.TestCase):
                     'station_lng': 14.5172493587762,
                     'station_lat': 46.0495728420941,
                     'scraped': '2017-03-28T16:00:00Z',
-                    'station_direction': '→',
+                    'station_direction': 'to_center',
                     'station_int_id': 3335
                 },
             '3334':
@@ -204,7 +205,7 @@ class LppTrafficTest(unittest.TestCase):
                     'station_lng': 14.5168919025372,
                     'station_lat': 46.0495752574493,
                     'scraped': '2017-03-28T16:00:00Z',
-                    'station_direction': '',
+                    'station_direction': 'from_center',
                     'station_int_id': 3334
                 }
         }
@@ -296,6 +297,7 @@ class LppTrafficTest(unittest.TestCase):
                 {
                     'scraped': '2017-03-28T16:00:00Z',
                     'route_int_id': 1553,
+                    'route_length': 15001.617297584155,
                     'route_num_sub': 'B',
                     'route_num': 3,
                     'route_name': 'LITOSTROJ'
@@ -304,6 +306,7 @@ class LppTrafficTest(unittest.TestCase):
                 {
                     'scraped': '2017-03-28T16:00:00Z',
                     'route_int_id': 1562,
+                    'route_length': 9778.44206408395,
                     'route_num_sub': '',
                     'route_num': 3,
                     'route_name': 'LITOSTROJ'
@@ -312,14 +315,15 @@ class LppTrafficTest(unittest.TestCase):
                 {
                     'scraped': '2017-03-28T16:00:00Z',
                     'route_int_id': 1561,
+                    'route_length': 8572.889271426635,
                     'route_num_sub': '',
                     'route_num': 3,
                     'route_name': 'GARAŽA'
                 }
         }
 
-        lt.w_scraper.get_json.assert_called_once()
-        lt.w_scraper_ignore.get_json.assert_called_once()
+        self.assertEqual(lt.w_scraper.get_json.call_count, 1)
+        self.assertEqual(lt.w_scraper_ignore.get_json.call_count, 1)
         args, kwargs = lt.w_scraper_ignore.get_json.call_args
         self.assertIn('?route_id=dc78be0d-0c14-43f1-886f-69101eba48fb', args[0])
         mock_f.make_dir.assert_called_once_with('.pytraffic/data/routes.json')
@@ -339,7 +343,7 @@ class LppTrafficTest(unittest.TestCase):
                 "scraped": "2017-03-21T00:00:00Z",
                 "station_lng": 14.4918072201637,
                 "station_name": "Kovinarska",
-                "station_direction": "",
+                "station_direction": "from_center",
                 "station_int_id": 3641,
                 "station_lat": 46.0804464528947
             }
@@ -348,6 +352,7 @@ class LppTrafficTest(unittest.TestCase):
             '1553': {
                 'scraped': '2017-03-28T16:00:00Z',
                 'route_int_id': 1553,
+                'route_length': 15001.617297584155,
                 'route_num_sub': 'B',
                 'route_num': 3,
                 'route_name': 'LITOSTROJ'
@@ -355,6 +360,7 @@ class LppTrafficTest(unittest.TestCase):
             '1562': {
                 'scraped': '2017-03-28T16:00:00Z',
                 'route_int_id': 1562,
+                'route_length': 9778.44206408395,
                 'route_num_sub': '',
                 'route_num': 3,
                 'route_name': 'LITOSTROJ'
@@ -362,6 +368,7 @@ class LppTrafficTest(unittest.TestCase):
             '1561': {
                 'scraped': '2017-03-28T16:00:00Z',
                 'route_int_id': 1561,
+                'route_length': 8572.889271426635,
                 'route_num_sub': '',
                 'route_num': 3,
                 'route_name': 'GARAŽA'
@@ -407,30 +414,32 @@ class LppTrafficTest(unittest.TestCase):
                 'station_lng': 14.4918072201637,
                 'station_ref_id': '803212',
                 'route_int_id': 1562,
+                'route_length': 9778.44206408395,
                 'route_num': 3,
                 'station_int_id': 3641,
                 'scraped': '2017-03-28T16:00:00Z',
                 'station_lat': 46.0804464528947,
                 'station_name': 'Kovinarska',
                 'route_name': 'LITOSTROJ',
-                'station_direction': ''
+                'station_direction': 'from_center'
             },
             {
                 'route_num_sub': 'B',
                 'station_lng': 14.4918072201637,
                 'station_ref_id': '803212',
                 'route_int_id': 1553,
+                'route_length': 15001.617297584155,
                 'route_num': 3,
                 'station_int_id': 3641,
                 'scraped': '2017-03-28T16:00:00Z',
                 'station_lat': 46.0804464528947,
                 'station_name': 'Kovinarska',
                 'route_name': 'LITOSTROJ',
-                'station_direction': ''
+                'station_direction': 'from_center'
             }
         ]
 
-        lt.w_scraper_ignore.get_json.assert_called_once()
+        self.assertEqual(lt.w_scraper_ignore.get_json.call_count, 1)
         args, kwargs = lt.w_scraper_ignore.get_json.call_args
         self.assertIn('?station_int_id=3641', args[0])
         mock_f.make_dir.assert_called_once_with(
@@ -447,7 +456,7 @@ class LppTrafficTest(unittest.TestCase):
                 "scraped": "2017-03-21T00:00:00Z",
                 "station_lng": 14.5028208626036,
                 "station_name": "Konzorcij",
-                "station_direction": "",
+                "station_direction": "from_center",
                 "station_int_id": 1944,
                 "station_lat": 46.0512362310992
             }
@@ -495,17 +504,19 @@ class LppTrafficTest(unittest.TestCase):
         res1 = {
             "station_int_id": 1944,
             "route_int_id": 730,
+            "vehicle_int_id": 101,
             "arrival_time": "2017-03-29T08:23:46.000Z"
         }
         res2 = {
             "station_int_id": 1944,
             "route_int_id": 737,
+            "vehicle_int_id": 595,
             "arrival_time": "2017-03-29T08:19:28.000Z"
         }
 
         lt.run_live()
 
-        lt.w_scraper.get_json.assert_called_once()
+        self.assertEqual(lt.w_scraper.get_json.call_count, 1)
         args, kwargs = lt.w_scraper.get_json.call_args
         self.assertIn('?station_int_id=1944', args[0])
         self.assertEqual(lt.live_producer.send.call_count, 2)
@@ -513,7 +524,7 @@ class LppTrafficTest(unittest.TestCase):
         self.assertEqual(args1[0], res1)
         args2, kwargs2 = lt.live_producer.send.call_args_list[1]
         self.assertEqual(args2[0], res2)
-        lt.live_producer.flush.assert_called_once()
+        self.assertEqual(lt.live_producer.flush.call_count, 1)
 
     def test_run_static(self, mock_p):
         lt = lpp.LppTraffic(self.conf)
@@ -525,9 +536,10 @@ class LppTrafficTest(unittest.TestCase):
                 "station_lng": 14.4913580625216,
                 "station_name": "Kovinarska",
                 "route_num_sub": "",
-                "station_direction": "\u2192",
+                "station_direction": "to_center",
                 "station_int_id": 3642,
                 "route_int_id": 1098,
+                "route_length": 9642.884408583066,
                 "route_num": 3,
                 "station_lat": 46.0803964420806
             }
@@ -573,7 +585,7 @@ class LppTrafficTest(unittest.TestCase):
 
         lt.run_static()
 
-        lt.w_scraper_ignore.get_json.assert_called_once()
+        self.assertEqual(lt.w_scraper_ignore.get_json.call_count, 1)
         args, kwargs = lt.w_scraper_ignore.get_json.call_args
         self.assertIn(
             '?day=1490745600000&route_int_id=1098&station_int_id=3642', args[0])
@@ -582,7 +594,7 @@ class LppTrafficTest(unittest.TestCase):
         self.assertEqual(args1[0], res1)
         args2, kwargs2 = lt.static_producer.send.call_args_list[1]
         self.assertEqual(args2[0], res2)
-        lt.static_producer.flush.assert_called_once()
+        self.assertEqual(lt.static_producer.flush.call_count, 1)
 
     def test_run_station(self, mock_p):
         lt = lpp.LppTraffic(self.conf)
@@ -594,9 +606,10 @@ class LppTrafficTest(unittest.TestCase):
                 "station_lng": 14.5072916018955,
                 "station_name": "Pohorskega bataljona",
                 "route_num_sub": "",
-                "station_direction": "\u2192",
+                "station_direction": "to_center",
                 "station_int_id": 2211,
                 "route_int_id": 1047,
+                "route_length": 8619.156395317332,
                 "route_num": 14,
                 "station_lat": 46.0824088609516
             },
@@ -607,9 +620,10 @@ class LppTrafficTest(unittest.TestCase):
                 "station_lng": 14.5072916018955,
                 "station_name": "Pohorskega bataljona",
                 "route_num_sub": "",
-                "station_direction": "\u2192",
+                "station_direction": "to_center",
                 "station_int_id": 2211,
                 "route_int_id": 987,
+                "route_length": 12721.110901254224,
                 "route_num": 14,
                 "station_lat": 46.0824088609516
             }
@@ -622,9 +636,10 @@ class LppTrafficTest(unittest.TestCase):
             "station_lng": 14.5072916018955,
             "station_name": "Pohorskega bataljona",
             "route_num_sub": "",
-            "station_direction": "\u2192",
+            "station_direction": "to_center",
             "station_int_id": 2211,
             "route_int_id": 1047,
+            "route_length": 8619.156395317332,
             "route_num": 14,
             "station_lat": 46.0824088609516
         }
@@ -635,9 +650,10 @@ class LppTrafficTest(unittest.TestCase):
             "station_lng": 14.5072916018955,
             "station_name": "Pohorskega bataljona",
             "route_num_sub": "",
-            "station_direction": "\u2192",
+            "station_direction": "to_center",
             "station_int_id": 2211,
             "route_int_id": 987,
+            "route_length": 12721.110901254224,
             "route_num": 14,
             "station_lat": 46.0824088609516
         }
@@ -649,7 +665,7 @@ class LppTrafficTest(unittest.TestCase):
         self.assertEqual(args1[0], res1)
         args2, kwargs2 = lt.station_producer.send.call_args_list[1]
         self.assertEqual(args2[0], res2)
-        lt.station_producer.flush.assert_called_once()
+        self.assertEqual(lt.station_producer.flush.call_count, 1)
 
 
 if __name__ == '__main__':

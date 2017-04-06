@@ -143,6 +143,7 @@ class LppTraffic(object):
                     tmp = {
                         'route_num': int(group['name']),
                         'route_int_id': route['int_id'],
+                        'route_length': route['length'],
                         'scraped': date_time.now_isoformat()
                     }
                     name = route['name']
@@ -253,6 +254,7 @@ class LppTraffic(object):
                     tmp = {
                         'station_int_id': int(station_int_id),
                         'route_int_id': route['route_int_id'],
+                        'vehicle_int_id': route['vehicle_int_id'],
                         'arrival_time': route['utc_timestamp']
                     }
                     self.live_producer.send(tmp)
