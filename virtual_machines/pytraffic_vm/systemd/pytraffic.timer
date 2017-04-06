@@ -1,0 +1,9 @@
+[Unit]
+Description=Send pytraffic collectors data to Kafka.
+
+[Timer]
+OnCalendar=*-*-* *:0/15:00
+Unit=pytraffic.service
+
+[Install]
+WantedBy=multi-user.target

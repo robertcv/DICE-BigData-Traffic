@@ -1,0 +1,9 @@
+[Unit]
+Description=Send pollution data to Kafka.
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/pytraffic --pollution_collector --config /home/centos/local.conf
+
+[Install]
+WantedBy=multi-user.target

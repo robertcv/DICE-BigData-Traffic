@@ -1,0 +1,9 @@
+[Unit]
+Description=Send lpp live arrival to Kafka.
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/pytraffic --lpp_collector live --config /home/centos/local.conf
+
+[Install]
+WantedBy=multi-user.target

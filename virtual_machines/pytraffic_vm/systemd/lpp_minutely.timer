@@ -1,0 +1,9 @@
+[Unit]
+Description=Send lpp live arrival to Kafka.
+
+[Timer]
+OnCalendar=*-*-* *:*:00
+Unit=lpp_minutely.service
+
+[Install]
+WantedBy=multi-user.target

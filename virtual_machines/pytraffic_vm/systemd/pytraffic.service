@@ -1,0 +1,9 @@
+[Unit]
+Description=Send pytraffic collectors data to Kafka.
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/pytraffic --bt_collector --il_collector --counters_collector --config /home/centos/local.conf
+
+[Install]
+WantedBy=multi-user.target

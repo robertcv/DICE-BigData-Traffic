@@ -1,0 +1,9 @@
+[Unit]
+Description=Send lpp station and static arrival data to Kafka.
+
+[Timer]
+OnCalendar=*-*-* 00:00:00
+Unit=lpp_daily.service
+
+[Install]
+WantedBy=multi-user.target
