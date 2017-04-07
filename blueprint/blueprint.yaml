@@ -33,7 +33,7 @@ node_templates:
   spark_worker_vm:
     type: dice.hosts.Medium
     instances:
-      deploy: 2
+      deploy: 1
     relationships:
       - type: dice.relationships.ProtectedBy
         target: spark_worker_fw
