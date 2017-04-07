@@ -1,4 +1,5 @@
 import unittest
+import unittest.mock as mock
 
 from pytraffic.collectors.util import date_time
 
@@ -17,11 +18,19 @@ class DateTimeTest(unittest.TestCase):
 
         self.assertRegex(date_time.today_timestamp(), re)
 
-    def test_hour_minut_to_utc(self):
+    @mock.patch('pytraffic.collectors.util.date_time.pytz.timezone')
+    def test_hour_minut_to_utc(self, mock_pytz):
 
-        re = r'\d{4}-\d{2}-\d{2}T06:45:00Z'
+        date = mock.Mock()
+        naive = mock.Mock()
+        date.replace.return_value = naive
+        date_time.hour_minut_to_utc(date, 8, 45)
 
-        self.assertRegex(date_time.hour_minut_to_utc(8, 45), re)
+        date.replace.assert_called_once_with(hour=8, minute=45, second=0,
+                                             microsecond=0)
+
+        mock_pytz.return_value.localize.assert_called_once_with(naive,
+                                                                is_dst=None)
 
     def test_local_to_utc(self):
 

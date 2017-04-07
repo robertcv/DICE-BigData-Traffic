@@ -15,7 +15,7 @@ class AirPollution(object):
         default (dict): Default dictionary for pollution data.
 
     """
-    english = {'ura': 'hour',
+    english = {'Ura': 'hour',
                'SO2µg/m3(normativi)': 'so2',
                'NOµg/m3': 'no',
                'NO2µg/m3(normativi)': 'no2',
@@ -27,7 +27,7 @@ class AirPollution(object):
                'Smer vetra': 'wind_direction',
                'Vlaga%': 'humidity',
                'Pritiskmbar': 'pressure',
-               'SonÄ\x8dno sevanjeW/m2': 'solar_radiation',
+               'Sončno sevanjeW/m2': 'solar_radiation',
                'Benzenµg/m3(normativi)': 'benzene',
                'Toluenµg/m3': 'tolulene',
                'Paraksilenµg/m3': 'paraxylene'}
@@ -64,22 +64,22 @@ class AirPollution(object):
                                                 self.conf['kafka_topic'])
         self.w_scraper = scraper.Scraper(conf['scraper'])
 
-    def process_table(self, table, location):
+    def process_table(self, table, date, location):
         """
         This function processes html table of data and sends it to Kafka.
 
         Args:
             table (str): String of html code which contains the air pollution
                 table.
-            date (:obj:datetime): Datetime object of today.
+            date (:obj:datetime): Datetime object for the date.
             location (str): Location where the pollution data is collected.
 
         """
-        header_row, = table.xpath('.//thead/tr')
+        rows = table.xpath(
+            './tr[not(@class="limits") and not(@class="alarms")]')
 
         headers = [re.sub('[\r\n\t]', '', header_cell.text_content().strip())
-                   for header_cell in
-                   header_row.xpath('./th')]
+                   for header_cell in rows[0].xpath('./td')]
 
         # map Slovenian headers to English
         english_headers = [self.english[header] for header in headers if
@@ -88,16 +88,15 @@ class AirPollution(object):
         english_headers.append('scraped')
         english_headers.append('location')
 
-        value_rows = table.xpath(
-            './/tbody/tr[not(@class="limits") and not(@class="alarms")]')
         all_rows = []
 
-        # get all table rows
-        for value_row in value_rows:
+        for value_row in rows[1:]:
             row = []
 
-            for value_cell in value_row.xpath('./th|td'):
+            for value_cell in value_row.xpath('./td'):
                 v = value_cell.text_content().strip()
+                if ',' in v:
+                    v = v.replace(',', '.')
                 try:
                     v = float(v)
                 except ValueError:
@@ -116,7 +115,8 @@ class AirPollution(object):
             tmp = self.default.copy()
             tmp.update(row)
             hour, minute = tmp['hour'].split(':')
-            tmp['scraped'] = date_time.hour_minut_to_utc(int(hour), int(minute))
+            tmp['scraped'] = date_time.hour_minut_to_utc(date, int(hour),
+                                                         int(minute))
             self.producer.send(tmp)
         self.producer.flush()
 
@@ -125,11 +125,14 @@ class AirPollution(object):
         This fetches the html code from source url. It then calls process_table
         to further process the code and sends data Kafka.
         """
-        url = self.conf['url'] + '?source={}&day={}&month={}&year={}'
-        date = datetime.datetime.today()
-        for location in ['bezigrad', 'vosnjakova-tivolska']:
-            text = self.w_scraper.get_text(
-                url.format(location, date.day, date.month, date.year))
-            etree = html.fromstring(text)
-            table, = etree.xpath('.//table[@id="air-polution"]')
-            self.process_table(table, location)
+        url = self.conf['url'] + '?AirMonitoringPointID={}&Date={}.{}.{}'
+        today = datetime.datetime.now()
+        yesterday = today - datetime.timedelta(days=1)
+        for l in self.conf['locations']:
+            for d in [yesterday, today]:
+                text = self.w_scraper.get_text(
+                    url.format(self.conf['locations'][l], d.day, d.month,
+                               d.year))
+                etree = html.fromstring(text)
+                table, = etree.xpath('.//div[@class="data-table"]/table')
+                self.process_table(table, d, l)

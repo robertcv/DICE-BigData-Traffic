@@ -24,12 +24,13 @@ def today_timestamp():
     return str(round(date.timestamp() * 1000))
 
 
-def hour_minut_to_utc(hour, minute):
+def hour_minut_to_utc(date, hour, minute):
     """
-    This function crates a datatime object with the given hour and minute. It
-    then changes it to utc and returns a iso formatted datetime.
+    This function crates a datatime object with the given date, hour and minute.
+    It then changes it to utc and returns a iso formatted datetime.
 
     Args:
+        date (:obj:datetime): Datetime object for date.
         hour (int): Given hour.
         minute (int): Given minutes.
 
@@ -37,8 +38,7 @@ def hour_minut_to_utc(hour, minute):
         str: Utc time in iso format.
     """
     local = pytz.timezone("Europe/Ljubljana")
-    naive = datetime.datetime.now().replace(hour=hour, minute=minute, second=0,
-                                            microsecond=0)
+    naive = date.replace(hour=hour, minute=minute, second=0, microsecond=0)
     local_dt = local.localize(naive, is_dst=None)
     utc_dt = local_dt.astimezone(pytz.utc)
 

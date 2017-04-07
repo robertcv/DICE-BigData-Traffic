@@ -11,129 +11,139 @@ class AirPollutionTest(unittest.TestCase):
     conf = {
         'kafka_host': 'host',
         'pollution': {
-            'url': 'http://test.si/stanje-okolja/zrak/',
-            'kafka_topic': 'pollution_json'
+            'url': 'http://test.si/zrak/',
+            'kafka_topic': 'pollution_json',
+            'locations': {
+                'bezigrad': 1,
+                'vosnjakova-tivolska': 3
+            }
         },
         'scraper': 'scraper'
     }
 
     @mock.patch('pytraffic.collectors.pollution.datetime')
     def test_run(self, mock_datetime, mock_s, mock_p):
-        today = mock.Mock(**{'day': 28, 'month': 3, 'year': 2017})
-        mock_datetime.datetime.today.return_value = today
+        today = mock.Mock()
+        today.day, today.month, today.year = 28, 3, 2017
+        yesterday = mock.Mock()
+        yesterday.day, yesterday.month, yesterday.year = 27, 3, 2017
+
+        mock_datetime.timedelta.return_value.__rsub__.return_value = yesterday
+        mock_datetime.datetime.now.return_value = today
         mock_s.return_value.get_text.return_value = """<html>
-        <table id="air-polution">
-            <thead><tr><th>ura</th></tr></thead>
-            <tbody><tr><th>00:00</th></tr></tbody>
-        </table>
-        </html>"""
+        <div class="data-table">
+            <table>
+                <tr><th>ura</th></tr>
+                <tr><th>00:00</th></tr>
+            </table>
+        </div></html>"""
 
         ap = pollution.AirPollution(self.conf)
         ap.process_table = mock.Mock()
         ap.run()
 
-        self.assertEqual(mock_s.return_value.get_text.call_count, 2)
-        call = mock_s.return_value.get_text.call_args_list
-        args1, kwargs1 = call[0]
-        args2, kwargs2 = call[1]
-        self.assertIn('?source=bezigrad&day=28&month=3&year=2017', args1[0])
-        self.assertIn('?source=vosnjakova-tivolska&day=28&month=3&year=2017',
-                      args2[0])
+        self.assertEqual(mock_s.return_value.get_text.call_count, 4)
+        urls = [args[0] for args, kwargs in
+                mock_s.return_value.get_text.call_args_list]
+        self.assertIn(
+            'http://test.si/zrak/?AirMonitoringPointID=1&Date=27.3.2017', urls)
+        self.assertIn(
+            'http://test.si/zrak/?AirMonitoringPointID=1&Date=28.3.2017', urls)
+        self.assertIn(
+            'http://test.si/zrak/?AirMonitoringPointID=3&Date=27.3.2017', urls)
+        self.assertIn(
+            'http://test.si/zrak/?AirMonitoringPointID=3&Date=28.3.2017', urls)
 
-        self.assertEqual(ap.process_table.call_count, 2)
-        call = ap.process_table.call_args_list
-        args1, kwargs1 = call[0]
-        args2, kwargs2 = call[1]
-        self.assertIn('bezigrad', args1)
-        self.assertIn('vosnjakova-tivolska', args2)
+        self.assertEqual(ap.process_table.call_count, 4)
+        calls = [arg for args, kwargs in
+                 ap.process_table.call_args_list for arg in args]
+        self.assertIn('bezigrad', calls)
+        self.assertIn('vosnjakova-tivolska', calls)
+        self.assertIn(today, calls)
+        self.assertIn(yesterday, calls)
 
     @mock.patch('pytraffic.collectors.pollution.date_time')
     def test_process_table(self, mock_d, mock_s, mock_p):
         ap = pollution.AirPollution(self.conf)
         text = """<html>
-        <table class="mediaTable" id="air-polution" cellspacing="0"
-        summary="Podatki o onesnaženosti zraka">
-        <caption class="hidden">Onesnaženost zraka</caption>
-        <thead><tr>
-            <th scope="col" class="time essential persist">ura</th>
-            <th scope="col" class="stripe essential">SO<sub>2</sub><br/>&micro;g/m<sup>3</sup><br/><a href="#norm-so2">(normativi)</a></th>
-            <th scope="col" class="stripe essential">NO<br/>&micro;g/m<sup>3</sup><br/></th>
-            <th scope="col" class="stripe optional">NO<sub>2</sub><br/>&micro;g/m<sup>3</sup><br/><a href="#norm-no2">(normativi)</a></th>
-            <th scope="col" class="stripe optional">NO<sub>&times;</sub><br/>&micro;g/m<sup>3</sup><br/></th>
-            <th scope="col" class="stripe optional">CO<br/>mg/m<sup>3</sup><br/><a href="#norm-co">(normativi)</a></th>
-            <th scope="col" class="stripe">Trdni delci PM<sub>10</sub><br/>&micro;g/m<sup>3</sup><br/><a href="#norm-pm10">(normativi)</a></th>
-            <th scope="col" class="stripe">Temperatura<br/>&deg;C<br/></th>
-            <th scope="col" class="stripe">Hitrost vetra<br/>m/s<br/></th>
-            <th scope="col" class="stripe">Smer vetra<br/><br/></th>
-            <th scope="col" class="stripe">Vlaga<br/>%<br/></th>
-            <th scope="col" class="stripe">Pritisk<br/>mbar<br/></th>
-            <th scope="col" class="stripe">Sončno sevanje<br/>W/m<sup>2</sup><br/></th>
-        </tr></thead><tbody><tr class="first">
-            <th scope="row" class="time">00:00</th>
-            <td>5.95</td>
-            <td>0</td>
-            <td>38.15</td>
-            <td>37.15</td>
-            <td>0.23</td>
-            <td>41.097</td>
-            <td>14</td>
-            <td>0.21</td>
-            <td>V</td>
-            <td>44.7</td>
-            <td>982.5</td>
-            <td>0</td>
-        </tr><tr>
-            <th scope="row" class="time">01:00</th>
-            <td>5.95</td>
-            <td>0</td>
-            <td>55.5</td>
-            <td>54.85</td>
-            <td>0.27</td>
-            <td>42.024</td>
-            <td>13.1</td>
-            <td>0.65</td>
-            <td>Z</td>
-            <td>48.3</td>
-            <td>982.5</td>
-            <td>0</td>
-        </tr><tr class="limits">
-        <th scope="row" class="limit">mejne vrednosti</th>
-            <td>350</td>
-            <td></td>
-            <td>200</td>
-            <td></td>
-            <td></td>
-            <td>50</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr></tbody></table></html>"""
+        <div class="data-table">
+        <div class="filter-header-content">
+            <button class="open-filter">Prikaži kolone</button>
+        </div>
+        <table class="table-scroll-filter">
+            <tr><td>Ura</td>
+                <td>SO<sub>2</sub>&micro;g/m<sup>3</sup>(normativi)</td>
+                <td>NO<br />&micro;g/m<sup>3</sup></td>
+                <td>NO<sub>2</sub>&micro;g/m<sup>3</sup>(normativi)</td>
+                <td>NO<sub>&times;</sub>&micro;g/m<sup>3</sup></td>
+                <td>CO<br />mg/m<sup>3</sup>(normativi)</td>
+                <td>Trdni delci PM<sub>10</sub>&micro;g/m<sup>3</sup>(normativi)</td>
+                <td>Temperatura<br />&deg;C</td>
+                <td>Hitrost vetra<br />m/s</td>
+                <td>Smer vetra<br /></td>
+                <td>Vlaga<br />%</td>
+                <td>Pritisk<br />mbar</td>
+                <td>Sončno sevanje<br />W/m<sup>2</sup></td>
+            </tr><tr>
+                <td>00:00</td>
+                <td>14</td>
+                <td>2,35</td>
+                <td>62,45</td>
+                <td>66</td>
+                <td>0,25</td>
+                <td>30,076</td>
+                <td>12,1</td>
+                <td>225</td>
+                <td>?</td>
+                <td>73,6</td>
+                <td>981,3</td>
+                <td>0</td>
+            </tr><tr>
+                <td>01:00</td>
+                <td>13,65</td>
+                <td>0</td>
+                <td>38,45</td>
+                <td>38,1</td>
+                <td>0,18</td>
+                <td>20,291</td>
+                <td>11,1</td>
+                <td>225</td>
+                <td>?</td>
+                <td>78,3</td>
+                <td>981,1</td>
+                <td>0</td>
+            </tr><tr class="limits">
+                <td>mejne vrednosti</td>
+                <td>350</td>
+                <td></td>
+                <td>200</td>
+                <td>50</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table></div></html>"""
 
         mock_d.hour_minut_to_utc.side_effect = ['2017-04-03T22:00:00Z',
                                                 '2017-04-03T23:00:00Z']
-
+        date = mock.Mock()
         etree = html.fromstring(text)
-        table, = etree.xpath('.//table[@id="air-polution"]')
-        ap.process_table(table, 'bezigrad')
+        table, = etree.xpath('.//div[@class="data-table"]/table')
+        ap.process_table(table, date, 'bezigrad')
 
-        res1 = {'pm': 41.097, 'co': 0.23, 'no2': 38.15, 'windspeed': 0.21,
-                'location': None, 'so2': 5.95, 'nox': 37.15,
-                'temperature': 14.0, 'humidity': 44.7, 'tolulene': None,
-                'hour': '00:00', 'wind_direction': 'V',
-                'solar_radiation': None, 'benzene': None, 'pressure': 982.5,
-                'paraxylene': None, 'scraped': '2017-04-03T22:00:00Z',
-                'no': 0.0}
+        res1 = {'hour': '00:00', 'tolulene': None, 'nox': 66.0, 'pm': 30.076,
+                'so2': 14.0, 'solar_radiation': 0.0, 'co': 0.25,
+                'humidity': 73.6, 'paraxylene': None, 'temperature': 12.1,
+                'scraped': '2017-04-03T22:00:00Z', 'wind_direction': None,
+                'location': 'bezigrad', 'no2': 62.45, 'windspeed': 225.0,
+                'pressure': 981.3, 'benzene': None, 'no': 2.35}
 
-        res2 = {'pm': 42.024, 'co': 0.27, 'no2': 55.5, 'windspeed': 0.65,
-                'location': None, 'so2': 5.95, 'nox': 54.85,
-                'temperature': 13.1, 'humidity': 48.3, 'tolulene': None,
-                'hour': '01:00', 'wind_direction': 'Z',
-                'solar_radiation': None, 'benzene': None, 'pressure': 982.5,
-                'paraxylene': None, 'scraped': '2017-04-03T23:00:00Z',
-                'no': 0.0}
+        res2 = {'hour': '01:00', 'tolulene': None, 'nox': 38.1, 'pm': 20.291,
+                'so2': 13.65, 'solar_radiation': 0.0, 'co': 0.18,
+                'humidity': 78.3, 'paraxylene': None, 'temperature': 11.1,
+                'scraped': '2017-04-03T23:00:00Z', 'wind_direction': None,
+                'location': 'bezigrad', 'no2': 38.45, 'windspeed': 225.0,
+                'pressure': 981.1, 'benzene': None, 'no': 0.0}
 
         call = mock_p.return_value.send.call_args_list
         args1, kwargs1 = call[0]

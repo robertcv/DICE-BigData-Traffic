@@ -61,7 +61,11 @@ CONF = {
     },
     # Air pollution
     'pollution': {
-        'url': 'http://www.ljubljana.si/si/zivljenje-v-ljubljani/okolje-prostor-bivanje/stanje-okolja/zrak/',
+        'url': 'https://www.ljubljana.si/sl/moja-ljubljana/varstvo-okolja/stanje-okolja/kakovost-zraka/',
+        'locations': {
+            'bezigrad': 1,
+            'vosnjakova-tivolska': 3
+        },
         'kafka_topic': 'pollution_json'
     },
     # Ljubljana loaction
@@ -73,7 +77,7 @@ CONF = {
     },
     # Web scraper
     'scraper': {
-        'timeout': 0.5,
+        'timeout': 2,
         'retries': 10,
         'sleep': 2,
         'ignore_status_code': False
