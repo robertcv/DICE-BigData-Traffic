@@ -6,6 +6,36 @@ imports:
 
 node_templates:
 
+  # Traffic
+  traffic_ip:
+    type: dice.VirtualIP
+
+  traffic_fw:
+    type: dice.firewall_rules.Base
+    properties:
+      rules:
+        - remote_ip_prefix: 0.0.0.0/0
+          port: 22
+        - remote_ip_prefix: 0.0.0.0/0
+          port_range_min: 10000
+          port_range_max: 10010
+
+  traffic_vm:
+    type: dice.hosts.centos.Small
+    relationships:
+      - type: dice.relationships.IPAvailableFrom
+        target: traffic_ip
+      - type: dice.relationships.ProtectedBy
+        target: traffic_fw
+
+  # Custom firewall rule for ipython something
+  ipython_fw:
+    type: dice.firewall_rules.Base
+    properties:
+      rules:
+        - remote_ip_prefix: 0.0.0.0/0
+          port: 12345
+
   # Spark
   spark_master_ip:
     type: dice.VirtualIP
@@ -20,6 +50,8 @@ node_templates:
         target: spark_master_ip
       - type: dice.relationships.ProtectedBy
         target: spark_master_fw
+      - type: dice.relationships.ProtectedBy
+        target: ipython_fw
 
   spark_master:
     type: dice.components.spark.Master
@@ -113,3 +145,8 @@ outputs:
   cassandra_vm: { value: { get_attribute: [ cassandra_vm, ip ] } }
   zookeeper_vm: { value: { get_attribute: [ zookeeper_vm, ip ] } }
   kafka_vm: { value: { get_attribute: [ kafka_vm, ip ] } }
+
+  traffic_ip:
+    value: { get_attribute: [ traffic_ip, floating_ip_address ] }
+  spark_master_ip:
+    value: { get_attribute: [ spark_master_ip, floating_ip_address ] }
