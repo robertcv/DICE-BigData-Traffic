@@ -1,0 +1,110 @@
+tosca_definitions_version: cloudify_dsl_1_3
+
+imports:
+  - https://github.com/dice-project/DICE-Deployment-Cloudify/releases/download/0.2.8/openstack.yaml
+
+
+node_templates:
+
+  # Spark
+  spark_master_ip:
+    type: dice.VirtualIP
+
+  spark_master_fw:
+    type: dice.firewall_rules.spark.Master
+
+  spark_master_vm:
+    type: dice.hosts.Medium
+    relationships:
+      - type: dice.relationships.IPAvailableFrom
+        target: spark_master_ip
+      - type: dice.relationships.ProtectedBy
+        target: spark_master_fw
+
+  spark_master:
+    type: dice.components.spark.Master
+    relationships:
+      - type: dice.relationships.ContainedIn
+        target: spark_master_vm
+
+  spark_worker_fw:
+    type: dice.firewall_rules.spark.Worker
+
+  spark_worker_vm:
+    type: dice.hosts.Medium
+    instances:
+      deploy: 2
+    relationships:
+      - type: dice.relationships.ProtectedBy
+        target: spark_worker_fw
+
+  spark_worker:
+    type: dice.components.spark.Worker
+    relationships:
+      - type: dice.relationships.ContainedIn
+        target: spark_worker_vm
+      - type: dice.relationships.spark.ConnectedToMaster
+        target: spark_master
+
+  # Cassandra
+  cassandra_fw:
+    type: dice.firewall_rules.cassandra.Common
+
+  cassandra_vm:
+    type: dice.hosts.Medium
+    relationships:
+      - type: dice.relationships.ProtectedBy
+        target: cassandra_fw
+
+  cassandra:
+    type: dice.components.cassandra.Seed
+    relationships:
+      - type: dice.relationships.ContainedIn
+        target: cassandra_vm
+
+  # Zookeeper
+  zookeeper_fw:
+    type: dice.firewall_rules.zookeeper.Server
+
+  zookeeper_vm:
+    type: dice.hosts.Medium
+    relationships:
+      - type: dice.relationships.ProtectedBy
+        target: zookeeper_fw
+
+  zookeeper_quorum:
+    type: dice.components.zookeeper.Quorum
+    relationships:
+      - type: dice.relationships.zookeeper.QuorumContains
+        target: zookeeper_vm
+
+  zookeeper:
+    type: dice.components.zookeeper.Server
+    relationships:
+      - type: dice.relationships.ContainedIn
+        target: zookeeper_vm
+      - type: dice.relationships.zookeeper.MemberOfQuorum
+        target: zookeeper_quorum
+
+  # Kafka
+  kafka_ip:
+    type: dice.VirtualIP
+
+  kafka_fw:
+    type: dice.firewall_rules.kafka.Broker
+
+  kafka_vm:
+    type: dice.hosts.Medium
+    relationships:
+      - type: dice.relationships.ProtectedBy
+        target: kafka_fw
+      - type: dice.relationships.IPAvailableFrom
+        target: kafka_ip
+
+  kafka:
+    type: dice.components.kafka.Broker
+    relationships:
+      - type: dice.relationships.ContainedIn
+        target: kafka_vm
+      - type: dice.relationships.zookeeper.ConnectedToZookeeperQuorum
+        target: zookeeper_quorum
