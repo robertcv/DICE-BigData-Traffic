@@ -87,9 +87,6 @@ node_templates:
         target: zookeeper_quorum
 
   # Kafka
-  kafka_ip:
-    type: dice.VirtualIP
-
   kafka_fw:
     type: dice.firewall_rules.kafka.Broker
 
@@ -98,8 +95,6 @@ node_templates:
     relationships:
       - type: dice.relationships.ProtectedBy
         target: kafka_fw
-      - type: dice.relationships.IPAvailableFrom
-        target: kafka_ip
 
   kafka:
     type: dice.components.kafka.Broker
@@ -108,3 +103,13 @@ node_templates:
         target: kafka_vm
       - type: dice.relationships.zookeeper.ConnectedToZookeeperQuorum
         target: zookeeper_quorum
+
+
+outputs:
+
+  traffic_vm: { value: { get_attribute: [ traffic_vm, ip ] } }
+  spark_master_vm: { value: { get_attribute: [ spark_master_vm, ip ] } }
+  spark_worker_vm: { value: { get_attribute: [ spark_worker_vm, ip ] } }
+  cassandra_vm: { value: { get_attribute: [ cassandra_vm, ip ] } }
+  zookeeper_vm: { value: { get_attribute: [ zookeeper_vm, ip ] } }
+  kafka_vm: { value: { get_attribute: [ kafka_vm, ip ] } }
