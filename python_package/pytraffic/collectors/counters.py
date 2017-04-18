@@ -53,7 +53,7 @@ class TrafficCounter(object):
                     tmp = point.copy()
 
                     del tmp['Data']
-                    tmp['id'] = d['Id']
+                    tmp['Id'] = d['Id']
                     tmp['modified'] = modified
 
                     for p in d['properties']:
