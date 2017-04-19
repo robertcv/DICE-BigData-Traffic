@@ -63,3 +63,16 @@ CREATE table lpp_live (station_int_id int, route_int_id int, vehicle_int_id int,
 arrival_time timestamp,
 PRIMARY KEY (station_int_id, route_int_id, arrival_time))
 WITH CLUSTERING ORDER BY (route_int_id ASC, arrival_time DESC);
+
+
+// spark results
+
+CREATE KEYSPACE dice_results WITH REPLICATION = {'class' : 'SimpleStrategy',
+'replication_factor' : 1};
+USE dice_results;
+
+// heavy traffic location
+
+CREATE table heavy_traffic (id varchar, location varchar, road varchar,
+direction varchar, lane varchar, stat varchar, longitude float, latitude float,
+datetime timestamp, PRIMARY KEY (id, datetime));
