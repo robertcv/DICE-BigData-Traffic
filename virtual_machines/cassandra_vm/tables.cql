@@ -76,3 +76,8 @@ USE dice_results;
 CREATE table heavy_traffic (id varchar, location varchar, road varchar,
 direction varchar, lane varchar, stat varchar, longitude float, latitude float,
 datetime timestamp, PRIMARY KEY (id, datetime));
+
+// traffic forecast
+
+CREATE table traffic_forecast (id varchar, stat float, datetime timestamp,
+PRIMARY KEY (id, datetime));
