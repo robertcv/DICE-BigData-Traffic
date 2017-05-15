@@ -81,3 +81,15 @@ datetime timestamp, PRIMARY KEY (id, datetime));
 
 CREATE table traffic_forecast (id varchar, stat float, datetime timestamp,
 PRIMARY KEY (id, datetime));
+
+// lpp station order
+
+CREATE table lpp_station_order (route_int_id int, station_int_id int, order_no
+int, PRIMARY KEY (route_int_id, station_int_id));
+
+// lpp travel time
+
+CREATE table lpp_travel_time (route_int_id int, station_1_int_id int,
+station_2_int_id int, weekday int, hour int, number_of_samples int, travel_time
+float, PRIMARY KEY (route_int_id, station_1_int_id, station_2_int_id, weekday,
+hour));
