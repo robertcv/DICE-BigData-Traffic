@@ -1,0 +1,9 @@
+[Unit]
+Description=<%= @description %>
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/pytraffic <%= @parameters %> --config <%= @config_path %>/local.conf
+
+[Install]
+WantedBy=multi-user.target

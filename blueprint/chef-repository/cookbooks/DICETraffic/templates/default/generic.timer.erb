@@ -1,0 +1,9 @@
+[Unit]
+Description=<%= @description %>
+
+[Timer]
+OnCalendar=<%= @calendar %>
+Unit=<%= @unit %>
+
+[Install]
+WantedBy=multi-user.target
