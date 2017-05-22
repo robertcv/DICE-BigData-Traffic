@@ -45,3 +45,20 @@ default['DICE-BigData-Traffic']['config'] = {
         :timon_password => 'timon_password',
     },
 }
+
+default['DICE-BigData-Traffic']['stream_reactor']['url'] =
+        'https://github.com/datamountaineer/stream-reactor/releases/download/v0.2.4/stream-reactor-0.2.4-3.1.1.tar.gz'
+default['DICE-BigData-Traffic']['stream_reactor']['release_checksum'] =
+        '65bf3da83d6b5dd6aa297c7cbcfb3285c69acd00436475d7980f35b5214b94c0'
+default['DICE-BigData-Traffic']['stream_reactor']['install_path'] =
+        '/var/lib/stream-reactor'
+
+default['DICE-BigData-Traffic']['stream_reactor']['cassandra_address'] =
+        '127.0.0.1'
+default['DICE-BigData-Traffic']['stream_reactor']['cassandra_port'] = 9042
+default['DICE-BigData-Traffic']['stream_reactor']['cassandra_keyspace'] =
+        'bigdatatraffic'
+default['DICE-BigData-Traffic']['stream_reactor']['cassandra_username'] =
+        'username'
+default['DICE-BigData-Traffic']['stream_reactor']['cassandra_password'] =
+        'password'

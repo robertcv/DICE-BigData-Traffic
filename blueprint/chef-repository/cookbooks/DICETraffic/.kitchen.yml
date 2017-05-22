@@ -24,3 +24,24 @@ suites:
           bt_sensors:
             timon_username: blueadmin
             timon_password: toothsword
+
+  - name: stream_reactor
+    run_list:
+      - recipe[DICETraffic::default]
+      - recipe[apt::default]
+      - recipe[java::default]
+      - recipe[DICETraffic::stream_reactor_install]
+      - recipe[DICETraffic::mockup_kafka]
+      - recipe[DICETraffic::stream_reactor_config]
+    attributes:
+      java:
+        jdk_version: "8"
+        install_flavor: openjdk
+      DICE-BigData-Traffic:
+        stream_reactor:
+          mockup: true # this is for enabling tests without kafka
+          cassandra_address: 192.168.30.55
+          cassandra_port: 9042
+          cassandra_keyspace: kitchenspace
+          cassandra_username: big_cassy
+          cassandra_password: teacherb33
