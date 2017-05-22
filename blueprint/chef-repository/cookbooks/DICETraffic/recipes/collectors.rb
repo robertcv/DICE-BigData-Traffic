@@ -53,9 +53,10 @@ execute 'obtain timon cert' do
 end
 
 # create the configuration file
-config = node['DICE-BigData-Traffic']['config'].dup
-config[:bt_sensors][:timon_crt_file] = "#{config_path}/#{certificate_file}"
-config[:data_dir] = data_path
+config = node['DICE-BigData-Traffic']['config'].to_hash.dup
+config['bt_sensors'] = config['bt_sensors'].to_hash.dup
+config['bt_sensors']['timon_crt_file'] = "#{config_path}/#{certificate_file}"
+config['data_dir'] = data_path
 
 template "#{config_path}/local.conf" do
     source 'local.conf.erb'

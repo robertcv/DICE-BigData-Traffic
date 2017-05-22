@@ -12,7 +12,6 @@ suites:
   - name: default
     run_list:
       - recipe[DICETraffic::default]
-    attributes:
 
   - name: collectors
     run_list:
