@@ -23,4 +23,6 @@ python_package/pytraffic/collectors/util/__pycache__/
 python_package/tests/__pycache__/
 python_package/tests/util/__pycache__/
 
-spark/ipython_notebooks/
+spark/ipython_notebooks/venv
+.dds.log
+python_package/venv/

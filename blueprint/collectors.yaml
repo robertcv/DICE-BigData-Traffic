@@ -3,39 +3,156 @@ tosca_definitions_version: cloudify_dsl_1_3
 imports:
   - https://github.com/dice-project/DICE-Deployment-Cloudify/releases/download/0.7.0/full.yaml
 
+node_types:
+
+  dice.chef.BigDataTransport.SoftwareComponent:
+    derived_from: dice.chef.SoftwareComponent
+    properties:
+      runlist_configure:
+        default: null
+      DICE-BigData-Traffic:
+        default: null
+      chef_config:
+        default:
+          version: 12.18.31
+          chef_repo: https://matejart.github.io/BigData-Transport/chef-repository-0.1.1.tar.gz
+          runlists:
+            create:    null
+            configure: { get_property: [ SELF, runlist_configure] }
+            start:     null
+            stop:      null
+            delete:    null
+          attributes:
+            java:
+              jdk_version:    { get_input: java_version }
+              install_flavor: { get_input: java_flavor  }
+            DICE-BigData-Traffic:
+              get_property: [ SELF, DICE-BigData-Traffic ]
+          http_proxy: { get_input: proxy }
+
+relationships:
+
+  dice.relationships.BigDataTransport.ConnectedToKafka:
+    derived_from: dice.relationships.Needs
+    target_interfaces:
+      cloudify.interfaces.relationship_lifecycle:
+        preconfigure:
+          implementation: dice.dice_plugin.tasks.base.copy_fqdn_from_target
+          inputs:
+            property: { default: kafka_fqdn }
+
+  dice.relationships.BigDataTransport.ConnectedToCassandra:
+    derived_from: dice.relationships.Needs
+    target_interfaces:
+      cloudify.interfaces.relationship_lifecycle:
+        preconfigure:
+          implementation: dice.dice_plugin.tasks.base.copy_fqdn_from_target
+          inputs:
+            property: { default: cassandra_fqdn }
+
 node_templates:
 
+  # Zookeeper
+  zookeeper_fw:
+    type: dice.firewall_rules.zookeeper.Server
+
+  zookeeper_vm:
+    type: dice.hosts.ubuntu.Medium
+    relationships:
+      - type: dice.relationships.ProtectedBy
+        target: zookeeper_fw
+
+  zookeeper_quorum:
+    type: dice.components.zookeeper.Quorum
+    relationships:
+      - type: dice.relationships.zookeeper.QuorumContains
+        target: zookeeper_vm
+
+  zookeeper:
+    type: dice.components.zookeeper.Server
+    relationships:
+      - type: dice.relationships.ContainedIn
+        target: zookeeper_vm
+      - type: dice.relationships.zookeeper.MemberOfQuorum
+        target: zookeeper_quorum
+
+  # Kafka
+  kafka_fw:
+    type: dice.firewall_rules.kafka.Broker
+
+  kafka_vm:
+    type: dice.hosts.ubuntu.Medium
+    relationships:
+      - type: dice.relationships.ProtectedBy
+        target: kafka_fw
+
+  kafka:
+    type: dice.components.kafka.Broker
+    relationships:
+      - type: dice.relationships.ContainedIn
+        target: kafka_vm
+      - type: dice.relationships.zookeeper.ConnectedToZookeeperQuorum
+        target: zookeeper_quorum
+
+  # Cassandra
+  cassandra_fw:
+    type: dice.firewall_rules.cassandra.Common
+
+  cassandra_vm:
+    type: dice.hosts.ubuntu.Medium
+    relationships:
+      - type: dice.relationships.ProtectedBy
+        target: cassandra_fw
+
+  cassandra:
+    type: dice.components.cassandra.Seed
+    relationships:
+      - type: dice.relationships.ContainedIn
+        target: cassandra_vm
+
+  # Data Collectors
   data_collectors_vm:
     type: dice.hosts.ubuntu.Small
     properties:
-      image: 9d1cf0bf-174f-418e-8005-4b19a06a97f7
+      image: 9d1cf0bf-174f-418e-8005-4b19a06a97f7 # ubuntu 16.04
+
+  stream_reactor:
+    type: dice.chef.BigDataTransport.SoftwareComponent
+    properties:
+      runlist_configure:
+        - recipe[java::default]
+        - recipe[DICETraffic::default]
+        - recipe[DICETraffic::stream_reactor]
+      DICE-BigData-Traffic:
+        stream_reactor:
+          cassandra_keyspace: dice
+          cassandra_username: cassandra
+          cassandra_password: cassandra
+    relationships:
+      - type: dice.relationships.ContainedIn
+        target: kafka_vm
+      - type: dice.relationships.BigDataTransport.ConnectedToCassandra
+        target: cassandra
+      - type: dice.relationships.Needs
+        target: kafka
 
   data_collectors:
-    type: dice.chef.SoftwareComponent
+    type: dice.chef.BigDataTransport.SoftwareComponent
     properties:
-      chef_config:
-        version: 13.0.118
-        chef_repo: https://matejart.github.io/BigData-Transport/chef-repository-0.1.1.tar.gz
-        runlists:
-          create:    null
-          configure:
-            - recipe[apt::default]
-            - recipe[DICETraffic::default]
-            - recipe[DICETraffic::collectors]
-          start:     null
-          stop:      null
-          delete:    null
-        attributes:
-          java:
-            jdk_version:    { get_input: java_version }
-            install_flavor: { get_input: java_flavor  }
-          DICE-BigData-Traffic:
-            config:
-              kafka_host: mykafka.local.lan:9092
-              bt_sensors:
-                timon_username: blueadmin
-                timon_password: toothsword
-        http_proxy: { get_input: proxy }
+      runlist_configure:
+        - recipe[apt::default]
+        - recipe[dice_common::default]
+        - recipe[DICETraffic::default]
+        - recipe[DICETraffic::collectors]
+      DICE-BigData-Traffic:
+        config:
+          bt_sensors:
+            timon_username: blueadmin
+            timon_password: toothsword
     relationships:
       - type: dice.relationships.ContainedIn
         target: data_collectors_vm
+      - type: dice.relationships.BigDataTransport.ConnectedToKafka
+        target: kafka
+      - type: dice.relationships.Needs
+        target: stream_reactor
