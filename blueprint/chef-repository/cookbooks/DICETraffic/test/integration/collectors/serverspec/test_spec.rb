@@ -43,6 +43,7 @@ systemd_units.each do | unit_array |
         it { should exist }
         it { should be_file }
         it { should contain unit_array[2] }
+        it { should contain "Unit=#{unit_array[0]}.service" }
     end
 
     describe service(unit_array[0]) do

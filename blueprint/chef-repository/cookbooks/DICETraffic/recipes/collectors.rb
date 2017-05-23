@@ -89,6 +89,7 @@ systemd_units = {
 
 systemd_units.each do | unit, data |
     data[:config_path] = config_path
+    data[:unit] = "#{unit}.service"
 
     template "/etc/systemd/system/#{unit}.service" do
       source 'generic.service.erb'
