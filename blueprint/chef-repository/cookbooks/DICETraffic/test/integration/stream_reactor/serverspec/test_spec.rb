@@ -76,6 +76,20 @@ config_files.each do | config_data |
     end
 end
 
+describe file("/etc/init/stream-reactor.conf") do
+    it { should exist }
+    it { should be_file }
+    it { should be_owned_by 'root' }
+    it { should be_grouped_into 'root' }
+    it { should be_mode 644 }
+    it { should contain
+        "CLASSPATH=/var/lib/stream-reactor/libs/kafka-connect-cassandra" }
+end
+
+describe service("stream-reactor") do
+    it { should be_enabled }
+end
+
 describe file("/usr/share/kafka/config/connect-distributed.properties") do
     it { should_not contain "schemas.enable=true" }
 end

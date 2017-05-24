@@ -49,6 +49,21 @@ ruby_block "disable schemas in kafka" do
     end
 end
 
+# Service to run the stream reactor
+template "/etc/init/stream-reactor.conf" do
+    source "stream-reactor.conf.erb"
+    mode '0644'
+    variables kafka_user: node_stream_reactor['kafka_user'],
+            kafka_home: node_stream_reactor['kafka_home'],
+            kafka_log_dir: node_stream_reactor['kafka_log_dir'],
+            stream_reactor_home: install_path
+end
+
+service 'stream-reactor' do
+    action [ :enable, :start ]
+end
+
+# Configurations for all sources
 config_files = [
         {
             :fname => 'cassandra-sink-bt-sensors.properties',
@@ -112,8 +127,12 @@ config_files.each do | config |
         code <<-EOH
             set -e
             bin/cli.sh create #{config[:name]} < #{config_fname}
-            sleep 5
             EOH
         cwd install_path
+        retries 15
+    end
+
+    service 'stream-reactor' do
+        action :restart
     end
 end
