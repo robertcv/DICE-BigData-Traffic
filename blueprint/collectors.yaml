@@ -110,6 +110,20 @@ node_templates:
       - type: dice.relationships.ContainedIn
         target: cassandra_vm
 
+  cassandra_keyspaces:
+    type: dice.components.misc.ScriptRunner
+    # this probably only works for a single instance of Cassandra
+    properties:
+      script: scripts/setup-cassandra-keyspaces.sh
+      language: bash
+      resources:
+        - scripts/tables.cql
+    relationships:
+      - type: dice.relationships.ContainedIn
+        target: cassandra_vm
+      - type: dice.relationships.Needs
+        target: cassandra
+
   # Data Collectors
   data_collectors_vm:
     type: dice.hosts.ubuntu.Small
@@ -122,7 +136,8 @@ node_templates:
       runlist_configure:
         - recipe[java::default]
         - recipe[DICETraffic::default]
-        - recipe[DICETraffic::stream_reactor]
+        - recipe[DICETraffic::stream_reactor_install]
+        - recipe[DICETraffic::stream_reactor_config]
       DICE-BigData-Traffic:
         stream_reactor:
           cassandra_keyspace: dice
@@ -133,6 +148,8 @@ node_templates:
         target: kafka_vm
       - type: dice.relationships.BigDataTransport.ConnectedToCassandra
         target: cassandra
+      - type: dice.relationships.Needs
+        target: cassandra_keyspaces
       - type: dice.relationships.Needs
         target: kafka
 
