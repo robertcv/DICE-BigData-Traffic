@@ -125,14 +125,33 @@ config_files.each do | config |
 
     bash "start source #{config[:name]}" do
         code <<-EOH
+            CONNECTOR=#{config[:name]}
+            CONFIG=#{config_fname}
+
+            set +e
+            # this will succeed if the connector exists; it will fail if
+            # a) the connector doesn't exist, or b) an error getting the
+            # information occurred
+            bin/cli.sh get $CONNECTOR > /dev/null
+            RESULT="$?"
+
             set -e
-            bin/cli.sh create #{config[:name]} < #{config_fname}
+            # if the next step fails because of b) above, the whole script
+            # should retry after a short grace period
+            if [ "$RESULT" != "0" ]
+            then
+                echo "Creating $CONNECTOR"
+                bin/cli.sh create $CONNECTOR < $CONFIG
+            else
+                echo "$CONNECTOR already created"
+            fi
+
             EOH
         cwd install_path
         retries 15
     end
+end
 
-    service 'stream-reactor' do
-        action :restart
-    end
+service 'stream-reactor' do
+    action :restart
 end

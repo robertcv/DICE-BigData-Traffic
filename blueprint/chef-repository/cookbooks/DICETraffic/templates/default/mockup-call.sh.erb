@@ -1,3 +1,9 @@
 #!/bin/bash
 
 echo "$*" >> <%= @logfile %>
+
+# special logic for mocking stream-reactor's cli.sh
+if [ "$1" == "get" ]
+then
+    exit 1
+fi
