@@ -37,7 +37,6 @@ release_checksum = node_stream_reactor['release_checksum']
 dicetraffic_user = node['DICE-BigData-Traffic']['user']
 dicetraffic_group = node['DICE-BigData-Traffic']['group']
 
-
 stream_reactor_tar = "#{Chef::Config[:file_cache_path]}/stream-reactor.tar.gz"
 remote_file stream_reactor_tar do
   source release_url

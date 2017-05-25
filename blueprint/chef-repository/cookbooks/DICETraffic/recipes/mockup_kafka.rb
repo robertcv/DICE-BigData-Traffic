@@ -35,7 +35,8 @@
 # that there are commands that can be called to register configurations to
 # various external services.
 
-install_path = node['DICE-BigData-Traffic']['stream_reactor']['install_path']
+node_stream_reactor = node['DICE-BigData-Traffic']['stream_reactor']
+install_path = node_stream_reactor['install_path']
 
 mock_log_file = '/tmp/stream-reactor-mock-cli.log'
 file mock_log_file do

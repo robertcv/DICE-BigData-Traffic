@@ -63,7 +63,7 @@ config_files.each do | config_data |
         it { should be_owned_by 'root' }
         it { should be_grouped_into 'root' }
         it { should be_mode 644 }
-        it { should contain "connect.cassandra.contact.points=192.168.30.55" }
+        it { should contain "connect.cassandra.contact.points=cassandra22.local.lan" }
         it { should contain "connect.cassandra.port=9042" }
         it { should contain "connect.cassandra.key.space=kitchenspace" }
         it { should contain entries[0] }

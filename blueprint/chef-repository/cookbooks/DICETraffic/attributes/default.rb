@@ -39,7 +39,8 @@ default['DICE-BigData-Traffic']['data_path'] = '/var/lib/dicetraffic'
 default['DICE-BigData-Traffic']['btsensors']['server'] = 'datacloud-timon.xlab.si:443'
 
 default['DICE-BigData-Traffic']['config'] = {
-    :kafka_host => '127.0.0.1:9092',
+# Kafka address set in kafka_fqdn Cloudify runtime attribute; port hardcoded
+#    :kafka_host => '127.0.0.1:9092',
     :bt_sensors => {
         :timon_username => 'timon_username',
         :timon_password => 'timon_password',
@@ -53,8 +54,9 @@ default['DICE-BigData-Traffic']['stream_reactor']['release_checksum'] =
 default['DICE-BigData-Traffic']['stream_reactor']['install_path'] =
         '/var/lib/stream-reactor'
 
-default['DICE-BigData-Traffic']['stream_reactor']['cassandra_address'] =
-        '127.0.0.1'
+# Cassandra address set in cassandra_fqdn Cloudify runtime attribute
+#default['DICE-BigData-Traffic']['stream_reactor']['cassandra_address'] =
+#        '127.0.0.1'
 default['DICE-BigData-Traffic']['stream_reactor']['cassandra_port'] = 9042
 default['DICE-BigData-Traffic']['stream_reactor']['cassandra_keyspace'] =
         'bigdatatraffic'

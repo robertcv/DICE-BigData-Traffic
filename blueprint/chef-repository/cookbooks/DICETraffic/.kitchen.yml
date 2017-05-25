@@ -20,10 +20,12 @@ suites:
     attributes:
       DICE-BigData-Traffic:
         config:
-          kafka_host: mykafka.local.lan:9092
           bt_sensors:
             timon_username: blueadmin
             timon_password: toothsword
+      cloudify:
+        runtime_properties:
+          kafka_fqdn: mykafka.local.lan
 
   - name: stream_reactor
     run_list:
@@ -40,8 +42,10 @@ suites:
       DICE-BigData-Traffic:
         stream_reactor:
           mockup: true # this is for enabling tests without kafka
-          cassandra_address: 192.168.30.55
           cassandra_port: 9042
           cassandra_keyspace: kitchenspace
           cassandra_username: big_cassy
           cassandra_password: teacherb33
+      cloudify:
+        runtime_properties:
+          cassandra_fqdn: cassandra22.local.lan

@@ -29,8 +29,14 @@
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
 
+rt_props = node['cloudify']['runtime_properties']
 node_stream_reactor = node['DICE-BigData-Traffic']['stream_reactor']
 install_path = node_stream_reactor['install_path']
+release_url = node_stream_reactor['url']
+release_checksum = node_stream_reactor['release_checksum']
+
+dicetraffic_user = node['DICE-BigData-Traffic']['user']
+dicetraffic_group = node['DICE-BigData-Traffic']['group']
 
 config_files = [
         {
@@ -80,7 +86,7 @@ config_files = [
 config_path = "#{install_path}/conf"
 config_files.each do | config |
     config_fname = "#{config_path}/#{config[:fname]}"
-    config[:cassandra_address] = node_stream_reactor[:cassandra_address]
+    config[:cassandra_address] = rt_props['cassandra_fqdn']
     config[:cassandra_port] = node_stream_reactor[:cassandra_port]
     config[:keyspace] = node_stream_reactor[:cassandra_keyspace]
     config[:cassandra_username] = node_stream_reactor[:cassandra_username]

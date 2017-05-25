@@ -20,7 +20,6 @@ describe file('/tmp/bigdata-traffic/python_package/pytraffic/') do
     it { should be_directory }
 end
 
-
 describe file('/tmp/bigdata-traffic/python_package/requirements.txt') do
     it { should be_file }
 end
