@@ -34,9 +34,20 @@ node_stream_reactor = node['DICE-BigData-Traffic']['stream_reactor']
 install_path = node_stream_reactor['install_path']
 release_url = node_stream_reactor['url']
 release_checksum = node_stream_reactor['release_checksum']
+kafka_home = node_stream_reactor['kafka_home']
 
 dicetraffic_user = node['DICE-BigData-Traffic']['user']
 dicetraffic_group = node['DICE-BigData-Traffic']['group']
+
+# modify Kafka configuration (do we need to do this on all Kafkas?)
+ruby_block "disable schemas in kafka" do
+    block do
+        cfg = Chef::Util::FileEdit.new(
+            "#{kafka_home}/config/connect-distributed.properties")
+        cfg.search_file_replace(/schemas\.enable=true/, 'schemas_enable=false')
+        cfg.write_file if cfg.unwritten_changes?
+    end
+end
 
 config_files = [
         {

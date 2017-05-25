@@ -64,3 +64,9 @@ default['DICE-BigData-Traffic']['stream_reactor']['cassandra_username'] =
         'username'
 default['DICE-BigData-Traffic']['stream_reactor']['cassandra_password'] =
         'password'
+# Kafka-related parameters
+default['DICE-BigData-Traffic']['stream_reactor']['kafka_user'] = 'kafka'
+default['DICE-BigData-Traffic']['stream_reactor']['kafka_home'] =
+    '/usr/share/kafka'
+default['DICE-BigData-Traffic']['stream_reactor']['kafka_log_dir'] =
+    '/var/log/kafka'

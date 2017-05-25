@@ -37,6 +37,7 @@
 
 node_stream_reactor = node['DICE-BigData-Traffic']['stream_reactor']
 install_path = node_stream_reactor['install_path']
+kafka_home = node_stream_reactor['kafka_home']
 
 mock_log_file = '/tmp/stream-reactor-mock-cli.log'
 file mock_log_file do
@@ -48,4 +49,43 @@ template "#{install_path}/bin/cli.sh" do
     variables logfile: mock_log_file
     mode '0755'
     action :create
+end
+
+kafka_user = node_stream_reactor['kafka_user']
+group kafka_user
+
+user kafka_user do
+    group kafka_user
+    shell '/bin/bash'
+end
+
+[ '', '/bin', '/config' ].each do |dir|
+    directory "#{kafka_home}#{dir}" do
+        recursive true
+        action :create
+    end
+end
+
+file "#{kafka_home}/bin/connect-distributed.sh" do
+    content <<-EOH
+        #!/bin/bash
+
+        sleep 1000
+        EOH
+    mode '0755'
+end
+
+file "#{kafka_home}/config/connect-distributed.properties" do
+    content <<-EOH
+        # mock-up content for testing purposes
+        bootstrap.servers=localhost:9092
+        group.id=connect-cluster
+        key.converter=org.apache.kafka.connect.json.JsonConverter
+        value.converter=org.apache.kafka.connect.json.JsonConverter
+        key.converter.schemas.enable=true
+        value.converter.schemas.enable=true
+        offset.storage.topic=connect-offsets
+        # etc.
+        EOH
+    mode '0644'
 end

@@ -75,3 +75,7 @@ config_files.each do | config_data |
         it { should contain "create #{entries[3]}" }
     end
 end
+
+describe file("/usr/share/kafka/config/connect-distributed.properties") do
+    it { should_not contain "schemas.enable=true" }
+end

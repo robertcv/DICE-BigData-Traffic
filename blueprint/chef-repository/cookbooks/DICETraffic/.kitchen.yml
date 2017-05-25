@@ -6,6 +6,7 @@ provisioner:
   name: chef_zero
 
 platforms:
+  - name: ubuntu-14.04
   - name: ubuntu-16.04
 
 suites:
@@ -26,6 +27,8 @@ suites:
       cloudify:
         runtime_properties:
           kafka_fqdn: mykafka.local.lan
+    excludes:
+      - ubuntu-14.04
 
   - name: stream_reactor
     run_list:
@@ -49,3 +52,5 @@ suites:
       cloudify:
         runtime_properties:
           cassandra_fqdn: cassandra22.local.lan
+    excludes:
+      - ubuntu-16.04
