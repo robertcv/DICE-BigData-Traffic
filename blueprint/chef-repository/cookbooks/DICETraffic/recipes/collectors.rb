@@ -110,6 +110,6 @@ systemd_units.each do | unit, data |
     end
 
     service "#{unit}.timer" do
-        action :enable
+        action [ :enable, :start ]
     end
 end
