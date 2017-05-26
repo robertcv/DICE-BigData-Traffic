@@ -21,6 +21,16 @@ describe file('/etc/dicetraffic/local.conf') do
     it { should contain '"timon_password": "toothsword"' }
     it { should contain '"timon_password": "toothsword"' }
     it { should contain '"timon_crt_file": "/etc/dicetraffic/datacloud.crt"' }
+    it { should contain '"data_dir": "/var/lib/dicetraffic/"' }
+end
+
+# check for the path for local data
+describe file('/var/lib/dicetraffic/data') do
+    it { should exist }
+    it { should be_directory }
+    it { should be_owned_by 'dicetraffic' }
+    it { should be_grouped_into 'dicetraffic' }
+    it { should be_mode 755 }
 end
 
 # verify the systemd services and timers

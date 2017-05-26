@@ -58,7 +58,7 @@ config = node['DICE-BigData-Traffic']['config'].to_hash.dup
 config['kafka_host'] = "#{rt_props['kafka_fqdn']}:9092"
 config['bt_sensors'] = config['bt_sensors'].to_hash.dup
 config['bt_sensors']['timon_crt_file'] = "#{config_path}/#{certificate_file}"
-config['data_dir'] = data_path
+config['data_dir'] = File.join(data_path, '') # trailing delim. important because software.
 
 template "#{config_path}/local.conf" do
     source 'local.conf.erb'
