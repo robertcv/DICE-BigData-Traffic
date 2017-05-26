@@ -1,0 +1,12 @@
+---
+suites:
+  - name: worker
+    run_list:
+      - recipe[apt::default]
+      - recipe[dice_common::default]
+    attributes:
+      cloudify:
+        node_id: abcdefghi_abcdefghi_abcdefghi_abcdefghi_overflow_randomid
+        deployment_id: a1b2c3d4e5f6
+        properties:
+          dns_server: 8.8.8.8

@@ -1,0 +1,20 @@
+[Unit]
+Description=Consul agent
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+User=consul
+Group=consul
+Environment=GOMAXPROCS=2
+Restart=on-failure
+ExecStart=/usr/bin/consul agent \
+  -data-dir=<%= @data %> \
+  -bind=<%= @bind %> \
+  -client=0.0.0.0 \
+  -join=<%= @master %>
+ExecReload=/bin/kill -HUP $MAINPID
+KillSignal=SIGTERM
+
+[Install]
+WantedBy=multi-user.target
