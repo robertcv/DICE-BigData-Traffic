@@ -82,9 +82,14 @@ systemd_units = {
         :parameters => '--pollution_collector',
         :calendar => '*-*-* *:00:00',
     },
-    'pytraffic' => {
-        :description => 'Send pytraffic collectors data to Kafka.',
-        :parameters => '--bt_collector --il_collector --counters_collector',
+    'bluetooth_quarter-hourly' => {
+        :description => 'Send bluetooth sensors data to Kafka.',
+        :parameters => '--bt_collector',
+        :calendar => '*-*-* *:0/15:00',
+    },
+    'loops_counters_quarter-hourly' => {
+        :description => 'Send inductive loops and counters data to Kafka.',
+        :parameters => '--il_collector --counters_collector',
         :calendar => '*-*-* *:0/15:00',
     },
 }

@@ -38,8 +38,9 @@ systemd_units = [
         ['lpp_daily', '--lpp_collector station', '*-*-* 00:00:00'],
         ['lpp_minutely', '--lpp_collector live', '*-*-* *:*:00'],
         ['pollution_hourly', '--pollution_collector', '*-*-* *:00:00'],
-        ['pytraffic', '--bt_collector --il_collector --counters_collector',
-            '*-*-* *:0/15:00'],
+        ['bluetooth_quarter-hourly', '--bt_collector', '*-*-* *:0/15:00'],
+        ['loops_counters_quarter-hourly', '--il_collector --counters_collector',
+         '*-*-* *:0/15:00'],
     ]
 
 systemd_units.each do | unit_array |
