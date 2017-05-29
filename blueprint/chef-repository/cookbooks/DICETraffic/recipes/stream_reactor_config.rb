@@ -44,7 +44,7 @@ ruby_block "disable schemas in kafka" do
     block do
         cfg = Chef::Util::FileEdit.new(
             "#{kafka_home}/config/connect-distributed.properties")
-        cfg.search_file_replace(/schemas\.enable=true/, 'schemas_enable=false')
+        cfg.search_file_replace(/schemas\.enable=true/, 'schemas.enable=false')
         cfg.write_file if cfg.unwritten_changes?
     end
 end
