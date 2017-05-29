@@ -1,0 +1,95 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 2 (0x2)
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=SI, L=Ljubljana, O=XLAB d.o.o., OU=XLAB research, CN=XLAB d.o.o. CA/name=arctur-openstack/emailAddress=admin@xlab.si
+        Validity
+            Not Before: Jul 18 14:33:03 2016 GMT
+            Not After : Jul 16 14:33:03 2026 GMT
+        Subject: C=SI, L=Ljubljana, O=XLAB d.o.o., OU=XLAB research, CN=arctur-openstack-vpn-client/name=arctur-openstack/emailAddress=admin@xlab.si
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:c2:1a:48:14:a1:4c:26:94:7d:e9:b2:43:f5:8d:
+                    1f:10:aa:0b:b6:07:f5:9d:26:da:3d:bd:12:a1:d1:
+                    e8:9f:36:86:95:6a:34:23:26:83:df:ec:d2:a9:fb:
+                    4d:03:b8:e9:28:83:e1:d9:b2:4a:d9:b4:b6:06:c8:
+                    82:68:3e:7b:fb:38:7a:99:f6:3d:87:3e:a1:e3:2d:
+                    d4:40:e3:08:70:63:6c:02:82:ba:6f:28:65:1e:c5:
+                    c9:63:98:08:cc:91:13:d5:d2:8b:61:6a:75:e8:34:
+                    92:34:5b:57:db:30:95:ad:bb:fd:5b:4e:43:56:f7:
+                    af:73:7a:e5:de:dc:35:35:41:8c:60:08:76:45:05:
+                    8b:1f:53:f9:ba:ad:c2:bc:bd:bb:c6:c9:87:7a:21:
+                    a6:8e:41:d8:41:c8:a0:f4:36:7b:6d:5b:8c:5e:9c:
+                    a8:32:a8:c8:2a:2e:65:b1:f5:cc:2b:91:d6:e8:84:
+                    8e:1c:02:03:3f:25:be:94:5f:a8:ec:35:35:49:ad:
+                    c9:b9:86:e1:63:49:ac:a1:eb:bf:c7:c8:a7:d7:3b:
+                    03:0c:87:57:b1:9d:c7:d6:b5:2e:11:d2:b7:c8:dc:
+                    89:65:24:a5:3b:58:4f:ae:13:1d:c7:be:41:9f:4c:
+                    8b:e2:11:99:af:52:76:22:3e:68:1e:99:c6:c0:9f:
+                    03:85
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                Easy-RSA Generated Certificate
+            X509v3 Subject Key Identifier: 
+                39:D0:60:3E:E7:30:91:90:59:B9:56:41:A6:E1:4A:77:95:10:06:88
+            X509v3 Authority Key Identifier: 
+                keyid:8A:1F:B0:46:AA:01:DD:99:CB:2C:6B:A3:4E:B2:3B:45:E2:A8:58:6F
+                DirName:/C=SI/L=Ljubljana/O=XLAB d.o.o./OU=XLAB research/CN=XLAB d.o.o. CA/name=arctur-openstack/emailAddress=admin@xlab.si
+                serial:A7:6A:BA:F1:A5:95:FD:11
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: sha256WithRSAEncryption
+         53:6a:27:f9:af:e9:e9:86:6f:db:b2:99:49:cd:39:dc:40:58:
+         b6:5b:65:3a:47:11:fa:9b:f6:09:6c:26:a8:97:75:0a:96:76:
+         64:07:7b:cc:39:3b:fa:c1:c7:d5:be:30:77:41:68:af:26:d7:
+         29:75:87:c5:d4:03:8d:13:d1:4a:db:08:df:8f:db:d7:a6:13:
+         c7:b5:a3:a0:ef:5d:92:ab:3d:fd:61:4b:c6:55:3a:9b:d8:2a:
+         e1:66:da:86:f3:a7:79:23:1e:8d:ba:7b:6f:c1:03:20:1e:cb:
+         bd:18:55:c4:c2:6f:b4:78:9e:2f:c6:e4:25:b3:c8:a4:81:24:
+         34:ac:8c:dc:e4:b7:f8:ac:3e:dd:ad:b5:35:74:e7:36:fd:50:
+         f5:6c:80:09:ba:fd:21:e3:f3:61:8a:aa:26:dc:40:54:70:55:
+         f1:d7:4d:55:d9:f8:68:ae:e1:32:41:25:18:15:5a:8c:f1:85:
+         26:73:ce:3a:95:ef:c1:ca:f7:da:e3:fa:1f:1a:16:e7:2e:99:
+         16:24:11:5b:30:d1:b5:63:e3:a9:08:9a:f4:a3:ed:b6:e4:ca:
+         f7:de:0c:be:0d:92:fa:3b:36:a3:3f:9a:e7:7d:db:69:77:33:
+         79:c6:47:cb:93:2c:98:6f:b5:8e:17:c7:e2:aa:05:f6:8a:c6:
+         2e:7d:11:d3
+-----BEGIN CERTIFICATE-----
+MIIFJjCCBA6gAwIBAgIBAjANBgkqhkiG9w0BAQsFADCBoTELMAkGA1UEBhMCU0kx
+EjAQBgNVBAcTCUxqdWJsamFuYTEUMBIGA1UEChMLWExBQiBkLm8uby4xFjAUBgNV
+BAsTDVhMQUIgcmVzZWFyY2gxFzAVBgNVBAMTDlhMQUIgZC5vLm8uIENBMRkwFwYD
+VQQpExBhcmN0dXItb3BlbnN0YWNrMRwwGgYJKoZIhvcNAQkBFg1hZG1pbkB4bGFi
+LnNpMB4XDTE2MDcxODE0MzMwM1oXDTI2MDcxNjE0MzMwM1owga4xCzAJBgNVBAYT
+AlNJMRIwEAYDVQQHEwlManVibGphbmExFDASBgNVBAoTC1hMQUIgZC5vLm8uMRYw
+FAYDVQQLEw1YTEFCIHJlc2VhcmNoMSQwIgYDVQQDExthcmN0dXItb3BlbnN0YWNr
+LXZwbi1jbGllbnQxGTAXBgNVBCkTEGFyY3R1ci1vcGVuc3RhY2sxHDAaBgkqhkiG
+9w0BCQEWDWFkbWluQHhsYWIuc2kwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
+AoIBAQDCGkgUoUwmlH3pskP1jR8Qqgu2B/WdJto9vRKh0eifNoaVajQjJoPf7NKp
++00DuOkog+HZskrZtLYGyIJoPnv7OHqZ9j2HPqHjLdRA4whwY2wCgrpvKGUexclj
+mAjMkRPV0othanXoNJI0W1fbMJWtu/1bTkNW969zeuXe3DU1QYxgCHZFBYsfU/m6
+rcK8vbvGyYd6IaaOQdhByKD0NnttW4xenKgyqMgqLmWx9cwrkdbohI4cAgM/Jb6U
+X6jsNTVJrcm5huFjSayh67/HyKfXOwMMh1exncfWtS4R0rfI3IllJKU7WE+uEx3H
+vkGfTIviEZmvUnYiPmgemcbAnwOFAgMBAAGjggFYMIIBVDAJBgNVHRMEAjAAMC0G
+CWCGSAGG+EIBDQQgFh5FYXN5LVJTQSBHZW5lcmF0ZWQgQ2VydGlmaWNhdGUwHQYD
+VR0OBBYEFDnQYD7nMJGQWblWQabhSneVEAaIMIHWBgNVHSMEgc4wgcuAFIofsEaq
+Ad2Zyyxro06yO0XiqFhvoYGnpIGkMIGhMQswCQYDVQQGEwJTSTESMBAGA1UEBxMJ
+TGp1YmxqYW5hMRQwEgYDVQQKEwtYTEFCIGQuby5vLjEWMBQGA1UECxMNWExBQiBy
+ZXNlYXJjaDEXMBUGA1UEAxMOWExBQiBkLm8uby4gQ0ExGTAXBgNVBCkTEGFyY3R1
+ci1vcGVuc3RhY2sxHDAaBgkqhkiG9w0BCQEWDWFkbWluQHhsYWIuc2mCCQCnarrx
+pZX9ETATBgNVHSUEDDAKBggrBgEFBQcDAjALBgNVHQ8EBAMCB4AwDQYJKoZIhvcN
+AQELBQADggEBAFNqJ/mv6emGb9uymUnNOdxAWLZbZTpHEfqb9glsJqiXdQqWdmQH
+e8w5O/rBx9W+MHdBaK8m1yl1h8XUA40T0UrbCN+P29emE8e1o6DvXZKrPf1hS8ZV
+OpvYKuFm2obzp3kjHo26e2/BAyAey70YVcTCb7R4ni/G5CWzyKSBJDSsjNzkt/is
+Pt2ttTV05zb9UPVsgAm6/SHj82GKqibcQFRwVfHXTVXZ+Giu4TJBJRgVWozxhSZz
+zjqV78HK99rj+h8aFucumRYkEVsw0bVj46kImvSj7bbkyvfeDL4Nkvo7NqM/mud9
+22l3M3nGR8uTLJhvtY4Xx+KqBfaKxi59EdM=
+-----END CERTIFICATE-----

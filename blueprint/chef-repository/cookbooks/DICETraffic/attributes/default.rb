@@ -70,3 +70,6 @@ default['DICE-BigData-Traffic']['stream_reactor']['kafka_home'] =
     '/usr/share/kafka'
 default['DICE-BigData-Traffic']['stream_reactor']['kafka_log_dir'] =
     '/var/log/kafka'
+
+# Settings for VPN - only the private key for now to be supplied externally
+default['DICE-BigData-Traffic']['vpn_key'] = 'dummy'

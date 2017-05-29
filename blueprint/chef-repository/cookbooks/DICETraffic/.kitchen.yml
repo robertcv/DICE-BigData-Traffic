@@ -54,3 +54,14 @@ suites:
           cassandra_fqdn: cassandra22.local.lan
     excludes:
       - ubuntu-16.04
+
+  - name: vpn
+    run_list:
+      - recipe[DICETraffic::vpn_install]
+    attributes:
+      DICE-BigData-Traffic:
+        vpn_key: |
+          -----BEGIN PRIVATE KEY-----
+          MIIEvERYLLONGgibbrishLO0kINGtextIMITATinguuenCODEbas64privatekey
+          43+xNwwfueIOidf3djg2331=
+          -----END PRIVATE KEY-----
