@@ -3,6 +3,19 @@ tosca_definitions_version: cloudify_dsl_1_3
 imports:
   - https://github.com/dice-project/DICE-Deployment-Cloudify/releases/download/0.7.0/full.yaml
 
+inputs:
+
+  vpn_key:
+    description: Private key of the VPN connection to Arctur
+#    default: |
+#      -----BEGIN PRIVATE KEY-----
+#      MIIEvERYLLONGgibbrishLO0kINGtextIMITATinguuenCODEbas64privatekey
+#      ...
+#      Insert your key's contents here
+#      ...
+#      43+xNwwfueIOidf3djg2331=
+#      -----END PRIVATE KEY-----
+
 node_types:
 
   dice.chef.BigDataTransport.SoftwareComponent:
@@ -160,12 +173,15 @@ node_templates:
         - recipe[apt::default]
         - recipe[dice_common::default]
         - recipe[DICETraffic::default]
+        - recipe[DICETraffic::vpn_install]
+        - recipe[DICETraffic::vpn_start]
         - recipe[DICETraffic::collectors]
       DICE-BigData-Traffic:
         config:
           bt_sensors:
             timon_username: blueadmin
             timon_password: toothsword
+        vpn_key: { get_input: vpn_key }
     relationships:
       - type: dice.relationships.ContainedIn
         target: data_collectors_vm
