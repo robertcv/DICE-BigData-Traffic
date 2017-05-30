@@ -1,0 +1,152 @@
+tosca_definitions_version: cloudify_dsl_1_3
+
+imports:
+  - https://github.com/dice-project/DICE-Deployment-Cloudify/releases/download/0.2.8/openstack.yaml
+
+
+node_templates:
+
+  # Traffic
+  traffic_ip:
+    type: dice.VirtualIP
+
+  traffic_fw:
+    type: dice.firewall_rules.Base
+    properties:
+      rules:
+        - remote_ip_prefix: 0.0.0.0/0
+          port: 22
+        - remote_ip_prefix: 0.0.0.0/0
+          port_range_min: 10000
+          port_range_max: 10010
+
+  traffic_vm:
+    type: dice.hosts.centos.Small
+    relationships:
+      - type: dice.relationships.IPAvailableFrom
+        target: traffic_ip
+      - type: dice.relationships.ProtectedBy
+        target: traffic_fw
+
+  # Custom firewall rule for ipython something
+  ipython_fw:
+    type: dice.firewall_rules.Base
+    properties:
+      rules:
+        - remote_ip_prefix: 0.0.0.0/0
+          port: 12345
+
+  # Spark
+  spark_master_ip:
+    type: dice.VirtualIP
+
+  spark_master_fw:
+    type: dice.firewall_rules.spark.Master
+
+  spark_master_vm:
+    type: dice.hosts.Medium
+    relationships:
+      - type: dice.relationships.IPAvailableFrom
+        target: spark_master_ip
+      - type: dice.relationships.ProtectedBy
+        target: spark_master_fw
+      - type: dice.relationships.ProtectedBy
+        target: ipython_fw
+
+  spark_master:
+    type: dice.components.spark.Master
+    relationships:
+      - type: dice.relationships.ContainedIn
+        target: spark_master_vm
+
+  spark_worker_fw:
+    type: dice.firewall_rules.spark.Worker
+
+  spark_worker_vm:
+    type: dice.hosts.Medium
+    instances:
+      deploy: 1
+    relationships:
+      - type: dice.relationships.ProtectedBy
+        target: spark_worker_fw
+
+  spark_worker:
+    type: dice.components.spark.Worker
+    relationships:
+      - type: dice.relationships.ContainedIn
+        target: spark_worker_vm
+      - type: dice.relationships.spark.ConnectedToMaster
+        target: spark_master
+
+  # Cassandra
+  cassandra_fw:
+    type: dice.firewall_rules.cassandra.Common
+
+  cassandra_vm:
+    type: dice.hosts.Medium
+    relationships:
+      - type: dice.relationships.ProtectedBy
+        target: cassandra_fw
+
+  cassandra:
+    type: dice.components.cassandra.Seed
+    relationships:
+      - type: dice.relationships.ContainedIn
+        target: cassandra_vm
+
+  # Zookeeper
+  zookeeper_fw:
+    type: dice.firewall_rules.zookeeper.Server
+
+  zookeeper_vm:
+    type: dice.hosts.Medium
+    relationships:
+      - type: dice.relationships.ProtectedBy
+        target: zookeeper_fw
+
+  zookeeper_quorum:
+    type: dice.components.zookeeper.Quorum
+    relationships:
+      - type: dice.relationships.zookeeper.QuorumContains
+        target: zookeeper_vm
+
+  zookeeper:
+    type: dice.components.zookeeper.Server
+    relationships:
+      - type: dice.relationships.ContainedIn
+        target: zookeeper_vm
+      - type: dice.relationships.zookeeper.MemberOfQuorum
+        target: zookeeper_quorum
+
+  # Kafka
+  kafka_fw:
+    type: dice.firewall_rules.kafka.Broker
+
+  kafka_vm:
+    type: dice.hosts.Medium
+    relationships:
+      - type: dice.relationships.ProtectedBy
+        target: kafka_fw
+
+  kafka:
+    type: dice.components.kafka.Broker
+    relationships:
+      - type: dice.relationships.ContainedIn
+        target: kafka_vm
+      - type: dice.relationships.zookeeper.ConnectedToZookeeperQuorum
+        target: zookeeper_quorum
+
+
+outputs:
+
+  traffic_vm: { value: { get_attribute: [ traffic_vm, ip ] } }
+  spark_master_vm: { value: { get_attribute: [ spark_master_vm, ip ] } }
+  spark_worker_vm: { value: { get_attribute: [ spark_worker_vm, ip ] } }
+  cassandra_vm: { value: { get_attribute: [ cassandra_vm, ip ] } }
+  zookeeper_vm: { value: { get_attribute: [ zookeeper_vm, ip ] } }
+  kafka_vm: { value: { get_attribute: [ kafka_vm, ip ] } }
+
+  traffic_ip:
+    value: { get_attribute: [ traffic_ip, floating_ip_address ] }
+  spark_master_ip:
+    value: { get_attribute: [ spark_master_ip, floating_ip_address ] }
