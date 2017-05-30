@@ -111,7 +111,7 @@ systemd_units.each do | unit, data |
     execute 'systemctl daemon-reload'
 
     service "#{unit}.service" do
-        action :enable
+        action [ :enable, :start ]
     end
 
     service "#{unit}.timer" do
