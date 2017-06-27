@@ -1,0 +1,39 @@
+node('master') {
+    stage('unit-tests') {
+
+        //checkout([$class: 'GitSCM', branches: [[name: '$GERRIT_BRANCH']],
+        //    userRemoteConfigs: [[url: 'ssh://git@gitlab.xlab.si:13022/dice/BigData-Transport.git']], refspec: '$GERRIT_REFSPEC',
+        //    credentialId: 'jenkins'])
+
+        sh '''
+            if [ ! -d "../venv" ]
+            then
+              virtualenv -p python3 ../venv
+            fi
+        '''
+        sh '''
+            PATH="$WORKSPACE/../venv/bin":/usr/local/bin:$PATH
+            . "$WORKSPACE/../venv/bin/activate"
+            cd python_package
+            pip install .
+            python -m unittest discover
+        '''
+
+        //archiveArtifacts artifacts: '**/*'
+        stash name: 'all-workspace'
+    }
+}
+
+node('dice_worker') {
+    stage('kitchen-tests') {
+        //unarchive mapping: ['**/*': '.']
+        unstash name: 'all-workspace'
+
+        try {
+            sh 'bash run-kitchen-tests.sh'
+        } catch(err) {
+            currentBuild.result = 'FAILURE'
+        }
+        archiveArtifacts artifacts: 'chef-repository/.kitchen/logs/*'
+    }
+}
