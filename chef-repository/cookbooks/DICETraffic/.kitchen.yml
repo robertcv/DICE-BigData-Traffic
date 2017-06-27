@@ -17,6 +17,7 @@ suites:
   - name: collectors
     run_list:
       - recipe[DICETraffic::default]
+      - recipe[apt::default]
       - recipe[DICETraffic::collectors]
     attributes:
       DICE-BigData-Traffic:
@@ -57,6 +58,7 @@ suites:
 
   - name: vpn
     run_list:
+      - recipe[apt::default]
       - recipe[DICETraffic::vpn_install]
     attributes:
       DICE-BigData-Traffic:

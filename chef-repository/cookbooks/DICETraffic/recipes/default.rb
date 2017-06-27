@@ -68,10 +68,12 @@ directory config_path do
 end
 
 data_path = "#{node['DICE-BigData-Traffic']['data_path']}/data"
-directory data_path do
-    user dicetraffic_user
-    group dicetraffic_group
-    mode '0755'
-    recursive true
-    action :create
+[node['DICE-BigData-Traffic']['data_path'], data_path].each do |path|
+    directory path do
+        user dicetraffic_user
+        group dicetraffic_group
+        mode '0755'
+        recursive true
+        action :create
+    end
 end
