@@ -4,6 +4,15 @@ node('master') {
         //checkout([$class: 'GitSCM', branches: [[name: '$GERRIT_BRANCH']],
         //    userRemoteConfigs: [[url: 'ssh://git@gitlab.xlab.si:13022/dice/BigData-Transport.git']], refspec: '$GERRIT_REFSPEC',
         //    credentialId: 'jenkins'])
+        // Checkout the Gerrit git repository
+        git url: 'ssh://jenkins@172.16.93.151:29418/BigData-Transport',
+            credentialId: 'jenkins'
+
+        // Fetch the changeset to a local branch using the build parameters
+        // provided to the build by the Gerrit plugin...
+        def changeBranch = "change-${GERRIT_CHANGE_NUMBER}-${GERRIT_PATCHSET_NUMBER}"
+        sh "git fetch origin ${GERRIT_REFSPEC}:${changeBranch}"
+        sh "git checkout ${changeBranch}"
 
         sh '''
             if [ ! -d "../venv" ]
