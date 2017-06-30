@@ -86,5 +86,80 @@ path to the DICE Deployment Service's git clone location.
           deploy d1219558-8c09-44a5-942c-5375103543cc \
           blueprint.tar.gz
 
+# Testing the project in Jenkins
+
+## Validation of the `develop` branch
+
+Testing the `develop` branch is a good practice, which lets us automatically
+validate the internally stable but not yet fully tested commits. Typically we
+want them to be run shortly after someone merges the changes to this branch
+and pushes them to a common repository (such as github or gitlab).
+
+This project contains a `Jenkinsfile` in the repository root, which runs two
+stages: a unit test stage, testing the Python code logic, and a kitchen test
+stage, testing the Chef recipes. The definition file assumes that Jenkins has
+a node named `master`, where the Python tests can run. It also needs to have
+a remote node named `dice_worker`, which has to reside somewhere where kitchen
+can provision and destroy virtual machines as needed.
+
+The steps in the `Jenkinsfile` then assume that a `kitchen.local.yml` file is
+present in the `workspace` folder of the worker Jenkins folder. See
+[misc/.kitchen.local.yml] for an example. Of course the Jenkins node has to
+assign in its settings all the environment variables that are used in the
+`.kitchen.local.yml` file.
+
+To create a `develop` branch validation project in Jenkins, create a pipeline
+project. It should be enough to use definition of pipeline script from SCM and
+name Script Path as `Jenkinsfile`.
+
+This scenario works if both the  `master` and the `dice_worker` Jenkins nodes
+can reach the SCM on the same address.
+
+## Validation from Gerrit
+
+It is greatly convenient if the Gerrit review process also uses Jenkins to
+verify the code. In principle, the same approach as for validating the
+`develop` branch might work. But in our organization, Gerrit has been located
+out of reach of `dice_worker`. Considering that the previous approach does
+a SCM fetch on both nodes, this doesn't work.
+
+Instead, we prepared `Jenkins-imperative`. This definition mandates a different
+way of populating the satellite node's workspace (using stash in the pipeline).
+
+Like before, create a Pipeline project in Jenkins. Then ensure the following
+items are set:
+
+* Build Triggers: Gerrit event must be checked
+* Gerrit Trigger:
+  * Click Advanced and populate Gerrit Reporting Values as needed (e.g.,
+    Verify Successful 1, Verify Failed -1).
+  * In Gerrit Project, set the pattern for your project in Gerrit that
+    represents this repository. Also set the branch pattern to the one
+    used in Gerrit's project.
+* Pipeline
+  * Definition: Pipeline script from SCM
+  * SCM: Git
+  * Repositories:
+    * Repository URL is the URL to your Gerrit's Git interface, e.g.,
+      `ssh://jenkins@gerrit2.local.lan:29418/BigData-Transport`
+    * Click Advanced
+    * Refspec: `$GERRIT_REFSPEC`
+    * Branches to build: `$GERRIT_BRANCH`
+    * Additional Behaviours: click Add and pick Strategy for choosing what to build
+      * Choosing strategy: Gerrit Trigger (if you don't pick this, Jenkins will
+        always check out a parent of the target branch, e.g., `develop`)
+  * Script Path: `Jenkins-imperative`
+  * Lightweight checkout must **not** be selected (otherwise you'll get errors
+    that `$GERRIT_REFSPEC` and `$GERRIT_BRANCH` are unknown branches, because
+    they variables will not be assigned their values.)
+
+You will probably notice that the Git settings together with the Gerrit Trigger
+are a bit redundant, because this will only affect the Jenkins accessing the
+`Jenkinsfile`. It is quite possible that the SCM sync will happen on a
+non-master node, so it might start executing the pipeline on a node that has
+not received the updated code. See Pipeline Jobs in [Gerrit Trigger
+documentation].
+
 [dds]:https://github.com/dice-project/DICE-Deployment-Service
 [dds-cli]:https://gitlab.xlab.si/dice/DICE-deployment-service/blob/master/doc/AdminGuide.md#dice-deployment-command-line-client-configuration
+[Gerrit Trigger documentation]:https://wiki.jenkins.io/display/JENKINS/Gerrit+Trigger

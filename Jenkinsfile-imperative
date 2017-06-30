@@ -28,14 +28,14 @@ node('master') {
             python -m unittest discover
         '''
 
-        //archiveArtifacts artifacts: '**/*'
+        // bundle the workspace in a stash ...
         stash name: 'all-workspace'
     }
 }
 
 node('dice_worker') {
     stage('kitchen-tests') {
-        //unarchive mapping: ['**/*': '.']
+        // ... and unbundle it at the worker, avoiding network routing issues
         unstash name: 'all-workspace'
 
         try {
