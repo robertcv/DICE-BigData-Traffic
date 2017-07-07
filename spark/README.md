@@ -10,7 +10,7 @@ export SPARK_HOME=/home/ubuntu/spark-2.0.1-bin-hadoop2.7
 Run it on cluster (on master):
 
 ```bash
-./run_spark_clouster.sh cassandra_ip spark://hostname:7077 app.py arg1 arg2
+./run_spark_cluster.sh cassandra_ip spark://hostname:7077 app.py arg1 arg2
 ```
 
 ### Apps
