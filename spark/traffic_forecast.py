@@ -4,7 +4,8 @@ from pyspark.sql.types import DoubleType
 from pyspark.ml.feature import StringIndexer, VectorAssembler
 from pyspark.ml.classification import RandomForestClassifier
 
-import datetime
+import pytz
+from datetime import datetime, timedelta
 import sys
 
 """
@@ -27,6 +28,41 @@ Example:
     traffic_forecast.py 2017-05-04T00:00:00Z 2017-05-05T00:00:00Z
 
 """
+
+dt_fmt = '%Y-%m-%dT%H:%M:%SZ'
+
+def get_default_start_end():
+    """
+    Default range is from the next midnight to the subsequent midnight.
+    """
+    tz = pytz.timezone('Europe/Ljubljana')
+    today_dt = tz.localize(datetime.now()).replace(
+        hour=0, minute=0, second=0, microsecond=0)
+    start = today_dt + timedelta(days=1)
+    end = start + timedelta(days=1)
+
+    return (start.astimezone(pytz.utc), end.astimezone(pytz.utc))
+
+# prepare data points for prediction
+def datetime_range(start, end, step=15):
+    cur = start
+    while cur < end:
+        quarter = cur.hour * 4 + cur.minute / 15
+        weekday = cur.weekday()
+        yield quarter, weekday, cur
+        cur += timedelta(minutes=step)
+
+default_start, default_end = get_default_start_end()
+
+if len(sys.argv) >= 2:
+    start = datetime.datetime.strptime(sys.argv[1], dt_fmt)
+else:
+    start = default_start
+
+if len(sys.argv) >= 3:
+    end = datetime.datetime.strptime(sys.argv[2], dt_fmt)
+else:
+    end = default_end
 
 spark = SparkSession.builder \
     .appName("TrafficForecast") \
@@ -76,22 +112,8 @@ dt = RandomForestClassifier(maxDepth=30, maxBins=100, minInstancesPerNode=20,
                             maxMemoryInMB=4048, labelCol="stat_double")
 model = dt.fit(data)
 
-
-# prepare data points for prediction
-def datetime_range(start, end, step=15):
-    cur = start
-    while cur < end:
-        quarter = cur.hour * 4 + cur.minute / 15
-        weekday = cur.weekday()
-        yield quarter, weekday, cur
-        cur += datetime.timedelta(minutes=step)
-
-
 ids_df = traffic.select('id').distinct().collect()
 ids = [i.id for i in ids_df]
-
-start = datetime.datetime.strptime(sys.argv[1], "%Y-%m-%dT%H:%M:%SZ")
-end = datetime.datetime.strptime(sys.argv[2], "%Y-%m-%dT%H:%M:%SZ")
 
 data = []
 for q, w, dt in datetime_range(start, end):
